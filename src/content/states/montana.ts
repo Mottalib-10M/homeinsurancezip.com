@@ -8,7 +8,7 @@ export default defineState({
   slug: 'montana',
   title: 'Homeowners Insurance Montana 2026: Big Sky and Bozeman Rates',
   description: `Homeowners insurance in Montana 2026: premium per policy by ZIP code and county, 2018 to 2022, Missoula, Flathead, Big Sky, wildfire and rising nonrenewals.`,
-  intro: `Montana's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}; ZIP ${hi[0].zip}, Big Sky, paid ${K.usd(hi[0].prem)}.`,
+  intro: `Montana's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}; ZIP ${hi[0].zip}, Big Sky, paid ${K.usd(hi[0].prem)}.`,
   resume: `Montana's median homeowners premium per policy was ${K.usd(st.prem[4])} in ${yr(4)} in the Treasury file, above the national ${K.usd(N.prem[4])} and ranked ${st.rankPrem} of 51, after a rise of ${K.sgn(st.chg)} after inflation from ${yr(0)}. Only ${st.zips} Montana ZIP codes reach the file's threshold, most of them in the western valleys and the larger towns. Cascade County, Great Falls, rose fastest of the large counties, ${K.sgn(cas.chg ?? 0)}, to ${K.usd(cas.prem)}. Missoula County paid ${K.usd(mis.prem)} and Flathead County ${K.usd(fla.prem)}. The resort ZIP code ${hi[0].zip} at Big Sky paid ${K.usd(hi[0].prem)}, and ${hi[1].zip} near Bozeman ${K.usd(hi[1].prem)}. Claims were infrequent but large, ${K.usd(st.sev)} on average, ranked ${st.rankSev} of 51, the profile of fire and winter water losses. Nonrenewals tripled from ${K.rate(st.nonren[2])} in ${yr(2)} to ${K.rate(st.nonren[4])} in ${yr(4)}, as insurers pulled back from wildfire areas. Montana has no FAIR plan for homes. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>The western valleys</h2>

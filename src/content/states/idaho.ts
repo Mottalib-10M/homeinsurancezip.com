@@ -8,7 +8,7 @@ export default defineState({
   slug: 'idaho',
   title: 'Homeowners Insurance Idaho 2026: Fast Rise From a Low Base',
   description: `Homeowners insurance in Idaho 2026: premium per policy by ZIP code and county, 2018 to 2022, Boise and the north, Sun Valley's high rates, rising nonrenewals.`,
-  intro: `Idaho's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, after a rise of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51.`,
+  intro: `Idaho's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, after a rise of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51.`,
   resume: `Idaho is still one of the cheaper states for homeowners insurance, but it was one of the fastest rising. The median ZIP code paid ${K.usd(st.prem[0])} per policy in ${yr(0)} and ${K.usd(st.prem[4])} in ${yr(4)}, a rise of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51. Ada County, around Boise, rose ${K.sgn(ada.chg ?? 0)} and Bonneville County, around Idaho Falls, ${K.sgn(bonn.chg ?? 0)}, as the state's population and building costs grew quickly. Insurers' paid loss ratio climbed every year, from ${K.pct(st.lrY[0], 0)} to ${K.pct(st.lrY[4], 0)}, and nonrenewals rose to ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51. Claims were rare but large, ${K.usd(st.sev)} on average. Blaine County, home of Sun Valley and Ketchum, had the two dearest ZIP codes, above ${K.usd(Math.floor(hi[1].prem / 100) * 100)}. Idaho has no FAIR plan for homes. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Boise, Nampa and the growth years</h2>

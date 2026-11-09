@@ -8,7 +8,7 @@ export default defineState({
   slug: 'wyoming',
   title: 'Homeowners Insurance Wyoming 2026: Cheyenne, Casper, Jackson',
   description: `Homeowners insurance in Wyoming 2026: premium per policy by ZIP code and county, 2018 to 2022, Cheyenne's hail, Casper, Jackson Hole and falling claim rates.`,
-  intro: `Wyoming's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}; Jackson's ${hi[0].zip} paid ${K.usd(hi[0].prem)}, and Laramie County rose ${K.sgn(lar.chg ?? 0)}.`,
+  intro: `Wyoming's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}; Jackson's ${hi[0].zip} paid ${K.usd(hi[0].prem)}, and Laramie County rose ${K.sgn(lar.chg ?? 0)}.`,
   resume: `Only ${st.zips} Wyoming ZIP codes reach the Treasury file's threshold, and their median premium per homeowners policy was ${K.usd(st.prem[4])} in ${yr(4)}, ranked ${st.rankPrem} of 51 and above the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. Laramie County, Cheyenne, stands out: ${K.usd(lar.prem)} after a rise of ${K.sgn(lar.chg ?? 0)}, with hail on the high plains the reason. Natrona County, Casper, paid ${K.usd(nat.prem)}. The dearest ZIP codes were in Teton County, ${hi[0].zip}, Jackson, at ${K.usd(hi[0].prem)} and ${hi[1].zip} at ${K.usd(hi[1].prem)}, where house values are among the highest in the country. Paid claims fell every year, from ${K.dec(st.freqY[0] * 100, 1)} per 100 policies in ${yr(0)} to ${K.dec(st.freqY[4] * 100, 1)} in ${yr(4)}, but were large, ${K.usd(st.sev)} on average. Nonrenewals peaked at ${K.rate(st.nonren[3])} in ${yr(3)}. Wyoming has no FAIR plan for homes. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Cheyenne and the high plains</h2>

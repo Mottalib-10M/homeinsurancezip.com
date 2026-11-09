@@ -8,7 +8,7 @@ export default defineState({
   slug: 'oklahoma',
   title: 'Homeowners Insurance Oklahoma 2026: Third Highest Median',
   description: `Homeowners insurance in Oklahoma 2026: premium per policy by ZIP code and county, 2018 to 2022, Oklahoma City against Tulsa, and hail and tornado claims.`,
-  intro: `Oklahoma's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, the third highest state median; even its cheapest ZIP code paid ${K.usd(lo[0].prem)}.`,
+  intro: `Oklahoma's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, the third highest state median; even its cheapest ZIP code paid ${K.usd(lo[0].prem)}.`,
   resume: `Oklahoma ranks third for homeowners premiums in the Treasury file: the median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, about ${K.pct(st.prem[4] / N.prem[4] - 1, 0)} above the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. Even the cheapest tenth of ZIP codes paid over ${K.usd(st.p10)}. Hail and tornadoes explain it. Claims ran at ${K.dec(st.freq * 100, 1)} per 100 policies a year, and they were large for a hail state, ${K.usd(st.sev)} on average, ranked ${st.rankSev} of 51, since tornadoes destroy houses outright. Oklahoma County paid ${K.usd(okc.prem)}, much more than Tulsa County at ${K.usd(tul.prem)}; Cleveland County, Norman and Moore, ${K.usd(cle.prem)}. Nonrenewals were moderate, ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51. Oklahoma has no FAIR plan for homes. The data stop in ${yr(4)}, before later rate increases.`,
   body: (h) => `
 <h2>Oklahoma City against Tulsa</h2>

@@ -8,7 +8,7 @@ export default defineState({
   slug: 'new-jersey',
   title: 'Homeowners Insurance New Jersey 2026: Shore vs. North Jersey',
   description: `Homeowners insurance in New Jersey 2026: premium per policy by ZIP code and county, 2018 to 2022, the Shore, Bergen and Morris, Ida in 2021, the state plan.`,
-  intro: `New Jersey's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}; Monmouth County, on the Shore, paid ${K.usd(mon.prem)}.`,
+  intro: `New Jersey's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}; Monmouth County, on the Shore, paid ${K.usd(mon.prem)}.`,
   resume: `New Jersey homeowners paid ${K.usd(st.prem[4])} per policy in the median ZIP code in ${yr(4)} in the Treasury file, about the national level of ${K.usd(N.prem[4])} and ranked ${st.rankPrem} of 51, after a rise of only ${K.sgn(st.chg)} after inflation from ${yr(0)}. North Jersey's large counties paid close to that: Bergen ${K.usd(ber.prem)}, Morris ${K.usd(mor.prem)}, Middlesex ${K.usd(mid.prem)}. The Shore is a separate market: Monmouth County paid ${K.usd(mon.prem)}, and its ZIP ${hi[0].zip} ${K.usd(hi[0].prem)}, the highest in the state. Claims rose to ${K.dec(st.freqY[3] * 100, 1)} per 100 policies in ${yr(3)}, the year the remnants of Ida brought tornadoes and flash floods, and the paid loss ratio to ${K.pct(st.lrY[3], 0)}. Cancellations for nonpayment were the lowest of any state, ${K.rate(st.npc)}. The New Jersey Insurance Underwriting Association writes dwelling fire policies for homes declined elsewhere. Flood is separate and matters on the Shore. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>North Jersey</h2>

@@ -8,7 +8,7 @@ export default defineState({
   slug: 'virginia',
   title: 'Homeowners Insurance Virginia 2026: NoVA to the Valley',
   description: `Homeowners insurance in Virginia 2026: premium per policy by ZIP code and county, 2018 to 2022, Fairfax, Loudoun, the Shenandoah Valley and nonrenewals.`,
-  intro: `Virginia insurers declined to renew ${K.rate(st.nonren[4])} of policies in the median ZIP code in ${yr(4)}, ranked ${st.rankNonren} of 51; premiums stayed below average.`,
+  intro: `Virginia homeowners insurers declined to renew ${K.rate(st.nonren[4])} of policies in the median ZIP code in ${yr(4)}, ranked ${st.rankNonren} of 51; premiums stayed below average.`,
   resume: `Virginia's median homeowners premium per policy was ${K.usd(st.prem[4])} in ${yr(4)} in the Treasury file, ranked ${st.rankPrem} of 51 and below the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation from ${yr(0)}. Renewals got harder: the median nonrenewal rate went from ${K.rate(st.nonren[0])} in ${yr(0)} to ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51, high for a state with modest losses. Insurers paid out ${K.pct(st.lrY[0], 0)} of premium in claims in ${yr(0)}, a year of record rain and of Hurricane Michael's winds as it crossed the state, then ${K.pct(st.lrY[4], 0)} in ${yr(4)}. Northern Virginia pays more: Fairfax County ${K.usd(fx.prem)}, Loudoun ${K.usd(lou.prem)}, with Loudoun's ZIP ${hi[0].zip} in hunt country the dearest in the state at ${K.usd(hi[0].prem)}. The Shenandoah Valley is among the cheapest: Augusta County ${K.usd(aug.prem)}. The Virginia Property Insurance Association covers homes declined elsewhere. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Northern Virginia</h2>

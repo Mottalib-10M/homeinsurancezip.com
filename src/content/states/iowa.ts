@@ -8,7 +8,7 @@ export default defineState({
   slug: 'iowa',
   title: 'Homeowners Insurance Iowa 2026: Derecho Year and Premiums',
   description: `Homeowners insurance in Iowa 2026: premium per policy by ZIP code and county, 2018 to 2022, the 2020 derecho, the bad 2022 loss year and the FAIR Plan.`,
-  intro: `Iowa's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, after a rise of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51.`,
+  intro: `Iowa's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, after a rise of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51.`,
   resume: `Iowa's median homeowners premium per policy was ${K.usd(st.prem[4])} in ${yr(4)} in the Treasury file, a little above the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation from ${yr(0)}, ranked ${st.rankChg} of 51. Two storm years shaped it. In August ${yr(2)} a derecho crossed the state and struck Cedar Rapids hardest; Iowa's paid loss ratio rose from ${K.pct(st.lrY[1], 0)} to ${K.pct(st.lrY[2], 0)}. In ${yr(4)} hail and wind pushed paid claims to ${K.dec(st.freqY[4] * 100, 1)} per 100 policies and the loss ratio to ${K.pct(st.lrY[4], 0)}, the highest of the five years. Polk County, Des Moines, paid ${K.usd(polk.prem)}; Pottawattamie County, across the river from Omaha, ${K.usd(pott.prem)}. Nonrenewals were above the national median, ${K.rate(st.nonren[4])} in ${yr(4)}. The Iowa FAIR Plan writes homes private insurers decline. The data stop in ${yr(4)}, and the national price index rose fast afterwards.`,
   body: (h) => `
 <h2>Cedar Rapids and the derecho</h2>

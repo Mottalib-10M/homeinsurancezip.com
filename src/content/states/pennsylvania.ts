@@ -8,7 +8,7 @@ export default defineState({
   slug: 'pennsylvania',
   title: 'Homeowners Insurance Pennsylvania 2026: Lowest State Median',
   description: `Homeowners insurance in Pennsylvania 2026: premium per policy by ZIP code and county, 2018 to 2022, the lowest state median, Pittsburgh, the Main Line.`,
-  intro: `Pennsylvania's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, the lowest of any state, across ${K.num(st.zips)} ZIP codes.`,
+  intro: `Pennsylvania's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, the lowest of any state, across ${K.num(st.zips)} ZIP codes.`,
   resume: `Pennsylvania had the lowest median homeowners premium of any state in the Treasury file: ${K.usd(st.prem[4])} per policy in ${yr(4)}, against ${K.usd(N.prem[4])} nationally, across ${K.num(st.zips)} ZIP codes. It barely moved after inflation from ${yr(0)}, ${K.sgn(st.chg)}. The reasons are in the claims: insurers paid ${K.dec(st.freq * 100, 1)} claims per 100 policies a year, at ${K.usd(st.sev)} on average, ranked ${st.rankSev} of 51 for size, and the paid loss ratio never passed ${K.pct(Math.max(...st.lrY), 0)}. Allegheny County, Pittsburgh, paid ${K.usd(alle.prem)} and Westmoreland ${K.usd(west.prem)}, both below the state median. The southeast pays more: Montgomery County ${K.usd(mont.prem)}, and its ZIP ${hi[0].zip} on the Main Line ${K.usd(hi[0].prem)}. Nonrenewals were among the lowest, ${K.rate(st.nonren[4])}. The Insurance Placement Facility of Pennsylvania covers homes declined elsewhere. The data stop in ${yr(4)}, and the national price index rose fast after.`,
   body: (h) => `
 <h2>Western Pennsylvania</h2>

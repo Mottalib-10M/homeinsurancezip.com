@@ -8,7 +8,7 @@ export default defineState({
   slug: 'louisiana',
   title: 'Homeowners Insurance Louisiana 2026: After Laura and Ida',
   description: `Homeowners insurance in Louisiana 2026: premium per policy by ZIP code and parish, 2018 to 2022, the Laura and Ida years, nonrenewals and Louisiana Citizens.`,
-  intro: `Louisiana insurers paid ${K.dec(st.freqY[3] * 100, 1)} claims per 100 policies in ${yr(3)}, the year of Hurricane Ida, and ${K.pct(st.lrY[3], 0)} of premium in losses.`,
+  intro: `Louisiana homeowners insurers paid ${K.dec(st.freqY[3] * 100, 1)} claims per 100 policies in ${yr(3)}, the year of Hurricane Ida, and ${K.pct(st.lrY[3], 0)} of premium in losses.`,
   resume: `Louisiana had the highest claim rate in the Treasury file, ${K.dec(st.freq * 100, 1)} paid claims per 100 policies a year in the median ZIP code, ranked ${st.rankFreq} of 51. Two hurricane years drove it. In ${yr(2)} Laura and Delta struck the southwest, and paid claims rose to ${K.dec(st.freqY[2] * 100, 1)} per 100 policies; in ${yr(3)} Ida came ashore at Port Fourchon, and the rate reached ${K.dec(st.freqY[3] * 100, 1)} with a paid loss ratio of ${K.pct(st.lrY[3], 0)}, the highest of any state in any year of the file. The median premium per policy was ${K.usd(st.prem[4])} in ${yr(4)}, ranked ${st.rankPrem} of 51. Orleans Parish paid ${K.usd(orl.prem)} and Jefferson Parish ${K.usd(jef.prem)}. Nonrenewals rose from ${K.rate(st.nonren[2])} in ${yr(2)} to ${K.rate(st.nonren[4])} in ${yr(4)}, and several insurers failed. Many homes moved to Louisiana Citizens, which is outside the file. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Two storms in two years</h2>

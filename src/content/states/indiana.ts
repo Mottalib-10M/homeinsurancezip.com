@@ -8,7 +8,7 @@ export default defineState({
   slug: 'indiana',
   title: 'Homeowners Insurance Indiana 2026: Steady Prices by ZIP Code',
   description: `Homeowners insurance in Indiana 2026: premium per policy by ZIP code and county, 2018 to 2022, Indianapolis, Fort Wayne, Hamilton County and the FAIR Plan.`,
-  intro: `Indiana's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, below the national median, and barely more than in ${yr(0)} after inflation.`,
+  intro: `Indiana's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, below the national median, and barely more than in ${yr(0)} after inflation.`,
   resume: `Indiana homeowners premiums were steady in the Treasury file. The median ZIP code paid ${K.usd(st.prem[0])} per policy in ${yr(0)} and ${K.usd(st.prem[4])} in ${yr(4)}, a rise of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51, and below the national ${K.usd(N.prem[4])}. The large counties move together: Marion County, Indianapolis, was at ${K.usd(mar.prem)}, Lake County in the northwest at ${K.usd(lake.prem)}, Allen County, Fort Wayne, at ${K.usd(allen.prem)} and St. Joseph County, South Bend, at ${K.usd(sj.prem)}, all within two percent of where they were after inflation. The dearest ZIP codes were in Hamilton County north of Indianapolis, ${hi[0].zip} at ${K.usd(hi[0].prem)}. Claims were moderate, ${K.dec(st.freq * 100, 1)} per 100 policies a year, and the paid loss ratio stayed between ${K.pct(Math.min(...st.lrY), 0)} and ${K.pct(Math.max(...st.lrY), 0)}. Insurers declined to renew ${K.rate(st.nonren[4])} of policies in ${yr(4)}. The Indiana FAIR Plan is the last resort. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Indianapolis and its suburbs</h2>

@@ -9,7 +9,7 @@ export default defineState({
   slug: 'florida',
   title: 'Homeowners Insurance Florida 2026: Premium by ZIP and County',
   description: `Homeowners insurance in Florida 2026: premium per policy by ZIP code and county, 2018 to 2022, the highest state median, Citizens and hurricane deductibles.`,
-  intro: `Florida's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, the highest of any state, and ZIP ${hi[0].zip} paid ${K.usd(hi[0].prem)}.`,
+  intro: `Florida's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, the highest of any state, and ZIP ${hi[0].zip} paid ${K.usd(hi[0].prem)}.`,
   resume: `Florida has the highest homeowners premiums in the Treasury file: its median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, about twice the national ${K.usd(N.prem[4])}. The dearest tenth of its ZIP codes paid over ${K.usd(st.p90)}, led by ${hi[0].zip} in ${hi[0].county} at ${K.usd(hi[0].prem)}. Yet the median fell ${K.sgn(st.chg)} after inflation from ${yr(0)} to ${yr(4)}, the largest drop of any state. That is not a sign of cheaper insurance. Private insurers failed or withdrew in those years, and Citizens Property Insurance Corporation took on the homes they left, often the dearest coastal ones; Citizens is outside the file. What remains is the private market. In ${yr(4)}, the year of Hurricane Ian, insurers paid out ${K.pct(st.lrY[4], 0)} of premium in claims in the median ZIP code. Florida law sets hurricane deductible options, a once-a-year rule, notice periods and a ${K.pct(F.citizensMargin, 0)} line for Citizens eligibility. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Southeast Florida against the rest</h2>

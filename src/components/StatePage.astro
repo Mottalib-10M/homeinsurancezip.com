@@ -54,7 +54,7 @@ const zipRows = (rs: typeof st.hi) => rs.map((z) => [z.zip, z.county, K.usd(z.pr
     <Clamp text={def.resume} lang={lang} id={`clamp-${def.slug}`} class="mb-8" />
     <Body html={def.body(helpers())} path={path} plier />
     <section data-chrome class="mt-10"><details class="pli rounded-lg border border-navy-200 px-3 py-2"><summary class="cursor-pointer font-medium text-navy-900">{st.name} in tables: year by year, counties, dearest and cheapest ZIP codes</summary>
-      <h2 class="font-serif text-2xl font-bold text-navy-900">{st.name}, year by year</h2>
+      <h2 class="font-serif text-2xl font-bold text-navy-900">Homeowners insurance in {st.name}, year by year</h2>
       <Fragment set:html={table(['Year', `${st.name} median ZIP`, 'National median ZIP', 'Nonrenewal rate', 'Claims per 100 policies', 'Paid loss ratio'], years, `Medians across the ${K.num(st.zips)} ZIP codes of ${st.name} in the Treasury FIO workbook (HO-3 and HO-5 policies, insurers that reported to regulators). Premium per policy = written premium / policies in force at year end.`, ['l', 'r', 'r', 'r', 'r', 'r'])} />
       <h2 class="mt-8 font-serif text-2xl font-bold text-navy-900">The {st.name} counties with the most ZIP codes in the file</h2>
       <Fragment set:html={table(['County', 'ZIP codes', 'Median 2018', 'Median 2022', 'Change', 'Nonrenewal 2022', 'Average claim'], countyRows, 'County of each ZIP code: the county holding most of its land area (Census 2020 relationship file). Medians across the county\'s ZIP codes.', ['l', 'r', 'r', 'r', 'r', 'r', 'r'])} />

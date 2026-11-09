@@ -34,7 +34,7 @@ export default defineGuide({
 <li><strong>Paid through your mortgage?</strong> The rise also moves the monthly payment for a year; the ${h.a('homeowners-insurance-cost-per-month', 'escrow calculator')} shows by how much.</li>
 </ul>
 ${h.mini('monthly', { t: 'Your premium per month, and per $1,000 insured to compare two quotes', p: ['y', 'cov'] })}
-<h2>Two speeds: before and after ${N.years[4]}</h2>
+<h2>Home insurance going up at two speeds: before and after ${N.years[4]}</h2>
 <p>From ${N.years[0]} to ${N.years[4]}, the BLS producer price index for homeowner's insurance rose ${K.sgn(ppi1822)} in total, while consumer prices rose ${K.sgn(cpi1822)}. Insurance lagged general inflation in those years: premiums are set by filings that take months to approve, and a policy renews once a year. The catch-up came after. The index rose ${K.sgn(ppi2324)} between ${2023} and ${2024} alone, and it kept climbing in ${2025} and ${2026}.</p>
 ${h.table(['Year', 'Home insurance price index', 'Home insurance prices since 2022', 'General prices since 2022'], yrs, `Bureau of Labor Statistics: producer price index for homeowner's insurance and consumer price index, yearly averages, then the latest month, ${K.ppiMonth}.`, ['l', 'r', 'r', 'r'])}
 <p>The index measures the price of comparable coverage, not the bill of one household. A bill can rise faster than the index when the insured value of the house is raised at renewal, or slower when a deductible goes up. That is why the calculator above asks for your premium today and compares it with the index path, not with your neighbor.</p>

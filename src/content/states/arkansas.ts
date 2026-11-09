@@ -8,7 +8,7 @@ export default defineState({
   slug: 'arkansas',
   title: 'Homeowners Insurance Arkansas 2026: Hail Claims and Premiums',
   description: `Homeowners insurance in Arkansas 2026: premium per policy by ZIP code and county from 2018 to 2022, one of the highest claim rates in the US, and loss ratios.`,
-  intro: `Arkansas insurers paid ${K.dec(st.freq * 100, 1)} claims per 100 policies a year, ranked ${st.rankFreq} of 51; the median ZIP code paid ${K.usd(st.prem[4])} in ${yr(4)}.`,
+  intro: `Arkansas homeowners insurers paid ${K.dec(st.freq * 100, 1)} claims per 100 policies a year, ranked ${st.rankFreq} of 51; the median ZIP code paid ${K.usd(st.prem[4])} in ${yr(4)}.`,
   resume: `Arkansas homeowners file claims more often than almost anyone else. Over ${yr(0)} to ${yr(4)}, the median ZIP code in the Treasury file had ${K.dec(st.freq * 100, 1)} paid claims per 100 policies a year, second only to Louisiana, against ${K.dec(N.freq * 100, 1)} nationally. Each claim was modest, ${K.usd(st.sev)} on average, consistent with hail and wind damage to roofs rather than total losses. The premium per policy in the median ZIP code was ${K.usd(st.prem[4])} in ${yr(4)}, ranked ${st.rankPrem} of 51, and it rose ${K.sgn(st.chg)} after inflation over five years. The strain shows in the loss ratio: insurers paid out ${K.pct(st.lrY[4], 0)} of premium in claims in ${yr(4)}, up from ${K.pct(st.lrY[0], 0)}. Pulaski County around Little Rock had the highest county median, ${K.usd(pul.prem)}. Arkansas has no FAIR plan for homes. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Claims in almost every year</h2>

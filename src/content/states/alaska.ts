@@ -8,7 +8,7 @@ export default defineState({
   slug: 'alaska',
   title: 'Homeowners Insurance Alaska 2026: Few Claims, Large Ones',
   description: `Homeowners insurance in Alaska 2026: premium per policy by ZIP code and borough from 2018 to 2022, the largest average claim of any state, and nonrenewal rates.`,
-  intro: `Alaska's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, but its average paid claim, ${K.usd(st.sev)}, was the largest of any state.`,
+  intro: `Alaska's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, but its average paid claim, ${K.usd(st.sev)}, was the largest of any state.`,
   resume: `Only ${st.zips} Alaska ZIP codes reach the Treasury file's threshold of ten insurers and fifty policies, most of them around Anchorage, the Mat-Su valley, the Kenai Peninsula and Fairbanks. Their median premium per policy was ${K.usd(st.prem[4])} in ${yr(4)}, ranked ${st.rankPrem} of 51, and it fell ${K.sgn(st.chg)} after inflation from ${yr(0)}, one of the few declines in the country. The pattern behind it is unusual: Alaska had the fewest paid claims per policy of any state, ${K.dec(st.freq * 100, 1)} per 100 a year, and the largest average claim, ${K.usd(st.sev)}. Fire in a cold climate, frozen pipes and long repair seasons with costly freight make each loss expensive. Nonrenewals were rare, ${K.rate(st.nonren[4])} in ${yr(4)}. Alaska has no FAIR plan for homes. Remote communities outside the file may pay very different prices, and the data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Four areas carry the file</h2>

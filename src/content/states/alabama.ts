@@ -8,7 +8,7 @@ export default defineState({
   slug: 'alabama',
   title: 'Homeowners Insurance Alabama 2026: Gulf Coast vs. Inland',
   description: `Homeowners insurance in Alabama 2026: premium per policy by ZIP code and county, 2018 to 2022, Mobile and Baldwin against Birmingham, and the beach plan.`,
-  intro: `The median Alabama ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}; ZIP ${hi[0].zip} on the coast paid ${K.usd(hi[0].prem)}.`,
+  intro: `The median Alabama ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}; ZIP ${hi[0].zip} on the coast paid ${K.usd(hi[0].prem)}.`,
   resume: `Alabama's median ZIP code paid ${K.usd(st.prem[4])} per homeowners policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and above the national ${K.usd(N.prem[4])}. Over five years the figure barely moved after inflation, ${K.sgn(st.chg)}, but the state is two markets. Inland, Jefferson County around Birmingham was at ${K.usd(jeff.prem)} and Madison County around Huntsville at ${K.usd(mad.prem)}. On the Gulf, Mobile County paid ${K.usd(mobile.prem)} and Baldwin County ${K.usd(bald.prem)}, and the single dearest ZIP code, ${hi[0].zip} in ${hi[0].county}, paid ${K.usd(hi[0].prem)}. The year ${yr(2)} stands out in the claims: ${K.dec(st.freqY[2] * 100, 1)} paid claims per 100 policies, the year Hurricane Sally came ashore near the state line. Coastal homes that private insurers will not cover for wind turn to the Alabama Insurance Underwriting Association, whose policies are not in these figures. Data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Birmingham and Huntsville pay close to the state median</h2>

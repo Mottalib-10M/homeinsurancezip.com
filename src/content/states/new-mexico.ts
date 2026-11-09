@@ -8,7 +8,7 @@ export default defineState({
   slug: 'new-mexico',
   title: 'Homeowners Insurance New Mexico 2026: Albuquerque and Taos',
   description: `Homeowners insurance in New Mexico 2026: premium per policy by ZIP code and county, 2018 to 2022, Albuquerque, Las Cruces, the northern mountains and wildfire.`,
-  intro: `New Mexico's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}; Bernalillo County, Albuquerque, paid less, ${K.usd(ber.prem)}.`,
+  intro: `New Mexico's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}; Bernalillo County, Albuquerque, paid less, ${K.usd(ber.prem)}.`,
   resume: `New Mexico homeowners paid ${K.usd(st.prem[4])} per policy in the median ZIP code in ${yr(4)} in the Treasury file, ranked ${st.rankPrem} of 51 and a little below the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. Cities pay less than the mountains. Bernalillo County, Albuquerque, paid ${K.usd(ber.prem)} and Doña Ana County, Las Cruces, ${K.usd(dona.prem)}, while Rio Arriba County in the north paid ${K.usd(rio.prem)}. The dearest ZIP codes were in the Sangre de Cristo range, ${hi[0].zip} in San Miguel County at ${K.usd(hi[0].prem)} and ${hi[1].zip} in Taos County at ${K.usd(hi[1].prem)}. Wildfire is the risk behind those figures, and the ${yr(4)} Hermits Peak and Calf Canyon fire, the largest in state history, burned in that area. Claims were average in number and size. Nonrenewals rose to ${K.rate(st.nonren[4])} in ${yr(4)}. New Mexico's FAIR plan writes a basic dwelling fire policy. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Albuquerque, Rio Rancho and Las Cruces</h2>

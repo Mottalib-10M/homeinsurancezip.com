@@ -8,7 +8,7 @@ export default defineState({
   slug: 'utah',
   title: 'Homeowners Insurance Utah 2026: Cheap but Rising Fast',
   description: `Homeowners insurance in Utah 2026: premium per policy by ZIP code and county, 2018 to 2022, Salt Lake, Utah County, St. George, Park City and a fast rise.`,
-  intro: `Utah's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, second lowest of any state, after a rise of ${K.sgn(st.chg)} after inflation.`,
+  intro: `Utah's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, second lowest of any state, after a rise of ${K.sgn(st.chg)} after inflation.`,
   resume: `Utah is one of the cheapest states for homeowners insurance in the Treasury file and one of the fastest rising. The median ZIP code paid ${K.usd(st.prem[0])} per policy in ${yr(0)} and ${K.usd(st.prem[4])} in ${yr(4)}, a rise of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51, while its level ranked ${st.rankPrem}. Every large county rose by about a sixth or more: Salt Lake ${K.sgn(slc.chg ?? 0)} to ${K.usd(slc.prem)}, Utah County ${K.sgn(uc.chg ?? 0)}, Washington County around St. George ${K.sgn(wash.chg ?? 0)}, Cache County ${K.sgn(cache.chg ?? 0)}. Rapid growth, rising construction costs and a climbing loss ratio, from ${K.pct(st.lrY[0], 0)} in ${yr(0)} to ${K.pct(st.lrY[4], 0)} in ${yr(4)}, went with it. Park City's ${hi[0].zip} was the dearest ZIP code, ${K.usd(hi[0].prem)}. Claims were few and modest, ${K.usd(st.sev)} on average. Utah has no FAIR plan for homes. Earthquake is a separate policy. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>The Wasatch Front</h2>

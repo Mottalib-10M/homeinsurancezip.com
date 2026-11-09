@@ -8,7 +8,7 @@ export default defineState({
   slug: 'illinois',
   title: 'Homeowners Insurance Illinois 2026: Chicago and Downstate',
   description: `Homeowners insurance in Illinois 2026: premium per policy by ZIP code and county, 2018 to 2022, Cook and the collar counties, downstate and the FAIR Plan.`,
-  intro: `Illinois's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, up ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51 for growth.`,
+  intro: `Illinois's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, up ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51 for growth.`,
   resume: `Illinois has one of the largest sets of ZIP codes in the Treasury file, ${K.num(st.zips)}, and its median homeowners premium per policy was ${K.usd(st.prem[4])} in ${yr(4)}, close to the national ${K.usd(N.prem[4])}. What stands out is the steady rise: ${K.sgn(st.chg)} after inflation from ${yr(0)}, ranked ${st.rankChg} of 51, with every year higher than the last. The premium range is narrow for a large state, from under ${K.usd(st.p10)} for the cheapest tenth of ZIP codes to over ${K.usd(st.p90)} for the dearest. Cook County's ${cook.zips} ZIP codes had a median of ${K.usd(cook.prem)}, nearly the same as DuPage at ${K.usd(dup.prem)} and Will at ${K.usd(will.prem)}. The dearest ZIP codes were downtown Chicago's ${hi[0].zip} and ${hi[1].zip}. Claims peaked in ${yr(2)}, the year of the August derecho, at ${K.dec(st.freqY[2] * 100, 1)} per 100 policies. The Illinois FAIR Plan covers homes private insurers decline. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Chicago and the collar counties</h2>

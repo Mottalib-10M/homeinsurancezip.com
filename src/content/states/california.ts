@@ -8,7 +8,7 @@ export default defineState({
   slug: 'california',
   title: 'Homeowners Insurance California 2026: Wildfire and Renewals',
   description: `Homeowners insurance in California 2026: premium per policy by ZIP code and county from 2018 to 2022, the largest rise of any state, nonrenewals, the FAIR Plan.`,
-  intro: `California's median ZIP code premium rose ${K.sgn(st.chg)} after inflation from ${yr(0)} to ${yr(4)}, the largest rise of any state, to ${K.usd(st.prem[4])}.`,
+  intro: `California's median ZIP code premium for homeowners insurance rose ${K.sgn(st.chg)} after inflation from ${yr(0)} to ${yr(4)}, the largest rise of any state, to ${K.usd(st.prem[4])}.`,
   resume: `California had the steepest premium rise in the Treasury file: the median ZIP code went from ${K.usd(st.prem[0])} per policy in ${yr(0)} to ${K.usd(st.prem[4])} in ${yr(4)}, ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51. The level is still middling, ranked ${st.rankPrem}, because California's ${K.num(st.zips)} ZIP codes include many dense urban areas with low exposure. The wildfire years show in the renewals: the share of policies insurers declined to renew nearly doubled between ${yr(0)} and ${yr(1)}, from ${K.rate(st.nonren[0])} to ${K.rate(st.nonren[1])}, and stayed there. Claims were rare but large, ${K.usd(st.sev)} on average, ranked ${st.rankSev} of 51. San Diego County rose ${K.sgn(sd.chg ?? 0)} and Orange County ${K.sgn(oc.chg ?? 0)}. Homes that lose private coverage turn to the California FAIR Plan, whose policies are not in these figures. The data stop in ${yr(4)}, before the later withdrawals of large insurers.`,
   body: (h) => `
 <h2>Rare claims, very large claims</h2>

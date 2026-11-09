@@ -8,7 +8,7 @@ export default defineState({
   slug: 'nevada',
   title: 'Homeowners Insurance Nevada 2026: Las Vegas and Reno Costs',
   description: `Homeowners insurance in Nevada 2026: premium per policy by ZIP code and county, 2018 to 2022, Las Vegas, Reno, Lake Tahoe, low claim rates, the wildfire edge.`,
-  intro: `Nevada's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, among the lowest, while Lake Tahoe's ${hi[0].zip} paid ${K.usd(hi[0].prem)}.`,
+  intro: `Nevada's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, among the lowest, while Lake Tahoe's ${hi[0].zip} paid ${K.usd(hi[0].prem)}.`,
   resume: `Nevada is one of the cheapest states for homeowners insurance in the Treasury file: the median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51, after a rise of ${K.sgn(st.chg)} after inflation from ${yr(0)}. Clark County, Las Vegas, with ${clark.zips} ZIP codes, paid ${K.usd(clark.prem)}; Washoe County, Reno, ${K.usd(wash.prem)}. Claims are rare in the desert, ${K.dec(st.freq * 100, 1)} per 100 policies a year, ranked ${st.rankFreq} of 51, with no hurricanes and little hail. The exception is the Sierra edge: Douglas County, at Lake Tahoe and the Carson Valley, paid ${K.usd(dou.prem)}, and its ZIP ${hi[0].zip} ${K.usd(hi[0].prem)}, with wildfire the concern. The cheapest ZIP codes in the state were in Clark County too, ${lo[0].zip} at ${K.usd(lo[0].prem)}. Nonrenewals rose to ${K.rate(st.nonren[4])} in ${yr(4)}. Nevada has no FAIR plan for homes. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Las Vegas</h2>

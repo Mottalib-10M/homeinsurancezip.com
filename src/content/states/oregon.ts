@@ -8,7 +8,7 @@ export default defineState({
   slug: 'oregon',
   title: 'Homeowners Insurance Oregon 2026: Low Premiums, Big Claims',
   description: `Homeowners insurance in Oregon 2026: premium per policy by ZIP code and county, 2018 to 2022, Portland, Eugene, Salem, the 2020 fires and the FAIR Plan.`,
-  intro: `Oregon's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, among the lowest, but its average claim, ${K.usd(st.sev)}, ranked ${st.rankSev} of 51.`,
+  intro: `Oregon's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, among the lowest, but its average claim, ${K.usd(st.sev)}, ranked ${st.rankSev} of 51.`,
   resume: `Oregon homeowners paid ${K.usd(st.prem[4])} per policy in the median ZIP code in ${yr(4)} in the Treasury file, ranked ${st.rankPrem} of 51 and well below the national ${K.usd(N.prem[4])}. But the figure rose ${K.sgn(st.chg)} after inflation from ${yr(0)}, ranked ${st.rankChg} for growth, and the shape of Oregon's claims explains why: insurers paid few claims, ${K.dec(st.freq * 100, 1)} per 100 policies a year, ranked ${st.rankFreq}, but large ones, ${K.usd(st.sev)} on average, the third largest of any state. Fire is the reason. The Labor Day fires of September ${yr(2)} burned more than a thousand homes in the Santiam Canyon, around Detroit and Gates, and in the Rogue Valley. Clackamas County rose ${K.sgn(clack.chg ?? 0)} to ${K.usd(clack.prem)}; Multnomah, Portland, ${K.sgn(mult.chg ?? 0)} to ${K.usd(mult.prem)}. Nonrenewals stayed moderate, ${K.rate(st.nonren[4])} in ${yr(4)}. The Oregon FAIR Plan writes a dwelling fire policy for homes declined elsewhere. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Portland and the Willamette Valley</h2>

@@ -8,7 +8,7 @@ export default defineState({
   slug: 'tennessee',
   title: 'Homeowners Insurance Tennessee 2026: Memphis to Knoxville',
   description: `Homeowners insurance in Tennessee 2026: premium per policy by ZIP code and county, 2018 to 2022, Memphis, Nashville, Chattanooga, Knoxville, tornadoes.`,
-  intro: `Tennessee's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}; Shelby County, Memphis, paid ${K.usd(shel.prem)}, the most of the big four.`,
+  intro: `Tennessee's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}; Shelby County, Memphis, paid ${K.usd(shel.prem)}, the most of the big four.`,
   resume: `Tennessee homeowners paid ${K.usd(st.prem[4])} per policy in the median ZIP code in ${yr(4)} in the Treasury file, ranked ${st.rankPrem} of 51 and a little above the national ${K.usd(N.prem[4])}, after a rise of only ${K.sgn(st.chg)} after inflation. The four big counties differ more than the state figure suggests. Shelby County, Memphis, paid ${K.usd(shel.prem)}; Davidson County, Nashville, ${K.usd(dav.prem)} after the fastest rise, ${K.sgn(dav.chg ?? 0)}; Hamilton County, Chattanooga, ${K.usd(ham.prem)}; Knox County, Knoxville, ${K.usd(knox.prem)}. Claims rose to ${K.dec(st.freqY[2] * 100, 1)} per 100 policies in ${yr(2)}, the year of the March tornado through Nashville and Cookeville. Nonrenewals reached ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51, and cancellations for nonpayment ran above the national rate. Tennessee has no FAIR plan for homes, so a declined house goes to surplus lines insurers. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Memphis and West Tennessee</h2>

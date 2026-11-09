@@ -8,7 +8,7 @@ export default defineState({
   slug: 'ohio',
   title: 'Homeowners Insurance Ohio 2026: Premiums in the Three Cs',
   description: `Homeowners insurance in Ohio 2026: premium per policy by ZIP code and county, 2018 to 2022, the three big cities, a narrow price range and the Ohio FAIR Plan.`,
-  intro: `Ohio's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51, one of the cheaper large states.`,
+  intro: `Ohio's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, ranked ${st.rankPrem} of 51, one of the cheaper large states.`,
   resume: `Ohio is one of the cheaper large states for homeowners insurance in the Treasury file. Across ${K.num(st.zips)} ZIP codes, the median paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and below the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. The range is narrow: the cheapest tenth of ZIP codes paid under ${K.usd(st.p10)} and the dearest tenth over ${K.usd(st.p90)}. The three big counties are close together, Cuyahoga, Cleveland, at ${K.usd(cuy.prem)}, Franklin, Columbus, at ${K.usd(fra.prem)}, and Hamilton, Cincinnati, at ${K.usd(ham.prem)}. Cuyahoga holds both ends of the state's range: ZIP ${hi[0].zip}, Gates Mills, paid ${K.usd(hi[0].prem)}, and ${lo[0].zip}, Parma, ${K.usd(lo[0].prem)}. Claims rose in ${yr(1)} and ${yr(2)}, with tornadoes around Dayton in May ${yr(1)}. Insurers paid out ${K.pct(st.lrY[4], 0)} of premium in claims in ${yr(4)}. Nonrenewals were ${K.rate(st.nonren[4])}. The Ohio FAIR Plan covers homes declined elsewhere. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>The three Cs</h2>

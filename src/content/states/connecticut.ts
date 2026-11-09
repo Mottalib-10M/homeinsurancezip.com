@@ -8,7 +8,7 @@ export default defineState({
   slug: 'connecticut',
   title: 'Homeowners Insurance Connecticut 2026: Flat Prices by ZIP',
   description: `Homeowners insurance in Connecticut 2026: premium per policy by ZIP code and county, 2018 to 2022, Greenwich against Hartford, storms and the FAIR Plan.`,
-  intro: `Connecticut's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, almost exactly what it paid in ${yr(0)} after inflation.`,
+  intro: `Connecticut's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, almost exactly what it paid in ${yr(0)} after inflation.`,
   resume: `Connecticut homeowners premiums held still from ${yr(0)} to ${yr(4)} in the Treasury file: the median ZIP code paid ${K.usd(st.prem[0])} per policy at the start and ${K.usd(st.prem[4])} at the end, a change of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51 for growth. The level is above the national median of ${K.usd(N.prem[4])}, ranked ${st.rankPrem}. The state has only eight counties, and Fairfield County, on Long Island Sound next to New York, stands apart with a median of ${K.usd(fair.prem)}, against ${K.usd(hart.prem)} in Hartford County. The two dearest ZIP codes, ${hi[0].zip} and ${hi[1].zip} in Greenwich, paid close to ${K.usd(Math.round(hi[0].prem / 100) * 100)} per policy. Claims spiked in ${yr(2)}, the year Tropical Storm Isaias knocked down trees across the state, at ${K.dec(st.freqY[2] * 100, 1)} per 100 policies. The Connecticut FAIR Plan covers homes private insurers decline. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Fairfield County and the rest</h2>

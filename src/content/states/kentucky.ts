@@ -8,7 +8,7 @@ export default defineState({
   slug: 'kentucky',
   title: 'Homeowners Insurance Kentucky 2026: Louisville and Lexington',
   description: `Homeowners insurance in Kentucky 2026: premium per policy by ZIP code and county, 2018 to 2022, Louisville's fall, the tornado claims and the FAIR Plan.`,
-  intro: `Kentucky's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, slightly less than in ${yr(0)} after inflation, with few nonrenewals.`,
+  intro: `Kentucky's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, slightly less than in ${yr(0)} after inflation, with few nonrenewals.`,
   resume: `Kentucky is one of the few states where the median homeowners premium per policy fell after inflation in the Treasury file: from ${K.usd(st.prem[0])} in ${yr(0)} to ${K.usd(st.prem[4])} in ${yr(4)}, ${K.sgn(st.chg)}, close to the national ${K.usd(N.prem[4])}. Jefferson County, Louisville, fell further, ${K.sgn(jeff.chg ?? 0)}, to ${K.usd(jeff.prem)}. Fayette County, Lexington, was at ${K.usd(fay.prem)}, and Pike County in the eastern coalfields at ${K.usd(pike.prem)}. Insurers rarely declined to renew: ${K.rate(st.nonren[4])} of policies in ${yr(4)}, ranked ${st.rankNonren} of 51. Claims were frequent but small, ${K.dec(st.freq * 100, 1)} per 100 policies a year at an average of ${K.usd(st.sev)}, ranked ${st.rankSev} for size. The paid loss ratio jumped to ${K.pct(st.lrY[4], 0)} in ${yr(4)}, after the December ${yr(3)} tornado outbreak in western Kentucky and the July ${yr(4)} floods in the east, though flood itself is outside homeowners policies. The Kentucky FAIR Plan writes homes declined elsewhere. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Louisville and Lexington</h2>

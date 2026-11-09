@@ -8,7 +8,7 @@ export default defineState({
   slug: 'washington',
   title: 'Homeowners Insurance Washington 2026: Seattle and Spokane',
   description: `Homeowners insurance in Washington State 2026: premium per policy by ZIP code and county, 2018 to 2022, King, Pierce, Spokane, large claims, earthquake.`,
-  intro: `Washington's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, below average, but its average claim, ${K.usd(st.sev)}, ranked ${st.rankSev} of 51.`,
+  intro: `Washington's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, below average, but its average claim, ${K.usd(st.sev)}, ranked ${st.rankSev} of 51.`,
   resume: `Washington State homeowners paid ${K.usd(st.prem[4])} per policy in the median ZIP code in ${yr(4)} in the Treasury file, ranked ${st.rankPrem} of 51 and below the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. Claims were rare, ${K.dec(st.freq * 100, 1)} per 100 policies a year, ranked ${st.rankFreq}, but large, ${K.usd(st.sev)} on average, ranked ${st.rankSev}, the profile of fire and water losses on houses with high rebuild costs. The paid loss ratio rose from ${K.pct(st.lrY[0], 0)} in ${yr(0)} to ${K.pct(st.lrY[4], 0)} in ${yr(4)}, with wildfire seasons east of the Cascades among the reasons. King County paid ${K.usd(king.prem)}, with Medina's ${hi[0].zip} the dearest ZIP code in the state at ${K.usd(hi[0].prem)}; Spokane County ${K.usd(spo.prem)}. Nonrenewals were ${K.rate(st.nonren[4])} in ${yr(4)}. Earthquake is excluded from standard policies. The Washington FAIR Plan covers homes declined elsewhere. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Puget Sound</h2>

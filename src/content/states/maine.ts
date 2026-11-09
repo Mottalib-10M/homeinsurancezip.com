@@ -8,7 +8,7 @@ export default defineState({
   slug: 'maine',
   title: 'Homeowners Insurance Maine 2026: Low Losses, Coastal Gap',
   description: `Homeowners insurance in Maine 2026: premium per policy by ZIP code and county, 2018 to 2022, the lowest loss ratios in the US, the coast and Aroostook.`,
-  intro: `Maine insurers paid out only ${K.pct(st.lrY[4], 0)} of premium in claims in ${yr(4)}; the median ZIP code paid ${K.usd(st.prem[4])} per policy.`,
+  intro: `Maine homeowners insurers paid out only ${K.pct(st.lrY[4], 0)} of premium in claims in ${yr(4)}; the median ZIP code paid ${K.usd(st.prem[4])} per policy.`,
   resume: `Maine is among the cheapest and calmest states for homeowners insurance in the Treasury file. The median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and well below the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. Insurers paid few claims, ${K.dec(st.freq * 100, 1)} per 100 policies a year, ranked ${st.rankFreq}, and small ones, ${K.usd(st.sev)} on average, ranked ${st.rankSev}. As a result the paid loss ratio stayed between ${K.pct(Math.min(...st.lrY), 0)} and ${K.pct(Math.max(...st.lrY), 0)}, the lowest range in the country. Nonrenewals fell from ${K.rate(st.nonren[1])} in ${yr(1)} to ${K.rate(st.nonren[4])} in ${yr(4)}. The coast is the exception: Hancock County, with Mount Desert Island, had a median of ${K.usd(han.prem)}, well above the state, and its ZIP ${hi[0].zip} paid ${K.usd(hi[0].prem)}. Aroostook County in the north was among the cheapest. Maine has no FAIR plan for homes. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Inland Maine and the County</h2>

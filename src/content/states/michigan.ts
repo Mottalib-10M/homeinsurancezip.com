@@ -8,7 +8,7 @@ export default defineState({
   slug: 'michigan',
   title: 'Homeowners Insurance Michigan 2026: Falling Nonrenewals',
   description: `Homeowners insurance in Michigan 2026: premium per policy by ZIP code and county, 2018 to 2022, Detroit and Oakland County, falling nonrenewals, MBPIA.`,
-  intro: `Michigan's nonrenewal rate fell from ${K.rate(st.nonren[0])} in ${yr(0)} to ${K.rate(st.nonren[4])} in ${yr(4)}; the median ZIP code paid ${K.usd(st.prem[4])} per policy.`,
+  intro: `Michigan's homeowners insurance nonrenewal rate fell from ${K.rate(st.nonren[0])} in ${yr(0)} to ${K.rate(st.nonren[4])} in ${yr(4)}; the median ZIP code paid ${K.usd(st.prem[4])} per policy.`,
   resume: `Michigan is a low-premium state in the Treasury file: its median ZIP code paid ${K.usd(st.prem[4])} per homeowners policy in ${yr(4)}, ranked ${st.rankPrem} of 51, and the figure did not move after inflation from ${yr(0)}, ${K.sgn(st.chg)}. What changed is renewals. In ${yr(0)} insurers declined to renew ${K.rate(st.nonren[0])} of policies in the median ZIP code, one of the highest rates in the country; by ${yr(4)} the rate was ${K.rate(st.nonren[4])}, a fall of about two thirds. Detroit's Wayne County paid ${K.usd(way.prem)} and Oakland County ${K.usd(oak.prem)}, both above the state median, while Kent County, Grand Rapids, paid ${K.usd(kent.prem)}. The cheapest ZIP codes were up north in Roscommon County, ${lo[0].zip} at ${K.usd(lo[0].prem)}. The paid loss ratio crept up to ${K.pct(st.lrY[4], 0)}. The Michigan Basic Property Insurance Association covers homes private insurers decline. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Nonrenewals came down</h2>

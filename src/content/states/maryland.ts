@@ -8,7 +8,7 @@ export default defineState({
   slug: 'maryland',
   title: 'Homeowners Insurance Maryland 2026: Premiums and Loss Ratios',
   description: `Homeowners insurance in Maryland 2026: premium per policy by ZIP code and county, 2018 to 2022, Baltimore, the DC suburbs, loss ratios and the joint plan.`,
-  intro: `Maryland insurers paid out ${K.pct(st.lrY[0], 0)} of premium in claims in ${yr(0)}, one of the highest ratios that year; the median ZIP code paid ${K.usd(st.prem[4])} in ${yr(4)}.`,
+  intro: `Maryland homeowners insurers paid out ${K.pct(st.lrY[0], 0)} of premium in claims in ${yr(0)}, one of the highest ratios that year; the median ZIP code paid ${K.usd(st.prem[4])} in ${yr(4)}.`,
   resume: `Maryland's median homeowners premium per policy was ${K.usd(st.prem[4])} in ${yr(4)} in the Treasury file, close to the national ${K.usd(N.prem[4])} and ranked ${st.rankPrem} of 51, after a rise of ${K.sgn(st.chg)} after inflation from ${yr(0)}. The striking figure is the loss ratio: insurers paid out ${K.pct(st.lrY[0], 0)} of premium in claims in ${yr(0)}, a year of heavy rain and flash floods around Ellicott City, and stayed near half in later years, ${K.pct(st.lrY[4], 0)} in ${yr(4)}, well above the national median. Baltimore County paid ${K.usd(balt.prem)}, Anne Arundel ${K.usd(aa.prem)} and Montgomery ${K.usd(mont.prem)}. The dearest ZIP code was ${hi[0].zip} on the Anne Arundel shore, ${K.usd(hi[0].prem)}; the cheapest ${lo[0].zip} on the Eastern Shore, ${K.usd(lo[0].prem)}. Nonrenewals stayed low, ${K.rate(st.nonren[4])}. The Maryland Joint Insurance Association covers homes declined elsewhere. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>The suburbs of Washington and Baltimore</h2>

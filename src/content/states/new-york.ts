@@ -8,7 +8,7 @@ export default defineState({
   slug: 'new-york',
   title: 'Homeowners Insurance New York 2026: Long Island vs Upstate',
   description: `Homeowners insurance in New York 2026: premium per policy by ZIP code and county, 2018 to 2022, Long Island, Westchester, Buffalo and upstate, the NYPIUA plan.`,
-  intro: `New York's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, but Suffolk, Nassau and Westchester counties paid over ${K.usd(2500)}.`,
+  intro: `New York's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, but Suffolk, Nassau and Westchester counties paid over ${K.usd(2500)}.`,
   resume: `New York has two homeowners insurance markets. Across its ${K.num(st.zips)} ZIP codes in the Treasury file, the median paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and well below the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. That median is set by upstate, where Erie County, Buffalo, paid ${K.usd(erie.prem)}. Downstate suburbs pay more than twice as much: Suffolk County ${K.usd(suf.prem)}, Nassau ${K.usd(nas.prem)} and Westchester ${K.usd(wes.prem)}. The state's spread is one of the widest in the country, from under ${K.usd(st.p10)} for the cheapest tenth of ZIP codes to over ${K.usd(st.p90)} for the dearest, and the East End of Long Island tops it: ZIP ${hi[0].zip} paid ${K.usd(hi[0].prem)}. Insurers rarely declined to renew, ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51. The New York Property Insurance Underwriting Association covers homes declined elsewhere. New York City ZIP codes are mostly condos and co-ops, insured on other forms. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Long Island and Westchester</h2>

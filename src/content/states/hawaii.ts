@@ -8,7 +8,7 @@ export default defineState({
   slug: 'hawaii',
   title: 'Homeowners Insurance Hawaii 2026: Premiums on Each Island',
   description: `Homeowners insurance in Hawaii 2026: premium per policy on Oahu, Maui, Kauai and the Big Island, 2018 to 2022, the lowest nonrenewal rate in the US, and HPIA.`,
-  intro: `Hawaii's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51, with the lowest nonrenewal rate of any state.`,
+  intro: `Hawaii's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, ranked ${st.rankPrem} of 51, with the lowest nonrenewal rate of any state.`,
   resume: `Only ${st.zips} Hawaii ZIP codes meet the Treasury file's threshold, spread over the four counties. Their median premium per homeowners policy was ${K.usd(st.prem[4])} in ${yr(4)}, above the national ${K.usd(N.prem[4])} and ranked ${st.rankPrem} of 51, after a rise of ${K.sgn(st.chg)} after inflation from ${yr(0)}. Kauai County had the highest county median, ${K.usd(kau.prem)}, and its ZIP ${hi[0].zip} the highest in the state, ${K.usd(hi[0].prem)}. Claims were rare, ${K.dec(st.freq * 100, 1)} per 100 policies a year, and the paid loss ratio was among the lowest in the country, falling to ${K.pct(st.lrY[4], 0)} in ${yr(4)}. Insurers also kept their customers: only ${K.rate(st.nonren[4])} of policies were not renewed in ${yr(4)}, ranked ${st.rankNonren} of 51. The figures end before the Lahaina fire of August 2023, which changed the market on Maui. Lava zones on the Big Island are often served by the Hawaii Property Insurance Association, outside these figures.`,
   body: (h) => `
 <h2>Four counties, four markets</h2>

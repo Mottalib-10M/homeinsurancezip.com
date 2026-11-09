@@ -8,7 +8,7 @@ export default defineState({
   slug: 'arizona',
   title: 'Homeowners Insurance Arizona 2026: Low Premiums, More Drops',
   description: `Homeowners insurance in Arizona 2026: premium per policy by ZIP code and county, 2018 to 2022, rising nonrenewals and the Yavapai and Maricopa increases.`,
-  intro: `Arizona premiums were low, ${K.usd(st.prem[4])} in the median ZIP code in ${yr(4)}, but nonrenewals rose to ${K.rate(st.nonren[4])}, ranked ${st.rankNonren} of 51.`,
+  intro: `Arizona homeowners insurance premiums were low, ${K.usd(st.prem[4])} in the median ZIP code in ${yr(4)}, but nonrenewals rose to ${K.rate(st.nonren[4])}, ranked ${st.rankNonren} of 51.`,
   resume: `Arizona is a cheap state for homeowners insurance that became less so. The median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and well below the national ${K.usd(N.prem[4])}. But the figure rose ${K.sgn(st.chg)} after inflation from ${yr(0)}, and the share of policies insurers declined to renew climbed from ${K.rate(st.nonren[0])} to ${K.rate(st.nonren[4])}, among the highest rates in the country. Insurers paid out more too: the paid loss ratio went from ${K.pct(st.lrY[0], 0)} to ${K.pct(st.lrY[4], 0)}. Maricopa County, with ${mar.zips} ZIP codes, rose ${K.sgn(mar.chg ?? 0)} to ${K.usd(mar.prem)}; Yavapai County, with its forested hills around Prescott, rose ${K.sgn(yav.chg ?? 0)}. The dearest ZIP code, ${hi[0].zip} in Maricopa, paid ${K.usd(hi[0].prem)}. Arizona has no FAIR plan for homes, so a home that no admitted insurer will renew goes to the surplus lines market. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Phoenix, Tucson and the fringe</h2>

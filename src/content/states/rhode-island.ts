@@ -8,7 +8,7 @@ export default defineState({
   slug: 'rhode-island',
   title: 'Homeowners Insurance Rhode Island 2026: Shore Towns and FAIR',
   description: `Homeowners insurance in Rhode Island 2026: premium per policy by ZIP code and county, 2018 to 2022, Providence, Newport, Block Island, the 2019 spike.`,
-  intro: `Rhode Island's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51; Block Island's ${hi[0].zip} paid ${K.usd(hi[0].prem)}.`,
+  intro: `Rhode Island's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, ranked ${st.rankPrem} of 51; Block Island's ${hi[0].zip} paid ${K.usd(hi[0].prem)}.`,
   resume: `Rhode Island is a dear state for homeowners insurance in the Treasury file: its ${st.zips} ZIP codes had a median of ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and well above the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. Even the cheapest tenth of ZIP codes paid over ${K.usd(st.p10)}. With some 400 miles of coastline for a small state, much of the population lives close to the water. Providence County paid ${K.usd(prov.prem)}; Newport County ${K.usd(newp.prem)}; Washington County, South County, ${K.usd(wash.prem)}, with its ZIP ${hi[0].zip}, Block Island, at ${K.usd(hi[0].prem)}. One year stands out in renewals: the median nonrenewal rate jumped to ${K.rate(st.nonren[1])} in ${yr(1)}, against ${K.rate(st.nonren[0])} the year before, then fell back to ${K.rate(st.nonren[4])} in ${yr(4)}. The Rhode Island FAIR Plan writes a wide range of forms for homes declined elsewhere. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Providence and Kent counties</h2>

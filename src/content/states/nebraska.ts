@@ -8,7 +8,7 @@ export default defineState({
   slug: 'nebraska',
   title: 'Homeowners Insurance Nebraska 2026: Top Nonrenewal Rate',
   description: `Homeowners insurance in Nebraska 2026: premium per policy by ZIP code and county, 2018 to 2022, Omaha and Lincoln, the top nonrenewal rate in the US, hail.`,
-  intro: `Nebraska insurers declined to renew ${K.rate(st.nonren[4])} of policies in the median ZIP code in ${yr(4)}, the highest rate of any state.`,
+  intro: `Nebraska homeowners insurers declined to renew ${K.rate(st.nonren[4])} of policies in the median ZIP code in ${yr(4)}, the highest rate of any state.`,
   resume: `Nebraska had the highest nonrenewal rate in the Treasury file in ${yr(4)}: insurers declined to renew ${K.rate(st.nonren[4])} of homeowners policies in the median ZIP code, up from ${K.rate(st.nonren[1])} in ${yr(1)}, and in ${K.pct(st.highNonren, 0)} of Nebraska ZIP codes the rate was above the line that marks the top tenth nationally. Premiums were high too: the median ZIP code paid ${K.usd(st.prem[4])} per policy, ranked ${st.rankPrem} of 51, after a rise of ${K.sgn(st.chg)} after inflation. Even the cheapest tenth of ZIP codes paid over ${K.usd(st.p10)}, more than the national median of ${K.usd(N.prem[4])}. Hail is the reason. Paid claims ran at ${K.dec(st.freq * 100, 1)} per 100 policies a year and reached ${K.dec(st.freqY[4] * 100, 1)} in ${yr(4)}. Douglas County, Omaha, paid ${K.usd(dou.prem)}; Sarpy County rose ${K.sgn(sar.chg ?? 0)}. Nebraska has no FAIR plan for homes. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Nonrenewals on the Plains</h2>

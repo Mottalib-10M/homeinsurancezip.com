@@ -8,7 +8,7 @@ export default defineState({
   slug: 'delaware',
   title: 'Homeowners Insurance Delaware 2026: Low Prices by County',
   description: `Homeowners insurance in Delaware 2026: premium per policy in New Castle, Kent and Sussex and by ZIP code, 2018 to 2022, beach ZIP codes and the FAIR Plan.`,
-  intro: `Delaware's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, among the lowest of any state, ranked ${st.rankPrem} of 51.`,
+  intro: `Delaware's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, among the lowest of any state, ranked ${st.rankPrem} of 51.`,
   resume: `Delaware is one of the cheapest states for homeowners insurance in the Treasury file. Its ${st.zips} ZIP codes had a median premium per policy of ${K.usd(st.prem[4])} in ${yr(4)}, ranked ${st.rankPrem} of 51 and well below the national ${K.usd(N.prem[4])}. Prices rose ${K.sgn(st.chg)} after inflation from ${yr(0)}. The three counties are close together: New Castle County in the north paid ${K.usd(nc.prem)}, Kent County ${K.usd(kent.prem)} and Sussex County, with the Atlantic beaches, ${K.usd(sus.prem)}. The dearest ZIP code was ${hi[0].zip} near Wilmington, ${K.usd(hi[0].prem)}, ahead of the beach ZIP code ${hi[1].zip}. Nonrenewals were erratic, from ${K.rate(st.nonren[0])} in ${yr(0)} to ${K.rate(st.nonren[1])} the next year, and ${K.rate(st.nonren[4])} in ${yr(4)}. The paid loss ratio peaked at ${K.pct(st.lrY[2], 0)} in ${yr(2)}. The Delaware FAIR Plan writes homes private insurers decline. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>A small state with a narrow range</h2>

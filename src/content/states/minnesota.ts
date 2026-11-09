@@ -8,7 +8,7 @@ export default defineState({
   slug: 'minnesota',
   title: 'Homeowners Insurance Minnesota 2026: The 2022 Hail Year',
   description: `Homeowners insurance in Minnesota 2026: premium per policy by ZIP code and county, 2018 to 2022, Hennepin and Ramsey, the 2022 storm losses, FAIR Plan.`,
-  intro: `Minnesota insurers paid ${K.dec(st.freqY[4] * 100, 1)} claims per 100 policies in ${yr(4)}, twice the year before; the median ZIP code paid ${K.usd(st.prem[4])}.`,
+  intro: `Minnesota homeowners insurers paid ${K.dec(st.freqY[4] * 100, 1)} claims per 100 policies in ${yr(4)}, twice the year before; the median ZIP code paid ${K.usd(st.prem[4])}.`,
   resume: `Minnesota's median homeowners premium per policy rose from ${K.usd(st.prem[0])} in ${yr(0)} to ${K.usd(st.prem[4])} in ${yr(4)} in the Treasury file, ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51 for growth and ${st.rankPrem} for level, above the national ${K.usd(N.prem[4])}. The rise was steady, and then ${yr(4)} brought the worst loss year of the period: paid claims jumped to ${K.dec(st.freqY[4] * 100, 1)} per 100 policies, from ${K.dec(st.freqY[3] * 100, 1)}, and the paid loss ratio to ${K.pct(st.lrY[4], 0)}, after hail and windstorms, including a derecho in May. Hennepin County, Minneapolis, paid ${K.usd(hen.prem)}, much more than St. Louis County, Duluth, at ${K.usd(stl.prem)}. Insurers rarely declined to renew: ${K.rate(st.nonren[4])} of policies in ${yr(4)}, ranked ${st.rankNonren} of 51. The Minnesota FAIR Plan writes homes declined elsewhere. Premiums after ${yr(4)}, outside this file, reflected those losses. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>The Twin Cities</h2>

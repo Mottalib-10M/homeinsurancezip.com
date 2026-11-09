@@ -8,7 +8,7 @@ export default defineState({
   slug: 'south-dakota',
   title: 'Homeowners Insurance South Dakota 2026: The 2022 Storm Year',
   description: `Homeowners insurance in South Dakota 2026: premium per policy by ZIP code and county, 2018 to 2022, Sioux Falls, the 2022 derecho, a fast rise, small claims.`,
-  intro: `South Dakota's median ZIP code premium rose ${K.sgn(st.chg)} after inflation from ${yr(0)} to ${yr(4)}, ranked ${st.rankChg} of 51, to ${K.usd(st.prem[4])}.`,
+  intro: `South Dakota's median ZIP code premium for homeowners insurance rose ${K.sgn(st.chg)} after inflation from ${yr(0)} to ${yr(4)}, ranked ${st.rankChg} of 51, to ${K.usd(st.prem[4])}.`,
   resume: `South Dakota had one of the fastest premium rises in the Treasury file: the median ZIP code went from ${K.usd(st.prem[0])} per homeowners policy in ${yr(0)} to ${K.usd(st.prem[4])} in ${yr(4)}, ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51. Minnehaha County, Sioux Falls, rose ${K.sgn(min.chg ?? 0)} to ${K.usd(min.prem)}. Then came ${yr(4)}: a derecho in May and other severe storms pushed paid claims to ${K.dec(st.freqY[4] * 100, 1)} per 100 policies, from ${K.dec(st.freqY[3] * 100, 1)} the year before, and the paid loss ratio to ${K.pct(st.lrY[4], 0)}, from ${K.pct(st.lrY[3], 0)}. Claims are small here, ${K.usd(st.sev)} on average, ranked ${st.rankSev} of 51: roofs and siding rather than whole houses. Nonrenewals rose to ${K.rate(st.nonren[4])} in ${yr(4)}. Only ${st.zips} ZIP codes reach the file's threshold. South Dakota has no FAIR plan for homes. Premiums after ${yr(4)}, outside the file, reflected the storm year. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Sioux Falls and the east</h2>

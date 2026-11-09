@@ -8,7 +8,7 @@ export default defineState({
   slug: 'north-carolina',
   title: 'Homeowners Insurance North Carolina 2026: Coast, Charlotte',
   description: `Homeowners insurance in North Carolina 2026: premium per policy by ZIP code and county, 2018 to 2022, Raleigh, Charlotte, the coast, nonrenewals, beach plan.`,
-  intro: `North Carolina insurers declined to renew ${K.rate(st.nonren[4])} of policies in the median ZIP code in ${yr(4)}, ranked ${st.rankNonren} of 51.`,
+  intro: `North Carolina homeowners insurers declined to renew ${K.rate(st.nonren[4])} of policies in the median ZIP code in ${yr(4)}, ranked ${st.rankNonren} of 51.`,
   resume: `North Carolina's median homeowners premium per policy was ${K.usd(st.prem[4])} in ${yr(4)} in the Treasury file, ranked ${st.rankPrem} of 51 and below the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. The numbers that stand out are renewals: insurers declined to renew ${K.rate(st.nonren[0])} of policies in the median ZIP code in ${yr(0)}, the year of Hurricane Florence, fell back, then reached ${K.rate(st.nonren[4])} in ${yr(4)}, and in ${K.pct(st.highNonren, 0)} of the state's ZIP codes the ${yr(4)} rate was above the national top-tenth line. Wake County, Raleigh, rose ${K.sgn(wake.chg ?? 0)} to ${K.usd(wake.prem)}; Mecklenburg, Charlotte, ${K.sgn(meck.chg ?? 0)} to ${K.usd(meck.prem)}. Oddly, the cheapest ZIP codes were on the coast in Carteret County, ${lo[0].zip} at ${K.usd(lo[0].prem)}, most likely because the beach plan carries much of the wind risk there. Two state plans cover homes private insurers decline. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Raleigh, Charlotte and the Triad</h2>

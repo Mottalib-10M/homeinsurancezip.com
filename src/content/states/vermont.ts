@@ -8,7 +8,7 @@ export default defineState({
   slug: 'vermont',
   title: 'Homeowners Insurance Vermont 2026: Low Losses, Falling Drops',
   description: `Homeowners insurance in Vermont 2026: premium per policy by ZIP code and county, 2018 to 2022, the smallest average claim in the US, Burlington, Windsor.`,
-  intro: `Vermont insurers paid the smallest average claim of any state, ${K.usd(st.sev)}; the median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}.`,
+  intro: `Vermont homeowners insurers paid the smallest average claim of any state, ${K.usd(st.sev)}; the median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}.`,
   resume: `Vermont is a low-loss state in the Treasury file. Insurers paid ${K.dec(st.freq * 100, 1)} claims per 100 policies a year, ranked ${st.rankFreq} of 51, and the smallest average claim of any state, ${K.usd(st.sev)}. The paid loss ratio stayed between ${K.pct(Math.min(...st.lrY), 0)} and ${K.pct(Math.max(...st.lrY), 0)}. The median ZIP code paid ${K.usd(st.prem[4])} per homeowners policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and below the national ${K.usd(N.prem[4])}, and the figure fell ${K.sgn(st.chg)} after inflation from ${yr(0)}, one of the few declines. Nonrenewals fell every year, from ${K.rate(st.nonren[0])} in ${yr(0)} to ${K.rate(st.nonren[4])} in ${yr(4)}. Windsor County paid ${K.usd(wsr.prem)}, Windham ${K.usd(whm.prem)}; the cheapest ZIP codes were in Chittenden County around Burlington, ${lo[0].zip} at ${K.usd(lo[0].prem)}. The data stop in ${yr(4)}, a year before the July 2023 floods, which homeowners policies did not cover. Vermont has no FAIR plan for homes.`,
   body: (h) => `
 <h2>Small claims, low premiums</h2>

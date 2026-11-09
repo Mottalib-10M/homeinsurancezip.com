@@ -8,7 +8,7 @@ export default defineState({
   slug: 'kansas',
   title: 'Homeowners Insurance Kansas 2026: Hail Premiums by County',
   description: `Homeowners insurance in Kansas 2026: premium per policy by ZIP code and county, 2018 to 2022, Wichita and Johnson County, doubling nonrenewals, FAIR Plan.`,
-  intro: `Kansas's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51, and nonrenewals doubled from ${yr(1)} to ${yr(4)}.`,
+  intro: `Kansas's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, ranked ${st.rankPrem} of 51, and nonrenewals doubled from ${yr(1)} to ${yr(4)}.`,
   resume: `Kansas is one of the dearest states for homeowners insurance in the Treasury file. Its median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and about ${K.pct(st.prem[4] / N.prem[4] - 1, 0)} above the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. Even the cheapest ZIP codes were expensive: the lowest tenth paid under ${K.usd(st.p10)}, more than the national median. The cause is hail and wind on the Plains: Kansas had ${K.dec(st.freq * 100, 1)} paid claims per 100 policies a year, ranked ${st.rankFreq} of 51, with ${K.dec(st.freqY[4] * 100, 1)} in ${yr(4)}. The average claim, ${K.usd(st.sev)}, was modest. Nonrenewals rose from ${K.rate(st.nonren[1])} in ${yr(1)} to ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren}. Sedgwick County, Wichita, paid ${K.usd(sed.prem)}; Johnson County, in the Kansas City suburbs, ${K.usd(joh.prem)}. The Kansas FAIR Plan writes a narrow policy for homes declined elsewhere. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Wichita pays more than the suburbs</h2>

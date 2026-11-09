@@ -19,11 +19,11 @@ export default defineGuide({
   nav: 'Nonrenewal rates', card: 'How often insurers declined to renew, state by state, and the odds over your next renewals.',
   title: 'Home Insurance Non-Renewal 2026: Notice and Rates by State',
   description: `Home insurance non-renewal 2026: how often insurers declined to renew in each state and ZIP code from 2018 to 2022, the notice you are owed, and what to do next`,
-  h1: 'Home insurance nonrenewal: how often it happens and what to do',
-  intro: `In the median ZIP code, insurers declined to renew ${K.pct(N.nonren[4], 2)} of homeowners policies in ${N.years[4]}; in ${top[0].name}, ${K.rate(top[0].nonren[4])}.`,
+  h1: 'Home insurance non-renewal: how often it happens and what to do',
+  intro: `Home insurance non-renewal, an insurer declining to renew a policy, hit ${K.pct(N.nonren[4], 2)} of homeowners policies in the median ZIP code in ${N.years[4]}; in ${top[0].name}, ${K.rate(top[0].nonren[4])}.`,
   resume: `A nonrenewal is the insurer's decision not to offer a new term when the policy ends. The Treasury file counts them for each ZIP code: in the median ZIP code, ${K.pct(N.nonren[4], 2)} of HO-3 and HO-5 policies were not renewed in ${N.years[4]}, up from ${K.pct(N.nonren[2], 2)} in ${N.years[2]}. One ZIP code in ten was above ${K.pct(N.nonren90, 2)}. The highest state medians in ${N.years[4]} were ${top[0].name} (${K.rate(top[0].nonren[4])}), ${top[1].name} (${K.rate(top[1].nonren[4])}) and ${top[2].name} (${K.rate(top[2].nonren[4])}). At the national rate, the chance of at least one nonrenewal over five renewals is about ${K.pct(odds5, 1)}, small for one household but large across a city. Texas insurers did not report nonrenewals, so Texas has no figure. The rate counts only insurer decisions, not owners who left, and it stops in ${N.years[4]}. A notice is not the end: states set a minimum warning, ${F.nonrenewalNoticeDays} days in Florida and 60 in ${sixty.join(', ').replace(/, ([^,]*)$/, ' and $1')}.`,
   body: (h) => `
-<h2>What the rate measures</h2>
+<h2>What the home insurance non-renewal rate measures</h2>
 <p>The workbook defines the nonrenewal rate as the count of nonrenewals in the year divided by the policies in force at year end. It is the insurer's choice, for reasons the definition names: "the risk profiles of properties (e.g., the age of the roof) or areas". A homeowner who shops and leaves is not in it, and neither is a cancellation during the term, which the file counts apart. At ${K.pct(N.nonren[4], 2)}, the national median looks small, yet in a ZIP code of 5,000 insured homes it means about ${K.num(5000 * N.nonren[4])} notices in a year.</p>
 ${h.table(['State', `Median ZIP ${N.years[0]}`, `${N.years[2]}`, `${N.years[4]}`], rows, 'The ten highest state medians in 2022. Treasury FIO workbook, medians across ZIP codes; Texas not reported.', ['l', 'r', 'r', 'r'])}
 <h2>Where it rose, and where it fell</h2>

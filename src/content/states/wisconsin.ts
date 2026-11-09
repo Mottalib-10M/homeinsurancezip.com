@@ -8,7 +8,7 @@ export default defineState({
   slug: 'wisconsin',
   title: 'Homeowners Insurance Wisconsin 2026: Milwaukee and Madison',
   description: `Homeowners insurance in Wisconsin 2026: premium per policy by ZIP code and county, 2018 to 2022, Milwaukee, Madison, Waukesha, the Northwoods, renewals.`,
-  intro: `Wisconsin's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51; Dane County, Madison, rose ${K.sgn(dane.chg ?? 0)}.`,
+  intro: `Wisconsin's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, ranked ${st.rankPrem} of 51; Dane County, Madison, rose ${K.sgn(dane.chg ?? 0)}.`,
   resume: `Wisconsin is one of the cheaper states for homeowners insurance in the Treasury file. Its ${K.num(st.zips)} ZIP codes had a median of ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and below the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation. The range is narrow: the dearest ZIP code in the state, ${hi[0].zip} on Geneva Lake, paid ${K.usd(hi[0].prem)}, a low top figure for a large state. Dane County, Madison, rose fastest of the three largest counties, ${K.sgn(dane.chg ?? 0)}, to ${K.usd(dane.prem)}; Milwaukee County paid ${K.usd(mil.prem)} and Waukesha ${K.usd(wauk.prem)}. Claims were few, ${K.dec(st.freq * 100, 1)} per 100 policies a year, and the paid loss ratio stayed between ${K.pct(Math.min(...st.lrY), 0)} and ${K.pct(Math.max(...st.lrY), 0)}. Insurers rarely declined to renew: ${K.rate(st.nonren[4])} in ${yr(4)}. Many Wisconsin homes are insured by local town mutuals, some of which may not have reported. Wisconsin's FAIR plan writes an HO-8 form. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Milwaukee and its suburbs</h2>

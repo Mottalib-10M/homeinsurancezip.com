@@ -12,7 +12,7 @@ export default defineState({
   slug: 'texas',
   title: 'Homeowners Insurance Texas 2026: Premium by ZIP and County',
   description: `Homeowners insurance in Texas 2026: median premium per policy by ZIP code and county, 2018 to 2022, the 2021 freeze claims, TWIA and the Texas FAIR Plan.`,
-  intro: `The median Texas ZIP code paid ${K.usd(st.prem[4])} per policy in ${N.years[4]}, ranked ${st.rankPrem} of 51; Dallas and Tarrant counties rose fastest.`,
+  intro: `The median Texas ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${N.years[4]}, ranked ${st.rankPrem} of 51; Dallas and Tarrant counties rose fastest.`,
   resume: `Texas homeowners in the median ZIP code paid ${K.usd(st.prem[4])} per HO-3 or HO-5 policy in ${N.years[4]}, against ${K.usd(N.prem[4])} for the country, which ranks the state ${st.rankPrem} of 51 in the Treasury file. The figure covers ${K.num(st.zips)} ZIP codes in ${st.counties} counties, more counties than any other state. The statewide change after inflation was modest, ${K.sgn(st.chg)} from ${N.years[0]} to ${N.years[4]}, but the Dallas and Fort Worth area moved much faster: Dallas County ${K.sgn(dallas.chg ?? 0)} and Tarrant County ${K.sgn(tarrant.chg ?? 0)}. The worst year for insurers was ${N.years[3]}, the year of the February freeze, when paid claims reached ${K.dec(st.freqY[3] * 100, 1)} per 100 policies. Texas insurers did not report nonrenewals or cancellations to the data call, so those rates are missing here. The figures stop in ${N.years[4]}; at ${K.ppiMonth} prices the state median would be about ${K.usd(K.today(st.prem[4]))}.`,
   body: (h) => `
 <h2>Houston against Dallas: two different markets</h2>

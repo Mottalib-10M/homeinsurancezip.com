@@ -8,7 +8,7 @@ export default defineState({
   slug: 'south-carolina',
   title: 'Homeowners Insurance South Carolina 2026: Coast vs Upstate',
   description: `Homeowners insurance in South Carolina 2026: premium per policy by ZIP code and county, 2018 to 2022, Charleston, the Upstate, nonrenewals and the wind pool.`,
-  intro: `South Carolina's nonrenewal rate nearly tripled from ${K.rate(st.nonren[0])} in ${yr(0)} to ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51.`,
+  intro: `South Carolina's homeowners insurance nonrenewal rate nearly tripled from ${K.rate(st.nonren[0])} in ${yr(0)} to ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51.`,
   resume: `South Carolina's median homeowners premium per policy was ${K.usd(st.prem[4])} in ${yr(4)} in the Treasury file, close to the national ${K.usd(N.prem[4])} and ranked ${st.rankPrem} of 51, and it barely moved after inflation, ${K.sgn(st.chg)}. Renewals moved a lot: insurers declined to renew ${K.rate(st.nonren[0])} of policies in the median ZIP code in ${yr(0)} and ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51, and in ${K.pct(st.highNonren, 0)} of the state's ZIP codes the ${yr(4)} rate was above the national top-tenth line. Cancellations for nonpayment were the highest of any state, ${K.rate(st.npc)}. The coast is another market: Charleston County paid ${K.usd(chs.prem)}, more than twice the state median, and its ZIP ${hi[0].zip}, the peninsula, ${K.usd(hi[0].prem)}. The Upstate paid less: Greenville County ${K.usd(gre.prem)}. The South Carolina Wind and Hail Underwriting Association writes wind coverage on the coast. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Charleston and the Lowcountry</h2>

@@ -8,7 +8,7 @@ export default defineState({
   slug: 'missouri',
   title: 'Homeowners Insurance Missouri 2026: St. Louis, Kansas City',
   description: `Homeowners insurance in Missouri 2026: premium per policy by ZIP code and county, 2018 to 2022, St. Louis against Kansas City, nonrenewals, FAIR Plan.`,
-  intro: `Missouri's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51, and nonrenewals rose to ${K.rate(st.nonren[4])}.`,
+  intro: `Missouri's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, ranked ${st.rankPrem} of 51, and nonrenewals rose to ${K.rate(st.nonren[4])}.`,
   resume: `Missouri is one of the dearer states for homeowners insurance in the Treasury file. The median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51 and about ${K.pct(st.prem[4] / N.prem[4] - 1, 0)} above the national median, after a rise of ${K.sgn(st.chg)} after inflation. Even the cheapest tenth of ZIP codes paid over ${K.usd(st.p10)}. The rise was uneven: Clay County, north of Kansas City, rose ${K.sgn(clay.chg ?? 0)}, while St. Louis County rose only ${K.sgn(stl.chg ?? 0)}. The change that stands out is renewals: the share of policies insurers declined to renew went from ${K.rate(st.nonren[1])} in ${yr(1)} to ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51, high for an inland state. Hail and tornadoes drive the claims, ${K.dec(st.freq * 100, 1)} per 100 policies a year. The dearest ZIP code was ${hi[0].zip} in St. Louis County, ${K.usd(hi[0].prem)}. The Missouri FAIR Plan covers homes private insurers decline. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>St. Louis</h2>

@@ -8,7 +8,7 @@ export default defineState({
   slug: 'massachusetts',
   title: 'Homeowners Insurance Massachusetts 2026: Cape Cod vs Inland',
   description: `Homeowners insurance in Massachusetts 2026: premium per policy by ZIP code and county, 2018 to 2022, Cape Cod and Nantucket, Worcester and the FAIR Plan.`,
-  intro: `Massachusetts's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}; Barnstable County, Cape Cod, paid ${K.usd(bar.prem)}.`,
+  intro: `Massachusetts's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}; Barnstable County, Cape Cod, paid ${K.usd(bar.prem)}.`,
   resume: `Massachusetts homeowners paid ${K.usd(st.prem[4])} per policy in the median ZIP code in ${yr(4)}, ranked ${st.rankPrem} of 51 and above the national ${K.usd(N.prem[4])}, after a small rise of ${K.sgn(st.chg)} after inflation from ${yr(0)}. Inland and coastal Massachusetts are separate markets. Worcester County paid ${K.usd(wor.prem)} and Middlesex County ${K.usd(mid.prem)}, while Barnstable County, Cape Cod, paid ${K.usd(bar.prem)}, about twice as much. Nantucket's two ZIP codes, ${hi[0].zip} and ${hi[1].zip}, were the dearest in the state at around ${K.usd(Math.round(hi[1].prem / 1000) * 1000)}. Insurers' paid loss ratio was among the lowest in the country after ${yr(0)}, near ${K.pct(st.lrY[4], 0)}. Nonrenewals fell from ${K.rate(st.nonren[0])} to ${K.rate(st.nonren[3])} and rose again to ${K.rate(st.nonren[4])}. On the Cape and the islands, the Massachusetts Property Insurance Underwriting Association, the state's FAIR Plan, writes a large share of homes, and those policies are not in these figures. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>The Cape and the islands</h2>

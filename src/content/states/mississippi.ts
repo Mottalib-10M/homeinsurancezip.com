@@ -8,7 +8,7 @@ export default defineState({
   slug: 'mississippi',
   title: 'Homeowners Insurance Mississippi 2026: Coast and Delta Costs',
   description: `Homeowners insurance in Mississippi 2026: premium per policy by ZIP code and county, 2018 to 2022, the Gulf Coast, Jackson, nonpayment and two state plans.`,
-  intro: `Mississippi's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, and ${K.rate(st.npc)} of policies were cancelled for nonpayment, among the highest rates.`,
+  intro: `Mississippi's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, and ${K.rate(st.npc)} of policies were cancelled for nonpayment, among the highest rates.`,
   resume: `Mississippi homeowners paid ${K.usd(st.prem[4])} per policy in the median ZIP code in ${yr(4)}, ranked ${st.rankPrem} of 51 and above the national ${K.usd(N.prem[4])}, after a modest rise of ${K.sgn(st.chg)} after inflation. The state is poorer than most, and the premium weighs more in household budgets: cancellations for nonpayment ran at ${K.rate(st.npc)}, among the highest in the country, against ${K.rate(N.npc)} nationally. Claims were frequent, ${K.dec(st.freq * 100, 1)} per 100 policies a year, ranked ${st.rankFreq}, with a peak of ${K.dec(st.freqY[2] * 100, 1)} in ${yr(2)}. On the Gulf Coast, Harrison County paid ${K.usd(har.prem)} and the dearest ZIP codes, ${hi[0].zip} in ${hi[0].county} and ${hi[1].zip} in ${hi[1].county}, about ${K.usd(Math.round(hi[1].prem / 100) * 100)}. Nonrenewals rose to ${K.rate(st.nonren[4])} in ${yr(4)}, ranked ${st.rankNonren} of 51. Two state plans serve homes private insurers decline: a windstorm plan on the coast and a FAIR plan inland. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>The Gulf Coast</h2>

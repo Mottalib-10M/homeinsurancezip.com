@@ -8,7 +8,7 @@ export default defineState({
   slug: 'colorado',
   title: 'Homeowners Insurance Colorado 2026: Hail Belt Premiums',
   description: `Homeowners insurance in Colorado 2026: premium per policy by ZIP code and county, 2018 to 2022, the second highest state median, and Front Range hail.`,
-  intro: `Colorado's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, second only to Florida, after a rise of ${K.sgn(st.chg)} after inflation.`,
+  intro: `Colorado's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, second only to Florida, after a rise of ${K.sgn(st.chg)} after inflation.`,
   resume: `Colorado ranks second in the Treasury file for homeowners premiums: the median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, up from ${K.usd(st.prem[0])} in ${yr(0)}, a rise of ${K.sgn(st.chg)} after inflation, ranked ${st.rankChg} of 51. The Front Range counties lead. Jefferson County's median was ${K.usd(jeff.prem)}, Denver's ${K.usd(den.prem)} and El Paso's, around Colorado Springs, ${K.usd(ep.prem)}, all up 18 percent or more. Hail is the main reason: large hailstorms over the metro area produce roof and car claims across whole suburbs. Mountain resort ZIP codes are dearer still, led by ${hi[0].zip} in ${hi[0].county} at ${K.usd(hi[0].prem)}, where house values and wildfire weigh. Oddly, Colorado's paid loss ratio fell to ${K.pct(st.lrY[4], 0)} in ${yr(4)}: premiums rose faster than claims. Nonrenewals reached ${K.rate(st.nonren[4])}. Colorado had no FAIR plan in the report. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Front Range hail</h2>

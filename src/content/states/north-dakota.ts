@@ -8,7 +8,7 @@ export default defineState({
   slug: 'north-dakota',
   title: 'Homeowners Insurance North Dakota 2026: Fargo and Bismarck',
   description: `Homeowners insurance in North Dakota 2026: premium per policy by ZIP code and county, 2018 to 2022, Fargo, Bismarck and Minot, hail claims and low loss ratios.`,
-  intro: `North Dakota's median ZIP code paid ${K.usd(st.prem[4])} per policy in ${yr(4)}, ranked ${st.rankPrem} of 51, with low loss ratios.`,
+  intro: `North Dakota's median ZIP code paid ${K.usd(st.prem[4])} per homeowners insurance policy in ${yr(4)}, ranked ${st.rankPrem} of 51, with low loss ratios.`,
   resume: `North Dakota homeowners paid ${K.usd(st.prem[4])} per policy in the median ZIP code in ${yr(4)} in the Treasury file, ranked ${st.rankPrem} of 51 and above the national ${K.usd(N.prem[4])}, after a rise of ${K.sgn(st.chg)} after inflation from ${yr(0)}. Only ${st.zips} ZIP codes reach the file's threshold, in and around the cities. Burleigh County, Bismarck, paid ${K.usd(bur.prem)}, the highest of the large counties, and Cass County, Fargo, ${K.usd(cass.prem)}. Prices are high for a state where insurers paid out little: the paid loss ratio stayed between ${K.pct(Math.min(...st.lrY), 0)} and ${K.pct(Math.max(...st.lrY), 0)}, among the lowest in the country. Claims were frequent but small, ${K.dec(st.freq * 100, 1)} per 100 policies a year at ${K.usd(st.sev)} on average, the pattern of hail on roofs and siding. Nonrenewals rose from ${K.rate(st.nonren[0])} in ${yr(0)} to ${K.rate(st.nonren[3])} in ${yr(3)}. North Dakota has no FAIR plan for homes. Flood along the Red River is a separate policy. The data stop in ${yr(4)}.`,
   body: (h) => `
 <h2>Bismarck, Fargo, Grand Forks and Minot</h2>
