@@ -1,0 +1,10267 @@
+[
+ {
+  "zips": 544,
+  "prem": [
+   1810,
+   1812,
+   1828,
+   1864,
+   1857
+  ],
+  "p10": 1670,
+  "p90": 2161,
+  "chg": 0.0273,
+  "nonren": [
+   0.0083,
+   0.0057,
+   0.004,
+   0.0063,
+   0.0066
+  ],
+  "freq": 0.057,
+  "sev": 14930,
+  "lr": 0.4148,
+  "lrY": [
+   0.3223,
+   0.3088,
+   0.4418,
+   0.374,
+   0.3461
+  ],
+  "freqY": [
+   0.0466,
+   0.0444,
+   0.071,
+   0.0495,
+   0.0443
+  ],
+  "npc": 0.0195,
+  "oc": 0.0203,
+  "code": "AL",
+  "name": "Alabama",
+  "slug": "alabama",
+  "counties": 67,
+  "hi": [
+   {
+    "zip": "36528",
+    "county": "Mobile County",
+    "prem": 8482,
+    "chg": 0.0955,
+    "nonren": 0
+   },
+   {
+    "zip": "36561",
+    "county": "Baldwin County",
+    "prem": 5305,
+    "chg": -0.1716,
+    "nonren": 0.0021
+   },
+   {
+    "zip": "36559",
+    "county": "Baldwin County",
+    "prem": 4660,
+    "chg": -0.0397,
+    "nonren": 0
+   },
+   {
+    "zip": "36523",
+    "county": "Mobile County",
+    "prem": 4420,
+    "chg": 0.2786,
+    "nonren": 0.0211
+   },
+   {
+    "zip": "36542",
+    "county": "Baldwin County",
+    "prem": 3580,
+    "chg": -0.1855,
+    "nonren": 0.0017
+   }
+  ],
+  "lo": [
+   {
+    "zip": "36832",
+    "county": "Lee County",
+    "prem": 1440,
+    "chg": 0.009,
+    "nonren": 0.0055
+   },
+   {
+    "zip": "35112",
+    "county": "St. Clair County",
+    "prem": 1482,
+    "chg": -0.1306,
+    "nonren": 0.0385
+   },
+   {
+    "zip": "36852",
+    "county": "Chambers County",
+    "prem": 1485,
+    "chg": 0.0409,
+    "nonren": 0
+   },
+   {
+    "zip": "35805",
+    "county": "Madison County",
+    "prem": 1521,
+    "chg": 0.0614,
+    "nonren": 0.0183
+   },
+   {
+    "zip": "36269",
+    "county": "Cleburne County",
+    "prem": 1528,
+    "chg": -0.0203,
+    "nonren": 0
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Jefferson County",
+    "zips": 45,
+    "chg": 0.043,
+    "freq": 0.0676,
+    "sev": 14992,
+    "prem": 1925,
+    "prem18": 1827,
+    "nonren": 0.0079
+   },
+   {
+    "name": "Mobile County",
+    "zips": 32,
+    "chg": -0.007,
+    "freq": 0.0506,
+    "sev": 18081,
+    "prem": 2097,
+    "prem18": 2180,
+    "nonren": 0.0091
+   },
+   {
+    "name": "Baldwin County",
+    "zips": 20,
+    "chg": -0.05,
+    "freq": 0.0583,
+    "sev": 26187,
+    "prem": 2281,
+    "prem18": 2367,
+    "nonren": 0.0029
+   },
+   {
+    "name": "Madison County",
+    "zips": 20,
+    "chg": 0.0595,
+    "freq": 0.0611,
+    "sev": 12935,
+    "prem": 1952,
+    "prem18": 1859,
+    "nonren": 0.0065
+   },
+   {
+    "name": "Tuscaloosa County",
+    "zips": 17,
+    "chg": 0.0243,
+    "freq": 0.0452,
+    "sev": 14105,
+    "prem": 1716,
+    "prem18": 1684,
+    "nonren": 0.0067
+   },
+   {
+    "name": "Shelby County",
+    "zips": 16,
+    "chg": 0.0483,
+    "freq": 0.0694,
+    "sev": 14758,
+    "prem": 1847,
+    "prem18": 1771,
+    "nonren": 0.0045
+   },
+   {
+    "name": "Montgomery County",
+    "zips": 15,
+    "chg": 0.013,
+    "freq": 0.0693,
+    "sev": 10378,
+    "prem": 1989,
+    "prem18": 1952,
+    "nonren": 0.0118
+   },
+   {
+    "name": "DeKalb County",
+    "zips": 14,
+    "chg": 0.033,
+    "freq": 0.0346,
+    "sev": 16854,
+    "prem": 1764,
+    "prem18": 1676,
+    "nonren": 0.0079
+   }
+  ],
+  "highNonren": 0.0276,
+  "rankPrem": 15,
+  "rankNonren": 37,
+  "rankChg": 38,
+  "rankFreq": 16,
+  "rankSev": 23
+ },
+ {
+  "zips": 31,
+  "prem": [
+   1314,
+   1280,
+   1276,
+   1294,
+   1283
+  ],
+  "p10": 1151,
+  "p90": 1443,
+  "chg": -0.0484,
+  "nonren": [
+   0.0073,
+   0.0061,
+   0.0028,
+   0.0035,
+   0.0037
+  ],
+  "freq": 0.0217,
+  "sev": 29852,
+  "lr": 0.4464,
+  "lrY": [
+   0.4218,
+   0.4317,
+   0.3621,
+   0.3505,
+   0.4092
+  ],
+  "freqY": [
+   0.0232,
+   0.0177,
+   0.0179,
+   0.0176,
+   0.0243
+  ],
+  "npc": 0.0092,
+  "oc": 0.0193,
+  "code": "AK",
+  "name": "Alaska",
+  "slug": "alaska",
+  "counties": 12,
+  "hi": [
+   {
+    "zip": "99737",
+    "county": "Southeast Fairbanks Census Area",
+    "prem": 1819,
+    "chg": 0.0041,
+    "nonren": 0.0094
+   },
+   {
+    "zip": "99712",
+    "county": "Fairbanks North Star Borough",
+    "prem": 1471,
+    "chg": -0.0085,
+    "nonren": 0.0037
+   },
+   {
+    "zip": "99516",
+    "county": "Anchorage Municipality",
+    "prem": 1462,
+    "chg": -0.071,
+    "nonren": 0.0036
+   },
+   {
+    "zip": "99567",
+    "county": "Anchorage Municipality",
+    "prem": 1443,
+    "chg": -0.0592,
+    "nonren": 0.0041
+   },
+   {
+    "zip": "99652",
+    "county": "Matanuska-Susitna Borough",
+    "prem": 1442,
+    "chg": 0.0283,
+    "nonren": 0.0019
+   }
+  ],
+  "lo": [
+   {
+    "zip": "99801",
+    "county": "Juneau City and Borough",
+    "prem": 1007,
+    "chg": -0.0632,
+    "nonren": 0.0014
+   },
+   {
+    "zip": "99827",
+    "county": "Haines Borough",
+    "prem": 1040,
+    "chg": -0.0758,
+    "nonren": 0.0017
+   },
+   {
+    "zip": "99518",
+    "county": "Anchorage Municipality",
+    "prem": 1101,
+    "chg": -0.0668,
+    "nonren": 0.0028
+   },
+   {
+    "zip": "99835",
+    "county": "Sitka City and Borough",
+    "prem": 1151,
+    "chg": -0.0537,
+    "nonren": 0.0007
+   },
+   {
+    "zip": "99504",
+    "county": "Anchorage Municipality",
+    "prem": 1168,
+    "chg": -0.039,
+    "nonren": 0.0046
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Anchorage Municipality",
+    "zips": 11,
+    "chg": -0.0652,
+    "freq": 0.0242,
+    "sev": 30429,
+    "prem": 1283,
+    "prem18": 1349,
+    "nonren": 0.0037
+   },
+   {
+    "name": "Matanuska-Susitna Borough",
+    "zips": 5,
+    "chg": 0.014,
+    "freq": 0.0249,
+    "sev": 27354,
+    "prem": 1347,
+    "prem18": 1343,
+    "nonren": 0.0035
+   },
+   {
+    "name": "Kenai Peninsula Borough",
+    "zips": 4,
+    "chg": -0.0416,
+    "freq": 0.0147,
+    "sev": 25562,
+    "prem": 1223,
+    "prem18": 1293,
+    "nonren": 0.0052
+   },
+   {
+    "name": "Fairbanks North Star Borough",
+    "zips": 3,
+    "chg": -0.0031,
+    "freq": 0.0237,
+    "sev": 31745,
+    "prem": 1356,
+    "prem18": 1308,
+    "nonren": 0.0037
+   },
+   {
+    "name": "Bethel Census Area",
+    "zips": 1,
+    "chg": -0.053,
+    "freq": 0.0196,
+    "sev": 22699,
+    "prem": 1177,
+    "prem18": 1243,
+    "nonren": 0.0061
+   },
+   {
+    "name": "Haines Borough",
+    "zips": 1,
+    "chg": -0.0758,
+    "freq": 0.0167,
+    "sev": 93145,
+    "prem": 1040,
+    "prem18": 1125,
+    "nonren": 0.0017
+   },
+   {
+    "name": "Juneau City and Borough",
+    "zips": 1,
+    "chg": -0.0632,
+    "freq": 0.0183,
+    "sev": 29658,
+    "prem": 1007,
+    "prem18": 1075,
+    "nonren": 0.0014
+   },
+   {
+    "name": "Ketchikan Gateway Borough",
+    "zips": 1,
+    "chg": -0.038,
+    "freq": 0.0174,
+    "sev": 24923,
+    "prem": 1296,
+    "prem18": 1347,
+    "nonren": 0.003
+   }
+  ],
+  "highNonren": 0.0,
+  "rankPrem": 36,
+  "rankNonren": 48,
+  "rankChg": 50,
+  "rankFreq": 51,
+  "rankSev": 1
+ },
+ {
+  "zips": 328,
+  "prem": [
+   1059,
+   1060,
+   1089,
+   1123,
+   1172
+  ],
+  "p10": 929,
+  "p90": 1564,
+  "chg": 0.108,
+  "nonren": [
+   0.0114,
+   0.0107,
+   0.011,
+   0.0126,
+   0.017
+  ],
+  "freq": 0.0458,
+  "sev": 13350,
+  "lr": 0.5029,
+  "lrY": [
+   0.4541,
+   0.4197,
+   0.4361,
+   0.5137,
+   0.5458
+  ],
+  "freqY": [
+   0.0433,
+   0.0407,
+   0.0397,
+   0.0461,
+   0.0506
+  ],
+  "npc": 0.0164,
+  "oc": 0.0196,
+  "code": "AZ",
+  "name": "Arizona",
+  "slug": "arizona",
+  "counties": 15,
+  "hi": [
+   {
+    "zip": "85253",
+    "county": "Maricopa County",
+    "prem": 5028,
+    "chg": 0.1171,
+    "nonren": 0.0124
+   },
+   {
+    "zip": "85262",
+    "county": "Maricopa County",
+    "prem": 3157,
+    "chg": 0.1865,
+    "nonren": 0.0115
+   },
+   {
+    "zip": "85255",
+    "county": "Maricopa County",
+    "prem": 2582,
+    "chg": 0.1929,
+    "nonren": 0.0091
+   },
+   {
+    "zip": "85377",
+    "county": "Maricopa County",
+    "prem": 2548,
+    "chg": 0.097,
+    "nonren": 0.0066
+   },
+   {
+    "zip": "85264",
+    "county": "Maricopa County",
+    "prem": 2446,
+    "chg": 0.0117,
+    "nonren": 0.0252
+   }
+  ],
+  "lo": [
+   {
+    "zip": "85141",
+    "county": "Pinal County",
+    "prem": 565,
+    "chg": 0.1378,
+    "nonren": 0
+   },
+   {
+    "zip": "85336",
+    "county": "Yuma County",
+    "prem": 698,
+    "chg": -0.3891,
+    "nonren": 0.0054
+   },
+   {
+    "zip": "85356",
+    "county": "Yuma County",
+    "prem": 708,
+    "chg": 0.1159,
+    "nonren": 0.0778
+   },
+   {
+    "zip": "85346",
+    "county": "La Paz County",
+    "prem": 722,
+    "chg": 0.13,
+    "nonren": 0.0463
+   },
+   {
+    "zip": "85120",
+    "county": "Pinal County",
+    "prem": 725,
+    "chg": 0.1679,
+    "nonren": 0.0247
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Maricopa County",
+    "zips": 130,
+    "chg": 0.1164,
+    "freq": 0.0578,
+    "sev": 13574,
+    "prem": 1249,
+    "prem18": 1119,
+    "nonren": 0.0156
+   },
+   {
+    "name": "Pima County",
+    "zips": 38,
+    "chg": 0.0989,
+    "freq": 0.0445,
+    "sev": 10549,
+    "prem": 1052,
+    "prem18": 961,
+    "nonren": 0.0126
+   },
+   {
+    "name": "Pinal County",
+    "zips": 26,
+    "chg": 0.1205,
+    "freq": 0.0424,
+    "sev": 12400,
+    "prem": 1030,
+    "prem18": 949,
+    "nonren": 0.0206
+   },
+   {
+    "name": "Yavapai County",
+    "zips": 26,
+    "chg": 0.1303,
+    "freq": 0.0518,
+    "sev": 12911,
+    "prem": 1134,
+    "prem18": 1014,
+    "nonren": 0.0155
+   },
+   {
+    "name": "Mohave County",
+    "zips": 18,
+    "chg": 0.0775,
+    "freq": 0.0315,
+    "sev": 13169,
+    "prem": 1028,
+    "prem18": 952,
+    "nonren": 0.0241
+   },
+   {
+    "name": "Cochise County",
+    "zips": 17,
+    "chg": 0.0945,
+    "freq": 0.042,
+    "sev": 13155,
+    "prem": 1074,
+    "prem18": 1005,
+    "nonren": 0.0224
+   },
+   {
+    "name": "Coconino County",
+    "zips": 14,
+    "chg": 0.0983,
+    "freq": 0.028,
+    "sev": 19209,
+    "prem": 1198,
+    "prem18": 1119,
+    "nonren": 0.0186
+   },
+   {
+    "name": "Navajo County",
+    "zips": 13,
+    "chg": 0.1495,
+    "freq": 0.0358,
+    "sev": 18944,
+    "prem": 1251,
+    "prem18": 1087,
+    "nonren": 0.0178
+   }
+  ],
+  "highNonren": 0.314,
+  "rankPrem": 43,
+  "rankNonren": 4,
+  "rankChg": 12,
+  "rankFreq": 25,
+  "rankSev": 40
+ },
+ {
+  "zips": 374,
+  "prem": [
+   1653,
+   1661,
+   1670,
+   1664,
+   1698
+  ],
+  "p10": 1514,
+  "p90": 1968,
+  "chg": 0.0341,
+  "nonren": [
+   0.0081,
+   0.0064,
+   0.0045,
+   0.0063,
+   0.0072
+  ],
+  "freq": 0.0823,
+  "sev": 13129,
+  "lr": 0.6077,
+  "lrY": [
+   0.4331,
+   0.4379,
+   0.5226,
+   0.4858,
+   0.5639
+  ],
+  "freqY": [
+   0.071,
+   0.0704,
+   0.0781,
+   0.0719,
+   0.0749
+  ],
+  "npc": 0.0216,
+  "oc": 0.0172,
+  "code": "AR",
+  "name": "Arkansas",
+  "slug": "arkansas",
+  "counties": 75,
+  "hi": [
+   {
+    "zip": "72223",
+    "county": "Pulaski County",
+    "prem": 3052,
+    "chg": -0.007,
+    "nonren": 0.0039
+   },
+   {
+    "zip": "72207",
+    "county": "Pulaski County",
+    "prem": 2980,
+    "chg": -0.001,
+    "nonren": 0.0069
+   },
+   {
+    "zip": "72212",
+    "county": "Pulaski County",
+    "prem": 2882,
+    "chg": 0.0114,
+    "nonren": 0.0067
+   },
+   {
+    "zip": "72135",
+    "county": "Pulaski County",
+    "prem": 2829,
+    "chg": 0.0739,
+    "nonren": 0.0028
+   },
+   {
+    "zip": "72348",
+    "county": "Crittenden County",
+    "prem": 2449,
+    "chg": -0.0004,
+    "nonren": 0.0119
+   }
+  ],
+  "lo": [
+   {
+    "zip": "72471",
+    "county": "Jackson County",
+    "prem": 1338,
+    "chg": 0.0812,
+    "nonren": 0
+   },
+   {
+    "zip": "71937",
+    "county": "Polk County",
+    "prem": 1360,
+    "chg": 0.0296,
+    "nonren": 0.0088
+   },
+   {
+    "zip": "72680",
+    "county": "Stone County",
+    "prem": 1366,
+    "chg": 0.0043,
+    "nonren": 0
+   },
+   {
+    "zip": "71860",
+    "county": "Lafayette County",
+    "prem": 1377,
+    "chg": 0.0444,
+    "nonren": 0.0151
+   },
+   {
+    "zip": "71766",
+    "county": "Calhoun County",
+    "prem": 1379,
+    "chg": 0.0214,
+    "nonren": 0
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Pulaski County",
+    "zips": 19,
+    "chg": 0.0146,
+    "freq": 0.0815,
+    "sev": 12565,
+    "prem": 2029,
+    "prem18": 2000,
+    "nonren": 0.0068
+   },
+   {
+    "name": "Benton County",
+    "zips": 17,
+    "chg": 0.0616,
+    "freq": 0.0887,
+    "sev": 15001,
+    "prem": 1841,
+    "prem18": 1751,
+    "nonren": 0.0056
+   },
+   {
+    "name": "Sebastian County",
+    "zips": 12,
+    "chg": 0.0464,
+    "freq": 0.0859,
+    "sev": 12475,
+    "prem": 1677,
+    "prem18": 1576,
+    "nonren": 0.0084
+   },
+   {
+    "name": "Washington County",
+    "zips": 12,
+    "chg": 0.0696,
+    "freq": 0.0811,
+    "sev": 15090,
+    "prem": 1855,
+    "prem18": 1753,
+    "nonren": 0.0069
+   },
+   {
+    "name": "White County",
+    "zips": 11,
+    "chg": 0.0355,
+    "freq": 0.0726,
+    "sev": 15418,
+    "prem": 1691,
+    "prem18": 1630,
+    "nonren": 0.0054
+   },
+   {
+    "name": "Baxter County",
+    "zips": 10,
+    "chg": 0.0096,
+    "freq": 0.0629,
+    "sev": 11292,
+    "prem": 1628,
+    "prem18": 1631,
+    "nonren": 0.0058
+   },
+   {
+    "name": "Saline County",
+    "zips": 10,
+    "chg": 0.0425,
+    "freq": 0.0851,
+    "sev": 13360,
+    "prem": 1811,
+    "prem18": 1761,
+    "nonren": 0.0039
+   },
+   {
+    "name": "Faulkner County",
+    "zips": 9,
+    "chg": 0.0419,
+    "freq": 0.0859,
+    "sev": 12852,
+    "prem": 1725,
+    "prem18": 1655,
+    "nonren": 0.0061
+   }
+  ],
+  "highNonren": 0.0321,
+  "rankPrem": 19,
+  "rankNonren": 33,
+  "rankChg": 34,
+  "rankFreq": 2,
+  "rankSev": 43
+ },
+ {
+  "zips": 1552,
+  "prem": [
+   1289,
+   1363,
+   1440,
+   1549,
+   1617
+  ],
+  "p10": 1081,
+  "p90": 2849,
+  "chg": 0.2124,
+  "nonren": [
+   0.0067,
+   0.0125,
+   0.0124,
+   0.012,
+   0.0122
+  ],
+  "freq": 0.0325,
+  "sev": 23238,
+  "lr": 0.4877,
+  "lrY": [
+   0.4271,
+   0.4209,
+   0.4388,
+   0.4367,
+   0.4919
+  ],
+  "freqY": [
+   0.0285,
+   0.0321,
+   0.0288,
+   0.0329,
+   0.0305
+  ],
+  "npc": 0.0117,
+  "oc": 0.0133,
+  "code": "CA",
+  "name": "California",
+  "slug": "california",
+  "counties": 58,
+  "hi": [
+   {
+    "zip": "90210",
+    "county": "Los Angeles County",
+    "prem": 11603,
+    "chg": 0.0031,
+    "nonren": 0.0467
+   },
+   {
+    "zip": "92067",
+    "county": "San Diego County",
+    "prem": 9347,
+    "chg": 0.4711,
+    "nonren": 0.0355
+   },
+   {
+    "zip": "90020",
+    "county": "Los Angeles County",
+    "prem": 9298,
+    "chg": 0.242,
+    "nonren": 0.0117
+   },
+   {
+    "zip": "90077",
+    "county": "Los Angeles County",
+    "prem": 8462,
+    "chg": -0.0856,
+    "nonren": 0.0484
+   },
+   {
+    "zip": "90265",
+    "county": "Los Angeles County",
+    "prem": 8311,
+    "chg": 0.0404,
+    "nonren": 0.0317
+   }
+  ],
+  "lo": [
+   {
+    "zip": "92257",
+    "county": "Imperial County",
+    "prem": 825,
+    "chg": 0.2767,
+    "nonren": 0.0267
+   },
+   {
+    "zip": "93249",
+    "county": "Kern County",
+    "prem": 836,
+    "chg": 0.1267,
+    "nonren": 0.0164
+   },
+   {
+    "zip": "93227",
+    "county": "Tulare County",
+    "prem": 853,
+    "chg": 0.2166,
+    "nonren": 0.0144
+   },
+   {
+    "zip": "93434",
+    "county": "Santa Barbara County",
+    "prem": 856,
+    "chg": 0.0726,
+    "nonren": 0.0105
+   },
+   {
+    "zip": "92239",
+    "county": "Riverside County",
+    "prem": 862,
+    "chg": 0.0144,
+    "nonren": 0
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Los Angeles County",
+    "zips": 268,
+    "chg": 0.1922,
+    "freq": 0.0355,
+    "sev": 27738,
+    "prem": 1492,
+    "prem18": 1230,
+    "nonren": 0.0118
+   },
+   {
+    "name": "San Diego County",
+    "zips": 96,
+    "chg": 0.2672,
+    "freq": 0.0447,
+    "sev": 21161,
+    "prem": 1883,
+    "prem18": 1476,
+    "nonren": 0.0138
+   },
+   {
+    "name": "Orange County",
+    "zips": 85,
+    "chg": 0.2069,
+    "freq": 0.0425,
+    "sev": 22288,
+    "prem": 1667,
+    "prem18": 1346,
+    "nonren": 0.0109
+   },
+   {
+    "name": "San Bernardino County",
+    "zips": 77,
+    "chg": 0.1705,
+    "freq": 0.0414,
+    "sev": 19913,
+    "prem": 1376,
+    "prem18": 1180,
+    "nonren": 0.0176
+   },
+   {
+    "name": "Riverside County",
+    "zips": 68,
+    "chg": 0.2024,
+    "freq": 0.0423,
+    "sev": 19744,
+    "prem": 1487,
+    "prem18": 1244,
+    "nonren": 0.0154
+   },
+   {
+    "name": "Santa Clara County",
+    "zips": 55,
+    "chg": 0.1844,
+    "freq": 0.0214,
+    "sev": 24784,
+    "prem": 1365,
+    "prem18": 1129,
+    "nonren": 0.006
+   },
+   {
+    "name": "Sacramento County",
+    "zips": 51,
+    "chg": 0.1677,
+    "freq": 0.0385,
+    "sev": 18786,
+    "prem": 1265,
+    "prem18": 1065,
+    "nonren": 0.0087
+   },
+   {
+    "name": "Alameda County",
+    "zips": 47,
+    "chg": 0.186,
+    "freq": 0.0236,
+    "sev": 22958,
+    "prem": 1696,
+    "prem18": 1469,
+    "nonren": 0.0067
+   }
+  ],
+  "highNonren": 0.2255,
+  "rankPrem": 24,
+  "rankNonren": 11,
+  "rankChg": 1,
+  "rankFreq": 40,
+  "rankSev": 2
+ },
+ {
+  "zips": 419,
+  "prem": [
+   2100,
+   2180,
+   2269,
+   2360,
+   2538
+  ],
+  "p10": 1444,
+  "p90": 3441,
+  "chg": 0.2087,
+  "nonren": [
+   0.0083,
+   0.007,
+   0.0057,
+   0.0089,
+   0.0109
+  ],
+  "freq": 0.061,
+  "sev": 17419,
+  "lr": 0.4221,
+  "lrY": [
+   0.3541,
+   0.3909,
+   0.3784,
+   0.2813,
+   0.2746
+  ],
+  "freqY": [
+   0.0493,
+   0.0522,
+   0.0465,
+   0.0407,
+   0.0407
+  ],
+  "npc": 0.0132,
+  "oc": 0.0149,
+  "code": "CO",
+  "name": "Colorado",
+  "slug": "colorado",
+  "counties": 64,
+  "hi": [
+   {
+    "zip": "81611",
+    "county": "Pitkin County",
+    "prem": 11843,
+    "chg": 0.4435,
+    "nonren": 0.0054
+   },
+   {
+    "zip": "81615",
+    "county": "Pitkin County",
+    "prem": 8599,
+    "chg": 0.312,
+    "nonren": 0.0064
+   },
+   {
+    "zip": "81656",
+    "county": "Pitkin County",
+    "prem": 8314,
+    "chg": 0.043,
+    "nonren": 0.0078
+   },
+   {
+    "zip": "81654",
+    "county": "Pitkin County",
+    "prem": 7116,
+    "chg": 0.3392,
+    "nonren": 0.0138
+   },
+   {
+    "zip": "81435",
+    "county": "San Miguel County",
+    "prem": 6760,
+    "chg": 0.3087,
+    "nonren": 0.0149
+   }
+  ],
+  "lo": [
+   {
+    "zip": "81501",
+    "county": "Mesa County",
+    "prem": 969,
+    "chg": 0.1049,
+    "nonren": 0.0084
+   },
+   {
+    "zip": "81520",
+    "county": "Mesa County",
+    "prem": 972,
+    "chg": 0.0964,
+    "nonren": 0.0084
+   },
+   {
+    "zip": "81504",
+    "county": "Mesa County",
+    "prem": 986,
+    "chg": 0.1349,
+    "nonren": 0.0084
+   },
+   {
+    "zip": "81503",
+    "county": "Mesa County",
+    "prem": 1032,
+    "chg": 0.1147,
+    "nonren": 0.0085
+   },
+   {
+    "zip": "81401",
+    "county": "Montrose County",
+    "prem": 1053,
+    "chg": 0.1137,
+    "nonren": 0.0083
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "El Paso County",
+    "zips": 35,
+    "chg": 0.2279,
+    "freq": 0.1119,
+    "sev": 14783,
+    "prem": 2734,
+    "prem18": 2227,
+    "nonren": 0.0122
+   },
+   {
+    "name": "Weld County",
+    "zips": 28,
+    "chg": 0.2496,
+    "freq": 0.1208,
+    "sev": 16541,
+    "prem": 2627,
+    "prem18": 2098,
+    "nonren": 0.0122
+   },
+   {
+    "name": "Jefferson County",
+    "zips": 26,
+    "chg": 0.2419,
+    "freq": 0.0751,
+    "sev": 16919,
+    "prem": 2966,
+    "prem18": 2376,
+    "nonren": 0.0105
+   },
+   {
+    "name": "Denver County",
+    "zips": 25,
+    "chg": 0.1797,
+    "freq": 0.0796,
+    "sev": 16088,
+    "prem": 2916,
+    "prem18": 2447,
+    "nonren": 0.0102
+   },
+   {
+    "name": "Adams County",
+    "zips": 18,
+    "chg": 0.2013,
+    "freq": 0.0937,
+    "sev": 15067,
+    "prem": 2692,
+    "prem18": 2201,
+    "nonren": 0.0118
+   },
+   {
+    "name": "Arapahoe County",
+    "zips": 17,
+    "chg": 0.1987,
+    "freq": 0.0697,
+    "sev": 16511,
+    "prem": 2966,
+    "prem18": 2494,
+    "nonren": 0.012
+   },
+   {
+    "name": "Larimer County",
+    "zips": 17,
+    "chg": 0.3,
+    "freq": 0.0622,
+    "sev": 18098,
+    "prem": 2231,
+    "prem18": 1658,
+    "nonren": 0.0087
+   },
+   {
+    "name": "Boulder County",
+    "zips": 16,
+    "chg": 0.3396,
+    "freq": 0.0685,
+    "sev": 20194,
+    "prem": 3124,
+    "prem18": 2343,
+    "nonren": 0.0105
+   }
+  ],
+  "highNonren": 0.0835,
+  "rankPrem": 2,
+  "rankNonren": 14,
+  "rankChg": 2,
+  "rankFreq": 10,
+  "rankSev": 12
+ },
+ {
+  "zips": 263,
+  "prem": [
+   1919,
+   1913,
+   1890,
+   1899,
+   1908
+  ],
+  "p10": 1556,
+  "p90": 3442,
+  "chg": 0.0017,
+  "nonren": [
+   0.0079,
+   0.0075,
+   0.0074,
+   0.0069,
+   0.009
+  ],
+  "freq": 0.0491,
+  "sev": 17618,
+  "lr": 0.3748,
+  "lrY": [
+   0.3339,
+   0.3227,
+   0.3865,
+   0.3616,
+   0.3387
+  ],
+  "freqY": [
+   0.0461,
+   0.0381,
+   0.0658,
+   0.049,
+   0.0382
+  ],
+  "npc": 0.0136,
+  "oc": 0.0176,
+  "code": "CT",
+  "name": "Connecticut",
+  "slug": "connecticut",
+  "counties": 8,
+  "hi": [
+   {
+    "zip": "06830",
+    "county": "Fairfield County",
+    "prem": 8979,
+    "chg": -0.02,
+    "nonren": 0.0053
+   },
+   {
+    "zip": "06831",
+    "county": "Fairfield County",
+    "prem": 8903,
+    "chg": 0.0205,
+    "nonren": 0.0057
+   },
+   {
+    "zip": "06793",
+    "county": "Litchfield County",
+    "prem": 6639,
+    "chg": 0.0573,
+    "nonren": 0.0115
+   },
+   {
+    "zip": "06840",
+    "county": "Fairfield County",
+    "prem": 5957,
+    "chg": -0.0124,
+    "nonren": 0.0076
+   },
+   {
+    "zip": "06870",
+    "county": "Fairfield County",
+    "prem": 5699,
+    "chg": 0.0504,
+    "nonren": 0.0044
+   }
+  ],
+  "lo": [
+   {
+    "zip": "06790",
+    "county": "Litchfield County",
+    "prem": 1242,
+    "chg": -0.062,
+    "nonren": 0.0096
+   },
+   {
+    "zip": "06062",
+    "county": "Hartford County",
+    "prem": 1246,
+    "chg": -0.0417,
+    "nonren": 0.0069
+   },
+   {
+    "zip": "06010",
+    "county": "Hartford County",
+    "prem": 1295,
+    "chg": -0.0666,
+    "nonren": 0.0076
+   },
+   {
+    "zip": "06096",
+    "county": "Hartford County",
+    "prem": 1303,
+    "chg": 0.02,
+    "nonren": 0.0074
+   },
+   {
+    "zip": "06779",
+    "county": "Litchfield County",
+    "prem": 1318,
+    "chg": 0.0044,
+    "nonren": 0.0152
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Hartford County",
+    "zips": 55,
+    "chg": -0.0209,
+    "freq": 0.0559,
+    "sev": 16047,
+    "prem": 1765,
+    "prem18": 1751,
+    "nonren": 0.0069
+   },
+   {
+    "name": "Fairfield County",
+    "zips": 45,
+    "chg": -0.0138,
+    "freq": 0.0579,
+    "sev": 21012,
+    "prem": 2732,
+    "prem18": 2648,
+    "nonren": 0.0093
+   },
+   {
+    "name": "New Haven County",
+    "zips": 39,
+    "chg": -0.0067,
+    "freq": 0.0598,
+    "sev": 18453,
+    "prem": 1875,
+    "prem18": 1868,
+    "nonren": 0.0135
+   },
+   {
+    "name": "Litchfield County",
+    "zips": 37,
+    "chg": 0.0065,
+    "freq": 0.045,
+    "sev": 18958,
+    "prem": 2259,
+    "prem18": 2216,
+    "nonren": 0.0085
+   },
+   {
+    "name": "New London County",
+    "zips": 27,
+    "chg": 0.0189,
+    "freq": 0.0318,
+    "sev": 17100,
+    "prem": 1872,
+    "prem18": 1817,
+    "nonren": 0.0079
+   },
+   {
+    "name": "Windham County",
+    "zips": 24,
+    "chg": 0.0091,
+    "freq": 0.0344,
+    "sev": 14998,
+    "prem": 1704,
+    "prem18": 1685,
+    "nonren": 0.0136
+   },
+   {
+    "name": "Middlesex County",
+    "zips": 22,
+    "chg": 0.0215,
+    "freq": 0.0386,
+    "sev": 15783,
+    "prem": 2187,
+    "prem18": 2106,
+    "nonren": 0.009
+   },
+   {
+    "name": "Tolland County",
+    "zips": 14,
+    "chg": 0.0043,
+    "freq": 0.0408,
+    "sev": 17208,
+    "prem": 1824,
+    "prem18": 1846,
+    "nonren": 0.0069
+   }
+  ],
+  "highNonren": 0.0266,
+  "rankPrem": 13,
+  "rankNonren": 22,
+  "rankChg": 44,
+  "rankFreq": 24,
+  "rankSev": 11
+ },
+ {
+  "zips": 57,
+  "prem": [
+   1035,
+   1078,
+   1062,
+   1073,
+   1125
+  ],
+  "p10": 1012,
+  "p90": 1432,
+  "chg": 0.0819,
+  "nonren": [
+   0.0112,
+   0.003,
+   0.0053,
+   0.007,
+   0.0084
+  ],
+  "freq": 0.038,
+  "sev": 14923,
+  "lr": 0.4419,
+  "lrY": [
+   0.3917,
+   0.4078,
+   0.494,
+   0.402,
+   0.2948
+  ],
+  "freqY": [
+   0.0394,
+   0.0294,
+   0.0496,
+   0.0341,
+   0.032
+  ],
+  "npc": 0.0159,
+  "oc": 0.0192,
+  "code": "DE",
+  "name": "Delaware",
+  "slug": "delaware",
+  "counties": 3,
+  "hi": [
+   {
+    "zip": "19807",
+    "county": "New Castle County",
+    "prem": 3653,
+    "chg": -0.0033,
+    "nonren": 0.0086
+   },
+   {
+    "zip": "19944",
+    "county": "Sussex County",
+    "prem": 2682,
+    "chg": -0.0506,
+    "nonren": 0.0043
+   },
+   {
+    "zip": "19930",
+    "county": "Sussex County",
+    "prem": 2373,
+    "chg": 0.1212,
+    "nonren": 0.006
+   },
+   {
+    "zip": "19971",
+    "county": "Sussex County",
+    "prem": 1990,
+    "chg": 0.0641,
+    "nonren": 0.007
+   },
+   {
+    "zip": "19806",
+    "county": "New Castle County",
+    "prem": 1633,
+    "chg": 0.0135,
+    "nonren": 0.005
+   }
+  ],
+  "lo": [
+   {
+    "zip": "19804",
+    "county": "New Castle County",
+    "prem": 937,
+    "chg": 0.1079,
+    "nonren": 0.0093
+   },
+   {
+    "zip": "19979",
+    "county": "Kent County",
+    "prem": 979,
+    "chg": 0.1312,
+    "nonren": 0.012
+   },
+   {
+    "zip": "19940",
+    "county": "Sussex County",
+    "prem": 993,
+    "chg": 0.0285,
+    "nonren": 0.0134
+   },
+   {
+    "zip": "19941",
+    "county": "Sussex County",
+    "prem": 994,
+    "chg": -0.0008,
+    "nonren": 0.0058
+   },
+   {
+    "zip": "19713",
+    "county": "New Castle County",
+    "prem": 998,
+    "chg": 0.1017,
+    "nonren": 0.0125
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "New Castle County",
+    "zips": 22,
+    "chg": 0.0961,
+    "freq": 0.0484,
+    "sev": 12926,
+    "prem": 1188,
+    "prem18": 1098,
+    "nonren": 0.0083
+   },
+   {
+    "name": "Sussex County",
+    "zips": 22,
+    "chg": 0.0574,
+    "freq": 0.0306,
+    "sev": 16198,
+    "prem": 1134,
+    "prem18": 1073,
+    "nonren": 0.0071
+   },
+   {
+    "name": "Kent County",
+    "zips": 13,
+    "chg": 0.0977,
+    "freq": 0.0363,
+    "sev": 15049,
+    "prem": 1070,
+    "prem18": 949,
+    "nonren": 0.0095
+   }
+  ],
+  "highNonren": 0.0175,
+  "rankPrem": 48,
+  "rankNonren": 27,
+  "rankChg": 19,
+  "rankFreq": 34,
+  "rankSev": 24
+ },
+ {
+  "zips": 20,
+  "prem": [
+   1643,
+   1644,
+   1651,
+   1632,
+   1628
+  ],
+  "p10": 1271,
+  "p90": 3159,
+  "chg": -0.0057,
+  "nonren": [
+   0.008,
+   0.0067,
+   0.0034,
+   0.0038,
+   0.0082
+  ],
+  "freq": 0.0536,
+  "sev": 15276,
+  "lr": 0.4214,
+  "lrY": [
+   0.5708,
+   0.4442,
+   0.4163,
+   0.3555,
+   0.3866
+  ],
+  "freqY": [
+   0.0826,
+   0.0496,
+   0.0493,
+   0.0446,
+   0.0476
+  ],
+  "npc": 0.0086,
+  "oc": 0.0219,
+  "code": "DC",
+  "name": "District of Columbia",
+  "slug": "district-of-columbia",
+  "counties": 1,
+  "hi": [
+   {
+    "zip": "20008",
+    "county": "District of Columbia",
+    "prem": 3698,
+    "chg": 0.0119,
+    "nonren": 0.0056
+   },
+   {
+    "zip": "20036",
+    "county": "District of Columbia",
+    "prem": 3353,
+    "chg": 0.021,
+    "nonren": 0
+   },
+   {
+    "zip": "20007",
+    "county": "District of Columbia",
+    "prem": 3137,
+    "chg": -0.0057,
+    "nonren": 0.0056
+   },
+   {
+    "zip": "20005",
+    "county": "District of Columbia",
+    "prem": 2990,
+    "chg": 0.067,
+    "nonren": 0
+   },
+   {
+    "zip": "20016",
+    "county": "District of Columbia",
+    "prem": 2765,
+    "chg": 0.0197,
+    "nonren": 0.0051
+   }
+  ],
+  "lo": [
+   {
+    "zip": "20019",
+    "county": "District of Columbia",
+    "prem": 1147,
+    "chg": -0.0182,
+    "nonren": 0.0145
+   },
+   {
+    "zip": "20032",
+    "county": "District of Columbia",
+    "prem": 1230,
+    "chg": 0.0085,
+    "nonren": 0.0162
+   },
+   {
+    "zip": "20017",
+    "county": "District of Columbia",
+    "prem": 1276,
+    "chg": -0.0134,
+    "nonren": 0.0086
+   },
+   {
+    "zip": "20020",
+    "county": "District of Columbia",
+    "prem": 1294,
+    "chg": -0.0118,
+    "nonren": 0.0131
+   },
+   {
+    "zip": "20018",
+    "county": "District of Columbia",
+    "prem": 1391,
+    "chg": -0.0023,
+    "nonren": 0.0133
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "District of Columbia",
+    "zips": 20,
+    "chg": -0.0057,
+    "freq": 0.0536,
+    "sev": 15276,
+    "prem": 1628,
+    "prem18": 1643,
+    "nonren": 0.0082
+   }
+  ],
+  "highNonren": 0.0,
+  "rankPrem": 23,
+  "rankNonren": 28,
+  "rankChg": 46,
+  "rankFreq": 19,
+  "rankSev": 21
+ },
+ {
+  "zips": 560,
+  "prem": [
+   3845,
+   4013,
+   3448,
+   3249,
+   3211
+  ],
+  "p10": 2030,
+  "p90": 10024,
+  "chg": -0.125,
+  "nonren": [
+   0.0,
+   0.0017,
+   0.0032,
+   0.0038,
+   0.0036
+  ],
+  "freq": 0.0719,
+  "sev": 20737,
+  "lr": 0.3823,
+  "lrY": [
+   0.3466,
+   0.2617,
+   0.3089,
+   0.3018,
+   0.4238
+  ],
+  "freqY": [
+   0.0869,
+   0.0678,
+   0.0618,
+   0.0539,
+   0.0685
+  ],
+  "npc": 0.0105,
+  "oc": 0.0118,
+  "code": "FL",
+  "name": "Florida",
+  "slug": "florida",
+  "counties": 47,
+  "hi": [
+   {
+    "zip": "33480",
+    "county": "Palm Beach County",
+    "prem": 40719,
+    "chg": 0.2216,
+    "nonren": 0.0024
+   },
+   {
+    "zip": "33140",
+    "county": "Miami-Dade County",
+    "prem": 34055,
+    "chg": 0.4058,
+    "nonren": 0.0021
+   },
+   {
+    "zip": "33316",
+    "county": "Broward County",
+    "prem": 24366,
+    "chg": 0.3206,
+    "nonren": 0.0075
+   },
+   {
+    "zip": "34102",
+    "county": "Collier County",
+    "prem": 23927,
+    "chg": 0.194,
+    "nonren": 0.0014
+   },
+   {
+    "zip": "33141",
+    "county": "Miami-Dade County",
+    "prem": 23306,
+    "chg": 0.2935,
+    "nonren": 0.0049
+   }
+  ],
+  "lo": [
+   {
+    "zip": "33576",
+    "county": "Pasco County",
+    "prem": 1503,
+    "chg": -0.433,
+    "nonren": 0.002
+   },
+   {
+    "zip": "32641",
+    "county": "Alachua County",
+    "prem": 1514,
+    "chg": -0.037,
+    "nonren": 0.006
+   },
+   {
+    "zip": "34748",
+    "county": "Lake County",
+    "prem": 1545,
+    "chg": -0.3653,
+    "nonren": 0.0017
+   },
+   {
+    "zip": "34609",
+    "county": "Hernando County",
+    "prem": 1558,
+    "chg": -0.2963,
+    "nonren": 0.0007
+   },
+   {
+    "zip": "34481",
+    "county": "Marion County",
+    "prem": 1560,
+    "chg": -0.1117,
+    "nonren": 0.0048
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Broward County",
+    "zips": 47,
+    "chg": -0.0158,
+    "freq": 0.0813,
+    "sev": 31768,
+    "prem": 6148,
+    "prem18": 6181,
+    "nonren": 0.0026
+   },
+   {
+    "name": "Palm Beach County",
+    "zips": 40,
+    "chg": 0.036,
+    "freq": 0.0693,
+    "sev": 36977,
+    "prem": 8444,
+    "prem18": 8029,
+    "nonren": 0.0027
+   },
+   {
+    "name": "Orange County",
+    "zips": 38,
+    "chg": -0.1527,
+    "freq": 0.1185,
+    "sev": 19872,
+    "prem": 2554,
+    "prem18": 3056,
+    "nonren": 0.0062
+   },
+   {
+    "name": "Hillsborough County",
+    "zips": 37,
+    "chg": -0.149,
+    "freq": 0.0673,
+    "sev": 20253,
+    "prem": 3212,
+    "prem18": 3869,
+    "nonren": 0.0019
+   },
+   {
+    "name": "Miami-Dade County",
+    "zips": 33,
+    "chg": 0.0284,
+    "freq": 0.0731,
+    "sev": 40596,
+    "prem": 7089,
+    "prem18": 6773,
+    "nonren": 0.0033
+   },
+   {
+    "name": "Duval County",
+    "zips": 29,
+    "chg": -0.1076,
+    "freq": 0.0772,
+    "sev": 16685,
+    "prem": 2369,
+    "prem18": 2651,
+    "nonren": 0.0037
+   },
+   {
+    "name": "Lee County",
+    "zips": 24,
+    "chg": -0.2415,
+    "freq": 0.1457,
+    "sev": 25767,
+    "prem": 2925,
+    "prem18": 3953,
+    "nonren": 0.0064
+   },
+   {
+    "name": "Polk County",
+    "zips": 23,
+    "chg": -0.3056,
+    "freq": 0.0946,
+    "sev": 16497,
+    "prem": 2282,
+    "prem18": 3464,
+    "nonren": 0.0091
+   }
+  ],
+  "highNonren": 0.0071,
+  "rankPrem": 1,
+  "rankNonren": 49,
+  "rankChg": 51,
+  "rankFreq": 5,
+  "rankSev": 5
+ },
+ {
+  "zips": 630,
+  "prem": [
+   1575,
+   1613,
+   1617,
+   1610,
+   1635
+  ],
+  "p10": 1429,
+  "p90": 2046,
+  "chg": 0.0491,
+  "nonren": [
+   0.0088,
+   0.0065,
+   0.0063,
+   0.0082,
+   0.013
+  ],
+  "freq": 0.0593,
+  "sev": 14232,
+  "lr": 0.4853,
+  "lrY": [
+   0.4635,
+   0.4389,
+   0.4654,
+   0.3673,
+   0.3811
+  ],
+  "freqY": [
+   0.0647,
+   0.0556,
+   0.061,
+   0.0442,
+   0.0496
+  ],
+  "npc": 0.0212,
+  "oc": 0.0208,
+  "code": "GA",
+  "name": "Georgia",
+  "slug": "georgia",
+  "counties": 157,
+  "hi": [
+   {
+    "zip": "31561",
+    "county": "Glynn County",
+    "prem": 25848,
+    "chg": 0.2122,
+    "nonren": 0.0048
+   },
+   {
+    "zip": "30327",
+    "county": "Fulton County",
+    "prem": 5831,
+    "chg": 0.1591,
+    "nonren": 0.0102
+   },
+   {
+    "zip": "31411",
+    "county": "Chatham County",
+    "prem": 4590,
+    "chg": 0.0118,
+    "nonren": 0.0052
+   },
+   {
+    "zip": "30305",
+    "county": "Fulton County",
+    "prem": 4405,
+    "chg": 0.1047,
+    "nonren": 0.0095
+   },
+   {
+    "zip": "31328",
+    "county": "Chatham County",
+    "prem": 4350,
+    "chg": 0.0916,
+    "nonren": 0.0075
+   }
+  ],
+  "lo": [
+   {
+    "zip": "31647",
+    "county": "Cook County",
+    "prem": 1153,
+    "chg": -0.1486,
+    "nonren": 0.0032
+   },
+   {
+    "zip": "31645",
+    "county": "Berrien County",
+    "prem": 1220,
+    "chg": -0.1036,
+    "nonren": 0.0134
+   },
+   {
+    "zip": "31027",
+    "county": "Laurens County",
+    "prem": 1253,
+    "chg": -0.031,
+    "nonren": 0.0073
+   },
+   {
+    "zip": "31075",
+    "county": "Laurens County",
+    "prem": 1272,
+    "chg": -0.0134,
+    "nonren": 0.0088
+   },
+   {
+    "zip": "31650",
+    "county": "Atkinson County",
+    "prem": 1295,
+    "chg": -0.0793,
+    "nonren": 0
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Fulton County",
+    "zips": 33,
+    "chg": 0.1266,
+    "freq": 0.0753,
+    "sev": 17218,
+    "prem": 2169,
+    "prem18": 1997,
+    "nonren": 0.0164
+   },
+   {
+    "name": "DeKalb County",
+    "zips": 27,
+    "chg": 0.1186,
+    "freq": 0.0675,
+    "sev": 14779,
+    "prem": 1897,
+    "prem18": 1681,
+    "nonren": 0.017
+   },
+   {
+    "name": "Cobb County",
+    "zips": 17,
+    "chg": 0.1304,
+    "freq": 0.0832,
+    "sev": 15547,
+    "prem": 1836,
+    "prem18": 1629,
+    "nonren": 0.0156
+   },
+   {
+    "name": "Gwinnett County",
+    "zips": 16,
+    "chg": 0.1404,
+    "freq": 0.084,
+    "sev": 14981,
+    "prem": 1816,
+    "prem18": 1583,
+    "nonren": 0.017
+   },
+   {
+    "name": "Chatham County",
+    "zips": 13,
+    "chg": 0.0388,
+    "freq": 0.0435,
+    "sev": 13528,
+    "prem": 2100,
+    "prem18": 2034,
+    "nonren": 0.0168
+   },
+   {
+    "name": "Hall County",
+    "zips": 10,
+    "chg": 0.0862,
+    "freq": 0.0709,
+    "sev": 14170,
+    "prem": 1614,
+    "prem18": 1496,
+    "nonren": 0.0156
+   },
+   {
+    "name": "Harris County",
+    "zips": 9,
+    "chg": 0.044,
+    "freq": 0.0568,
+    "sev": 18480,
+    "prem": 1822,
+    "prem18": 1745,
+    "nonren": 0.011
+   },
+   {
+    "name": "Jackson County",
+    "zips": 9,
+    "chg": 0.0655,
+    "freq": 0.0617,
+    "sev": 14320,
+    "prem": 1568,
+    "prem18": 1502,
+    "nonren": 0.0149
+   }
+  ],
+  "highNonren": 0.1349,
+  "rankPrem": 22,
+  "rankNonren": 7,
+  "rankChg": 28,
+  "rankFreq": 12,
+  "rankSev": 31
+ },
+ {
+  "zips": 25,
+  "prem": [
+   1956,
+   1950,
+   1989,
+   2088,
+   2136
+  ],
+  "p10": 1499,
+  "p90": 2738,
+  "chg": 0.1107,
+  "nonren": [
+   0.0035,
+   0.0037,
+   0.0025,
+   0.0039,
+   0.0028
+  ],
+  "freq": 0.0294,
+  "sev": 18545,
+  "lr": 0.2472,
+  "lrY": [
+   0.2434,
+   0.38,
+   0.2594,
+   0.2324,
+   0.1428
+  ],
+  "freqY": [
+   0.0323,
+   0.0328,
+   0.0323,
+   0.0306,
+   0.0211
+  ],
+  "npc": 0.008,
+  "oc": 0.0096,
+  "code": "HI",
+  "name": "Hawaii",
+  "slug": "hawaii",
+  "counties": 4,
+  "hi": [
+   {
+    "zip": "96722",
+    "county": "Kauai County",
+    "prem": 3858,
+    "chg": 0.1842,
+    "nonren": 0
+   },
+   {
+    "zip": "96761",
+    "county": "Maui County",
+    "prem": 2807,
+    "chg": 0.1873,
+    "nonren": 0.0013
+   },
+   {
+    "zip": "96821",
+    "county": "Honolulu County",
+    "prem": 2750,
+    "chg": 0.0823,
+    "nonren": 0.0017
+   },
+   {
+    "zip": "96740",
+    "county": "Hawaii County",
+    "prem": 2719,
+    "chg": 0.1623,
+    "nonren": 0.0014
+   },
+   {
+    "zip": "96790",
+    "county": "Maui County",
+    "prem": 2544,
+    "chg": 0.2131,
+    "nonren": 0.0016
+   }
+  ],
+  "lo": [
+   {
+    "zip": "96706",
+    "county": "Honolulu County",
+    "prem": 1365,
+    "chg": 0.0927,
+    "nonren": 0.0028
+   },
+   {
+    "zip": "96732",
+    "county": "Maui County",
+    "prem": 1382,
+    "chg": 0.1511,
+    "nonren": 0.0057
+   },
+   {
+    "zip": "96738",
+    "county": "Hawaii County",
+    "prem": 1480,
+    "chg": 0.145,
+    "nonren": 0.0009
+   },
+   {
+    "zip": "96793",
+    "county": "Maui County",
+    "prem": 1529,
+    "chg": 0.1107,
+    "nonren": 0.0036
+   },
+   {
+    "zip": "96707",
+    "county": "Honolulu County",
+    "prem": 1561,
+    "chg": 0.1053,
+    "nonren": 0.0024
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Honolulu County",
+    "zips": 11,
+    "chg": 0.1053,
+    "freq": 0.0382,
+    "sev": 18195,
+    "prem": 2068,
+    "prem18": 1890,
+    "nonren": 0.0028
+   },
+   {
+    "name": "Maui County",
+    "zips": 6,
+    "chg": 0.1427,
+    "freq": 0.0249,
+    "sev": 18224,
+    "prem": 2121,
+    "prem18": 1849,
+    "nonren": 0.0035
+   },
+   {
+    "name": "Hawaii County",
+    "zips": 4,
+    "chg": 0.1179,
+    "freq": 0.0143,
+    "sev": 24468,
+    "prem": 2023,
+    "prem18": 1875,
+    "nonren": 0.0023
+   },
+   {
+    "name": "Kauai County",
+    "zips": 4,
+    "chg": 0.0719,
+    "freq": 0.0336,
+    "sev": 15268,
+    "prem": 2293,
+    "prem18": 2141,
+    "nonren": 0.0012
+   }
+  ],
+  "highNonren": 0.0,
+  "rankPrem": 8,
+  "rankNonren": 50,
+  "rankChg": 11,
+  "rankFreq": 43,
+  "rankSev": 7
+ },
+ {
+  "zips": 211,
+  "prem": [
+   1052,
+   1093,
+   1114,
+   1190,
+   1235
+  ],
+  "p10": 1010,
+  "p90": 1638,
+  "chg": 0.166,
+  "nonren": [
+   0.0071,
+   0.0085,
+   0.006,
+   0.0084,
+   0.0125
+  ],
+  "freq": 0.0292,
+  "sev": 18282,
+  "lr": 0.476,
+  "lrY": [
+   0.3318,
+   0.3528,
+   0.391,
+   0.4199,
+   0.445
+  ],
+  "freqY": [
+   0.0256,
+   0.0268,
+   0.0288,
+   0.0305,
+   0.0295
+  ],
+  "npc": 0.0111,
+  "oc": 0.0151,
+  "code": "ID",
+  "name": "Idaho",
+  "slug": "idaho",
+  "counties": 44,
+  "hi": [
+   {
+    "zip": "83340",
+    "county": "Blaine County",
+    "prem": 5983,
+    "chg": 0.1552,
+    "nonren": 0.0155
+   },
+   {
+    "zip": "83353",
+    "county": "Blaine County",
+    "prem": 5681,
+    "chg": 0.0797,
+    "nonren": 0.0083
+   },
+   {
+    "zip": "83278",
+    "county": "Custer County",
+    "prem": 2967,
+    "chg": 0.1413,
+    "nonren": 0.023
+   },
+   {
+    "zip": "83333",
+    "county": "Blaine County",
+    "prem": 2482,
+    "chg": 0.1855,
+    "nonren": 0.0119
+   },
+   {
+    "zip": "83836",
+    "county": "Bonner County",
+    "prem": 2227,
+    "chg": 0.0955,
+    "nonren": 0.0225
+   }
+  ],
+  "lo": [
+   {
+    "zip": "83705",
+    "county": "Ada County",
+    "prem": 876,
+    "chg": 0.1973,
+    "nonren": 0.0075
+   },
+   {
+    "zip": "83868",
+    "county": "Shoshone County",
+    "prem": 885,
+    "chg": 0.1436,
+    "nonren": 0.0063
+   },
+   {
+    "zip": "83651",
+    "county": "Canyon County",
+    "prem": 899,
+    "chg": 0.1576,
+    "nonren": 0.0085
+   },
+   {
+    "zip": "83605",
+    "county": "Canyon County",
+    "prem": 903,
+    "chg": 0.1264,
+    "nonren": 0.0099
+   },
+   {
+    "zip": "83704",
+    "county": "Ada County",
+    "prem": 908,
+    "chg": 0.1684,
+    "nonren": 0.0045
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Bonner County",
+    "zips": 16,
+    "chg": 0.0908,
+    "freq": 0.025,
+    "sev": 29000,
+    "prem": 1482,
+    "prem18": 1345,
+    "nonren": 0.0164
+   },
+   {
+    "name": "Ada County",
+    "zips": 14,
+    "chg": 0.1985,
+    "freq": 0.0399,
+    "sev": 15217,
+    "prem": 1052,
+    "prem18": 880,
+    "nonren": 0.0059
+   },
+   {
+    "name": "Bonneville County",
+    "zips": 10,
+    "chg": 0.203,
+    "freq": 0.0628,
+    "sev": 14088,
+    "prem": 1309,
+    "prem18": 1062,
+    "nonren": 0.0116
+   },
+   {
+    "name": "Canyon County",
+    "zips": 10,
+    "chg": 0.1539,
+    "freq": 0.0422,
+    "sev": 14572,
+    "prem": 1040,
+    "prem18": 901,
+    "nonren": 0.0078
+   },
+   {
+    "name": "Kootenai County",
+    "zips": 10,
+    "chg": 0.1169,
+    "freq": 0.0309,
+    "sev": 20654,
+    "prem": 1291,
+    "prem18": 1163,
+    "nonren": 0.0073
+   },
+   {
+    "name": "Idaho County",
+    "zips": 9,
+    "chg": 0.0765,
+    "freq": 0.0199,
+    "sev": 24435,
+    "prem": 1195,
+    "prem18": 1099,
+    "nonren": 0.0174
+   },
+   {
+    "name": "Latah County",
+    "zips": 8,
+    "chg": 0.1216,
+    "freq": 0.017,
+    "sev": 19158,
+    "prem": 1237,
+    "prem18": 1099,
+    "nonren": 0.0117
+   },
+   {
+    "name": "Shoshone County",
+    "zips": 8,
+    "chg": 0.1576,
+    "freq": 0.0215,
+    "sev": 19728,
+    "prem": 1071,
+    "prem18": 913,
+    "nonren": 0.0151
+   }
+  ],
+  "highNonren": 0.1754,
+  "rankPrem": 39,
+  "rankNonren": 9,
+  "rankChg": 5,
+  "rankFreq": 44,
+  "rankSev": 9
+ },
+ {
+  "zips": 1193,
+  "prem": [
+   1362,
+   1405,
+   1462,
+   1515,
+   1563
+  ],
+  "p10": 1367,
+  "p90": 1855,
+  "chg": 0.1449,
+  "nonren": [
+   0.0089,
+   0.0092,
+   0.0071,
+   0.0094,
+   0.0087
+  ],
+  "freq": 0.0529,
+  "sev": 14502,
+  "lr": 0.4888,
+  "lrY": [
+   0.41,
+   0.425,
+   0.4649,
+   0.3887,
+   0.3735
+  ],
+  "freqY": [
+   0.0449,
+   0.0517,
+   0.0549,
+   0.0467,
+   0.0443
+  ],
+  "npc": 0.0156,
+  "oc": 0.0194,
+  "code": "IL",
+  "name": "Illinois",
+  "slug": "illinois",
+  "counties": 102,
+  "hi": [
+   {
+    "zip": "60611",
+    "county": "Cook County",
+    "prem": 5978,
+    "chg": 0.3048,
+    "nonren": 0.0192
+   },
+   {
+    "zip": "60654",
+    "county": "Cook County",
+    "prem": 5862,
+    "chg": 0.326,
+    "nonren": 0.0139
+   },
+   {
+    "zip": "60610",
+    "county": "Cook County",
+    "prem": 5123,
+    "chg": -0.0168,
+    "nonren": 0.0152
+   },
+   {
+    "zip": "60043",
+    "county": "Cook County",
+    "prem": 5043,
+    "chg": 0.106,
+    "nonren": 0.0074
+   },
+   {
+    "zip": "60022",
+    "county": "Cook County",
+    "prem": 4752,
+    "chg": 0.1541,
+    "nonren": 0.0071
+   }
+  ],
+  "lo": [
+   {
+    "zip": "61367",
+    "county": "Lee County",
+    "prem": 1039,
+    "chg": 0.0265,
+    "nonren": 0.0037
+   },
+   {
+    "zip": "61013",
+    "county": "Stephenson County",
+    "prem": 1081,
+    "chg": 0.111,
+    "nonren": 0.0055
+   },
+   {
+    "zip": "60456",
+    "county": "Cook County",
+    "prem": 1081,
+    "chg": 0.128,
+    "nonren": 0.0131
+   },
+   {
+    "zip": "62273",
+    "county": "Bond County",
+    "prem": 1208,
+    "chg": 0.0014,
+    "nonren": 0.0312
+   },
+   {
+    "zip": "60915",
+    "county": "Kankakee County",
+    "prem": 1211,
+    "chg": 0.0912,
+    "nonren": 0.009
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Cook County",
+    "zips": 158,
+    "chg": 0.1079,
+    "freq": 0.0629,
+    "sev": 15936,
+    "prem": 1643,
+    "prem18": 1487,
+    "nonren": 0.0088
+   },
+   {
+    "name": "DuPage County",
+    "zips": 36,
+    "chg": 0.1041,
+    "freq": 0.0712,
+    "sev": 16742,
+    "prem": 1637,
+    "prem18": 1485,
+    "nonren": 0.0094
+   },
+   {
+    "name": "Will County",
+    "zips": 30,
+    "chg": 0.1248,
+    "freq": 0.0821,
+    "sev": 15621,
+    "prem": 1649,
+    "prem18": 1488,
+    "nonren": 0.0112
+   },
+   {
+    "name": "Champaign County",
+    "zips": 28,
+    "chg": 0.1514,
+    "freq": 0.0566,
+    "sev": 14051,
+    "prem": 1457,
+    "prem18": 1277,
+    "nonren": 0.0099
+   },
+   {
+    "name": "Madison County",
+    "zips": 27,
+    "chg": 0.1697,
+    "freq": 0.0523,
+    "sev": 13759,
+    "prem": 1699,
+    "prem18": 1457,
+    "nonren": 0.005
+   },
+   {
+    "name": "Lake County",
+    "zips": 26,
+    "chg": 0.1138,
+    "freq": 0.0637,
+    "sev": 17130,
+    "prem": 1669,
+    "prem18": 1463,
+    "nonren": 0.0098
+   },
+   {
+    "name": "St. Clair County",
+    "zips": 25,
+    "chg": 0.1715,
+    "freq": 0.0544,
+    "sev": 14666,
+    "prem": 1729,
+    "prem18": 1486,
+    "nonren": 0.0088
+   },
+   {
+    "name": "Sangamon County",
+    "zips": 24,
+    "chg": 0.1302,
+    "freq": 0.0373,
+    "sev": 15650,
+    "prem": 1660,
+    "prem18": 1461,
+    "nonren": 0.0085
+   }
+  ],
+  "highNonren": 0.0394,
+  "rankPrem": 27,
+  "rankNonren": 26,
+  "rankChg": 6,
+  "rankFreq": 22,
+  "rankSev": 28
+ },
+ {
+  "zips": 672,
+  "prem": [
+   1412,
+   1414,
+   1413,
+   1454,
+   1465
+  ],
+  "p10": 1277,
+  "p90": 1680,
+  "chg": 0.03,
+  "nonren": [
+   0.0119,
+   0.0091,
+   0.0065,
+   0.0094,
+   0.0104
+  ],
+  "freq": 0.0375,
+  "sev": 15068,
+  "lr": 0.3836,
+  "lrY": [
+   0.3052,
+   0.3583,
+   0.3487,
+   0.2849,
+   0.354
+  ],
+  "freqY": [
+   0.0339,
+   0.0426,
+   0.0361,
+   0.0306,
+   0.0374
+  ],
+  "npc": 0.0193,
+  "oc": 0.0121,
+  "code": "IN",
+  "name": "Indiana",
+  "slug": "indiana",
+  "counties": 92,
+  "hi": [
+   {
+    "zip": "46290",
+    "county": "Hamilton County",
+    "prem": 3199,
+    "chg": 0.0048,
+    "nonren": 0
+   },
+   {
+    "zip": "46032",
+    "county": "Hamilton County",
+    "prem": 2439,
+    "chg": 0.0326,
+    "nonren": 0.0114
+   },
+   {
+    "zip": "46278",
+    "county": "Marion County",
+    "prem": 2399,
+    "chg": 0.0518,
+    "nonren": 0.0082
+   },
+   {
+    "zip": "46077",
+    "county": "Boone County",
+    "prem": 2330,
+    "chg": 0.0551,
+    "nonren": 0.008
+   },
+   {
+    "zip": "46204",
+    "county": "Marion County",
+    "prem": 2232,
+    "chg": -0.0815,
+    "nonren": 0.0317
+   }
+  ],
+  "lo": [
+   {
+    "zip": "46808",
+    "county": "Allen County",
+    "prem": 1064,
+    "chg": 0.0185,
+    "nonren": 0.0115
+   },
+   {
+    "zip": "46809",
+    "county": "Allen County",
+    "prem": 1090,
+    "chg": 0.0316,
+    "nonren": 0.0102
+   },
+   {
+    "zip": "46818",
+    "county": "Allen County",
+    "prem": 1097,
+    "chg": -0.008,
+    "nonren": 0.0087
+   },
+   {
+    "zip": "46774",
+    "county": "Allen County",
+    "prem": 1112,
+    "chg": 0.0278,
+    "nonren": 0.0112
+   },
+   {
+    "zip": "47904",
+    "county": "Tippecanoe County",
+    "prem": 1115,
+    "chg": 0.0455,
+    "nonren": 0.0096
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Marion County",
+    "zips": 34,
+    "chg": 0.0117,
+    "freq": 0.0667,
+    "sev": 12935,
+    "prem": 1545,
+    "prem18": 1524,
+    "nonren": 0.013
+   },
+   {
+    "name": "Lake County",
+    "zips": 27,
+    "chg": 0.0099,
+    "freq": 0.0544,
+    "sev": 15541,
+    "prem": 1454,
+    "prem18": 1443,
+    "nonren": 0.0154
+   },
+   {
+    "name": "Allen County",
+    "zips": 25,
+    "chg": 0.0185,
+    "freq": 0.0382,
+    "sev": 12858,
+    "prem": 1279,
+    "prem18": 1240,
+    "nonren": 0.0112
+   },
+   {
+    "name": "St. Joseph County",
+    "zips": 17,
+    "chg": -0.0015,
+    "freq": 0.0314,
+    "sev": 15611,
+    "prem": 1282,
+    "prem18": 1276,
+    "nonren": 0.0109
+   },
+   {
+    "name": "Hamilton County",
+    "zips": 13,
+    "chg": 0.0335,
+    "freq": 0.097,
+    "sev": 14618,
+    "prem": 1693,
+    "prem18": 1645,
+    "nonren": 0.0113
+   },
+   {
+    "name": "Madison County",
+    "zips": 13,
+    "chg": 0.038,
+    "freq": 0.0607,
+    "sev": 13648,
+    "prem": 1340,
+    "prem18": 1311,
+    "nonren": 0.0102
+   },
+   {
+    "name": "Kosciusko County",
+    "zips": 12,
+    "chg": 0.0009,
+    "freq": 0.0291,
+    "sev": 16194,
+    "prem": 1289,
+    "prem18": 1289,
+    "nonren": 0.0089
+   },
+   {
+    "name": "Clark County",
+    "zips": 11,
+    "chg": 0.0224,
+    "freq": 0.0408,
+    "sev": 13801,
+    "prem": 1460,
+    "prem18": 1425,
+    "nonren": 0.0225
+   }
+  ],
+  "highNonren": 0.1057,
+  "rankPrem": 30,
+  "rankNonren": 17,
+  "rankChg": 37,
+  "rankFreq": 36,
+  "rankSev": 22
+ },
+ {
+  "zips": 580,
+  "prem": [
+   1433,
+   1446,
+   1480,
+   1561,
+   1602
+  ],
+  "p10": 1428,
+  "p90": 1847,
+  "chg": 0.1215,
+  "nonren": [
+   0.012,
+   0.0102,
+   0.0084,
+   0.0101,
+   0.0092
+  ],
+  "freq": 0.0579,
+  "sev": 14233,
+  "lr": 0.5303,
+  "lrY": [
+   0.2765,
+   0.2655,
+   0.4107,
+   0.3566,
+   0.5268
+  ],
+  "freqY": [
+   0.0373,
+   0.0353,
+   0.0457,
+   0.0413,
+   0.0607
+  ],
+  "npc": 0.0145,
+  "oc": 0.0073,
+  "code": "IA",
+  "name": "Iowa",
+  "slug": "iowa",
+  "counties": 99,
+  "hi": [
+   {
+    "zip": "51355",
+    "county": "Dickinson County",
+    "prem": 2506,
+    "chg": 0.0508,
+    "nonren": 0.0028
+   },
+   {
+    "zip": "50061",
+    "county": "Madison County",
+    "prem": 2428,
+    "chg": 0.1648,
+    "nonren": 0.0042
+   },
+   {
+    "zip": "51561",
+    "county": "Mills County",
+    "prem": 2388,
+    "chg": 0.235,
+    "nonren": 0.0052
+   },
+   {
+    "zip": "51542",
+    "county": "Pottawattamie County",
+    "prem": 2343,
+    "chg": 0.0309,
+    "nonren": 0.0101
+   },
+   {
+    "zip": "52767",
+    "county": "Scott County",
+    "prem": 2241,
+    "chg": 0.3172,
+    "nonren": 0.0253
+   }
+  ],
+  "lo": [
+   {
+    "zip": "52401",
+    "county": "Linn County",
+    "prem": 1221,
+    "chg": 0.1182,
+    "nonren": 0
+   },
+   {
+    "zip": "52172",
+    "county": "Allamakee County",
+    "prem": 1248,
+    "chg": 0.0528,
+    "nonren": 0.0084
+   },
+   {
+    "zip": "52347",
+    "county": "Iowa County",
+    "prem": 1291,
+    "chg": 0.0445,
+    "nonren": 0
+   },
+   {
+    "zip": "50702",
+    "county": "Black Hawk County",
+    "prem": 1291,
+    "chg": 0.1457,
+    "nonren": 0.0135
+   },
+   {
+    "zip": "52235",
+    "county": "Johnson County",
+    "prem": 1304,
+    "chg": 0.0029,
+    "nonren": 0.0122
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Polk County",
+    "zips": 30,
+    "chg": 0.1372,
+    "freq": 0.1257,
+    "sev": 13200,
+    "prem": 1579,
+    "prem18": 1384,
+    "nonren": 0.0108
+   },
+   {
+    "name": "Linn County",
+    "zips": 20,
+    "chg": 0.1186,
+    "freq": 0.2586,
+    "sev": 16326,
+    "prem": 1598,
+    "prem18": 1397,
+    "nonren": 0.0086
+   },
+   {
+    "name": "Scott County",
+    "zips": 17,
+    "chg": 0.1053,
+    "freq": 0.0858,
+    "sev": 14279,
+    "prem": 1568,
+    "prem18": 1429,
+    "nonren": 0.0086
+   },
+   {
+    "name": "Pottawattamie County",
+    "zips": 14,
+    "chg": 0.1433,
+    "freq": 0.0616,
+    "sev": 16589,
+    "prem": 1902,
+    "prem18": 1651,
+    "nonren": 0.0128
+   },
+   {
+    "name": "Benton County",
+    "zips": 13,
+    "chg": 0.0884,
+    "freq": 0.2276,
+    "sev": 21915,
+    "prem": 1559,
+    "prem18": 1416,
+    "nonren": 0.0103
+   },
+   {
+    "name": "Story County",
+    "zips": 13,
+    "chg": 0.1423,
+    "freq": 0.1588,
+    "sev": 14274,
+    "prem": 1631,
+    "prem18": 1487,
+    "nonren": 0.0106
+   },
+   {
+    "name": "Woodbury County",
+    "zips": 13,
+    "chg": 0.1731,
+    "freq": 0.0468,
+    "sev": 14050,
+    "prem": 1722,
+    "prem18": 1461,
+    "nonren": 0.0101
+   },
+   {
+    "name": "Clinton County",
+    "zips": 12,
+    "chg": 0.0992,
+    "freq": 0.0892,
+    "sev": 12997,
+    "prem": 1493,
+    "prem18": 1404,
+    "nonren": 0.0082
+   }
+  ],
+  "highNonren": 0.0845,
+  "rankPrem": 25,
+  "rankNonren": 20,
+  "rankChg": 10,
+  "rankFreq": 15,
+  "rankSev": 30
+ },
+ {
+  "zips": 414,
+  "prem": [
+   2175,
+   2181,
+   2195,
+   2260,
+   2289
+  ],
+  "p10": 1972,
+  "p90": 2782,
+  "chg": 0.0522,
+  "nonren": [
+   0.0065,
+   0.0057,
+   0.0076,
+   0.0122,
+   0.0134
+  ],
+  "freq": 0.0677,
+  "sev": 13538,
+  "lr": 0.381,
+  "lrY": [
+   0.2477,
+   0.3351,
+   0.2822,
+   0.2492,
+   0.3489
+  ],
+  "freqY": [
+   0.0455,
+   0.062,
+   0.053,
+   0.0508,
+   0.0699
+  ],
+  "npc": 0.0179,
+  "oc": 0.0112,
+  "code": "KS",
+  "name": "Kansas",
+  "slug": "kansas",
+  "counties": 105,
+  "hi": [
+   {
+    "zip": "66211",
+    "county": "Johnson County",
+    "prem": 5515,
+    "chg": 0.0691,
+    "nonren": 0.0091
+   },
+   {
+    "zip": "66224",
+    "county": "Johnson County",
+    "prem": 3900,
+    "chg": 0.0994,
+    "nonren": 0.0126
+   },
+   {
+    "zip": "67230",
+    "county": "Sedgwick County",
+    "prem": 3659,
+    "chg": 0.0278,
+    "nonren": 0.0147
+   },
+   {
+    "zip": "66221",
+    "county": "Johnson County",
+    "prem": 3648,
+    "chg": 0.1376,
+    "nonren": 0.0104
+   },
+   {
+    "zip": "67228",
+    "county": "Sedgwick County",
+    "prem": 3630,
+    "chg": -0.0215,
+    "nonren": 0.0217
+   }
+  ],
+  "lo": [
+   {
+    "zip": "66755",
+    "county": "Allen County",
+    "prem": 1499,
+    "chg": 0.0001,
+    "nonren": 0.0142
+   },
+   {
+    "zip": "66024",
+    "county": "Doniphan County",
+    "prem": 1635,
+    "chg": 0.0386,
+    "nonren": 0.0157
+   },
+   {
+    "zip": "67336",
+    "county": "Cherokee County",
+    "prem": 1661,
+    "chg": -0.0419,
+    "nonren": 0.0204
+   },
+   {
+    "zip": "66105",
+    "county": "Wyandotte County",
+    "prem": 1670,
+    "chg": -0.0838,
+    "nonren": 0.0244
+   },
+   {
+    "zip": "66777",
+    "county": "Greenwood County",
+    "prem": 1690,
+    "chg": 0.0477,
+    "nonren": 0.0122
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Sedgwick County",
+    "zips": 39,
+    "chg": 0.0392,
+    "freq": 0.0628,
+    "sev": 14517,
+    "prem": 2754,
+    "prem18": 2596,
+    "nonren": 0.0161
+   },
+   {
+    "name": "Johnson County",
+    "zips": 30,
+    "chg": 0.1021,
+    "freq": 0.0586,
+    "sev": 16173,
+    "prem": 2486,
+    "prem18": 2264,
+    "nonren": 0.0094
+   },
+   {
+    "name": "Shawnee County",
+    "zips": 21,
+    "chg": 0.1192,
+    "freq": 0.0584,
+    "sev": 12661,
+    "prem": 2214,
+    "prem18": 1992,
+    "nonren": 0.0086
+   },
+   {
+    "name": "Butler County",
+    "zips": 11,
+    "chg": 0.0106,
+    "freq": 0.057,
+    "sev": 16933,
+    "prem": 2680,
+    "prem18": 2656,
+    "nonren": 0.0133
+   },
+   {
+    "name": "Crawford County",
+    "zips": 9,
+    "chg": 0.037,
+    "freq": 0.0474,
+    "sev": 12480,
+    "prem": 2062,
+    "prem18": 1970,
+    "nonren": 0.011
+   },
+   {
+    "name": "Jefferson County",
+    "zips": 9,
+    "chg": 0.0642,
+    "freq": 0.0432,
+    "sev": 16360,
+    "prem": 2282,
+    "prem18": 2085,
+    "nonren": 0.0123
+   },
+   {
+    "name": "Osage County",
+    "zips": 9,
+    "chg": 0.0939,
+    "freq": 0.0892,
+    "sev": 16335,
+    "prem": 2202,
+    "prem18": 2069,
+    "nonren": 0.0103
+   },
+   {
+    "name": "Sumner County",
+    "zips": 9,
+    "chg": -0.0434,
+    "freq": 0.0687,
+    "sev": 15171,
+    "prem": 2352,
+    "prem18": 2417,
+    "nonren": 0.015
+   }
+  ],
+  "highNonren": 0.2029,
+  "rankPrem": 6,
+  "rankNonren": 6,
+  "rankChg": 26,
+  "rankFreq": 6,
+  "rankSev": 37
+ },
+ {
+  "zips": 466,
+  "prem": [
+   1549,
+   1533,
+   1502,
+   1495,
+   1526
+  ],
+  "p10": 1321,
+  "p90": 1835,
+  "chg": -0.008,
+  "nonren": [
+   0.0058,
+   0.0048,
+   0.0034,
+   0.0053,
+   0.0049
+  ],
+  "freq": 0.054,
+  "sev": 12346,
+  "lr": 0.4037,
+  "lrY": [
+   0.2947,
+   0.3395,
+   0.3402,
+   0.3121,
+   0.4078
+  ],
+  "freqY": [
+   0.0474,
+   0.0567,
+   0.0489,
+   0.0418,
+   0.0522
+  ],
+  "npc": 0.0158,
+  "oc": 0.0146,
+  "code": "KY",
+  "name": "Kentucky",
+  "slug": "kentucky",
+  "counties": 120,
+  "hi": [
+   {
+    "zip": "42236",
+    "county": "Christian County",
+    "prem": 2956,
+    "chg": -0.0098,
+    "nonren": 0
+   },
+   {
+    "zip": "40510",
+    "county": "Fayette County",
+    "prem": 2897,
+    "chg": 0.0422,
+    "nonren": 0
+   },
+   {
+    "zip": "40059",
+    "county": "Oldham County",
+    "prem": 2786,
+    "chg": -0.0573,
+    "nonren": 0.0064
+   },
+   {
+    "zip": "40507",
+    "county": "Fayette County",
+    "prem": 2302,
+    "chg": -0.0996,
+    "nonren": 0
+   },
+   {
+    "zip": "41224",
+    "county": "Martin County",
+    "prem": 2255,
+    "chg": -0.0718,
+    "nonren": 0.0068
+   }
+  ],
+  "lo": [
+   {
+    "zip": "40313",
+    "county": "Rowan County",
+    "prem": 1101,
+    "chg": -0.0198,
+    "nonren": 0
+   },
+   {
+    "zip": "41085",
+    "county": "Campbell County",
+    "prem": 1124,
+    "chg": 0.0037,
+    "nonren": 0
+   },
+   {
+    "zip": "41056",
+    "county": "Mason County",
+    "prem": 1138,
+    "chg": 0.0261,
+    "nonren": 0.0071
+   },
+   {
+    "zip": "40517",
+    "county": "Fayette County",
+    "prem": 1140,
+    "chg": 0.005,
+    "nonren": 0.0038
+   },
+   {
+    "zip": "41183",
+    "county": "Greenup County",
+    "prem": 1142,
+    "chg": -0.0315,
+    "nonren": 0.0035
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Jefferson County",
+    "zips": 31,
+    "chg": -0.0706,
+    "freq": 0.0571,
+    "sev": 10449,
+    "prem": 1571,
+    "prem18": 1687,
+    "nonren": 0.008
+   },
+   {
+    "name": "Pike County",
+    "zips": 15,
+    "chg": -0.005,
+    "freq": 0.0225,
+    "sev": 40164,
+    "prem": 1557,
+    "prem18": 1561,
+    "nonren": 0.0047
+   },
+   {
+    "name": "Fayette County",
+    "zips": 14,
+    "chg": 0.0116,
+    "freq": 0.0617,
+    "sev": 10295,
+    "prem": 1493,
+    "prem18": 1507,
+    "nonren": 0.0037
+   },
+   {
+    "name": "Breckinridge County",
+    "zips": 11,
+    "chg": -0.0278,
+    "freq": 0.0426,
+    "sev": 11227,
+    "prem": 1415,
+    "prem18": 1533,
+    "nonren": 0.0049
+   },
+   {
+    "name": "Graves County",
+    "zips": 10,
+    "chg": 0.0635,
+    "freq": 0.0564,
+    "sev": 11997,
+    "prem": 1761,
+    "prem18": 1672,
+    "nonren": 0.0068
+   },
+   {
+    "name": "Muhlenberg County",
+    "zips": 10,
+    "chg": 0.0751,
+    "freq": 0.0766,
+    "sev": 13892,
+    "prem": 1590,
+    "prem18": 1538,
+    "nonren": 0.0047
+   },
+   {
+    "name": "Campbell County",
+    "zips": 9,
+    "chg": 0.0007,
+    "freq": 0.0456,
+    "sev": 11942,
+    "prem": 1356,
+    "prem18": 1340,
+    "nonren": 0.0028
+   },
+   {
+    "name": "Hopkins County",
+    "zips": 9,
+    "chg": 0.0518,
+    "freq": 0.0656,
+    "sev": 14386,
+    "prem": 1714,
+    "prem18": 1629,
+    "nonren": 0.0056
+   }
+  ],
+  "highNonren": 0.0086,
+  "rankPrem": 28,
+  "rankNonren": 44,
+  "rankChg": 47,
+  "rankFreq": 18,
+  "rankSev": 47
+ },
+ {
+  "zips": 337,
+  "prem": [
+   2307,
+   2314,
+   2300,
+   2316,
+   2438
+  ],
+  "p10": 1771,
+  "p90": 3385,
+  "chg": 0.0659,
+  "nonren": [
+   0.0047,
+   0.0046,
+   0.0026,
+   0.0071,
+   0.0105
+  ],
+  "freq": 0.1055,
+  "sev": 15333,
+  "lr": 0.5975,
+  "lrY": [
+   0.2731,
+   0.2766,
+   0.4878,
+   0.7609,
+   0.5119
+  ],
+  "freqY": [
+   0.0469,
+   0.051,
+   0.1043,
+   0.1263,
+   0.0699
+  ],
+  "npc": 0.0213,
+  "oc": 0.0152,
+  "code": "LA",
+  "name": "Louisiana",
+  "slug": "louisiana",
+  "counties": 64,
+  "hi": [
+   {
+    "zip": "70130",
+    "county": "Orleans Parish",
+    "prem": 8306,
+    "chg": -0.0842,
+    "nonren": 0.0845
+   },
+   {
+    "zip": "70116",
+    "county": "Orleans Parish",
+    "prem": 6857,
+    "chg": -0.1172,
+    "nonren": 0.0686
+   },
+   {
+    "zip": "70115",
+    "county": "Orleans Parish",
+    "prem": 6676,
+    "chg": -0.0557,
+    "nonren": 0.0699
+   },
+   {
+    "zip": "70118",
+    "county": "Orleans Parish",
+    "prem": 6487,
+    "chg": -0.0492,
+    "nonren": 0.0635
+   },
+   {
+    "zip": "70124",
+    "county": "Orleans Parish",
+    "prem": 5121,
+    "chg": 0.0402,
+    "nonren": 0.1053
+   }
+  ],
+  "lo": [
+   {
+    "zip": "71108",
+    "county": "Caddo Parish",
+    "prem": 1559,
+    "chg": 0.177,
+    "nonren": 0.0158
+   },
+   {
+    "zip": "71038",
+    "county": "Claiborne Parish",
+    "prem": 1567,
+    "chg": 0.075,
+    "nonren": 0.0025
+   },
+   {
+    "zip": "71028",
+    "county": "Bienville Parish",
+    "prem": 1587,
+    "chg": 0.0098,
+    "nonren": 0.0096
+   },
+   {
+    "zip": "71112",
+    "county": "Bossier Parish",
+    "prem": 1587,
+    "chg": 0.1605,
+    "nonren": 0.0054
+   },
+   {
+    "zip": "71109",
+    "county": "Caddo Parish",
+    "prem": 1622,
+    "chg": 0.1559,
+    "nonren": 0.0175
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "East Baton Rouge Parish",
+    "zips": 20,
+    "chg": 0.0444,
+    "freq": 0.0759,
+    "sev": 12605,
+    "prem": 2431,
+    "prem18": 2340,
+    "nonren": 0.0061
+   },
+   {
+    "name": "Caddo Parish",
+    "zips": 19,
+    "chg": 0.1343,
+    "freq": 0.1172,
+    "sev": 11419,
+    "prem": 1838,
+    "prem18": 1642,
+    "nonren": 0.0081
+   },
+   {
+    "name": "Jefferson Parish",
+    "zips": 16,
+    "chg": 0.0315,
+    "freq": 0.1479,
+    "sev": 15902,
+    "prem": 3556,
+    "prem18": 3498,
+    "nonren": 0.0417
+   },
+   {
+    "name": "Orleans Parish",
+    "zips": 16,
+    "chg": -0.0159,
+    "freq": 0.1165,
+    "sev": 15502,
+    "prem": 4025,
+    "prem18": 4107,
+    "nonren": 0.066
+   },
+   {
+    "name": "St. Tammany Parish",
+    "zips": 13,
+    "chg": -0.0573,
+    "freq": 0.0922,
+    "sev": 17260,
+    "prem": 3057,
+    "prem18": 3334,
+    "nonren": 0.0439
+   },
+   {
+    "name": "Rapides Parish",
+    "zips": 12,
+    "chg": 0.0737,
+    "freq": 0.1383,
+    "sev": 14629,
+    "prem": 1793,
+    "prem18": 1703,
+    "nonren": 0.0097
+   },
+   {
+    "name": "Calcasieu Parish",
+    "zips": 11,
+    "chg": 0.0811,
+    "freq": 0.379,
+    "sev": 51044,
+    "prem": 2708,
+    "prem18": 2434,
+    "nonren": 0.0169
+   },
+   {
+    "name": "Lafayette Parish",
+    "zips": 10,
+    "chg": -0.0138,
+    "freq": 0.0835,
+    "sev": 14430,
+    "prem": 2282,
+    "prem18": 2301,
+    "nonren": 0.0351
+   }
+  ],
+  "highNonren": 0.2552,
+  "rankPrem": 4,
+  "rankNonren": 15,
+  "rankChg": 24,
+  "rankFreq": 1,
+  "rankSev": 20
+ },
+ {
+  "zips": 396,
+  "prem": [
+   1092,
+   1132,
+   1124,
+   1126,
+   1149
+  ],
+  "p10": 1013,
+  "p90": 1703,
+  "chg": 0.0497,
+  "nonren": [
+   0.0099,
+   0.0121,
+   0.0073,
+   0.0068,
+   0.0054
+  ],
+  "freq": 0.0267,
+  "sev": 11723,
+  "lr": 0.2606,
+  "lrY": [
+   0.2057,
+   0.201,
+   0.1582,
+   0.1452,
+   0.1714
+  ],
+  "freqY": [
+   0.0307,
+   0.0303,
+   0.0255,
+   0.022,
+   0.023
+  ],
+  "npc": 0.0161,
+  "oc": 0.0154,
+  "code": "ME",
+  "name": "Maine",
+  "slug": "maine",
+  "counties": 16,
+  "hi": [
+   {
+    "zip": "04675",
+    "county": "Hancock County",
+    "prem": 5897,
+    "chg": 0.3698,
+    "nonren": 0
+   },
+   {
+    "zip": "04662",
+    "county": "Hancock County",
+    "prem": 4820,
+    "chg": 0.1859,
+    "nonren": 0.0039
+   },
+   {
+    "zip": "04853",
+    "county": "Knox County",
+    "prem": 3549,
+    "chg": 0.1919,
+    "nonren": 0.0137
+   },
+   {
+    "zip": "03911",
+    "county": "York County",
+    "prem": 3406,
+    "chg": 0.1276,
+    "nonren": 0.0213
+   },
+   {
+    "zip": "04848",
+    "county": "Waldo County",
+    "prem": 3244,
+    "chg": -0.0261,
+    "nonren": 0.0054
+   }
+  ],
+  "lo": [
+   {
+    "zip": "04785",
+    "county": "Aroostook County",
+    "prem": 878,
+    "chg": 0.0247,
+    "nonren": 0.0072
+   },
+   {
+    "zip": "04756",
+    "county": "Aroostook County",
+    "prem": 908,
+    "chg": 0.1054,
+    "nonren": 0.0076
+   },
+   {
+    "zip": "04773",
+    "county": "Aroostook County",
+    "prem": 917,
+    "chg": -0.1201,
+    "nonren": 0.0042
+   },
+   {
+    "zip": "04746",
+    "county": "Aroostook County",
+    "prem": 925,
+    "chg": 0.1547,
+    "nonren": 0.018
+   },
+   {
+    "zip": "04346",
+    "county": "Kennebec County",
+    "prem": 925,
+    "chg": 0.0413,
+    "nonren": 0.0059
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Penobscot County",
+    "zips": 39,
+    "chg": 0.0194,
+    "freq": 0.0279,
+    "sev": 11452,
+    "prem": 1041,
+    "prem18": 1016,
+    "nonren": 0.006
+   },
+   {
+    "name": "Aroostook County",
+    "zips": 37,
+    "chg": 0.0664,
+    "freq": 0.029,
+    "sev": 10099,
+    "prem": 1036,
+    "prem18": 962,
+    "nonren": 0.0061
+   },
+   {
+    "name": "Hancock County",
+    "zips": 37,
+    "chg": 0.0501,
+    "freq": 0.0239,
+    "sev": 9112,
+    "prem": 1550,
+    "prem18": 1458,
+    "nonren": 0.0039
+   },
+   {
+    "name": "Cumberland County",
+    "zips": 36,
+    "chg": 0.0545,
+    "freq": 0.0309,
+    "sev": 13138,
+    "prem": 1375,
+    "prem18": 1277,
+    "nonren": 0.005
+   },
+   {
+    "name": "York County",
+    "zips": 36,
+    "chg": 0.0548,
+    "freq": 0.0321,
+    "sev": 13450,
+    "prem": 1154,
+    "prem18": 1109,
+    "nonren": 0.0057
+   },
+   {
+    "name": "Oxford County",
+    "zips": 29,
+    "chg": 0.0482,
+    "freq": 0.0262,
+    "sev": 20260,
+    "prem": 1170,
+    "prem18": 1152,
+    "nonren": 0.0067
+   },
+   {
+    "name": "Kennebec County",
+    "zips": 26,
+    "chg": 0.0399,
+    "freq": 0.031,
+    "sev": 12222,
+    "prem": 1137,
+    "prem18": 1089,
+    "nonren": 0.0053
+   },
+   {
+    "name": "Washington County",
+    "zips": 26,
+    "chg": 0.0429,
+    "freq": 0.0185,
+    "sev": 9300,
+    "prem": 1165,
+    "prem18": 1106,
+    "nonren": 0.0052
+   }
+  ],
+  "highNonren": 0.0152,
+  "rankPrem": 46,
+  "rankNonren": 43,
+  "rankChg": 27,
+  "rankFreq": 48,
+  "rankSev": 48
+ },
+ {
+  "zips": 423,
+  "prem": [
+   1398,
+   1444,
+   1482,
+   1490,
+   1520
+  ],
+  "p10": 1193,
+  "p90": 2192,
+  "chg": 0.0945,
+  "nonren": [
+   0.0042,
+   0.0071,
+   0.0053,
+   0.006,
+   0.007
+  ],
+  "freq": 0.059,
+  "sev": 14209,
+  "lr": 0.5477,
+  "lrY": [
+   0.5758,
+   0.4487,
+   0.4901,
+   0.4699,
+   0.5054
+  ],
+  "freqY": [
+   0.0716,
+   0.0482,
+   0.0584,
+   0.0489,
+   0.0543
+  ],
+  "npc": 0.0078,
+  "oc": 0.0143,
+  "code": "MD",
+  "name": "Maryland",
+  "slug": "maryland",
+  "counties": 24,
+  "hi": [
+   {
+    "zip": "21056",
+    "county": "Anne Arundel County",
+    "prem": 5794,
+    "chg": 0.1262,
+    "nonren": 0.0149
+   },
+   {
+    "zip": "21153",
+    "county": "Baltimore County",
+    "prem": 4665,
+    "chg": 0.1472,
+    "nonren": 0
+   },
+   {
+    "zip": "21662",
+    "county": "Talbot County",
+    "prem": 4036,
+    "chg": 0.0902,
+    "nonren": 0.0034
+   },
+   {
+    "zip": "21612",
+    "county": "Talbot County",
+    "prem": 3177,
+    "chg": 0.0675,
+    "nonren": 0.0088
+   },
+   {
+    "zip": "21654",
+    "county": "Talbot County",
+    "prem": 3133,
+    "chg": 0.0086,
+    "nonren": 0.0035
+   }
+  ],
+  "lo": [
+   {
+    "zip": "21835",
+    "county": "Dorchester County",
+    "prem": 898,
+    "chg": 0.0572,
+    "nonren": 0.0341
+   },
+   {
+    "zip": "21767",
+    "county": "Washington County",
+    "prem": 939,
+    "chg": 0.0616,
+    "nonren": 0.0034
+   },
+   {
+    "zip": "21521",
+    "county": "Garrett County",
+    "prem": 959,
+    "chg": 0.1046,
+    "nonren": 0.0092
+   },
+   {
+    "zip": "21524",
+    "county": "Allegany County",
+    "prem": 963,
+    "chg": 0.0798,
+    "nonren": 0.0152
+   },
+   {
+    "zip": "21557",
+    "county": "Allegany County",
+    "prem": 999,
+    "chg": 0.047,
+    "nonren": 0.0131
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Montgomery County",
+    "zips": 43,
+    "chg": 0.1157,
+    "freq": 0.0684,
+    "sev": 15679,
+    "prem": 1638,
+    "prem18": 1504,
+    "nonren": 0.0053
+   },
+   {
+    "name": "Baltimore County",
+    "zips": 38,
+    "chg": 0.0864,
+    "freq": 0.0675,
+    "sev": 13712,
+    "prem": 1752,
+    "prem18": 1611,
+    "nonren": 0.008
+   },
+   {
+    "name": "Anne Arundel County",
+    "zips": 34,
+    "chg": 0.1007,
+    "freq": 0.0548,
+    "sev": 14523,
+    "prem": 1654,
+    "prem18": 1498,
+    "nonren": 0.0071
+   },
+   {
+    "name": "Prince George's County",
+    "zips": 33,
+    "chg": 0.0894,
+    "freq": 0.1062,
+    "sev": 12113,
+    "prem": 1556,
+    "prem18": 1429,
+    "nonren": 0.0084
+   },
+   {
+    "name": "Frederick County",
+    "zips": 26,
+    "chg": 0.1103,
+    "freq": 0.0632,
+    "sev": 14163,
+    "prem": 1370,
+    "prem18": 1267,
+    "nonren": 0.0052
+   },
+   {
+    "name": "St. Mary's County",
+    "zips": 23,
+    "chg": 0.1362,
+    "freq": 0.0692,
+    "sev": 14554,
+    "prem": 1748,
+    "prem18": 1531,
+    "nonren": 0.003
+   },
+   {
+    "name": "Charles County",
+    "zips": 21,
+    "chg": 0.1159,
+    "freq": 0.0918,
+    "sev": 13392,
+    "prem": 1623,
+    "prem18": 1443,
+    "nonren": 0.007
+   },
+   {
+    "name": "Baltimore city",
+    "zips": 20,
+    "chg": 0.0916,
+    "freq": 0.0674,
+    "sev": 12841,
+    "prem": 1582,
+    "prem18": 1436,
+    "nonren": 0.0083
+   }
+  ],
+  "highNonren": 0.0165,
+  "rankPrem": 29,
+  "rankNonren": 36,
+  "rankChg": 15,
+  "rankFreq": 14,
+  "rankSev": 32
+ },
+ {
+  "zips": 500,
+  "prem": [
+   1795,
+   1837,
+   1864,
+   1840,
+   1850
+  ],
+  "p10": 1441,
+  "p90": 3429,
+  "chg": 0.0325,
+  "nonren": [
+   0.0119,
+   0.0084,
+   0.0069,
+   0.0057,
+   0.0091
+  ],
+  "freq": 0.0382,
+  "sev": 16002,
+  "lr": 0.2864,
+  "lrY": [
+   0.31,
+   0.2408,
+   0.2372,
+   0.249,
+   0.2388
+  ],
+  "freqY": [
+   0.0485,
+   0.0354,
+   0.0373,
+   0.0378,
+   0.0293
+  ],
+  "npc": 0.0214,
+  "oc": 0.013,
+  "code": "MA",
+  "name": "Massachusetts",
+  "slug": "massachusetts",
+  "counties": 14,
+  "hi": [
+   {
+    "zip": "02554",
+    "county": "Nantucket County",
+    "prem": 16084,
+    "chg": 0.3074,
+    "nonren": 0.0016
+   },
+   {
+    "zip": "02564",
+    "county": "Nantucket County",
+    "prem": 15191,
+    "chg": 0.0532,
+    "nonren": 0.0064
+   },
+   {
+    "zip": "02535",
+    "county": "Dukes County",
+    "prem": 14909,
+    "chg": 0.0729,
+    "nonren": 0.0154
+   },
+   {
+    "zip": "02108",
+    "county": "Suffolk County",
+    "prem": 11504,
+    "chg": 0.1702,
+    "nonren": 0.0168
+   },
+   {
+    "zip": "02647",
+    "county": "Barnstable County",
+    "prem": 11286,
+    "chg": 0.0868,
+    "nonren": 0
+   }
+  ],
+  "lo": [
+   {
+    "zip": "01376",
+    "county": "Franklin County",
+    "prem": 1197,
+    "chg": 0.0152,
+    "nonren": 0.0033
+   },
+   {
+    "zip": "01344",
+    "county": "Franklin County",
+    "prem": 1254,
+    "chg": 0.0149,
+    "nonren": 0
+   },
+   {
+    "zip": "01364",
+    "county": "Franklin County",
+    "prem": 1279,
+    "chg": 0.0178,
+    "nonren": 0.0092
+   },
+   {
+    "zip": "01220",
+    "county": "Berkshire County",
+    "prem": 1279,
+    "chg": 0.0179,
+    "nonren": 0.0096
+   },
+   {
+    "zip": "01066",
+    "county": "Hampshire County",
+    "prem": 1291,
+    "chg": -0.0814,
+    "nonren": 0.0169
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Worcester County",
+    "zips": 83,
+    "chg": 0.0451,
+    "freq": 0.0355,
+    "sev": 16138,
+    "prem": 1643,
+    "prem18": 1563,
+    "nonren": 0.0097
+   },
+   {
+    "name": "Middlesex County",
+    "zips": 78,
+    "chg": 0.0321,
+    "freq": 0.038,
+    "sev": 15367,
+    "prem": 1880,
+    "prem18": 1813,
+    "nonren": 0.0094
+   },
+   {
+    "name": "Barnstable County",
+    "zips": 46,
+    "chg": 0.0426,
+    "freq": 0.0349,
+    "sev": 17587,
+    "prem": 3512,
+    "prem18": 3198,
+    "nonren": 0.0056
+   },
+   {
+    "name": "Essex County",
+    "zips": 41,
+    "chg": 0.0225,
+    "freq": 0.0399,
+    "sev": 16591,
+    "prem": 2041,
+    "prem18": 2017,
+    "nonren": 0.0094
+   },
+   {
+    "name": "Norfolk County",
+    "zips": 39,
+    "chg": 0.029,
+    "freq": 0.0449,
+    "sev": 15842,
+    "prem": 1860,
+    "prem18": 1841,
+    "nonren": 0.0092
+   },
+   {
+    "name": "Hampden County",
+    "zips": 35,
+    "chg": 0.0375,
+    "freq": 0.0386,
+    "sev": 16075,
+    "prem": 1441,
+    "prem18": 1398,
+    "nonren": 0.0102
+   },
+   {
+    "name": "Bristol County",
+    "zips": 34,
+    "chg": 0.0277,
+    "freq": 0.0402,
+    "sev": 13554,
+    "prem": 1864,
+    "prem18": 1804,
+    "nonren": 0.0094
+   },
+   {
+    "name": "Plymouth County",
+    "zips": 32,
+    "chg": 0.0253,
+    "freq": 0.0509,
+    "sev": 16612,
+    "prem": 2100,
+    "prem18": 1993,
+    "nonren": 0.0092
+   }
+  ],
+  "highNonren": 0.032,
+  "rankPrem": 16,
+  "rankNonren": 21,
+  "rankChg": 35,
+  "rankFreq": 33,
+  "rankSev": 16
+ },
+ {
+  "zips": 913,
+  "prem": [
+   1173,
+   1165,
+   1163,
+   1161,
+   1171
+  ],
+  "p10": 935,
+  "p90": 1534,
+  "chg": -0.0037,
+  "nonren": [
+   0.0279,
+   0.0234,
+   0.0166,
+   0.0125,
+   0.0094
+  ],
+  "freq": 0.0394,
+  "sev": 14903,
+  "lr": 0.4437,
+  "lrY": [
+   0.3605,
+   0.4019,
+   0.3649,
+   0.4051,
+   0.4368
+  ],
+  "freqY": [
+   0.0362,
+   0.0389,
+   0.0327,
+   0.0378,
+   0.0413
+  ],
+  "npc": 0.0146,
+  "oc": 0.0117,
+  "code": "MI",
+  "name": "Michigan",
+  "slug": "michigan",
+  "counties": 83,
+  "hi": [
+   {
+    "zip": "48202",
+    "county": "Wayne County",
+    "prem": 3465,
+    "chg": 0.043,
+    "nonren": 0.0265
+   },
+   {
+    "zip": "48302",
+    "county": "Oakland County",
+    "prem": 3397,
+    "chg": -0.0335,
+    "nonren": 0.0199
+   },
+   {
+    "zip": "48304",
+    "county": "Oakland County",
+    "prem": 3388,
+    "chg": -0.0021,
+    "nonren": 0.0229
+   },
+   {
+    "zip": "48214",
+    "county": "Wayne County",
+    "prem": 3374,
+    "chg": -0.0361,
+    "nonren": 0.0322
+   },
+   {
+    "zip": "49757",
+    "county": "Mackinac County",
+    "prem": 3276,
+    "chg": 0.1142,
+    "nonren": 0
+   }
+  ],
+  "lo": [
+   {
+    "zip": "48630",
+    "county": "Roscommon County",
+    "prem": 669,
+    "chg": 0.1067,
+    "nonren": 0
+   },
+   {
+    "zip": "48627",
+    "county": "Roscommon County",
+    "prem": 766,
+    "chg": -0.0472,
+    "nonren": 0.0112
+   },
+   {
+    "zip": "48656",
+    "county": "Roscommon County",
+    "prem": 790,
+    "chg": 0.0119,
+    "nonren": 0.0074
+   },
+   {
+    "zip": "49320",
+    "county": "Mecosta County",
+    "prem": 799,
+    "chg": -0.0,
+    "nonren": 0
+   },
+   {
+    "zip": "49839",
+    "county": "Alger County",
+    "prem": 802,
+    "chg": 0.0025,
+    "nonren": 0.0099
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Oakland County",
+    "zips": 68,
+    "chg": -0.0211,
+    "freq": 0.0411,
+    "sev": 18211,
+    "prem": 1499,
+    "prem18": 1513,
+    "nonren": 0.017
+   },
+   {
+    "name": "Wayne County",
+    "zips": 65,
+    "chg": -0.0114,
+    "freq": 0.0491,
+    "sev": 17768,
+    "prem": 1466,
+    "prem18": 1484,
+    "nonren": 0.0204
+   },
+   {
+    "name": "Macomb County",
+    "zips": 36,
+    "chg": 0.0031,
+    "freq": 0.0381,
+    "sev": 15966,
+    "prem": 1238,
+    "prem18": 1283,
+    "nonren": 0.0182
+   },
+   {
+    "name": "Kent County",
+    "zips": 27,
+    "chg": -0.0134,
+    "freq": 0.0432,
+    "sev": 12113,
+    "prem": 1070,
+    "prem18": 1090,
+    "nonren": 0.0083
+   },
+   {
+    "name": "Genesee County",
+    "zips": 21,
+    "chg": 0.0049,
+    "freq": 0.0384,
+    "sev": 16698,
+    "prem": 1353,
+    "prem18": 1346,
+    "nonren": 0.0134
+   },
+   {
+    "name": "St. Clair County",
+    "zips": 21,
+    "chg": -0.0181,
+    "freq": 0.0347,
+    "sev": 15342,
+    "prem": 1351,
+    "prem18": 1361,
+    "nonren": 0.0134
+   },
+   {
+    "name": "Berrien County",
+    "zips": 20,
+    "chg": 0.0134,
+    "freq": 0.0411,
+    "sev": 17057,
+    "prem": 1289,
+    "prem18": 1259,
+    "nonren": 0.0071
+   },
+   {
+    "name": "Saginaw County",
+    "zips": 19,
+    "chg": -0.0076,
+    "freq": 0.0444,
+    "sev": 13739,
+    "prem": 1238,
+    "prem18": 1262,
+    "nonren": 0.0098
+   }
+  ],
+  "highNonren": 0.0657,
+  "rankPrem": 44,
+  "rankNonren": 19,
+  "rankChg": 45,
+  "rankFreq": 31,
+  "rankSev": 25
+ },
+ {
+  "zips": 688,
+  "prem": [
+   1604,
+   1663,
+   1715,
+   1789,
+   1858
+  ],
+  "p10": 1493,
+  "p90": 2419,
+  "chg": 0.1305,
+  "nonren": [
+   0.0036,
+   0.0019,
+   0.0016,
+   0.0026,
+   0.0044
+  ],
+  "freq": 0.0628,
+  "sev": 16850,
+  "lr": 0.551,
+  "lrY": [
+   0.2759,
+   0.3633,
+   0.3561,
+   0.3684,
+   0.6646
+  ],
+  "freqY": [
+   0.0355,
+   0.048,
+   0.0402,
+   0.0396,
+   0.0856
+  ],
+  "npc": 0.0153,
+  "oc": 0.0064,
+  "code": "MN",
+  "name": "Minnesota",
+  "slug": "minnesota",
+  "counties": 87,
+  "hi": [
+   {
+    "zip": "55403",
+    "county": "Hennepin County",
+    "prem": 5811,
+    "chg": 0.0424,
+    "nonren": 0.0081
+   },
+   {
+    "zip": "55391",
+    "county": "Hennepin County",
+    "prem": 4839,
+    "chg": 0.1736,
+    "nonren": 0.0044
+   },
+   {
+    "zip": "55356",
+    "county": "Hennepin County",
+    "prem": 4509,
+    "chg": 0.1807,
+    "nonren": 0.0021
+   },
+   {
+    "zip": "55424",
+    "county": "Hennepin County",
+    "prem": 3840,
+    "chg": 0.141,
+    "nonren": 0.0029
+   },
+   {
+    "zip": "55436",
+    "county": "Hennepin County",
+    "prem": 3822,
+    "chg": 0.1305,
+    "nonren": 0.0058
+   }
+  ],
+  "lo": [
+   {
+    "zip": "55602",
+    "county": "St. Louis County",
+    "prem": 1095,
+    "chg": 0.0671,
+    "nonren": 0.0043
+   },
+   {
+    "zip": "56685",
+    "county": "Beltrami County",
+    "prem": 1113,
+    "chg": -0.0059,
+    "nonren": 0
+   },
+   {
+    "zip": "55782",
+    "county": "St. Louis County",
+    "prem": 1159,
+    "chg": -0.0263,
+    "nonren": 0
+   },
+   {
+    "zip": "55750",
+    "county": "St. Louis County",
+    "prem": 1182,
+    "chg": 0.1017,
+    "nonren": 0.0034
+   },
+   {
+    "zip": "55763",
+    "county": "St. Louis County",
+    "prem": 1210,
+    "chg": 0.0585,
+    "nonren": 0.0085
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Hennepin County",
+    "zips": 60,
+    "chg": 0.1217,
+    "freq": 0.0699,
+    "sev": 20593,
+    "prem": 2552,
+    "prem18": 2292,
+    "nonren": 0.0061
+   },
+   {
+    "name": "St. Louis County",
+    "zips": 40,
+    "chg": 0.0583,
+    "freq": 0.026,
+    "sev": 16971,
+    "prem": 1475,
+    "prem18": 1409,
+    "nonren": 0.0043
+   },
+   {
+    "name": "Stearns County",
+    "zips": 20,
+    "chg": 0.1781,
+    "freq": 0.0833,
+    "sev": 17407,
+    "prem": 1887,
+    "prem18": 1608,
+    "nonren": 0.0031
+   },
+   {
+    "name": "Ramsey County",
+    "zips": 19,
+    "chg": 0.1053,
+    "freq": 0.0828,
+    "sev": 16962,
+    "prem": 2202,
+    "prem18": 1970,
+    "nonren": 0.0053
+   },
+   {
+    "name": "Dakota County",
+    "zips": 18,
+    "chg": 0.1135,
+    "freq": 0.101,
+    "sev": 20725,
+    "prem": 2379,
+    "prem18": 2148,
+    "nonren": 0.0051
+   },
+   {
+    "name": "Itasca County",
+    "zips": 18,
+    "chg": 0.0949,
+    "freq": 0.0383,
+    "sev": 14140,
+    "prem": 1542,
+    "prem18": 1418,
+    "nonren": 0.0043
+   },
+   {
+    "name": "Otter Tail County",
+    "zips": 18,
+    "chg": 0.1534,
+    "freq": 0.0554,
+    "sev": 14772,
+    "prem": 1725,
+    "prem18": 1502,
+    "nonren": 0.0034
+   },
+   {
+    "name": "Washington County",
+    "zips": 16,
+    "chg": 0.1162,
+    "freq": 0.1148,
+    "sev": 22478,
+    "prem": 2468,
+    "prem18": 2198,
+    "nonren": 0.0047
+   }
+  ],
+  "highNonren": 0.0203,
+  "rankPrem": 14,
+  "rankNonren": 45,
+  "rankChg": 9,
+  "rankFreq": 9,
+  "rankSev": 14
+ },
+ {
+  "zips": 333,
+  "prem": [
+   1870,
+   1899,
+   1883,
+   1908,
+   1921
+  ],
+  "p10": 1562,
+  "p90": 2418,
+  "chg": 0.0351,
+  "nonren": [
+   0.0118,
+   0.0061,
+   0.0066,
+   0.0096,
+   0.0125
+  ],
+  "freq": 0.0677,
+  "sev": 13599,
+  "lr": 0.4456,
+  "lrY": [
+   0.3392,
+   0.3168,
+   0.4061,
+   0.4168,
+   0.3849
+  ],
+  "freqY": [
+   0.0543,
+   0.0595,
+   0.0741,
+   0.0678,
+   0.0605
+  ],
+  "npc": 0.0303,
+  "oc": 0.029,
+  "code": "MS",
+  "name": "Mississippi",
+  "slug": "mississippi",
+  "counties": 81,
+  "hi": [
+   {
+    "zip": "39564",
+    "county": "Jackson County",
+    "prem": 3607,
+    "chg": -0.1105,
+    "nonren": 0.0372
+   },
+   {
+    "zip": "39507",
+    "county": "Harrison County",
+    "prem": 3588,
+    "chg": -0.0862,
+    "nonren": 0.0447
+   },
+   {
+    "zip": "39572",
+    "county": "Hancock County",
+    "prem": 3572,
+    "chg": 0.1292,
+    "nonren": 0.0152
+   },
+   {
+    "zip": "39571",
+    "county": "Harrison County",
+    "prem": 3403,
+    "chg": -0.032,
+    "nonren": 0.0178
+   },
+   {
+    "zip": "39531",
+    "county": "Harrison County",
+    "prem": 3270,
+    "chg": -0.1195,
+    "nonren": 0.0195
+   }
+  ],
+  "lo": [
+   {
+    "zip": "39358",
+    "county": "Kemper County",
+    "prem": 1395,
+    "chg": -0.0638,
+    "nonren": 0.006
+   },
+   {
+    "zip": "38625",
+    "county": "Tippah County",
+    "prem": 1405,
+    "chg": 0.101,
+    "nonren": 0.0182
+   },
+   {
+    "zip": "39767",
+    "county": "Webster County",
+    "prem": 1446,
+    "chg": 0.054,
+    "nonren": 0.0155
+   },
+   {
+    "zip": "38841",
+    "county": "Pontotoc County",
+    "prem": 1453,
+    "chg": 0.0442,
+    "nonren": 0.0073
+   },
+   {
+    "zip": "38953",
+    "county": "Tallahatchie County",
+    "prem": 1467,
+    "chg": 0.0177,
+    "nonren": 0
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Hinds County",
+    "zips": 16,
+    "chg": 0.0079,
+    "freq": 0.0843,
+    "sev": 13459,
+    "prem": 2106,
+    "prem18": 2061,
+    "nonren": 0.0168
+   },
+   {
+    "name": "Harrison County",
+    "zips": 10,
+    "chg": -0.0694,
+    "freq": 0.0509,
+    "sev": 12905,
+    "prem": 2819,
+    "prem18": 2868,
+    "nonren": 0.0311
+   },
+   {
+    "name": "Bolivar County",
+    "zips": 9,
+    "chg": 0.03,
+    "freq": 0.0918,
+    "sev": 16537,
+    "prem": 2232,
+    "prem18": 2159,
+    "nonren": 0.0113
+   },
+   {
+    "name": "DeSoto County",
+    "zips": 8,
+    "chg": 0.0648,
+    "freq": 0.0693,
+    "sev": 13761,
+    "prem": 1941,
+    "prem18": 1835,
+    "nonren": 0.0131
+   },
+   {
+    "name": "Lauderdale County",
+    "zips": 8,
+    "chg": 0.0192,
+    "freq": 0.0595,
+    "sev": 13531,
+    "prem": 1833,
+    "prem18": 1891,
+    "nonren": 0.0132
+   },
+   {
+    "name": "Lee County",
+    "zips": 8,
+    "chg": 0.0708,
+    "freq": 0.068,
+    "sev": 13748,
+    "prem": 1721,
+    "prem18": 1608,
+    "nonren": 0.0088
+   },
+   {
+    "name": "Attala County",
+    "zips": 7,
+    "chg": 0.0577,
+    "freq": 0.0603,
+    "sev": 13621,
+    "prem": 1705,
+    "prem18": 1596,
+    "nonren": 0.0052
+   },
+   {
+    "name": "Jackson County",
+    "zips": 7,
+    "chg": -0.1041,
+    "freq": 0.0329,
+    "sev": 14116,
+    "prem": 2843,
+    "prem18": 3134,
+    "nonren": 0.0377
+   }
+  ],
+  "highNonren": 0.1411,
+  "rankPrem": 12,
+  "rankNonren": 10,
+  "rankChg": 33,
+  "rankFreq": 7,
+  "rankSev": 36
+ },
+ {
+  "zips": 701,
+  "prem": [
+   1813,
+   1829,
+   1867,
+   1937,
+   1989
+  ],
+  "p10": 1740,
+  "p90": 2392,
+  "chg": 0.1,
+  "nonren": [
+   0.0089,
+   0.0064,
+   0.008,
+   0.0116,
+   0.0141
+  ],
+  "freq": 0.0533,
+  "sev": 15584,
+  "lr": 0.4295,
+  "lrY": [
+   0.3372,
+   0.3632,
+   0.3558,
+   0.3044,
+   0.3042
+  ],
+  "freqY": [
+   0.0467,
+   0.055,
+   0.0503,
+   0.047,
+   0.0458
+  ],
+  "npc": 0.0222,
+  "oc": 0.0139,
+  "code": "MO",
+  "name": "Missouri",
+  "slug": "missouri",
+  "counties": 113,
+  "hi": [
+   {
+    "zip": "63124",
+    "county": "St. Louis County",
+    "prem": 6086,
+    "chg": 0.0921,
+    "nonren": 0.0106
+   },
+   {
+    "zip": "63073",
+    "county": "Franklin County",
+    "prem": 5592,
+    "chg": 0.123,
+    "nonren": 0.0113
+   },
+   {
+    "zip": "63105",
+    "county": "St. Louis County",
+    "prem": 4590,
+    "chg": 0.0385,
+    "nonren": 0.0126
+   },
+   {
+    "zip": "63108",
+    "county": "St. Louis city",
+    "prem": 4436,
+    "chg": -0.0208,
+    "nonren": 0.0169
+   },
+   {
+    "zip": "63131",
+    "county": "St. Louis County",
+    "prem": 4175,
+    "chg": 0.0833,
+    "nonren": 0.0102
+   }
+  ],
+  "lo": [
+   {
+    "zip": "63656",
+    "county": "Iron County",
+    "prem": 1468,
+    "chg": -0.0331,
+    "nonren": 0.0122
+   },
+   {
+    "zip": "65077",
+    "county": "Callaway County",
+    "prem": 1491,
+    "chg": 0.0216,
+    "nonren": 0.0119
+   },
+   {
+    "zip": "63382",
+    "county": "Audrain County",
+    "prem": 1515,
+    "chg": 0.0675,
+    "nonren": 0.0046
+   },
+   {
+    "zip": "63447",
+    "county": "Lewis County",
+    "prem": 1522,
+    "chg": -0.1317,
+    "nonren": 0.0328
+   },
+   {
+    "zip": "63633",
+    "county": "Reynolds County",
+    "prem": 1525,
+    "chg": 0.003,
+    "nonren": 0.0149
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Jackson County",
+    "zips": 49,
+    "chg": 0.1094,
+    "freq": 0.0599,
+    "sev": 15086,
+    "prem": 2078,
+    "prem18": 1901,
+    "nonren": 0.0123
+   },
+   {
+    "name": "St. Louis County",
+    "zips": 41,
+    "chg": 0.0319,
+    "freq": 0.0689,
+    "sev": 12680,
+    "prem": 2076,
+    "prem18": 2039,
+    "nonren": 0.0117
+   },
+   {
+    "name": "Franklin County",
+    "zips": 19,
+    "chg": 0.0924,
+    "freq": 0.0462,
+    "sev": 16646,
+    "prem": 2121,
+    "prem18": 1943,
+    "nonren": 0.0123
+   },
+   {
+    "name": "Clay County",
+    "zips": 17,
+    "chg": 0.1744,
+    "freq": 0.0577,
+    "sev": 15004,
+    "prem": 2257,
+    "prem18": 1923,
+    "nonren": 0.0119
+   },
+   {
+    "name": "Greene County",
+    "zips": 16,
+    "chg": 0.143,
+    "freq": 0.0773,
+    "sev": 13982,
+    "prem": 2005,
+    "prem18": 1779,
+    "nonren": 0.0172
+   },
+   {
+    "name": "St. Louis city",
+    "zips": 15,
+    "chg": 0.0275,
+    "freq": 0.0584,
+    "sev": 14112,
+    "prem": 2303,
+    "prem18": 2176,
+    "nonren": 0.0144
+   },
+   {
+    "name": "Jefferson County",
+    "zips": 14,
+    "chg": 0.0441,
+    "freq": 0.052,
+    "sev": 16039,
+    "prem": 1968,
+    "prem18": 1887,
+    "nonren": 0.0138
+   },
+   {
+    "name": "Platte County",
+    "zips": 13,
+    "chg": 0.1503,
+    "freq": 0.0588,
+    "sev": 14314,
+    "prem": 2269,
+    "prem18": 1976,
+    "nonren": 0.0127
+   }
+  ],
+  "highNonren": 0.1569,
+  "rankPrem": 10,
+  "rankNonren": 5,
+  "rankChg": 14,
+  "rankFreq": 20,
+  "rankSev": 19
+ },
+ {
+  "zips": 167,
+  "prem": [
+   1666,
+   1654,
+   1686,
+   1767,
+   1823
+  ],
+  "p10": 1448,
+  "p90": 2464,
+  "chg": 0.1023,
+  "nonren": [
+   0.0041,
+   0.0032,
+   0.0027,
+   0.0059,
+   0.009
+  ],
+  "freq": 0.0379,
+  "sev": 18544,
+  "lr": 0.3948,
+  "lrY": [
+   0.261,
+   0.295,
+   0.3093,
+   0.3594,
+   0.284
+  ],
+  "freqY": [
+   0.0301,
+   0.0359,
+   0.031,
+   0.0411,
+   0.0303
+  ],
+  "npc": 0.0128,
+  "oc": 0.0119,
+  "code": "MT",
+  "name": "Montana",
+  "slug": "montana",
+  "counties": 46,
+  "hi": [
+   {
+    "zip": "59716",
+    "county": "Madison County",
+    "prem": 7599,
+    "chg": 0.2622,
+    "nonren": 0.0033
+   },
+   {
+    "zip": "59730",
+    "county": "Gallatin County",
+    "prem": 3565,
+    "chg": 0.2423,
+    "nonren": 0.0051
+   },
+   {
+    "zip": "59065",
+    "county": "Park County",
+    "prem": 3325,
+    "chg": 0.1581,
+    "nonren": 0.0112
+   },
+   {
+    "zip": "59028",
+    "county": "Stillwater County",
+    "prem": 3147,
+    "chg": 0.0752,
+    "nonren": 0
+   },
+   {
+    "zip": "59720",
+    "county": "Madison County",
+    "prem": 3143,
+    "chg": 0.056,
+    "nonren": 0.0121
+   }
+  ],
+  "lo": [
+   {
+    "zip": "59919",
+    "county": "Flathead County",
+    "prem": 1179,
+    "chg": 0.0614,
+    "nonren": 0.0372
+   },
+   {
+    "zip": "59845",
+    "county": "Sanders County",
+    "prem": 1186,
+    "chg": 0.1138,
+    "nonren": 0.0213
+   },
+   {
+    "zip": "59739",
+    "county": "Beaverhead County",
+    "prem": 1267,
+    "chg": 0.1403,
+    "nonren": 0.0256
+   },
+   {
+    "zip": "59801",
+    "county": "Missoula County",
+    "prem": 1271,
+    "chg": 0.1011,
+    "nonren": 0.006
+   },
+   {
+    "zip": "59417",
+    "county": "Glacier County",
+    "prem": 1301,
+    "chg": 0.1056,
+    "nonren": 0.0217
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Missoula County",
+    "zips": 12,
+    "chg": 0.1009,
+    "freq": 0.0285,
+    "sev": 22141,
+    "prem": 1628,
+    "prem18": 1517,
+    "nonren": 0.0089
+   },
+   {
+    "name": "Cascade County",
+    "zips": 11,
+    "chg": 0.154,
+    "freq": 0.0519,
+    "sev": 12615,
+    "prem": 1713,
+    "prem18": 1484,
+    "nonren": 0.0085
+   },
+   {
+    "name": "Flathead County",
+    "zips": 11,
+    "chg": 0.1123,
+    "freq": 0.0298,
+    "sev": 22232,
+    "prem": 1608,
+    "prem18": 1551,
+    "nonren": 0.0118
+   },
+   {
+    "name": "Lake County",
+    "zips": 10,
+    "chg": 0.1016,
+    "freq": 0.0304,
+    "sev": 23047,
+    "prem": 1836,
+    "prem18": 1702,
+    "nonren": 0.0111
+   },
+   {
+    "name": "Yellowstone County",
+    "zips": 9,
+    "chg": 0.0921,
+    "freq": 0.265,
+    "sev": 20631,
+    "prem": 2302,
+    "prem18": 2108,
+    "nonren": 0.0058
+   },
+   {
+    "name": "Gallatin County",
+    "zips": 7,
+    "chg": 0.2153,
+    "freq": 0.0318,
+    "sev": 20970,
+    "prem": 2082,
+    "prem18": 1747,
+    "nonren": 0.0066
+   },
+   {
+    "name": "Madison County",
+    "zips": 7,
+    "chg": 0.1446,
+    "freq": 0.0238,
+    "sev": 18949,
+    "prem": 2234,
+    "prem18": 1871,
+    "nonren": 0.0103
+   },
+   {
+    "name": "Park County",
+    "zips": 7,
+    "chg": 0.1581,
+    "freq": 0.0178,
+    "sev": 13529,
+    "prem": 2108,
+    "prem18": 1777,
+    "nonren": 0.0112
+   }
+  ],
+  "highNonren": 0.1198,
+  "rankPrem": 17,
+  "rankNonren": 23,
+  "rankChg": 13,
+  "rankFreq": 35,
+  "rankSev": 8
+ },
+ {
+  "zips": 288,
+  "prem": [
+   2190,
+   2253,
+   2239,
+   2350,
+   2434
+  ],
+  "p10": 2088,
+  "p90": 2929,
+  "chg": 0.1382,
+  "nonren": [
+   0.0061,
+   0.0048,
+   0.0088,
+   0.0128,
+   0.023
+  ],
+  "freq": 0.0737,
+  "sev": 13881,
+  "lr": 0.451,
+  "lrY": [
+   0.3211,
+   0.3012,
+   0.2594,
+   0.2626,
+   0.4175
+  ],
+  "freqY": [
+   0.0529,
+   0.0515,
+   0.0476,
+   0.0515,
+   0.0752
+  ],
+  "npc": 0.0129,
+  "oc": 0.0148,
+  "code": "NE",
+  "name": "Nebraska",
+  "slug": "nebraska",
+  "counties": 82,
+  "hi": [
+   {
+    "zip": "68461",
+    "county": "Lancaster County",
+    "prem": 4434,
+    "chg": 0.2168,
+    "nonren": 0
+   },
+   {
+    "zip": "68069",
+    "county": "Douglas County",
+    "prem": 3691,
+    "chg": 0.149,
+    "nonren": 0.0322
+   },
+   {
+    "zip": "68118",
+    "county": "Douglas County",
+    "prem": 3392,
+    "chg": 0.148,
+    "nonren": 0.0335
+   },
+   {
+    "zip": "68064",
+    "county": "Douglas County",
+    "prem": 3298,
+    "chg": 0.2691,
+    "nonren": 0.0423
+   },
+   {
+    "zip": "68023",
+    "county": "Washington County",
+    "prem": 3275,
+    "chg": 0.1829,
+    "nonren": 0.0313
+   }
+  ],
+  "lo": [
+   {
+    "zip": "69044",
+    "county": "Hitchcock County",
+    "prem": 1632,
+    "chg": -0.3035,
+    "nonren": 0.0265
+   },
+   {
+    "zip": "68971",
+    "county": "Harlan County",
+    "prem": 1759,
+    "chg": -0.0692,
+    "nonren": 0.0064
+   },
+   {
+    "zip": "68504",
+    "county": "Lancaster County",
+    "prem": 1819,
+    "chg": 0.1642,
+    "nonren": 0.0188
+   },
+   {
+    "zip": "68746",
+    "county": "Boyd County",
+    "prem": 1843,
+    "chg": 0.024,
+    "nonren": 0.0175
+   },
+   {
+    "zip": "68783",
+    "county": "Knox County",
+    "prem": 1860,
+    "chg": 0.1731,
+    "nonren": 0.0575
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Lancaster County",
+    "zips": 32,
+    "chg": 0.1708,
+    "freq": 0.0629,
+    "sev": 15444,
+    "prem": 2486,
+    "prem18": 2102,
+    "nonren": 0.0201
+   },
+   {
+    "name": "Douglas County",
+    "zips": 30,
+    "chg": 0.1659,
+    "freq": 0.0889,
+    "sev": 16915,
+    "prem": 2659,
+    "prem18": 2318,
+    "nonren": 0.0247
+   },
+   {
+    "name": "Cass County",
+    "zips": 13,
+    "chg": 0.1692,
+    "freq": 0.0863,
+    "sev": 19829,
+    "prem": 2550,
+    "prem18": 2294,
+    "nonren": 0.0178
+   },
+   {
+    "name": "Sarpy County",
+    "zips": 11,
+    "chg": 0.2287,
+    "freq": 0.0653,
+    "sev": 14413,
+    "prem": 2592,
+    "prem18": 2142,
+    "nonren": 0.0225
+   },
+   {
+    "name": "Buffalo County",
+    "zips": 8,
+    "chg": 0.0779,
+    "freq": 0.1472,
+    "sev": 13224,
+    "prem": 2517,
+    "prem18": 2328,
+    "nonren": 0.0306
+   },
+   {
+    "name": "Saunders County",
+    "zips": 8,
+    "chg": 0.2391,
+    "freq": 0.0695,
+    "sev": 20398,
+    "prem": 2661,
+    "prem18": 2158,
+    "nonren": 0.0251
+   },
+   {
+    "name": "Dodge County",
+    "zips": 6,
+    "chg": 0.1459,
+    "freq": 0.0391,
+    "sev": 13782,
+    "prem": 2539,
+    "prem18": 2155,
+    "nonren": 0.0226
+   },
+   {
+    "name": "Gage County",
+    "zips": 6,
+    "chg": 0.0805,
+    "freq": 0.1226,
+    "sev": 14923,
+    "prem": 2446,
+    "prem18": 2278,
+    "nonren": 0.0263
+   }
+  ],
+  "highNonren": 0.5694,
+  "rankPrem": 5,
+  "rankNonren": 1,
+  "rankChg": 7,
+  "rankFreq": 4,
+  "rankSev": 33
+ },
+ {
+  "zips": 138,
+  "prem": [
+   997,
+   1029,
+   1074,
+   1054,
+   1077
+  ],
+  "p10": 883,
+  "p90": 1553,
+  "chg": 0.0703,
+  "nonren": [
+   0.006,
+   0.0048,
+   0.0033,
+   0.0049,
+   0.0072
+  ],
+  "freq": 0.0274,
+  "sev": 16008,
+  "lr": 0.4137,
+  "lrY": [
+   0.3833,
+   0.37,
+   0.3899,
+   0.4019,
+   0.4323
+  ],
+  "freqY": [
+   0.0295,
+   0.0291,
+   0.0271,
+   0.0271,
+   0.0303
+  ],
+  "npc": 0.0099,
+  "oc": 0.0189,
+  "code": "NV",
+  "name": "Nevada",
+  "slug": "nevada",
+  "counties": 16,
+  "hi": [
+   {
+    "zip": "89413",
+    "county": "Douglas County",
+    "prem": 6286,
+    "chg": 0.1777,
+    "nonren": 0
+   },
+   {
+    "zip": "89402",
+    "county": "Washoe County",
+    "prem": 4475,
+    "chg": 0.0833,
+    "nonren": 0
+   },
+   {
+    "zip": "89109",
+    "county": "Clark County",
+    "prem": 4293,
+    "chg": 0.9679,
+    "nonren": 0.0217
+   },
+   {
+    "zip": "89451",
+    "county": "Washoe County",
+    "prem": 3519,
+    "chg": 0.046,
+    "nonren": 0.0054
+   },
+   {
+    "zip": "89448",
+    "county": "Douglas County",
+    "prem": 2948,
+    "chg": 0.0073,
+    "nonren": 0.0085
+   }
+  ],
+  "lo": [
+   {
+    "zip": "89034",
+    "county": "Clark County",
+    "prem": 632,
+    "chg": 0.0321,
+    "nonren": 0.0031
+   },
+   {
+    "zip": "89018",
+    "county": "Clark County",
+    "prem": 759,
+    "chg": -0.2322,
+    "nonren": 0.0091
+   },
+   {
+    "zip": "89046",
+    "county": "Clark County",
+    "prem": 780,
+    "chg": 0.009,
+    "nonren": 0
+   },
+   {
+    "zip": "89061",
+    "county": "Nye County",
+    "prem": 817,
+    "chg": -0.0124,
+    "nonren": 0.0055
+   },
+   {
+    "zip": "89027",
+    "county": "Clark County",
+    "prem": 825,
+    "chg": 0.029,
+    "nonren": 0.0058
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Clark County",
+    "zips": 70,
+    "chg": 0.061,
+    "freq": 0.0389,
+    "sev": 15390,
+    "prem": 1079,
+    "prem18": 1020,
+    "nonren": 0.008
+   },
+   {
+    "name": "Washoe County",
+    "zips": 21,
+    "chg": 0.0857,
+    "freq": 0.0245,
+    "sev": 22287,
+    "prem": 1143,
+    "prem18": 1078,
+    "nonren": 0.005
+   },
+   {
+    "name": "Douglas County",
+    "zips": 8,
+    "chg": 0.1242,
+    "freq": 0.0253,
+    "sev": 28192,
+    "prem": 1542,
+    "prem18": 1479,
+    "nonren": 0.0044
+   },
+   {
+    "name": "Nye County",
+    "zips": 7,
+    "chg": 0.0132,
+    "freq": 0.0338,
+    "sev": 15195,
+    "prem": 932,
+    "prem18": 915,
+    "nonren": 0.0082
+   },
+   {
+    "name": "Elko County",
+    "zips": 5,
+    "chg": 0.0665,
+    "freq": 0.0207,
+    "sev": 8599,
+    "prem": 1085,
+    "prem18": 1044,
+    "nonren": 0.0071
+   },
+   {
+    "name": "Lyon County",
+    "zips": 5,
+    "chg": 0.0576,
+    "freq": 0.0235,
+    "sev": 15679,
+    "prem": 1013,
+    "prem18": 991,
+    "nonren": 0.0065
+   },
+   {
+    "name": "Lincoln County",
+    "zips": 4,
+    "chg": 0.0901,
+    "freq": 0.0218,
+    "sev": 28315,
+    "prem": 1008,
+    "prem18": 935,
+    "nonren": 0.0147
+   },
+   {
+    "name": "White Pine County",
+    "zips": 4,
+    "chg": 0.0602,
+    "freq": 0.015,
+    "sev": 17912,
+    "prem": 902,
+    "prem18": 839,
+    "nonren": 0.0122
+   }
+  ],
+  "highNonren": 0.029,
+  "rankPrem": 49,
+  "rankNonren": 34,
+  "rankChg": 23,
+  "rankFreq": 47,
+  "rankSev": 15
+ },
+ {
+  "zips": 238,
+  "prem": [
+   1319,
+   1341,
+   1355,
+   1351,
+   1365
+  ],
+  "p10": 1148,
+  "p90": 1782,
+  "chg": 0.0255,
+  "nonren": [
+   0.014,
+   0.0096,
+   0.0085,
+   0.0104,
+   0.0082
+  ],
+  "freq": 0.0297,
+  "sev": 14681,
+  "lr": 0.2886,
+  "lrY": [
+   0.2534,
+   0.2587,
+   0.2006,
+   0.2045,
+   0.246
+  ],
+  "freqY": [
+   0.0346,
+   0.0321,
+   0.0266,
+   0.0283,
+   0.0259
+  ],
+  "npc": 0.0176,
+  "oc": 0.0159,
+  "code": "NH",
+  "name": "New Hampshire",
+  "slug": "new-hampshire",
+  "counties": 10,
+  "hi": [
+   {
+    "zip": "03871",
+    "county": "Rockingham County",
+    "prem": 5446,
+    "chg": 0.4148,
+    "nonren": 0
+   },
+   {
+    "zip": "03854",
+    "county": "Rockingham County",
+    "prem": 2630,
+    "chg": 0.0563,
+    "nonren": 0.0035
+   },
+   {
+    "zip": "03233",
+    "county": "Merrimack County",
+    "prem": 2459,
+    "chg": 0.1186,
+    "nonren": 0
+   },
+   {
+    "zip": "03750",
+    "county": "Grafton County",
+    "prem": 2423,
+    "chg": -0.0031,
+    "nonren": 0.004
+   },
+   {
+    "zip": "03862",
+    "county": "Rockingham County",
+    "prem": 2219,
+    "chg": 0.0849,
+    "nonren": 0.0056
+   }
+  ],
+  "lo": [
+   {
+    "zip": "03597",
+    "county": "Coos County",
+    "prem": 889,
+    "chg": -0.1208,
+    "nonren": 0
+   },
+   {
+    "zip": "03570",
+    "county": "Coos County",
+    "prem": 980,
+    "chg": -0.0371,
+    "nonren": 0.0105
+   },
+   {
+    "zip": "03868",
+    "county": "Strafford County",
+    "prem": 1004,
+    "chg": 0.002,
+    "nonren": 0.01
+   },
+   {
+    "zip": "03774",
+    "county": "Grafton County",
+    "prem": 1038,
+    "chg": -0.0154,
+    "nonren": 0.0024
+   },
+   {
+    "zip": "03588",
+    "county": "Coos County",
+    "prem": 1045,
+    "chg": -0.0687,
+    "nonren": 0.005
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Grafton County",
+    "zips": 35,
+    "chg": 0.0124,
+    "freq": 0.0274,
+    "sev": 15048,
+    "prem": 1244,
+    "prem18": 1248,
+    "nonren": 0.0072
+   },
+   {
+    "name": "Rockingham County",
+    "zips": 35,
+    "chg": 0.041,
+    "freq": 0.0356,
+    "sev": 15585,
+    "prem": 1467,
+    "prem18": 1420,
+    "nonren": 0.0081
+   },
+   {
+    "name": "Hillsborough County",
+    "zips": 33,
+    "chg": 0.0363,
+    "freq": 0.0298,
+    "sev": 14495,
+    "prem": 1355,
+    "prem18": 1298,
+    "nonren": 0.009
+   },
+   {
+    "name": "Carroll County",
+    "zips": 27,
+    "chg": 0.0256,
+    "freq": 0.031,
+    "sev": 15387,
+    "prem": 1380,
+    "prem18": 1341,
+    "nonren": 0.0078
+   },
+   {
+    "name": "Merrimack County",
+    "zips": 27,
+    "chg": 0.0278,
+    "freq": 0.0275,
+    "sev": 14529,
+    "prem": 1376,
+    "prem18": 1320,
+    "nonren": 0.0084
+   },
+   {
+    "name": "Cheshire County",
+    "zips": 24,
+    "chg": 0.0186,
+    "freq": 0.0286,
+    "sev": 16014,
+    "prem": 1375,
+    "prem18": 1353,
+    "nonren": 0.0084
+   },
+   {
+    "name": "Strafford County",
+    "zips": 16,
+    "chg": 0.0237,
+    "freq": 0.0307,
+    "sev": 12703,
+    "prem": 1303,
+    "prem18": 1256,
+    "nonren": 0.009
+   },
+   {
+    "name": "Sullivan County",
+    "zips": 15,
+    "chg": 0.0123,
+    "freq": 0.0289,
+    "sev": 15842,
+    "prem": 1400,
+    "prem18": 1340,
+    "nonren": 0.0107
+   }
+  ],
+  "highNonren": 0.0084,
+  "rankPrem": 33,
+  "rankNonren": 29,
+  "rankChg": 40,
+  "rankFreq": 42,
+  "rankSev": 26
+ },
+ {
+  "zips": 563,
+  "prem": [
+   1558,
+   1584,
+   1601,
+   1592,
+   1598
+  ],
+  "p10": 1305,
+  "p90": 2644,
+  "chg": 0.0175,
+  "nonren": [
+   0.0048,
+   0.0076,
+   0.0046,
+   0.0051,
+   0.0075
+  ],
+  "freq": 0.0595,
+  "sev": 13356,
+  "lr": 0.4398,
+  "lrY": [
+   0.3906,
+   0.3376,
+   0.4111,
+   0.4865,
+   0.3578
+  ],
+  "freqY": [
+   0.0563,
+   0.0503,
+   0.0663,
+   0.0685,
+   0.0441
+  ],
+  "npc": 0.0056,
+  "oc": 0.0147,
+  "code": "NJ",
+  "name": "New Jersey",
+  "slug": "new-jersey",
+  "counties": 21,
+  "hi": [
+   {
+    "zip": "07723",
+    "county": "Monmouth County",
+    "prem": 8535,
+    "chg": 0.1089,
+    "nonren": 0.0125
+   },
+   {
+    "zip": "07620",
+    "county": "Bergen County",
+    "prem": 7939,
+    "chg": -0.0143,
+    "nonren": 0.017
+   },
+   {
+    "zip": "08738",
+    "county": "Ocean County",
+    "prem": 6381,
+    "chg": 0.0088,
+    "nonren": 0.0157
+   },
+   {
+    "zip": "07976",
+    "county": "Morris County",
+    "prem": 6062,
+    "chg": 0.0139,
+    "nonren": 0.0149
+   },
+   {
+    "zip": "08403",
+    "county": "Atlantic County",
+    "prem": 5541,
+    "chg": -0.0951,
+    "nonren": 0.0098
+   }
+  ],
+  "lo": [
+   {
+    "zip": "07034",
+    "county": "Morris County",
+    "prem": 1124,
+    "chg": 0.0103,
+    "nonren": 0.0065
+   },
+   {
+    "zip": "08835",
+    "county": "Somerset County",
+    "prem": 1153,
+    "chg": 0.081,
+    "nonren": 0.016
+   },
+   {
+    "zip": "08757",
+    "county": "Ocean County",
+    "prem": 1154,
+    "chg": 0.0531,
+    "nonren": 0.0042
+   },
+   {
+    "zip": "08865",
+    "county": "Warren County",
+    "prem": 1158,
+    "chg": 0.0358,
+    "nonren": 0.0099
+   },
+   {
+    "zip": "07847",
+    "county": "Morris County",
+    "prem": 1160,
+    "chg": -0.0341,
+    "nonren": 0.0028
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Bergen County",
+    "zips": 65,
+    "chg": 0.0019,
+    "freq": 0.0655,
+    "sev": 14245,
+    "prem": 1666,
+    "prem18": 1679,
+    "nonren": 0.0118
+   },
+   {
+    "name": "Monmouth County",
+    "zips": 48,
+    "chg": 0.0411,
+    "freq": 0.056,
+    "sev": 15124,
+    "prem": 2341,
+    "prem18": 2223,
+    "nonren": 0.0068
+   },
+   {
+    "name": "Morris County",
+    "zips": 46,
+    "chg": 0.0018,
+    "freq": 0.0672,
+    "sev": 11611,
+    "prem": 1465,
+    "prem18": 1474,
+    "nonren": 0.0059
+   },
+   {
+    "name": "Middlesex County",
+    "zips": 36,
+    "chg": 0.0245,
+    "freq": 0.0586,
+    "sev": 11750,
+    "prem": 1382,
+    "prem18": 1339,
+    "nonren": 0.0081
+   },
+   {
+    "name": "Camden County",
+    "zips": 33,
+    "chg": 0.0046,
+    "freq": 0.0617,
+    "sev": 12564,
+    "prem": 1434,
+    "prem18": 1423,
+    "nonren": 0.0072
+   },
+   {
+    "name": "Essex County",
+    "zips": 31,
+    "chg": -0.0004,
+    "freq": 0.0885,
+    "sev": 15453,
+    "prem": 2161,
+    "prem18": 2130,
+    "nonren": 0.0122
+   },
+   {
+    "name": "Ocean County",
+    "zips": 29,
+    "chg": 0.0965,
+    "freq": 0.04,
+    "sev": 13527,
+    "prem": 1837,
+    "prem18": 1626,
+    "nonren": 0.0048
+   },
+   {
+    "name": "Burlington County",
+    "zips": 28,
+    "chg": 0.0341,
+    "freq": 0.0648,
+    "sev": 13259,
+    "prem": 1548,
+    "prem18": 1475,
+    "nonren": 0.0066
+   }
+  ],
+  "highNonren": 0.0089,
+  "rankPrem": 26,
+  "rankNonren": 31,
+  "rankChg": 41,
+  "rankFreq": 11,
+  "rankSev": 39
+ },
+ {
+  "zips": 201,
+  "prem": [
+   1396,
+   1428,
+   1438,
+   1448,
+   1451
+  ],
+  "p10": 1090,
+  "p90": 2385,
+  "chg": 0.0357,
+  "nonren": [
+   0.008,
+   0.0078,
+   0.006,
+   0.0064,
+   0.0088
+  ],
+  "freq": 0.0429,
+  "sev": 13691,
+  "lr": 0.3904,
+  "lrY": [
+   0.3628,
+   0.3939,
+   0.2602,
+   0.2817,
+   0.338
+  ],
+  "freqY": [
+   0.0433,
+   0.0443,
+   0.0333,
+   0.0336,
+   0.0422
+  ],
+  "npc": 0.0178,
+  "oc": 0.0205,
+  "code": "NM",
+  "name": "New Mexico",
+  "slug": "new-mexico",
+  "counties": 33,
+  "hi": [
+   {
+    "zip": "87562",
+    "county": "San Miguel County",
+    "prem": 4234,
+    "chg": 0.4861,
+    "nonren": 0
+   },
+   {
+    "zip": "87525",
+    "county": "Taos County",
+    "prem": 3650,
+    "chg": 0.1601,
+    "nonren": 0
+   },
+   {
+    "zip": "87506",
+    "county": "Santa Fe County",
+    "prem": 3193,
+    "chg": 0.0994,
+    "nonren": 0.0044
+   },
+   {
+    "zip": "87710",
+    "county": "Colfax County",
+    "prem": 2858,
+    "chg": 0.024,
+    "nonren": 0.0071
+   },
+   {
+    "zip": "88242",
+    "county": "Lea County",
+    "prem": 2843,
+    "chg": -0.0048,
+    "nonren": 0.0106
+   }
+  ],
+  "lo": [
+   {
+    "zip": "88065",
+    "county": "Grant County",
+    "prem": 939,
+    "chg": 0.0282,
+    "nonren": 0
+   },
+   {
+    "zip": "88023",
+    "county": "Grant County",
+    "prem": 960,
+    "chg": 0.0754,
+    "nonren": 0.0164
+   },
+   {
+    "zip": "88001",
+    "county": "Do\u00f1a Ana County",
+    "prem": 977,
+    "chg": 0.0592,
+    "nonren": 0.0063
+   },
+   {
+    "zip": "87020",
+    "county": "Cibola County",
+    "prem": 988,
+    "chg": -0.013,
+    "nonren": 0.0069
+   },
+   {
+    "zip": "86515",
+    "county": "McKinley County",
+    "prem": 993,
+    "chg": -0.0274,
+    "nonren": 0.0345
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Bernalillo County",
+    "zips": 19,
+    "chg": 0.0459,
+    "freq": 0.0678,
+    "sev": 13548,
+    "prem": 1154,
+    "prem18": 1136,
+    "nonren": 0.0063
+   },
+   {
+    "name": "Rio Arriba County",
+    "zips": 17,
+    "chg": -0.049,
+    "freq": 0.0242,
+    "sev": 14176,
+    "prem": 1596,
+    "prem18": 1594,
+    "nonren": 0.0097
+   },
+   {
+    "name": "Do\u00f1a Ana County",
+    "zips": 15,
+    "chg": 0.0391,
+    "freq": 0.0562,
+    "sev": 11024,
+    "prem": 1212,
+    "prem18": 1163,
+    "nonren": 0.0059
+   },
+   {
+    "name": "Sandoval County",
+    "zips": 14,
+    "chg": 0.0562,
+    "freq": 0.0446,
+    "sev": 16629,
+    "prem": 1470,
+    "prem18": 1413,
+    "nonren": 0.0087
+   },
+   {
+    "name": "Taos County",
+    "zips": 13,
+    "chg": 0.0893,
+    "freq": 0.0253,
+    "sev": 14855,
+    "prem": 1844,
+    "prem18": 1711,
+    "nonren": 0.0118
+   },
+   {
+    "name": "Santa Fe County",
+    "zips": 12,
+    "chg": 0.0606,
+    "freq": 0.043,
+    "sev": 17192,
+    "prem": 1756,
+    "prem18": 1747,
+    "nonren": 0.0074
+   },
+   {
+    "name": "Grant County",
+    "zips": 11,
+    "chg": -0.008,
+    "freq": 0.0302,
+    "sev": 7927,
+    "prem": 1093,
+    "prem18": 1101,
+    "nonren": 0.0123
+   },
+   {
+    "name": "San Juan County",
+    "zips": 11,
+    "chg": -0.0448,
+    "freq": 0.0346,
+    "sev": 14194,
+    "prem": 1197,
+    "prem18": 1202,
+    "nonren": 0.0087
+   }
+  ],
+  "highNonren": 0.1095,
+  "rankPrem": 32,
+  "rankNonren": 25,
+  "rankChg": 32,
+  "rankFreq": 27,
+  "rankSev": 35
+ },
+ {
+  "zips": 1536,
+  "prem": [
+   1182,
+   1204,
+   1212,
+   1215,
+   1218
+  ],
+  "p10": 910,
+  "p90": 3076,
+  "chg": 0.043,
+  "nonren": [
+   0.004,
+   0.0038,
+   0.0027,
+   0.0033,
+   0.004
+  ],
+  "freq": 0.034,
+  "sev": 15898,
+  "lr": 0.3619,
+  "lrY": [
+   0.3236,
+   0.2874,
+   0.2626,
+   0.3109,
+   0.3006
+  ],
+  "freqY": [
+   0.0373,
+   0.0326,
+   0.0298,
+   0.0349,
+   0.0292
+  ],
+  "npc": 0.0092,
+  "oc": 0.0121,
+  "code": "NY",
+  "name": "New York",
+  "slug": "new-york",
+  "counties": 62,
+  "hi": [
+   {
+    "zip": "11962",
+    "county": "Suffolk County",
+    "prem": 22974,
+    "chg": 0.1377,
+    "nonren": 0.0067
+   },
+   {
+    "zip": "11976",
+    "county": "Suffolk County",
+    "prem": 19340,
+    "chg": 0.1859,
+    "nonren": 0.0017
+   },
+   {
+    "zip": "10021",
+    "county": "New York County",
+    "prem": 18597,
+    "chg": 0.5879,
+    "nonren": 0.0191
+   },
+   {
+    "zip": "11932",
+    "county": "Suffolk County",
+    "prem": 17929,
+    "chg": 0.1636,
+    "nonren": 0.0051
+   },
+   {
+    "zip": "10014",
+    "county": "New York County",
+    "prem": 16786,
+    "chg": 0.3856,
+    "nonren": 0.0093
+   }
+  ],
+  "lo": [
+   {
+    "zip": "14884",
+    "county": "Allegany County",
+    "prem": 723,
+    "chg": 0.0362,
+    "nonren": 0
+   },
+   {
+    "zip": "13211",
+    "county": "Onondaga County",
+    "prem": 745,
+    "chg": 0.0376,
+    "nonren": 0.0025
+   },
+   {
+    "zip": "14623",
+    "county": "Monroe County",
+    "prem": 758,
+    "chg": 0.0438,
+    "nonren": 0.0027
+   },
+   {
+    "zip": "14720",
+    "county": "Chautauqua County",
+    "prem": 758,
+    "chg": 0.0949,
+    "nonren": 0
+   },
+   {
+    "zip": "14904",
+    "county": "Chemung County",
+    "prem": 762,
+    "chg": 0.046,
+    "nonren": 0.0037
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Suffolk County",
+    "zips": 106,
+    "chg": 0.0439,
+    "freq": 0.0403,
+    "sev": 24091,
+    "prem": 2696,
+    "prem18": 2512,
+    "nonren": 0.0034
+   },
+   {
+    "name": "Westchester County",
+    "zips": 72,
+    "chg": 0.0064,
+    "freq": 0.0609,
+    "sev": 21423,
+    "prem": 2598,
+    "prem18": 2578,
+    "nonren": 0.0037
+   },
+   {
+    "name": "Nassau County",
+    "zips": 66,
+    "chg": 0.0223,
+    "freq": 0.0451,
+    "sev": 25018,
+    "prem": 2634,
+    "prem18": 2564,
+    "nonren": 0.0038
+   },
+   {
+    "name": "Erie County",
+    "zips": 61,
+    "chg": 0.0397,
+    "freq": 0.0415,
+    "sev": 11568,
+    "prem": 1009,
+    "prem18": 956,
+    "nonren": 0.0045
+   },
+   {
+    "name": "Queens County",
+    "zips": 58,
+    "chg": 0.0671,
+    "freq": 0.0352,
+    "sev": 24513,
+    "prem": 2139,
+    "prem18": 1962,
+    "nonren": 0.0053
+   },
+   {
+    "name": "Ulster County",
+    "zips": 53,
+    "chg": 0.0386,
+    "freq": 0.0368,
+    "sev": 15821,
+    "prem": 1487,
+    "prem18": 1436,
+    "nonren": 0.0035
+   },
+   {
+    "name": "Monroe County",
+    "zips": 39,
+    "chg": 0.0529,
+    "freq": 0.0426,
+    "sev": 10643,
+    "prem": 913,
+    "prem18": 889,
+    "nonren": 0.0027
+   },
+   {
+    "name": "Oneida County",
+    "zips": 39,
+    "chg": 0.0567,
+    "freq": 0.0326,
+    "sev": 12715,
+    "prem": 1034,
+    "prem18": 989,
+    "nonren": 0.0053
+   }
+  ],
+  "highNonren": 0.0117,
+  "rankPrem": 40,
+  "rankNonren": 47,
+  "rankChg": 29,
+  "rankFreq": 38,
+  "rankSev": 17
+ },
+ {
+  "zips": 725,
+  "prem": [
+   1235,
+   1261,
+   1298,
+   1309,
+   1319
+  ],
+  "p10": 1059,
+  "p90": 1758,
+  "chg": 0.0827,
+  "nonren": [
+   0.0216,
+   0.0077,
+   0.0085,
+   0.0135,
+   0.0209
+  ],
+  "freq": 0.053,
+  "sev": 12487,
+  "lr": 0.464,
+  "lrY": [
+   0.4547,
+   0.3947,
+   0.4058,
+   0.3453,
+   0.4119
+  ],
+  "freqY": [
+   0.0613,
+   0.0455,
+   0.0494,
+   0.0374,
+   0.0454
+  ],
+  "npc": 0.0228,
+  "oc": 0.0217,
+  "code": "NC",
+  "name": "North Carolina",
+  "slug": "north-carolina",
+  "counties": 100,
+  "hi": [
+   {
+    "zip": "28207",
+    "county": "Mecklenburg County",
+    "prem": 3558,
+    "chg": 0.1693,
+    "nonren": 0.0092
+   },
+   {
+    "zip": "28646",
+    "county": "Avery County",
+    "prem": 3489,
+    "chg": 0.2399,
+    "nonren": 0.0094
+   },
+   {
+    "zip": "28717",
+    "county": "Jackson County",
+    "prem": 3113,
+    "chg": 0.2382,
+    "nonren": 0.0023
+   },
+   {
+    "zip": "27927",
+    "county": "Currituck County",
+    "prem": 3019,
+    "chg": -0.1349,
+    "nonren": 0.0013
+   },
+   {
+    "zip": "28480",
+    "county": "New Hanover County",
+    "prem": 2779,
+    "chg": 0.1326,
+    "nonren": 0.0204
+   }
+  ],
+  "lo": [
+   {
+    "zip": "28553",
+    "county": "Carteret County",
+    "prem": 761,
+    "chg": -0.1651,
+    "nonren": 0
+   },
+   {
+    "zip": "28511",
+    "county": "Carteret County",
+    "prem": 778,
+    "chg": 0.1026,
+    "nonren": 0.0141
+   },
+   {
+    "zip": "28524",
+    "county": "Carteret County",
+    "prem": 779,
+    "chg": -0.1236,
+    "nonren": 0
+   },
+   {
+    "zip": "28531",
+    "county": "Carteret County",
+    "prem": 786,
+    "chg": 0.1093,
+    "nonren": 0.0161
+   },
+   {
+    "zip": "28529",
+    "county": "Pamlico County",
+    "prem": 847,
+    "chg": -0.0818,
+    "nonren": 0.028
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Wake County",
+    "zips": 30,
+    "chg": 0.1307,
+    "freq": 0.0747,
+    "sev": 14642,
+    "prem": 1613,
+    "prem18": 1436,
+    "nonren": 0.0286
+   },
+   {
+    "name": "Mecklenburg County",
+    "zips": 29,
+    "chg": 0.0905,
+    "freq": 0.0671,
+    "sev": 13409,
+    "prem": 1562,
+    "prem18": 1435,
+    "nonren": 0.0445
+   },
+   {
+    "name": "Guilford County",
+    "zips": 22,
+    "chg": 0.1005,
+    "freq": 0.0689,
+    "sev": 11236,
+    "prem": 1241,
+    "prem18": 1138,
+    "nonren": 0.031
+   },
+   {
+    "name": "Buncombe County",
+    "zips": 15,
+    "chg": 0.1098,
+    "freq": 0.0326,
+    "sev": 12581,
+    "prem": 1285,
+    "prem18": 1173,
+    "nonren": 0.0134
+   },
+   {
+    "name": "Forsyth County",
+    "zips": 14,
+    "chg": 0.0865,
+    "freq": 0.0548,
+    "sev": 11376,
+    "prem": 1227,
+    "prem18": 1116,
+    "nonren": 0.025
+   },
+   {
+    "name": "Gaston County",
+    "zips": 14,
+    "chg": 0.0825,
+    "freq": 0.054,
+    "sev": 12192,
+    "prem": 1189,
+    "prem18": 1128,
+    "nonren": 0.0337
+   },
+   {
+    "name": "Columbus County",
+    "zips": 13,
+    "chg": 0.03,
+    "freq": 0.1039,
+    "sev": 13647,
+    "prem": 1912,
+    "prem18": 1873,
+    "nonren": 0.024
+   },
+   {
+    "name": "Cumberland County",
+    "zips": 12,
+    "chg": 0.0965,
+    "freq": 0.1056,
+    "sev": 11100,
+    "prem": 1834,
+    "prem18": 1661,
+    "nonren": 0.0391
+   }
+  ],
+  "highNonren": 0.4855,
+  "rankPrem": 34,
+  "rankNonren": 3,
+  "rankChg": 18,
+  "rankFreq": 21,
+  "rankSev": 45
+ },
+ {
+  "zips": 88,
+  "prem": [
+   1793,
+   1791,
+   1799,
+   1911,
+   1930
+  ],
+  "p10": 1683,
+  "p90": 2255,
+  "chg": 0.0805,
+  "nonren": [
+   0.004,
+   0.0055,
+   0.0063,
+   0.0093,
+   0.0077
+  ],
+  "freq": 0.051,
+  "sev": 12391,
+  "lr": 0.3192,
+  "lrY": [
+   0.2119,
+   0.2241,
+   0.2705,
+   0.2174,
+   0.2645
+  ],
+  "freqY": [
+   0.0437,
+   0.0432,
+   0.0421,
+   0.0461,
+   0.0519
+  ],
+  "npc": 0.0114,
+  "oc": 0.0129,
+  "code": "ND",
+  "name": "North Dakota",
+  "slug": "north-dakota",
+  "counties": 39,
+  "hi": [
+   {
+    "zip": "58558",
+    "county": "Burleigh County",
+    "prem": 2480,
+    "chg": 0.0697,
+    "nonren": 0.0078
+   },
+   {
+    "zip": "58503",
+    "county": "Burleigh County",
+    "prem": 2476,
+    "chg": 0.0917,
+    "nonren": 0.0057
+   },
+   {
+    "zip": "58575",
+    "county": "McLean County",
+    "prem": 2448,
+    "chg": 0.1411,
+    "nonren": 0.0185
+   },
+   {
+    "zip": "58623",
+    "county": "Bowman County",
+    "prem": 2405,
+    "chg": 0.1336,
+    "nonren": 0.0206
+   },
+   {
+    "zip": "58601",
+    "county": "Stark County",
+    "prem": 2393,
+    "chg": 0.1134,
+    "nonren": 0.0092
+   }
+  ],
+  "lo": [
+   {
+    "zip": "57648",
+    "county": "Emmons County",
+    "prem": 1523,
+    "chg": 0.2298,
+    "nonren": 0
+   },
+   {
+    "zip": "58270",
+    "county": "Walsh County",
+    "prem": 1540,
+    "chg": -0.0055,
+    "nonren": 0.0235
+   },
+   {
+    "zip": "58763",
+    "county": "Mountrail County",
+    "prem": 1595,
+    "chg": -0.1375,
+    "nonren": 0.0054
+   },
+   {
+    "zip": "58203",
+    "county": "Grand Forks County",
+    "prem": 1596,
+    "chg": 0.072,
+    "nonren": 0.0058
+   },
+   {
+    "zip": "58436",
+    "county": "Dickey County",
+    "prem": 1598,
+    "chg": 0.1815,
+    "nonren": 0.0476
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Cass County",
+    "zips": 10,
+    "chg": 0.1126,
+    "freq": 0.0539,
+    "sev": 14483,
+    "prem": 1995,
+    "prem18": 1729,
+    "nonren": 0.0082
+   },
+   {
+    "name": "Grand Forks County",
+    "zips": 8,
+    "chg": 0.1076,
+    "freq": 0.0559,
+    "sev": 12357,
+    "prem": 1917,
+    "prem18": 1720,
+    "nonren": 0.006
+   },
+   {
+    "name": "Ward County",
+    "zips": 7,
+    "chg": 0.0789,
+    "freq": 0.0487,
+    "sev": 10978,
+    "prem": 1940,
+    "prem18": 1790,
+    "nonren": 0.0068
+   },
+   {
+    "name": "Burleigh County",
+    "zips": 5,
+    "chg": 0.0697,
+    "freq": 0.069,
+    "sev": 11679,
+    "prem": 2287,
+    "prem18": 2121,
+    "nonren": 0.0078
+   },
+   {
+    "name": "McLean County",
+    "zips": 5,
+    "chg": 0.0756,
+    "freq": 0.0566,
+    "sev": 8278,
+    "prem": 2043,
+    "prem18": 1936,
+    "nonren": 0.0109
+   },
+   {
+    "name": "Richland County",
+    "zips": 5,
+    "chg": 0.1381,
+    "freq": 0.0491,
+    "sev": 11046,
+    "prem": 1865,
+    "prem18": 1655,
+    "nonren": 0.0035
+   },
+   {
+    "name": "Williams County",
+    "zips": 4,
+    "chg": 0.007,
+    "freq": 0.0945,
+    "sev": 14962,
+    "prem": 1923,
+    "prem18": 1925,
+    "nonren": 0.0074
+   },
+   {
+    "name": "Morton County",
+    "zips": 3,
+    "chg": 0.0685,
+    "freq": 0.0419,
+    "sev": 16510,
+    "prem": 2175,
+    "prem18": 1894,
+    "nonren": 0.0096
+   }
+  ],
+  "highNonren": 0.1364,
+  "rankPrem": 11,
+  "rankNonren": 30,
+  "rankChg": 20,
+  "rankFreq": 23,
+  "rankSev": 46
+ },
+ {
+  "zips": 1032,
+  "prem": [
+   1184,
+   1174,
+   1181,
+   1215,
+   1239
+  ],
+  "p10": 1074,
+  "p90": 1445,
+  "chg": 0.0417,
+  "nonren": [
+   0.0096,
+   0.0076,
+   0.0067,
+   0.0078,
+   0.0099
+  ],
+  "freq": 0.0429,
+  "sev": 13195,
+  "lr": 0.4487,
+  "lrY": [
+   0.3115,
+   0.4036,
+   0.4377,
+   0.3724,
+   0.4148
+  ],
+  "freqY": [
+   0.0346,
+   0.0446,
+   0.0442,
+   0.038,
+   0.0428
+  ],
+  "npc": 0.0168,
+  "oc": 0.014,
+  "code": "OH",
+  "name": "Ohio",
+  "slug": "ohio",
+  "counties": 88,
+  "hi": [
+   {
+    "zip": "44040",
+    "county": "Cuyahoga County",
+    "prem": 2740,
+    "chg": 0.019,
+    "nonren": 0.0102
+   },
+   {
+    "zip": "45243",
+    "county": "Hamilton County",
+    "prem": 2510,
+    "chg": 0.0826,
+    "nonren": 0.0052
+   },
+   {
+    "zip": "44022",
+    "county": "Cuyahoga County",
+    "prem": 2334,
+    "chg": 0.0228,
+    "nonren": 0.0079
+   },
+   {
+    "zip": "43620",
+    "county": "Lucas County",
+    "prem": 2211,
+    "chg": 0.06,
+    "nonren": 0.0183
+   },
+   {
+    "zip": "45208",
+    "county": "Hamilton County",
+    "prem": 2085,
+    "chg": 0.0363,
+    "nonren": 0.0029
+   }
+  ],
+  "lo": [
+   {
+    "zip": "44134",
+    "county": "Cuyahoga County",
+    "prem": 906,
+    "chg": 0.0381,
+    "nonren": 0.0116
+   },
+   {
+    "zip": "44142",
+    "county": "Cuyahoga County",
+    "prem": 919,
+    "chg": 0.0479,
+    "nonren": 0.0088
+   },
+   {
+    "zip": "44129",
+    "county": "Cuyahoga County",
+    "prem": 927,
+    "chg": 0.045,
+    "nonren": 0.0098
+   },
+   {
+    "zip": "43144",
+    "county": "Hocking County",
+    "prem": 933,
+    "chg": -0.1052,
+    "nonren": 0.0333
+   },
+   {
+    "zip": "44095",
+    "county": "Lake County",
+    "prem": 940,
+    "chg": 0.0262,
+    "nonren": 0.0086
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Cuyahoga County",
+    "zips": 51,
+    "chg": 0.0331,
+    "freq": 0.052,
+    "sev": 12652,
+    "prem": 1255,
+    "prem18": 1203,
+    "nonren": 0.0113
+   },
+   {
+    "name": "Hamilton County",
+    "zips": 51,
+    "chg": 0.0616,
+    "freq": 0.0516,
+    "sev": 11783,
+    "prem": 1333,
+    "prem18": 1236,
+    "nonren": 0.0083
+   },
+   {
+    "name": "Franklin County",
+    "zips": 38,
+    "chg": 0.0448,
+    "freq": 0.0634,
+    "sev": 11578,
+    "prem": 1263,
+    "prem18": 1213,
+    "nonren": 0.0118
+   },
+   {
+    "name": "Summit County",
+    "zips": 31,
+    "chg": -0.001,
+    "freq": 0.0604,
+    "sev": 12778,
+    "prem": 1147,
+    "prem18": 1154,
+    "nonren": 0.0095
+   },
+   {
+    "name": "Montgomery County",
+    "zips": 29,
+    "chg": 0.0691,
+    "freq": 0.0551,
+    "sev": 12026,
+    "prem": 1296,
+    "prem18": 1189,
+    "nonren": 0.0086
+   },
+   {
+    "name": "Mahoning County",
+    "zips": 26,
+    "chg": 0.0072,
+    "freq": 0.0514,
+    "sev": 11783,
+    "prem": 1206,
+    "prem18": 1174,
+    "nonren": 0.0109
+   },
+   {
+    "name": "Stark County",
+    "zips": 26,
+    "chg": 0.0108,
+    "freq": 0.0466,
+    "sev": 13203,
+    "prem": 1110,
+    "prem18": 1100,
+    "nonren": 0.009
+   },
+   {
+    "name": "Lucas County",
+    "zips": 25,
+    "chg": 0.0538,
+    "freq": 0.0305,
+    "sev": 16076,
+    "prem": 1297,
+    "prem18": 1233,
+    "nonren": 0.0089
+   }
+  ],
+  "highNonren": 0.0717,
+  "rankPrem": 38,
+  "rankNonren": 18,
+  "rankChg": 30,
+  "rankFreq": 28,
+  "rankSev": 42
+ },
+ {
+  "zips": 423,
+  "prem": [
+   2424,
+   2439,
+   2462,
+   2479,
+   2525
+  ],
+  "p10": 2088,
+  "p90": 3207,
+  "chg": 0.0403,
+  "nonren": [
+   0.0066,
+   0.0028,
+   0.0022,
+   0.0052,
+   0.0066
+  ],
+  "freq": 0.0592,
+  "sev": 18969,
+  "lr": 0.4387,
+  "lrY": [
+   0.2931,
+   0.344,
+   0.4159,
+   0.3623,
+   0.333
+  ],
+  "freqY": [
+   0.0455,
+   0.0556,
+   0.0625,
+   0.0507,
+   0.0497
+  ],
+  "npc": 0.0166,
+  "oc": 0.015,
+  "code": "OK",
+  "name": "Oklahoma",
+  "slug": "oklahoma",
+  "counties": 77,
+  "hi": [
+   {
+    "zip": "73116",
+    "county": "Oklahoma County",
+    "prem": 5623,
+    "chg": -0.0465,
+    "nonren": 0.0029
+   },
+   {
+    "zip": "73151",
+    "county": "Oklahoma County",
+    "prem": 5407,
+    "chg": 0.0001,
+    "nonren": 0.013
+   },
+   {
+    "zip": "73131",
+    "county": "Oklahoma County",
+    "prem": 5299,
+    "chg": 0.0323,
+    "nonren": 0.004
+   },
+   {
+    "zip": "73134",
+    "county": "Oklahoma County",
+    "prem": 4615,
+    "chg": -0.0222,
+    "nonren": 0.0076
+   },
+   {
+    "zip": "73007",
+    "county": "Oklahoma County",
+    "prem": 4568,
+    "chg": -0.1485,
+    "nonren": 0.0024
+   }
+  ],
+  "lo": [
+   {
+    "zip": "74115",
+    "county": "Tulsa County",
+    "prem": 1763,
+    "chg": 0.0374,
+    "nonren": 0.011
+   },
+   {
+    "zip": "74128",
+    "county": "Tulsa County",
+    "prem": 1864,
+    "chg": 0.0382,
+    "nonren": 0.0078
+   },
+   {
+    "zip": "74743",
+    "county": "Choctaw County",
+    "prem": 1894,
+    "chg": 0.0788,
+    "nonren": 0.009
+   },
+   {
+    "zip": "74110",
+    "county": "Tulsa County",
+    "prem": 1903,
+    "chg": 0.0716,
+    "nonren": 0.0091
+   },
+   {
+    "zip": "74960",
+    "county": "Adair County",
+    "prem": 1921,
+    "chg": 0.0391,
+    "nonren": 0.0067
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Oklahoma County",
+    "zips": 49,
+    "chg": -0.0404,
+    "freq": 0.0885,
+    "sev": 15685,
+    "prem": 3158,
+    "prem18": 3238,
+    "nonren": 0.007
+   },
+   {
+    "name": "Tulsa County",
+    "zips": 31,
+    "chg": 0.0547,
+    "freq": 0.0563,
+    "sev": 17458,
+    "prem": 2247,
+    "prem18": 2135,
+    "nonren": 0.0048
+   },
+   {
+    "name": "Cleveland County",
+    "zips": 11,
+    "chg": -0.0211,
+    "freq": 0.0781,
+    "sev": 20178,
+    "prem": 3210,
+    "prem18": 3250,
+    "nonren": 0.0057
+   },
+   {
+    "name": "Le Flore County",
+    "zips": 11,
+    "chg": 0.0993,
+    "freq": 0.0684,
+    "sev": 20774,
+    "prem": 2122,
+    "prem18": 1934,
+    "nonren": 0.004
+   },
+   {
+    "name": "Osage County",
+    "zips": 11,
+    "chg": 0.0469,
+    "freq": 0.0513,
+    "sev": 21992,
+    "prem": 2241,
+    "prem18": 2208,
+    "nonren": 0.0054
+   },
+   {
+    "name": "Caddo County",
+    "zips": 10,
+    "chg": 0.0298,
+    "freq": 0.0619,
+    "sev": 17849,
+    "prem": 2668,
+    "prem18": 2654,
+    "nonren": 0.0076
+   },
+   {
+    "name": "Comanche County",
+    "zips": 10,
+    "chg": 0.0806,
+    "freq": 0.1056,
+    "sev": 17797,
+    "prem": 2920,
+    "prem18": 2706,
+    "nonren": 0.0076
+   },
+   {
+    "name": "Bryan County",
+    "zips": 9,
+    "chg": 0.0934,
+    "freq": 0.0524,
+    "sev": 18276,
+    "prem": 2422,
+    "prem18": 2102,
+    "nonren": 0.0083
+   }
+  ],
+  "highNonren": 0.0355,
+  "rankPrem": 3,
+  "rankNonren": 38,
+  "rankChg": 31,
+  "rankFreq": 13,
+  "rankSev": 6
+ },
+ {
+  "zips": 342,
+  "prem": [
+   1009,
+   1032,
+   1053,
+   1107,
+   1153
+  ],
+  "p10": 981,
+  "p90": 1426,
+  "chg": 0.1379,
+  "nonren": [
+   0.007,
+   0.0059,
+   0.0043,
+   0.0065,
+   0.0066
+  ],
+  "freq": 0.0258,
+  "sev": 21424,
+  "lr": 0.4728,
+  "lrY": [
+   0.3398,
+   0.4086,
+   0.3987,
+   0.4104,
+   0.3923
+  ],
+  "freqY": [
+   0.0217,
+   0.0229,
+   0.0239,
+   0.0258,
+   0.0237
+  ],
+  "npc": 0.0114,
+  "oc": 0.0137,
+  "code": "OR",
+  "name": "Oregon",
+  "slug": "oregon",
+  "counties": 36,
+  "hi": [
+   {
+    "zip": "97201",
+    "county": "Multnomah County",
+    "prem": 2808,
+    "chg": 0.0829,
+    "nonren": 0.0123
+   },
+   {
+    "zip": "97205",
+    "county": "Multnomah County",
+    "prem": 2650,
+    "chg": 0.0507,
+    "nonren": 0
+   },
+   {
+    "zip": "97210",
+    "county": "Multnomah County",
+    "prem": 2377,
+    "chg": 0.1145,
+    "nonren": 0.0068
+   },
+   {
+    "zip": "97034",
+    "county": "Clackamas County",
+    "prem": 2053,
+    "chg": 0.1365,
+    "nonren": 0.0071
+   },
+   {
+    "zip": "97231",
+    "county": "Multnomah County",
+    "prem": 1906,
+    "chg": 0.1337,
+    "nonren": 0.0043
+   }
+  ],
+  "lo": [
+   {
+    "zip": "97496",
+    "county": "Douglas County",
+    "prem": 859,
+    "chg": 0.1168,
+    "nonren": 0.0045
+   },
+   {
+    "zip": "97071",
+    "county": "Marion County",
+    "prem": 859,
+    "chg": 0.0588,
+    "nonren": 0.0054
+   },
+   {
+    "zip": "97322",
+    "county": "Linn County",
+    "prem": 863,
+    "chg": 0.1097,
+    "nonren": 0.0068
+   },
+   {
+    "zip": "97477",
+    "county": "Lane County",
+    "prem": 867,
+    "chg": 0.1181,
+    "nonren": 0.0046
+   },
+   {
+    "zip": "97402",
+    "county": "Lane County",
+    "prem": 887,
+    "chg": 0.1032,
+    "nonren": 0.0069
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Lane County",
+    "zips": 32,
+    "chg": 0.1394,
+    "freq": 0.0287,
+    "sev": 18324,
+    "prem": 1139,
+    "prem18": 1009,
+    "nonren": 0.005
+   },
+   {
+    "name": "Multnomah County",
+    "zips": 31,
+    "chg": 0.1354,
+    "freq": 0.0262,
+    "sev": 22593,
+    "prem": 1181,
+    "prem18": 1021,
+    "nonren": 0.0055
+   },
+   {
+    "name": "Clackamas County",
+    "zips": 24,
+    "chg": 0.1582,
+    "freq": 0.0353,
+    "sev": 22611,
+    "prem": 1259,
+    "prem18": 1094,
+    "nonren": 0.0054
+   },
+   {
+    "name": "Marion County",
+    "zips": 23,
+    "chg": 0.1142,
+    "freq": 0.0342,
+    "sev": 19918,
+    "prem": 1061,
+    "prem18": 964,
+    "nonren": 0.0057
+   },
+   {
+    "name": "Douglas County",
+    "zips": 22,
+    "chg": 0.1334,
+    "freq": 0.0313,
+    "sev": 20602,
+    "prem": 1070,
+    "prem18": 945,
+    "nonren": 0.0095
+   },
+   {
+    "name": "Washington County",
+    "zips": 21,
+    "chg": 0.1503,
+    "freq": 0.0239,
+    "sev": 22683,
+    "prem": 1172,
+    "prem18": 1022,
+    "nonren": 0.0044
+   },
+   {
+    "name": "Jackson County",
+    "zips": 15,
+    "chg": 0.1829,
+    "freq": 0.0271,
+    "sev": 20843,
+    "prem": 1146,
+    "prem18": 940,
+    "nonren": 0.0063
+   },
+   {
+    "name": "Lincoln County",
+    "zips": 15,
+    "chg": 0.0973,
+    "freq": 0.0202,
+    "sev": 15348,
+    "prem": 1177,
+    "prem18": 1078,
+    "nonren": 0.0069
+   }
+  ],
+  "highNonren": 0.0468,
+  "rankPrem": 45,
+  "rankNonren": 39,
+  "rankChg": 8,
+  "rankFreq": 50,
+  "rankSev": 3
+ },
+ {
+  "zips": 1524,
+  "prem": [
+   986,
+   989,
+   991,
+   1001,
+   1015
+  ],
+  "p10": 859,
+  "p90": 1476,
+  "chg": 0.0257,
+  "nonren": [
+   0.0049,
+   0.0016,
+   0.0024,
+   0.0043,
+   0.0042
+  ],
+  "freq": 0.0364,
+  "sev": 11664,
+  "lr": 0.3912,
+  "lrY": [
+   0.3375,
+   0.3448,
+   0.298,
+   0.3146,
+   0.3186
+  ],
+  "freqY": [
+   0.0405,
+   0.0405,
+   0.0315,
+   0.0336,
+   0.0328
+  ],
+  "npc": 0.0093,
+  "oc": 0.0111,
+  "code": "PA",
+  "name": "Pennsylvania",
+  "slug": "pennsylvania",
+  "counties": 67,
+  "hi": [
+   {
+    "zip": "19035",
+    "county": "Montgomery County",
+    "prem": 5490,
+    "chg": 0.0121,
+    "nonren": 0.0042
+   },
+   {
+    "zip": "19041",
+    "county": "Delaware County",
+    "prem": 4762,
+    "chg": 0.0204,
+    "nonren": 0.0056
+   },
+   {
+    "zip": "19437",
+    "county": "Montgomery County",
+    "prem": 4622,
+    "chg": 0.1213,
+    "nonren": 0
+   },
+   {
+    "zip": "19085",
+    "county": "Delaware County",
+    "prem": 4562,
+    "chg": 0.0504,
+    "nonren": 0.005
+   },
+   {
+    "zip": "19490",
+    "county": "Montgomery County",
+    "prem": 4434,
+    "chg": 0.2283,
+    "nonren": 0
+   }
+  ],
+  "lo": [
+   {
+    "zip": "18056",
+    "county": "Berks County",
+    "prem": 712,
+    "chg": -0.0939,
+    "nonren": 0
+   },
+   {
+    "zip": "17850",
+    "county": "Northumberland County",
+    "prem": 723,
+    "chg": -0.0173,
+    "nonren": 0
+   },
+   {
+    "zip": "17729",
+    "county": "Potter County",
+    "prem": 725,
+    "chg": -0.0834,
+    "nonren": 0.0079
+   },
+   {
+    "zip": "16228",
+    "county": "Armstrong County",
+    "prem": 738,
+    "chg": 0.0723,
+    "nonren": 0
+   },
+   {
+    "zip": "15827",
+    "county": "Elk County",
+    "prem": 739,
+    "chg": -0.005,
+    "nonren": 0
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Allegheny County",
+    "zips": 94,
+    "chg": 0.024,
+    "freq": 0.0466,
+    "sev": 9770,
+    "prem": 990,
+    "prem18": 961,
+    "nonren": 0.0047
+   },
+   {
+    "name": "Westmoreland County",
+    "zips": 63,
+    "chg": 0.0226,
+    "freq": 0.0351,
+    "sev": 9045,
+    "prem": 923,
+    "prem18": 899,
+    "nonren": 0.0049
+   },
+   {
+    "name": "Montgomery County",
+    "zips": 55,
+    "chg": 0.0202,
+    "freq": 0.0656,
+    "sev": 14210,
+    "prem": 1422,
+    "prem18": 1398,
+    "nonren": 0.0038
+   },
+   {
+    "name": "Washington County",
+    "zips": 49,
+    "chg": 0.0293,
+    "freq": 0.049,
+    "sev": 11731,
+    "prem": 967,
+    "prem18": 960,
+    "nonren": 0.0053
+   },
+   {
+    "name": "Schuylkill County",
+    "zips": 47,
+    "chg": 0.0494,
+    "freq": 0.0344,
+    "sev": 10516,
+    "prem": 1022,
+    "prem18": 970,
+    "nonren": 0.0041
+   },
+   {
+    "name": "Bucks County",
+    "zips": 45,
+    "chg": 0.0278,
+    "freq": 0.0599,
+    "sev": 15788,
+    "prem": 1687,
+    "prem18": 1643,
+    "nonren": 0.0033
+   },
+   {
+    "name": "Lancaster County",
+    "zips": 45,
+    "chg": 0.0518,
+    "freq": 0.0438,
+    "sev": 11184,
+    "prem": 994,
+    "prem18": 941,
+    "nonren": 0.0033
+   },
+   {
+    "name": "Philadelphia County",
+    "zips": 45,
+    "chg": 0.0545,
+    "freq": 0.0537,
+    "sev": 14098,
+    "prem": 1711,
+    "prem18": 1584,
+    "nonren": 0.0052
+   }
+  ],
+  "highNonren": 0.0098,
+  "rankPrem": 51,
+  "rankNonren": 46,
+  "rankChg": 39,
+  "rankFreq": 37,
+  "rankSev": 49
+ },
+ {
+  "zips": 74,
+  "prem": [
+   1928,
+   1954,
+   1982,
+   1985,
+   2001
+  ],
+  "p10": 1740,
+  "p90": 3017,
+  "chg": 0.062,
+  "nonren": [
+   0.0081,
+   0.0289,
+   0.0085,
+   0.0076,
+   0.0115
+  ],
+  "freq": 0.0543,
+  "sev": 13809,
+  "lr": 0.3386,
+  "lrY": [
+   0.3714,
+   0.2915,
+   0.2695,
+   0.3326,
+   0.3477
+  ],
+  "freqY": [
+   0.0692,
+   0.0443,
+   0.0543,
+   0.059,
+   0.0462
+  ],
+  "npc": 0.0084,
+  "oc": 0.0143,
+  "code": "RI",
+  "name": "Rhode Island",
+  "slug": "rhode-island",
+  "counties": 5,
+  "hi": [
+   {
+    "zip": "02807",
+    "county": "Washington County",
+    "prem": 6857,
+    "chg": 0.1667,
+    "nonren": 0.0175
+   },
+   {
+    "zip": "02840",
+    "county": "Newport County",
+    "prem": 4801,
+    "chg": 0.0839,
+    "nonren": 0.0067
+   },
+   {
+    "zip": "02837",
+    "county": "Newport County",
+    "prem": 4581,
+    "chg": 0.0168,
+    "nonren": 0.0058
+   },
+   {
+    "zip": "02835",
+    "county": "Newport County",
+    "prem": 4280,
+    "chg": 0.0294,
+    "nonren": 0.0054
+   },
+   {
+    "zip": "02906",
+    "county": "Providence County",
+    "prem": 3242,
+    "chg": -0.0215,
+    "nonren": 0.008
+   }
+  ],
+  "lo": [
+   {
+    "zip": "02833",
+    "county": "Washington County",
+    "prem": 1618,
+    "chg": 0.0723,
+    "nonren": 0.0044
+   },
+   {
+    "zip": "02861",
+    "county": "Providence County",
+    "prem": 1641,
+    "chg": 0.0524,
+    "nonren": 0.0135
+   },
+   {
+    "zip": "02824",
+    "county": "Providence County",
+    "prem": 1675,
+    "chg": 0.0097,
+    "nonren": 0.0274
+   },
+   {
+    "zip": "02914",
+    "county": "Providence County",
+    "prem": 1690,
+    "chg": 0.0398,
+    "nonren": 0.019
+   },
+   {
+    "zip": "02859",
+    "county": "Providence County",
+    "prem": 1709,
+    "chg": 0.0816,
+    "nonren": 0.0127
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Providence County",
+    "zips": 37,
+    "chg": 0.062,
+    "freq": 0.0604,
+    "sev": 12915,
+    "prem": 1945,
+    "prem18": 1771,
+    "nonren": 0.0135
+   },
+   {
+    "name": "Washington County",
+    "zips": 19,
+    "chg": 0.057,
+    "freq": 0.0475,
+    "sev": 14277,
+    "prem": 2096,
+    "prem18": 1990,
+    "nonren": 0.0081
+   },
+   {
+    "name": "Kent County",
+    "zips": 8,
+    "chg": 0.0633,
+    "freq": 0.0574,
+    "sev": 13264,
+    "prem": 1921,
+    "prem18": 1824,
+    "nonren": 0.0118
+   },
+   {
+    "name": "Newport County",
+    "zips": 7,
+    "chg": 0.0824,
+    "freq": 0.0392,
+    "sev": 16760,
+    "prem": 2823,
+    "prem18": 2592,
+    "nonren": 0.0067
+   },
+   {
+    "name": "Bristol County",
+    "zips": 3,
+    "chg": 0.0409,
+    "freq": 0.0445,
+    "sev": 13522,
+    "prem": 2279,
+    "prem18": 2139,
+    "nonren": 0.0093
+   }
+  ],
+  "highNonren": 0.0541,
+  "rankPrem": 9,
+  "rankNonren": 12,
+  "rankChg": 25,
+  "rankFreq": 17,
+  "rankSev": 34
+ },
+ {
+  "zips": 367,
+  "prem": [
+   1464,
+   1473,
+   1479,
+   1447,
+   1460
+  ],
+  "p10": 1211,
+  "p90": 2265,
+  "chg": 0.0098,
+  "nonren": [
+   0.0076,
+   0.0087,
+   0.0095,
+   0.0171,
+   0.0218
+  ],
+  "freq": 0.0429,
+  "sev": 13411,
+  "lr": 0.3515,
+  "lrY": [
+   0.3029,
+   0.2841,
+   0.3224,
+   0.2853,
+   0.2918
+  ],
+  "freqY": [
+   0.0439,
+   0.0391,
+   0.0463,
+   0.0326,
+   0.0403
+  ],
+  "npc": 0.0506,
+  "oc": 0.0197,
+  "code": "SC",
+  "name": "South Carolina",
+  "slug": "south-carolina",
+  "counties": 46,
+  "hi": [
+   {
+    "zip": "29401",
+    "county": "Charleston County",
+    "prem": 14548,
+    "chg": 0.2057,
+    "nonren": 0.0037
+   },
+   {
+    "zip": "29482",
+    "county": "Charleston County",
+    "prem": 13528,
+    "chg": 0.2215,
+    "nonren": 0.005
+   },
+   {
+    "zip": "29941",
+    "county": "Beaufort County",
+    "prem": 11467,
+    "chg": 0.0377,
+    "nonren": 0.0142
+   },
+   {
+    "zip": "29915",
+    "county": "Beaufort County",
+    "prem": 9796,
+    "chg": 0.0655,
+    "nonren": 0.0702
+   },
+   {
+    "zip": "29451",
+    "county": "Charleston County",
+    "prem": 7957,
+    "chg": 0.1141,
+    "nonren": 0.0195
+   }
+  ],
+  "lo": [
+   {
+    "zip": "29683",
+    "county": "Greenville County",
+    "prem": 1032,
+    "chg": -0.003,
+    "nonren": 0.013
+   },
+   {
+    "zip": "29320",
+    "county": "Spartanburg County",
+    "prem": 1055,
+    "chg": 0.0613,
+    "nonren": 0.0152
+   },
+   {
+    "zip": "29333",
+    "county": "Spartanburg County",
+    "prem": 1068,
+    "chg": 0.0619,
+    "nonren": 0.0172
+   },
+   {
+    "zip": "29377",
+    "county": "Spartanburg County",
+    "prem": 1071,
+    "chg": 0.0493,
+    "nonren": 0.0165
+   },
+   {
+    "zip": "29321",
+    "county": "Union County",
+    "prem": 1076,
+    "chg": 0.0007,
+    "nonren": 0.0123
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Charleston County",
+    "zips": 22,
+    "chg": -0.0786,
+    "freq": 0.0297,
+    "sev": 17228,
+    "prem": 3279,
+    "prem18": 3694,
+    "nonren": 0.0873
+   },
+   {
+    "name": "Greenville County",
+    "zips": 21,
+    "chg": 0.0581,
+    "freq": 0.054,
+    "sev": 12264,
+    "prem": 1408,
+    "prem18": 1291,
+    "nonren": 0.0218
+   },
+   {
+    "name": "Spartanburg County",
+    "zips": 20,
+    "chg": 0.037,
+    "freq": 0.0597,
+    "sev": 11184,
+    "prem": 1225,
+    "prem18": 1189,
+    "nonren": 0.0382
+   },
+   {
+    "name": "Aiken County",
+    "zips": 16,
+    "chg": -0.0098,
+    "freq": 0.0358,
+    "sev": 11769,
+    "prem": 1310,
+    "prem18": 1311,
+    "nonren": 0.0149
+   },
+   {
+    "name": "Horry County",
+    "zips": 16,
+    "chg": -0.0413,
+    "freq": 0.0399,
+    "sev": 14328,
+    "prem": 1880,
+    "prem18": 1949,
+    "nonren": 0.1007
+   },
+   {
+    "name": "Orangeburg County",
+    "zips": 16,
+    "chg": -0.0266,
+    "freq": 0.0424,
+    "sev": 16980,
+    "prem": 1452,
+    "prem18": 1528,
+    "nonren": 0.0208
+   },
+   {
+    "name": "Richland County",
+    "zips": 14,
+    "chg": 0.0217,
+    "freq": 0.0524,
+    "sev": 12218,
+    "prem": 1491,
+    "prem18": 1498,
+    "nonren": 0.0385
+   },
+   {
+    "name": "Lexington County",
+    "zips": 13,
+    "chg": 0.0291,
+    "freq": 0.0443,
+    "sev": 12919,
+    "prem": 1294,
+    "prem18": 1249,
+    "nonren": 0.0347
+   }
+  ],
+  "highNonren": 0.5095,
+  "rankPrem": 31,
+  "rankNonren": 2,
+  "rankChg": 43,
+  "rankFreq": 29,
+  "rankSev": 38
+ },
+ {
+  "zips": 180,
+  "prem": [
+   1508,
+   1555,
+   1624,
+   1730,
+   1794
+  ],
+  "p10": 1545,
+  "p90": 2285,
+  "chg": 0.2074,
+  "nonren": [
+   0.0047,
+   0.0072,
+   0.0061,
+   0.0096,
+   0.011
+  ],
+  "freq": 0.0811,
+  "sev": 11595,
+  "lr": 0.5016,
+  "lrY": [
+   0.2229,
+   0.3425,
+   0.2141,
+   0.1957,
+   0.6748
+  ],
+  "freqY": [
+   0.0438,
+   0.0616,
+   0.0346,
+   0.0416,
+   0.093
+  ],
+  "npc": 0.0088,
+  "oc": 0.0141,
+  "code": "SD",
+  "name": "South Dakota",
+  "slug": "south-dakota",
+  "counties": 61,
+  "hi": [
+   {
+    "zip": "57759",
+    "county": "Lawrence County",
+    "prem": 2898,
+    "chg": 0.1948,
+    "nonren": 0.0197
+   },
+   {
+    "zip": "57049",
+    "county": "Union County",
+    "prem": 2764,
+    "chg": 0.1507,
+    "nonren": 0.0134
+   },
+   {
+    "zip": "57720",
+    "county": "Harding County",
+    "prem": 2615,
+    "chg": 0.471,
+    "nonren": 0
+   },
+   {
+    "zip": "57038",
+    "county": "Union County",
+    "prem": 2594,
+    "chg": 0.0799,
+    "nonren": 0.0188
+   },
+   {
+    "zip": "57793",
+    "county": "Lawrence County",
+    "prem": 2584,
+    "chg": 0.319,
+    "nonren": 0.0128
+   }
+  ],
+  "lo": [
+   {
+    "zip": "57427",
+    "county": "Brown County",
+    "prem": 1315,
+    "chg": -0.2489,
+    "nonren": 0
+   },
+   {
+    "zip": "57241",
+    "county": "Hamlin County",
+    "prem": 1315,
+    "chg": 0.1158,
+    "nonren": 0
+   },
+   {
+    "zip": "57226",
+    "county": "Deuel County",
+    "prem": 1350,
+    "chg": 0.3024,
+    "nonren": 0.0023
+   },
+   {
+    "zip": "57031",
+    "county": "Yankton County",
+    "prem": 1394,
+    "chg": 0.0496,
+    "nonren": 0
+   },
+   {
+    "zip": "57437",
+    "county": "McPherson County",
+    "prem": 1413,
+    "chg": 0.2227,
+    "nonren": 0.013
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Minnehaha County",
+    "zips": 16,
+    "chg": 0.2346,
+    "freq": 0.0831,
+    "sev": 10985,
+    "prem": 1905,
+    "prem18": 1522,
+    "nonren": 0.0127
+   },
+   {
+    "name": "Lincoln County",
+    "zips": 8,
+    "chg": 0.1976,
+    "freq": 0.0846,
+    "sev": 12279,
+    "prem": 1925,
+    "prem18": 1605,
+    "nonren": 0.011
+   },
+   {
+    "name": "Brookings County",
+    "zips": 6,
+    "chg": 0.2014,
+    "freq": 0.085,
+    "sev": 13295,
+    "prem": 1740,
+    "prem18": 1411,
+    "nonren": 0.0076
+   },
+   {
+    "name": "Brown County",
+    "zips": 6,
+    "chg": 0.1805,
+    "freq": 0.0368,
+    "sev": 12530,
+    "prem": 1729,
+    "prem18": 1509,
+    "nonren": 0.0112
+   },
+   {
+    "name": "Pennington County",
+    "zips": 6,
+    "chg": 0.1895,
+    "freq": 0.1232,
+    "sev": 15848,
+    "prem": 2116,
+    "prem18": 1854,
+    "nonren": 0.0141
+   },
+   {
+    "name": "Turner County",
+    "zips": 6,
+    "chg": 0.2736,
+    "freq": 0.0803,
+    "sev": 11761,
+    "prem": 1786,
+    "prem18": 1498,
+    "nonren": 0.0123
+   },
+   {
+    "name": "Bon Homme County",
+    "zips": 5,
+    "chg": 0.1556,
+    "freq": 0.0815,
+    "sev": 8150,
+    "prem": 1715,
+    "prem18": 1467,
+    "nonren": 0.0136
+   },
+   {
+    "name": "Charles Mix County",
+    "zips": 5,
+    "chg": 0.1312,
+    "freq": 0.0847,
+    "sev": 7975,
+    "prem": 1745,
+    "prem18": 1589,
+    "nonren": 0.0148
+   }
+  ],
+  "highNonren": 0.1111,
+  "rankPrem": 18,
+  "rankNonren": 13,
+  "rankChg": 3,
+  "rankFreq": 3,
+  "rankSev": 50
+ },
+ {
+  "zips": 552,
+  "prem": [
+   1643,
+   1643,
+   1629,
+   1661,
+   1677
+  ],
+  "p10": 1372,
+  "p90": 2080,
+  "chg": 0.0115,
+  "nonren": [
+   0.0091,
+   0.0079,
+   0.0065,
+   0.0087,
+   0.0105
+  ],
+  "freq": 0.0457,
+  "sev": 14584,
+  "lr": 0.3922,
+  "lrY": [
+   0.2966,
+   0.3184,
+   0.3624,
+   0.317,
+   0.3662
+  ],
+  "freqY": [
+   0.0382,
+   0.0429,
+   0.0513,
+   0.0421,
+   0.0457
+  ],
+  "npc": 0.019,
+  "oc": 0.0173,
+  "code": "TN",
+  "name": "Tennessee",
+  "slug": "tennessee",
+  "counties": 95,
+  "hi": [
+   {
+    "zip": "37350",
+    "county": "Hamilton County",
+    "prem": 4027,
+    "chg": 0.0887,
+    "nonren": 0.002
+   },
+   {
+    "zip": "37215",
+    "county": "Davidson County",
+    "prem": 3786,
+    "chg": 0.1251,
+    "nonren": 0.0086
+   },
+   {
+    "zip": "38028",
+    "county": "Fayette County",
+    "prem": 3671,
+    "chg": 0.0669,
+    "nonren": 0.0138
+   },
+   {
+    "zip": "37205",
+    "county": "Davidson County",
+    "prem": 3637,
+    "chg": 0.0997,
+    "nonren": 0.0052
+   },
+   {
+    "zip": "38139",
+    "county": "Shelby County",
+    "prem": 3593,
+    "chg": 0.0376,
+    "nonren": 0.0088
+   }
+  ],
+  "lo": [
+   {
+    "zip": "37665",
+    "county": "Sullivan County",
+    "prem": 1039,
+    "chg": 0.0361,
+    "nonren": 0.0212
+   },
+   {
+    "zip": "37645",
+    "county": "Hawkins County",
+    "prem": 1106,
+    "chg": -0.0232,
+    "nonren": 0.0079
+   },
+   {
+    "zip": "37643",
+    "county": "Carter County",
+    "prem": 1137,
+    "chg": -0.0239,
+    "nonren": 0.0111
+   },
+   {
+    "zip": "37642",
+    "county": "Hawkins County",
+    "prem": 1142,
+    "chg": -0.0205,
+    "nonren": 0.0151
+   },
+   {
+    "zip": "37650",
+    "county": "Unicoi County",
+    "prem": 1159,
+    "chg": -0.0143,
+    "nonren": 0.0128
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Shelby County",
+    "zips": 32,
+    "chg": 0.0311,
+    "freq": 0.0842,
+    "sev": 13564,
+    "prem": 2118,
+    "prem18": 2019,
+    "nonren": 0.0176
+   },
+   {
+    "name": "Davidson County",
+    "zips": 24,
+    "chg": 0.0664,
+    "freq": 0.0676,
+    "sev": 14749,
+    "prem": 1760,
+    "prem18": 1664,
+    "nonren": 0.013
+   },
+   {
+    "name": "Hamilton County",
+    "zips": 23,
+    "chg": 0.0313,
+    "freq": 0.0426,
+    "sev": 15067,
+    "prem": 1631,
+    "prem18": 1598,
+    "nonren": 0.009
+   },
+   {
+    "name": "Knox County",
+    "zips": 20,
+    "chg": -0.0048,
+    "freq": 0.0364,
+    "sev": 13249,
+    "prem": 1390,
+    "prem18": 1402,
+    "nonren": 0.0079
+   },
+   {
+    "name": "Rutherford County",
+    "zips": 12,
+    "chg": 0.0352,
+    "freq": 0.0582,
+    "sev": 13880,
+    "prem": 1883,
+    "prem18": 1803,
+    "nonren": 0.0121
+   },
+   {
+    "name": "Blount County",
+    "zips": 10,
+    "chg": -0.0022,
+    "freq": 0.0334,
+    "sev": 18080,
+    "prem": 1546,
+    "prem18": 1589,
+    "nonren": 0.0064
+   },
+   {
+    "name": "Williamson County",
+    "zips": 10,
+    "chg": 0.1053,
+    "freq": 0.065,
+    "sev": 18812,
+    "prem": 2443,
+    "prem18": 2223,
+    "nonren": 0.0095
+   },
+   {
+    "name": "Madison County",
+    "zips": 9,
+    "chg": 0.0107,
+    "freq": 0.0886,
+    "sev": 12097,
+    "prem": 1830,
+    "prem18": 1797,
+    "nonren": 0.0118
+   }
+  ],
+  "highNonren": 0.087,
+  "rankPrem": 20,
+  "rankNonren": 16,
+  "rankChg": 42,
+  "rankFreq": 26,
+  "rankSev": 27
+ },
+ {
+  "zips": 1510,
+  "prem": [
+   2196,
+   2174,
+   2182,
+   2209,
+   2249
+  ],
+  "p10": 1714,
+  "p90": 3006,
+  "chg": 0.0307,
+  "nonren": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "freq": 0.0672,
+  "sev": 17005,
+  "lr": 0.4671,
+  "lrY": [
+   0.3283,
+   0.3485,
+   0.3369,
+   0.5595,
+   0.3668
+  ],
+  "freqY": [
+   0.0515,
+   0.0574,
+   0.05,
+   0.0833,
+   0.0453
+  ],
+  "npc": null,
+  "oc": null,
+  "code": "TX",
+  "name": "Texas",
+  "slug": "texas",
+  "counties": 244,
+  "hi": [
+   {
+    "zip": "75205",
+    "county": "Dallas County",
+    "prem": 8194,
+    "chg": 0.4179,
+    "nonren": null
+   },
+   {
+    "zip": "77024",
+    "county": "Harris County",
+    "prem": 7568,
+    "chg": 0.2021,
+    "nonren": null
+   },
+   {
+    "zip": "77056",
+    "county": "Harris County",
+    "prem": 7351,
+    "chg": 0.2119,
+    "nonren": null
+   },
+   {
+    "zip": "75225",
+    "county": "Dallas County",
+    "prem": 6977,
+    "chg": 0.3491,
+    "nonren": null
+   },
+   {
+    "zip": "77019",
+    "county": "Harris County",
+    "prem": 6871,
+    "chg": 0.2328,
+    "nonren": null
+   }
+  ],
+  "lo": [
+   {
+    "zip": "77650",
+    "county": "Galveston County",
+    "prem": 909,
+    "chg": -0.3532,
+    "nonren": null
+   },
+   {
+    "zip": "78252",
+    "county": "Bexar County",
+    "prem": 1070,
+    "chg": 0.0404,
+    "nonren": null
+   },
+   {
+    "zip": "77590",
+    "county": "Galveston County",
+    "prem": 1093,
+    "chg": -0.0445,
+    "nonren": null
+   },
+   {
+    "zip": "76537",
+    "county": "Williamson County",
+    "prem": 1093,
+    "chg": 0.0541,
+    "nonren": null
+   },
+   {
+    "zip": "77551",
+    "county": "Galveston County",
+    "prem": 1099,
+    "chg": -0.2053,
+    "nonren": null
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Harris County",
+    "zips": 128,
+    "chg": 0.047,
+    "freq": 0.0501,
+    "sev": 18148,
+    "prem": 2702,
+    "prem18": 2583,
+    "nonren": null
+   },
+   {
+    "name": "Dallas County",
+    "zips": 77,
+    "chg": 0.1397,
+    "freq": 0.0977,
+    "sev": 18171,
+    "prem": 2771,
+    "prem18": 2387,
+    "nonren": null
+   },
+   {
+    "name": "Bexar County",
+    "zips": 64,
+    "chg": 0.0584,
+    "freq": 0.0748,
+    "sev": 11996,
+    "prem": 1771,
+    "prem18": 1693,
+    "nonren": null
+   },
+   {
+    "name": "Tarrant County",
+    "zips": 62,
+    "chg": 0.1457,
+    "freq": 0.102,
+    "sev": 18049,
+    "prem": 2604,
+    "prem18": 2293,
+    "nonren": null
+   },
+   {
+    "name": "Travis County",
+    "zips": 46,
+    "chg": 0.1325,
+    "freq": 0.0547,
+    "sev": 15571,
+    "prem": 1956,
+    "prem18": 1744,
+    "nonren": null
+   },
+   {
+    "name": "Collin County",
+    "zips": 29,
+    "chg": 0.2299,
+    "freq": 0.0764,
+    "sev": 25621,
+    "prem": 3041,
+    "prem18": 2482,
+    "nonren": null
+   },
+   {
+    "name": "Denton County",
+    "zips": 26,
+    "chg": 0.1827,
+    "freq": 0.0842,
+    "sev": 20920,
+    "prem": 2717,
+    "prem18": 2312,
+    "nonren": null
+   },
+   {
+    "name": "El Paso County",
+    "zips": 26,
+    "chg": 0.0175,
+    "freq": 0.0618,
+    "sev": 10049,
+    "prem": 1298,
+    "prem18": 1275,
+    "nonren": null
+   }
+  ],
+  "highNonren": 0.0,
+  "rankPrem": 7,
+  "rankNonren": 51,
+  "rankChg": 36,
+  "rankFreq": 8,
+  "rankSev": 13
+ },
+ {
+  "zips": 248,
+  "prem": [
+   880,
+   910,
+   950,
+   995,
+   1041
+  ],
+  "p10": 922,
+  "p90": 1379,
+  "chg": 0.1818,
+  "nonren": [
+   0.0053,
+   0.0056,
+   0.0055,
+   0.0069,
+   0.009
+  ],
+  "freq": 0.0331,
+  "sev": 13236,
+  "lr": 0.4582,
+  "lrY": [
+   0.3216,
+   0.3617,
+   0.4523,
+   0.4457,
+   0.4369
+  ],
+  "freqY": [
+   0.0263,
+   0.0297,
+   0.0349,
+   0.0339,
+   0.0357
+  ],
+  "npc": 0.0107,
+  "oc": 0.0167,
+  "code": "UT",
+  "name": "Utah",
+  "slug": "utah",
+  "counties": 29,
+  "hi": [
+   {
+    "zip": "84060",
+    "county": "Summit County",
+    "prem": 5246,
+    "chg": 0.2689,
+    "nonren": 0.0051
+   },
+   {
+    "zip": "84098",
+    "county": "Summit County",
+    "prem": 3043,
+    "chg": 0.2832,
+    "nonren": 0.0167
+   },
+   {
+    "zip": "84004",
+    "county": "Utah County",
+    "prem": 2264,
+    "chg": 0.2474,
+    "nonren": 0.0098
+   },
+   {
+    "zip": "84061",
+    "county": "Summit County",
+    "prem": 2010,
+    "chg": 0.2121,
+    "nonren": 0.0242
+   },
+   {
+    "zip": "84103",
+    "county": "Salt Lake County",
+    "prem": 1967,
+    "chg": 0.1414,
+    "nonren": 0.0085
+   }
+  ],
+  "lo": [
+   {
+    "zip": "84749",
+    "county": "Wayne County",
+    "prem": 805,
+    "chg": -0.0282,
+    "nonren": 0
+   },
+   {
+    "zip": "84740",
+    "county": "Piute County",
+    "prem": 810,
+    "chg": 0.0091,
+    "nonren": 0
+   },
+   {
+    "zip": "84752",
+    "county": "Beaver County",
+    "prem": 815,
+    "chg": 0.0235,
+    "nonren": 0
+   },
+   {
+    "zip": "84052",
+    "county": "Duchesne County",
+    "prem": 837,
+    "chg": -0.0659,
+    "nonren": 0.0155
+   },
+   {
+    "zip": "84724",
+    "county": "Sevier County",
+    "prem": 839,
+    "chg": 0.1754,
+    "nonren": 0
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Salt Lake County",
+    "zips": 36,
+    "chg": 0.1688,
+    "freq": 0.0505,
+    "sev": 12986,
+    "prem": 1082,
+    "prem18": 922,
+    "nonren": 0.0089
+   },
+   {
+    "name": "Utah County",
+    "zips": 22,
+    "chg": 0.1704,
+    "freq": 0.0405,
+    "sev": 13436,
+    "prem": 1044,
+    "prem18": 893,
+    "nonren": 0.0087
+   },
+   {
+    "name": "Washington County",
+    "zips": 18,
+    "chg": 0.173,
+    "freq": 0.0272,
+    "sev": 15600,
+    "prem": 1061,
+    "prem18": 903,
+    "nonren": 0.0111
+   },
+   {
+    "name": "Cache County",
+    "zips": 15,
+    "chg": 0.2195,
+    "freq": 0.0346,
+    "sev": 14718,
+    "prem": 1054,
+    "prem18": 854,
+    "nonren": 0.0048
+   },
+   {
+    "name": "Box Elder County",
+    "zips": 14,
+    "chg": 0.2888,
+    "freq": 0.0342,
+    "sev": 13081,
+    "prem": 1119,
+    "prem18": 872,
+    "nonren": 0.0094
+   },
+   {
+    "name": "Sanpete County",
+    "zips": 13,
+    "chg": 0.1288,
+    "freq": 0.0235,
+    "sev": 12825,
+    "prem": 982,
+    "prem18": 867,
+    "nonren": 0.0112
+   },
+   {
+    "name": "Sevier County",
+    "zips": 11,
+    "chg": 0.2122,
+    "freq": 0.0276,
+    "sev": 8459,
+    "prem": 958,
+    "prem18": 797,
+    "nonren": 0.0089
+   },
+   {
+    "name": "Davis County",
+    "zips": 10,
+    "chg": 0.2124,
+    "freq": 0.0762,
+    "sev": 13775,
+    "prem": 1224,
+    "prem18": 1040,
+    "nonren": 0.0066
+   }
+  ],
+  "highNonren": 0.0524,
+  "rankPrem": 50,
+  "rankNonren": 24,
+  "rankChg": 4,
+  "rankFreq": 39,
+  "rankSev": 41
+ },
+ {
+  "zips": 247,
+  "prem": [
+   1213,
+   1219,
+   1219,
+   1214,
+   1203
+  ],
+  "p10": 1037,
+  "p90": 1713,
+  "chg": -0.0153,
+  "nonren": [
+   0.0141,
+   0.0112,
+   0.0105,
+   0.0083,
+   0.0072
+  ],
+  "freq": 0.0287,
+  "sev": 11373,
+  "lr": 0.2562,
+  "lrY": [
+   0.2215,
+   0.2052,
+   0.1489,
+   0.1624,
+   0.1774
+  ],
+  "freqY": [
+   0.034,
+   0.0341,
+   0.0245,
+   0.0246,
+   0.0247
+  ],
+  "npc": 0.0192,
+  "oc": 0.0105,
+  "code": "VT",
+  "name": "Vermont",
+  "slug": "vermont",
+  "counties": 14,
+  "hi": [
+   {
+    "zip": "05071",
+    "county": "Windsor County",
+    "prem": 3055,
+    "chg": -0.177,
+    "nonren": 0.0088
+   },
+   {
+    "zip": "05251",
+    "county": "Bennington County",
+    "prem": 2905,
+    "chg": 0.0241,
+    "nonren": 0.0045
+   },
+   {
+    "zip": "05254",
+    "county": "Bennington County",
+    "prem": 2869,
+    "chg": -0.0222,
+    "nonren": 0.0112
+   },
+   {
+    "zip": "05672",
+    "county": "Lamoille County",
+    "prem": 2810,
+    "chg": -0.0763,
+    "nonren": 0.0078
+   },
+   {
+    "zip": "05155",
+    "county": "Windham County",
+    "prem": 2604,
+    "chg": -0.0608,
+    "nonren": 0.0051
+   }
+  ],
+  "lo": [
+   {
+    "zip": "05404",
+    "county": "Chittenden County",
+    "prem": 847,
+    "chg": -0.0354,
+    "nonren": 0.0053
+   },
+   {
+    "zip": "05408",
+    "county": "Chittenden County",
+    "prem": 866,
+    "chg": -0.0279,
+    "nonren": 0.0061
+   },
+   {
+    "zip": "05670",
+    "county": "Washington County",
+    "prem": 877,
+    "chg": -0.0591,
+    "nonren": 0
+   },
+   {
+    "zip": "05481",
+    "county": "Franklin County",
+    "prem": 904,
+    "chg": -0.0872,
+    "nonren": 0
+   },
+   {
+    "zip": "05150",
+    "county": "Windsor County",
+    "prem": 920,
+    "chg": -0.0096,
+    "nonren": 0.0096
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Windsor County",
+    "zips": 32,
+    "chg": -0.0298,
+    "freq": 0.0319,
+    "sev": 11471,
+    "prem": 1387,
+    "prem18": 1444,
+    "nonren": 0.0093
+   },
+   {
+    "name": "Orange County",
+    "zips": 25,
+    "chg": -0.0247,
+    "freq": 0.0245,
+    "sev": 8375,
+    "prem": 1203,
+    "prem18": 1213,
+    "nonren": 0.0063
+   },
+   {
+    "name": "Rutland County",
+    "zips": 25,
+    "chg": -0.0267,
+    "freq": 0.0312,
+    "sev": 10972,
+    "prem": 1229,
+    "prem18": 1259,
+    "nonren": 0.009
+   },
+   {
+    "name": "Windham County",
+    "zips": 24,
+    "chg": -0.0038,
+    "freq": 0.0297,
+    "sev": 18740,
+    "prem": 1409,
+    "prem18": 1390,
+    "nonren": 0.008
+   },
+   {
+    "name": "Orleans County",
+    "zips": 22,
+    "chg": 0.0076,
+    "freq": 0.0255,
+    "sev": 11475,
+    "prem": 1142,
+    "prem18": 1119,
+    "nonren": 0.0075
+   },
+   {
+    "name": "Washington County",
+    "zips": 19,
+    "chg": -0.0167,
+    "freq": 0.0302,
+    "sev": 10628,
+    "prem": 1172,
+    "prem18": 1173,
+    "nonren": 0.0062
+   },
+   {
+    "name": "Bennington County",
+    "zips": 17,
+    "chg": -0.0165,
+    "freq": 0.042,
+    "sev": 11373,
+    "prem": 1681,
+    "prem18": 1569,
+    "nonren": 0.0106
+   },
+   {
+    "name": "Chittenden County",
+    "zips": 16,
+    "chg": -0.0312,
+    "freq": 0.0335,
+    "sev": 11548,
+    "prem": 1101,
+    "prem18": 1120,
+    "nonren": 0.0062
+   }
+  ],
+  "highNonren": 0.0162,
+  "rankPrem": 41,
+  "rankNonren": 35,
+  "rankChg": 48,
+  "rankFreq": 45,
+  "rankSev": 51
+ },
+ {
+  "zips": 748,
+  "prem": [
+   1177,
+   1193,
+   1215,
+   1248,
+   1280
+  ],
+  "p10": 977,
+  "p90": 1865,
+  "chg": 0.0898,
+  "nonren": [
+   0.0067,
+   0.0087,
+   0.0075,
+   0.0103,
+   0.0129
+  ],
+  "freq": 0.0389,
+  "sev": 12688,
+  "lr": 0.3684,
+  "lrY": [
+   0.4321,
+   0.2923,
+   0.3025,
+   0.2741,
+   0.3096
+  ],
+  "freqY": [
+   0.0541,
+   0.0342,
+   0.0343,
+   0.0303,
+   0.0347
+  ],
+  "npc": 0.0163,
+  "oc": 0.0156,
+  "code": "VA",
+  "name": "Virginia",
+  "slug": "virginia",
+  "counties": 112,
+  "hi": [
+   {
+    "zip": "20184",
+    "county": "Loudoun County",
+    "prem": 5060,
+    "chg": 0.2107,
+    "nonren": 0.0216
+   },
+   {
+    "zip": "22102",
+    "county": "Fairfax County",
+    "prem": 3605,
+    "chg": 0.1205,
+    "nonren": 0.0086
+   },
+   {
+    "zip": "20198",
+    "county": "Fauquier County",
+    "prem": 3601,
+    "chg": 0.0847,
+    "nonren": 0.0103
+   },
+   {
+    "zip": "23451",
+    "county": "Virginia Beach city",
+    "prem": 3595,
+    "chg": 0.0802,
+    "nonren": 0.0551
+   },
+   {
+    "zip": "23347",
+    "county": "Northampton County",
+    "prem": 3344,
+    "chg": 0.0481,
+    "nonren": 0
+   }
+  ],
+  "lo": [
+   {
+    "zip": "24441",
+    "county": "Augusta County",
+    "prem": 807,
+    "chg": -0.0303,
+    "nonren": 0.0088
+   },
+   {
+    "zip": "24374",
+    "county": "Wythe County",
+    "prem": 820,
+    "chg": 0.0445,
+    "nonren": 0.0333
+   },
+   {
+    "zip": "23395",
+    "county": "Accomack County",
+    "prem": 822,
+    "chg": -0.3038,
+    "nonren": 0
+   },
+   {
+    "zip": "24313",
+    "county": "Wythe County",
+    "prem": 829,
+    "chg": 0.0386,
+    "nonren": 0
+   },
+   {
+    "zip": "24416",
+    "county": "Rockbridge County",
+    "prem": 846,
+    "chg": 0.0562,
+    "nonren": 0.0075
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Fairfax County",
+    "zips": 42,
+    "chg": 0.088,
+    "freq": 0.0697,
+    "sev": 14559,
+    "prem": 1412,
+    "prem18": 1324,
+    "nonren": 0.0097
+   },
+   {
+    "name": "Augusta County",
+    "zips": 19,
+    "chg": 0.0582,
+    "freq": 0.0247,
+    "sev": 10157,
+    "prem": 1000,
+    "prem18": 974,
+    "nonren": 0.0113
+   },
+   {
+    "name": "Loudoun County",
+    "zips": 17,
+    "chg": 0.1014,
+    "freq": 0.0856,
+    "sev": 16598,
+    "prem": 1673,
+    "prem18": 1517,
+    "nonren": 0.0093
+   },
+   {
+    "name": "Rockingham County",
+    "zips": 17,
+    "chg": 0.0472,
+    "freq": 0.021,
+    "sev": 12194,
+    "prem": 993,
+    "prem18": 925,
+    "nonren": 0.0077
+   },
+   {
+    "name": "Accomack County",
+    "zips": 15,
+    "chg": -0.0689,
+    "freq": 0.0196,
+    "sev": 13257,
+    "prem": 1495,
+    "prem18": 1599,
+    "nonren": 0.0106
+   },
+   {
+    "name": "Pittsylvania County",
+    "zips": 15,
+    "chg": 0.1029,
+    "freq": 0.0474,
+    "sev": 8412,
+    "prem": 1018,
+    "prem18": 935,
+    "nonren": 0.0114
+   },
+   {
+    "name": "Prince William County",
+    "zips": 15,
+    "chg": 0.0877,
+    "freq": 0.0783,
+    "sev": 11877,
+    "prem": 1412,
+    "prem18": 1298,
+    "nonren": 0.0152
+   },
+   {
+    "name": "Fauquier County",
+    "zips": 14,
+    "chg": 0.0966,
+    "freq": 0.0553,
+    "sev": 22504,
+    "prem": 1656,
+    "prem18": 1505,
+    "nonren": 0.0095
+   }
+  ],
+  "highNonren": 0.1698,
+  "rankPrem": 37,
+  "rankNonren": 8,
+  "rankChg": 16,
+  "rankFreq": 32,
+  "rankSev": 44
+ },
+ {
+  "zips": 511,
+  "prem": [
+   1213,
+   1255,
+   1288,
+   1317,
+   1304
+  ],
+  "p10": 1115,
+  "p90": 1699,
+  "chg": 0.0804,
+  "nonren": [
+   0.0046,
+   0.0067,
+   0.0055,
+   0.0061,
+   0.0073
+  ],
+  "freq": 0.0287,
+  "sev": 21335,
+  "lr": 0.4492,
+  "lrY": [
+   0.3251,
+   0.4122,
+   0.3739,
+   0.427,
+   0.4772
+  ],
+  "freqY": [
+   0.0244,
+   0.0289,
+   0.0261,
+   0.0293,
+   0.0313
+  ],
+  "npc": 0.0084,
+  "oc": 0.0145,
+  "code": "WA",
+  "name": "Washington",
+  "slug": "washington",
+  "counties": 39,
+  "hi": [
+   {
+    "zip": "98039",
+    "county": "King County",
+    "prem": 6096,
+    "chg": 0.0878,
+    "nonren": 0.0079
+   },
+   {
+    "zip": "98222",
+    "county": "San Juan County",
+    "prem": 3541,
+    "chg": -0.0836,
+    "nonren": 0.0115
+   },
+   {
+    "zip": "98004",
+    "county": "King County",
+    "prem": 3002,
+    "chg": 0.0987,
+    "nonren": 0.0092
+   },
+   {
+    "zip": "98040",
+    "county": "King County",
+    "prem": 2969,
+    "chg": 0.1238,
+    "nonren": 0.0064
+   },
+   {
+    "zip": "98243",
+    "county": "San Juan County",
+    "prem": 2928,
+    "chg": 0.0746,
+    "nonren": 0.0201
+   }
+  ],
+  "lo": [
+   {
+    "zip": "98266",
+    "county": "Whatcom County",
+    "prem": 903,
+    "chg": -0.1407,
+    "nonren": 0.0079
+   },
+   {
+    "zip": "99001",
+    "county": "Spokane County",
+    "prem": 923,
+    "chg": 0.0831,
+    "nonren": 0.0069
+   },
+   {
+    "zip": "98569",
+    "county": "Grays Harbor County",
+    "prem": 940,
+    "chg": 0.0268,
+    "nonren": 0.0063
+   },
+   {
+    "zip": "99102",
+    "county": "Whitman County",
+    "prem": 947,
+    "chg": 0.0739,
+    "nonren": 0.0092
+   },
+   {
+    "zip": "99205",
+    "county": "Spokane County",
+    "prem": 948,
+    "chg": 0.0519,
+    "nonren": 0.0054
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "King County",
+    "zips": 76,
+    "chg": 0.0894,
+    "freq": 0.0318,
+    "sev": 24142,
+    "prem": 1505,
+    "prem18": 1364,
+    "nonren": 0.0064
+   },
+   {
+    "name": "Pierce County",
+    "zips": 47,
+    "chg": 0.0604,
+    "freq": 0.0339,
+    "sev": 22326,
+    "prem": 1299,
+    "prem18": 1209,
+    "nonren": 0.0078
+   },
+   {
+    "name": "Spokane County",
+    "zips": 33,
+    "chg": 0.091,
+    "freq": 0.0378,
+    "sev": 20032,
+    "prem": 1230,
+    "prem18": 1126,
+    "nonren": 0.0061
+   },
+   {
+    "name": "Snohomish County",
+    "zips": 26,
+    "chg": 0.0853,
+    "freq": 0.0309,
+    "sev": 24226,
+    "prem": 1250,
+    "prem18": 1167,
+    "nonren": 0.0065
+   },
+   {
+    "name": "Lewis County",
+    "zips": 19,
+    "chg": 0.063,
+    "freq": 0.0186,
+    "sev": 17179,
+    "prem": 1290,
+    "prem18": 1219,
+    "nonren": 0.0074
+   },
+   {
+    "name": "Clark County",
+    "zips": 18,
+    "chg": 0.1002,
+    "freq": 0.0289,
+    "sev": 24360,
+    "prem": 1215,
+    "prem18": 1104,
+    "nonren": 0.0062
+   },
+   {
+    "name": "Yakima County",
+    "zips": 18,
+    "chg": 0.0559,
+    "freq": 0.0369,
+    "sev": 22067,
+    "prem": 1340,
+    "prem18": 1281,
+    "nonren": 0.0102
+   },
+   {
+    "name": "Kitsap County",
+    "zips": 16,
+    "chg": 0.0818,
+    "freq": 0.0255,
+    "sev": 20950,
+    "prem": 1258,
+    "prem18": 1146,
+    "nonren": 0.005
+   }
+  ],
+  "highNonren": 0.047,
+  "rankPrem": 35,
+  "rankNonren": 32,
+  "rankChg": 21,
+  "rankFreq": 46,
+  "rankSev": 4
+ },
+ {
+  "zips": 456,
+  "prem": [
+   1199,
+   1188,
+   1166,
+   1156,
+   1143
+  ],
+  "p10": 1014,
+  "p90": 1324,
+  "chg": -0.0382,
+  "nonren": [
+   0.0042,
+   0.003,
+   0.0022,
+   0.0049,
+   0.0057
+  ],
+  "freq": 0.0263,
+  "sev": 14342,
+  "lr": 0.3444,
+  "lrY": [
+   0.2129,
+   0.2047,
+   0.2249,
+   0.1924,
+   0.2463
+  ],
+  "freqY": [
+   0.0259,
+   0.0267,
+   0.0265,
+   0.023,
+   0.0263
+  ],
+  "npc": 0.0285,
+  "oc": 0.0186,
+  "code": "WV",
+  "name": "West Virginia",
+  "slug": "west-virginia",
+  "counties": 55,
+  "hi": [
+   {
+    "zip": "26209",
+    "county": "Pocahontas County",
+    "prem": 2227,
+    "chg": 0.0018,
+    "nonren": 0
+   },
+   {
+    "zip": "24986",
+    "county": "Greenbrier County",
+    "prem": 1930,
+    "chg": -0.039,
+    "nonren": 0.0051
+   },
+   {
+    "zip": "26291",
+    "county": "Pocahontas County",
+    "prem": 1759,
+    "chg": -0.0065,
+    "nonren": 0.0128
+   },
+   {
+    "zip": "25442",
+    "county": "Jefferson County",
+    "prem": 1679,
+    "chg": 0.0686,
+    "nonren": 0.0062
+   },
+   {
+    "zip": "25843",
+    "county": "Raleigh County",
+    "prem": 1621,
+    "chg": -0.0613,
+    "nonren": 0.0133
+   }
+  ],
+  "lo": [
+   {
+    "zip": "26534",
+    "county": "Monongalia County",
+    "prem": 814,
+    "chg": -0.0183,
+    "nonren": 0
+   },
+   {
+    "zip": "26167",
+    "county": "Wetzel County",
+    "prem": 868,
+    "chg": -0.0698,
+    "nonren": 0
+   },
+   {
+    "zip": "26030",
+    "county": "Brooke County",
+    "prem": 876,
+    "chg": -0.1658,
+    "nonren": 0
+   },
+   {
+    "zip": "26134",
+    "county": "Pleasants County",
+    "prem": 895,
+    "chg": -0.0999,
+    "nonren": 0
+   },
+   {
+    "zip": "26866",
+    "county": "Pendleton County",
+    "prem": 918,
+    "chg": -0.0255,
+    "nonren": 0
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Kanawha County",
+    "zips": 30,
+    "chg": -0.0666,
+    "freq": 0.0328,
+    "sev": 15182,
+    "prem": 1127,
+    "prem18": 1225,
+    "nonren": 0.0065
+   },
+   {
+    "name": "Raleigh County",
+    "zips": 25,
+    "chg": -0.0611,
+    "freq": 0.0266,
+    "sev": 12321,
+    "prem": 1157,
+    "prem18": 1260,
+    "nonren": 0.0086
+   },
+   {
+    "name": "Fayette County",
+    "zips": 22,
+    "chg": -0.0521,
+    "freq": 0.0311,
+    "sev": 13320,
+    "prem": 1103,
+    "prem18": 1173,
+    "nonren": 0.0048
+   },
+   {
+    "name": "Logan County",
+    "zips": 17,
+    "chg": -0.1594,
+    "freq": 0.0203,
+    "sev": 15507,
+    "prem": 1246,
+    "prem18": 1474,
+    "nonren": 0.0104
+   },
+   {
+    "name": "Greenbrier County",
+    "zips": 14,
+    "chg": -0.0107,
+    "freq": 0.0228,
+    "sev": 11816,
+    "prem": 1118,
+    "prem18": 1131,
+    "nonren": 0.0063
+   },
+   {
+    "name": "Hampshire County",
+    "zips": 14,
+    "chg": 0.0167,
+    "freq": 0.0255,
+    "sev": 11623,
+    "prem": 1266,
+    "prem18": 1235,
+    "nonren": 0.0055
+   },
+   {
+    "name": "Randolph County",
+    "zips": 14,
+    "chg": -0.0551,
+    "freq": 0.0212,
+    "sev": 11447,
+    "prem": 1143,
+    "prem18": 1226,
+    "nonren": 0.0057
+   },
+   {
+    "name": "Boone County",
+    "zips": 13,
+    "chg": -0.069,
+    "freq": 0.0244,
+    "sev": 23161,
+    "prem": 1281,
+    "prem18": 1312,
+    "nonren": 0
+   }
+  ],
+  "highNonren": 0.0241,
+  "rankPrem": 47,
+  "rankNonren": 41,
+  "rankChg": 49,
+  "rankFreq": 49,
+  "rankSev": 29
+ },
+ {
+  "zips": 722,
+  "prem": [
+   1104,
+   1123,
+   1143,
+   1184,
+   1199
+  ],
+  "p10": 1015,
+  "p90": 1459,
+  "chg": 0.0749,
+  "nonren": [
+   0.0054,
+   0.0046,
+   0.0045,
+   0.0056,
+   0.0063
+  ],
+  "freq": 0.0312,
+  "sev": 15785,
+  "lr": 0.4014,
+  "lrY": [
+   0.2711,
+   0.3532,
+   0.2746,
+   0.2706,
+   0.3691
+  ],
+  "freqY": [
+   0.0249,
+   0.0328,
+   0.024,
+   0.0234,
+   0.0337
+  ],
+  "npc": 0.0152,
+  "oc": 0.0071,
+  "code": "WI",
+  "name": "Wisconsin",
+  "slug": "wisconsin",
+  "counties": 72,
+  "hi": [
+   {
+    "zip": "53125",
+    "county": "Walworth County",
+    "prem": 2093,
+    "chg": 0.0583,
+    "nonren": 0.0027
+   },
+   {
+    "zip": "53058",
+    "county": "Waukesha County",
+    "prem": 1919,
+    "chg": 0.1119,
+    "nonren": 0.0039
+   },
+   {
+    "zip": "54850",
+    "county": "Ashland County",
+    "prem": 1906,
+    "chg": -0.057,
+    "nonren": 0.008
+   },
+   {
+    "zip": "53122",
+    "county": "Waukesha County",
+    "prem": 1844,
+    "chg": -0.0004,
+    "nonren": 0.0058
+   },
+   {
+    "zip": "53147",
+    "county": "Walworth County",
+    "prem": 1824,
+    "chg": 0.0387,
+    "nonren": 0.0064
+   }
+  ],
+  "lo": [
+   {
+    "zip": "54542",
+    "county": "Forest County",
+    "prem": 797,
+    "chg": -0.0646,
+    "nonren": 0.0039
+   },
+   {
+    "zip": "54102",
+    "county": "Marinette County",
+    "prem": 810,
+    "chg": 0.0377,
+    "nonren": 0.0117
+   },
+   {
+    "zip": "54462",
+    "county": "Langlade County",
+    "prem": 839,
+    "chg": -0.0118,
+    "nonren": 0.0054
+   },
+   {
+    "zip": "54241",
+    "county": "Manitowoc County",
+    "prem": 863,
+    "chg": 0.0718,
+    "nonren": 0.0052
+   },
+   {
+    "zip": "54304",
+    "county": "Brown County",
+    "prem": 873,
+    "chg": 0.0457,
+    "nonren": 0.0077
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Milwaukee County",
+    "zips": 34,
+    "chg": 0.0439,
+    "freq": 0.0299,
+    "sev": 14767,
+    "prem": 1197,
+    "prem18": 1131,
+    "nonren": 0.0075
+   },
+   {
+    "name": "Dane County",
+    "zips": 33,
+    "chg": 0.1234,
+    "freq": 0.0297,
+    "sev": 13139,
+    "prem": 1351,
+    "prem18": 1214,
+    "nonren": 0.0053
+   },
+   {
+    "name": "Waukesha County",
+    "zips": 26,
+    "chg": 0.0618,
+    "freq": 0.0318,
+    "sev": 17231,
+    "prem": 1300,
+    "prem18": 1240,
+    "nonren": 0.0058
+   },
+   {
+    "name": "Dodge County",
+    "zips": 17,
+    "chg": 0.0772,
+    "freq": 0.0259,
+    "sev": 14747,
+    "prem": 1146,
+    "prem18": 1034,
+    "nonren": 0.0081
+   },
+   {
+    "name": "Grant County",
+    "zips": 16,
+    "chg": 0.142,
+    "freq": 0.0264,
+    "sev": 9443,
+    "prem": 1229,
+    "prem18": 1069,
+    "nonren": 0.0057
+   },
+   {
+    "name": "Fond du Lac County",
+    "zips": 15,
+    "chg": 0.0786,
+    "freq": 0.04,
+    "sev": 15004,
+    "prem": 1119,
+    "prem18": 1072,
+    "nonren": 0.0084
+   },
+   {
+    "name": "Marathon County",
+    "zips": 15,
+    "chg": 0.075,
+    "freq": 0.0258,
+    "sev": 12931,
+    "prem": 1147,
+    "prem18": 1096,
+    "nonren": 0.0055
+   },
+   {
+    "name": "Outagamie County",
+    "zips": 14,
+    "chg": 0.0446,
+    "freq": 0.062,
+    "sev": 14345,
+    "prem": 1068,
+    "prem18": 1006,
+    "nonren": 0.0108
+   }
+  ],
+  "highNonren": 0.0097,
+  "rankPrem": 42,
+  "rankNonren": 40,
+  "rankChg": 22,
+  "rankFreq": 41,
+  "rankSev": 18
+ },
+ {
+  "zips": 83,
+  "prem": [
+   1558,
+   1559,
+   1562,
+   1652,
+   1667
+  ],
+  "p10": 1251,
+  "p90": 2283,
+  "chg": 0.0849,
+  "nonren": [
+   0.0063,
+   0.0085,
+   0.0099,
+   0.011,
+   0.0056
+  ],
+  "freq": 0.0428,
+  "sev": 17906,
+  "lr": 0.4644,
+  "lrY": [
+   0.3797,
+   0.44,
+   0.3513,
+   0.3891,
+   0.297
+  ],
+  "freqY": [
+   0.0457,
+   0.0438,
+   0.0387,
+   0.0348,
+   0.0308
+  ],
+  "npc": 0.0116,
+  "oc": 0.0143,
+  "code": "WY",
+  "name": "Wyoming",
+  "slug": "wyoming",
+  "counties": 23,
+  "hi": [
+   {
+    "zip": "83025",
+    "county": "Teton County",
+    "prem": 11196,
+    "chg": 0.2838,
+    "nonren": 0.0348
+   },
+   {
+    "zip": "83014",
+    "county": "Teton County",
+    "prem": 6186,
+    "chg": 0.1932,
+    "nonren": 0.023
+   },
+   {
+    "zip": "83001",
+    "county": "Teton County",
+    "prem": 4703,
+    "chg": 0.2239,
+    "nonren": 0.0109
+   },
+   {
+    "zip": "83414",
+    "county": "Teton County",
+    "prem": 3206,
+    "chg": 0.243,
+    "nonren": 0.0055
+   },
+   {
+    "zip": "82054",
+    "county": "Laramie County",
+    "prem": 2785,
+    "chg": 0.2446,
+    "nonren": 0.0061
+   }
+  ],
+  "lo": [
+   {
+    "zip": "82901",
+    "county": "Sweetwater County",
+    "prem": 986,
+    "chg": 0.0584,
+    "nonren": 0.0083
+   },
+   {
+    "zip": "83101",
+    "county": "Lincoln County",
+    "prem": 1013,
+    "chg": 0.0808,
+    "nonren": 0.007
+   },
+   {
+    "zip": "82935",
+    "county": "Sweetwater County",
+    "prem": 1020,
+    "chg": 0.0078,
+    "nonren": 0.0071
+   },
+   {
+    "zip": "82520",
+    "county": "Fremont County",
+    "prem": 1181,
+    "chg": -0.0035,
+    "nonren": 0.0047
+   },
+   {
+    "zip": "82410",
+    "county": "Big Horn County",
+    "prem": 1217,
+    "chg": 0.0328,
+    "nonren": 0.0067
+   }
+  ],
+  "topCounties": [
+   {
+    "name": "Carbon County",
+    "zips": 7,
+    "chg": 0.052,
+    "freq": 0.0507,
+    "sev": 15144,
+    "prem": 1366,
+    "prem18": 1261,
+    "nonren": 0.0059
+   },
+   {
+    "name": "Lincoln County",
+    "zips": 7,
+    "chg": 0.0911,
+    "freq": 0.0211,
+    "sev": 31940,
+    "prem": 1499,
+    "prem18": 1369,
+    "nonren": 0.006
+   },
+   {
+    "name": "Laramie County",
+    "zips": 6,
+    "chg": 0.1827,
+    "freq": 0.0935,
+    "sev": 19063,
+    "prem": 2395,
+    "prem18": 1971,
+    "nonren": 0.0037
+   },
+   {
+    "name": "Natrona County",
+    "zips": 6,
+    "chg": 0.0503,
+    "freq": 0.0521,
+    "sev": 14422,
+    "prem": 1637,
+    "prem18": 1583,
+    "nonren": 0.0055
+   },
+   {
+    "name": "Sheridan County",
+    "zips": 6,
+    "chg": 0.0994,
+    "freq": 0.0415,
+    "sev": 17154,
+    "prem": 1882,
+    "prem18": 1750,
+    "nonren": 0.0034
+   },
+   {
+    "name": "Fremont County",
+    "zips": 5,
+    "chg": -0.0035,
+    "freq": 0.0293,
+    "sev": 14206,
+    "prem": 1259,
+    "prem18": 1310,
+    "nonren": 0.0082
+   },
+   {
+    "name": "Sublette County",
+    "zips": 5,
+    "chg": -0.0368,
+    "freq": 0.0249,
+    "sev": 26717,
+    "prem": 1411,
+    "prem18": 1530,
+    "nonren": 0.006
+   },
+   {
+    "name": "Big Horn County",
+    "zips": 4,
+    "chg": 0.1145,
+    "freq": 0.1116,
+    "sev": 23512,
+    "prem": 1365,
+    "prem18": 1223,
+    "nonren": 0.006
+   }
+  ],
+  "highNonren": 0.0482,
+  "rankPrem": 21,
+  "rankNonren": 42,
+  "rankChg": 17,
+  "rankFreq": 30,
+  "rankSev": 10
+ }
+]

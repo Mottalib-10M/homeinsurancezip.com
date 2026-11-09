@@ -1,0 +1,51 @@
+---
+/** Method: the files, the steps of scripts/build-data.py, the rules of the calculators, the limits and the Treasury disclaimer. */
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { KIT as K } from '../../lib/kit';
+import { src, table } from '../../lib/helpers';
+import { breadcrumbSchema, webPageSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('method', lang);
+const P = K.P;
+const N = K.N;
+const I = N.index;
+const title = 'Home Insurance Data Method 2026: Treasury ZIP Code File';
+const description = `Home insurance data method 2026: the Treasury FIO workbook of ${N.zips.toLocaleString('en-US')} ZIP codes, 2018 to 2022, BLS price indexes, Census county links, and what is left out.`;
+const idx = N.years.map((y) => [String(y), K.dec(I.ppi.annual[String(y)], 1), K.dec(I.cpi.annual[String(y)], 1), K.dec(I.tenants.annual[String(y)], 1)]);
+const later = ['2023', '2024', '2025'].map((y) => [y, K.dec(I.ppi.annual[y], 1), K.dec(I.cpi.annual[y], 1), K.dec(I.tenants.annual[y], 1)]);
+const last = [[K.month(I.ppi.last.ym), K.dec(I.ppi.last.v, 1), K.dec(I.cpi.last.v, 1), K.dec(I.tenants.last.v, 1)]];
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'Where the numbers come from', description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Where the numbers come from', path }])]} breadcrumbs={[{ label: 'Where the numbers come from' }]}>
+  <article class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Where the numbers come from</h1>
+    <p><strong>Every premium, nonrenewal rate and claim figure on this site comes from one federal spreadsheet: the ZIP code metrics the Treasury's Federal Insurance Office released on {K.day(P.data.published)}, covering {P.data.firstYear} to {P.data.lastYear}.</strong> The data stop in {P.data.lastYear}. Anything said about later years uses the Bureau of Labor Statistics price index and is labeled as an estimate.</p>
+    <h2>1. The Treasury workbook</h2>
+    <p>The file (<Fragment set:html={src('fio_data', 'Supporting Underlying Metrics, xlsx')} />) accompanies the report <Fragment set:html={src('fio_report', 'Analyses of U.S. Homeowners Insurance Markets, 2018-2022')} />. It comes from the Property and Casualty Market Intelligence data call run by the NAIC, state regulators and the Federal Insurance Office. For each ZIP code and year it gives seven metrics, defined in the workbook as follows.</p>
+    <ul>
+      <li>Premiums per policy: written premium divided by policies in force at the end of the year.</li>
+      <li>Nonrenewal rate: nonrenewals in the year divided by policies in force at year end. Only nonrenewals decided by the insurer.</li>
+      <li>Nonpayment cancellation rate and other than nonpayment cancellation rate, on the same base.</li>
+      <li>Claim frequency: paid claims in the year divided by policies in force. Claim severity: losses paid divided by paid claims.</li>
+      <li>Paid loss ratio: losses paid divided by written premium.</li>
+    </ul>
+    <p>Scope, as the workbook states it: HO-3 and HO-5 policies of the reporting insurers, about {K.pct(P.data.marketShare, 0)} of those policies nationwide by premium. Residual market plans (FAIR plans, Citizens, wind pools), excess and surplus lines, flood insurance and the years 2023 and 2024 are outside it. To protect insurers and homeowners, a ZIP code appears only with at least {P.data.minInsurers} reporting insurers and {P.data.minPolicies} policies. That keeps {K.num(N.zips)} ZIP codes. Texas insurers did not report nonrenewals, so Texas nonrenewal and cancellation rates read "not reported" here (report, note to Figure 8).</p>
+    <h2>2. Inflation</h2>
+    <p>The report says its dollar figures are adjusted for inflation with the consumer price index. The workbook does not print the base year, and its values behave like inflation-adjusted values. We therefore call the change from {P.data.firstYear} to {P.data.lastYear} a change "after inflation". To carry a {P.data.lastYear} premium to today, we read it as {P.data.lastYear} dollars and multiply it by the change of the BLS producer price index for homeowner's insurance from its {P.data.lastYear} average to {K.month(I.ppi.last.ym)} ({K.sgn(N.ppiFactor - 1)}). That figure is an estimate for an area, not the price of a policy. If the workbook's base year differs, it shifts every projection by the same proportion.</p>
+    <Fragment set:html={table(['Year', 'PPI homeowner\'s insurance', 'CPI-U all items', 'CPI tenants\' and household insurance'], [...idx, ...later, ...last], `${src('bls_ppi', 'BLS PPI')} series PCU5241265241262 and ${src('bls_cpi', 'BLS CPI')} series CUUR0000SA0 and CUUR0000SEHD, yearly averages, then the latest month published. October 2025 values were not collected.`, ['l', 'r', 'r', 'r'])} />
+    <h2>3. ZIP code, county, state</h2>
+    <p>Each ZIP code is placed in the county that holds the largest land share of its ZIP Code Tabulation Area in the <Fragment set:html={src('census_rel', 'Census Bureau 2020 relationship file')} />, and in that county's state. A ZIP code that straddles a county line is counted once. County and state figures are medians across their ZIP codes: each ZIP code counts once, whatever its number of policies, so they describe the typical ZIP code, not the typical policy, and they will not match the report's averages. The national figures are the median across all {K.num(N.zips)} ZIP codes.</p>
+    <h2>4. The rules in the calculators</h2>
+    <p>Escrow: a servicer may hold a cushion of no more than one-sixth of the yearly disbursements and may spread a shortage over at least {P.escrow.shortageMonths} months (<Fragment set:html={src('ecfr_escrow', '12 CFR 1024.17')} />). Florida: hurricane deductible options and the once-a-year rule (<Fragment set:html={src('fl_627_701', 'Fla. Stat. 627.701')} />), notice periods of {P.florida.renewalNoticeDays} days for a renewal premium and {P.florida.nonrenewalNoticeDays} days for a nonrenewal (<Fragment set:html={src('fl_627_4133', 'Fla. Stat. 627.4133')} />), and the Citizens eligibility line of {K.pct(P.florida.citizensMargin, 0)} (<Fragment set:html={src('fl_627_351', 'Fla. Stat. 627.351(6)')} />). The replacement cost condition uses {K.pct(P.coinsurance.defaultShare, 0)} by default, the share most homeowners forms print; the reader can change it.</p>
+    <h2>5. What is not here</h2>
+    <ul>
+      <li>A quote. Premium per policy mixes houses of every size and every deductible; your price depends on your house, your claims and your insurer.</li>
+      <li>Years after {P.data.lastYear}, except through the national price index.</li>
+      <li>FAIR plan, Citizens and surplus lines policies, and flood insurance (see <Fragment set:html={src('fema_flood', 'FEMA')} /> for flood).</li>
+      <li>Rates filed with state departments, NAIC tables or commercial sample quotes. They are linked when useful, never copied.</li>
+    </ul>
+    <h2>6. The Treasury's disclaimer</h2>
+    <p>Restated as the workbook requires. Treasury reviewed and validated the data for its aggregate analyses and did not validate the data in each ZIP code; the metrics include anomalies that may matter more for one ZIP code than for a region. The U.S. government (including Treasury) makes no warranty as to the quality, accuracy, correctness, completeness, or usefulness of the Supporting Underlying Metrics and expressly disclaims liability for errors or omissions in this information and materials. The U.S. government (including Treasury) is not liable for any item created by any third party using the Supporting Underlying Metrics. This site is not endorsed by Treasury, the NAIC or any state regulator.</p>
+    <p>The data are a work of the U.S. government, released "to promote transparency and research". The site is rebuilt by one script (<code>scripts/build-data.py</code>) when a source changes. Corrections: <a href={route('contact', lang)}>contact page</a>.</p>
+  </article>
+</PageLayout>

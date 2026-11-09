@@ -1,0 +1,21 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME, REVIEW_CYCLE_MONTHS } from '../../data/site-config';
+const lang = 'en';
+---
+<PageLayout title="Editorial policy of Home Insurance ZIP: federal data, dated figures" description="How Home Insurance ZIP writes its pages: the Treasury ZIP code file, BLS indexes and statutes only, every figure computed by a script, and no money from insurers or agents." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Editorial policy</h1>
+    <h2>What counts as a source</h2>
+    <p>Premiums, nonrenewals and claims come from the Treasury's Federal Insurance Office ZIP code workbook. Price changes since then come from the Bureau of Labor Statistics. Rules come from statutes and federal regulations, read in their official version. Insurer blogs and quote sites are read to learn what people ask, never as a source of a number. Private data sets, such as filed-rate databases sold to insurers, are not reproduced.</p>
+    <h2>How a figure reaches a page</h2>
+    <p>No figure is typed by hand. A script reads the federal files and writes the medians by ZIP code, county and state; rules live in one parameter file with their source and the date they were read. Pages read those files, so a corrected source corrects every page at the next build.</p>
+    <h2>Dates are stated</h2>
+    <p>The Treasury figures end in 2022, and every page says so. A figure carried to a later month is labeled as an estimate, with the index used. A figure we cannot trace to an official file is not published.</p>
+    <h2>Independence</h2>
+    <p>{AUTHOR_NAME} receives nothing from insurers, agents, brokers, lenders or lead buyers and links to none of them. There is no advertising today; if some is added it will be labeled, limited to three places a page, and never come from a firm selling insurance.</p>
+    <h2>Review and corrections</h2>
+    <p>The site is reviewed at least every {REVIEW_CYCLE_MONTHS} months, and when the Treasury or the BLS publishes new data. A reported error is checked against the source and, once fixed, moves the date shown on the page. Write through the <a href={route('contact', lang)}>contact page</a>; the data steps are on the <a href={route('method', lang)}>method page</a>.</p>
+  </div>
+</PageLayout>

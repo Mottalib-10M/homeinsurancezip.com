@@ -1,0 +1,124 @@
+{
+  "_readme": "Every rule the calculators apply lives here, with the official text it was read in on retrieved_at. Data figures (premiums, nonrenewals, claims, indexes) live in national.json, states.json and public/data, built by scripts/build-data.py from the Treasury workbook, the Census relationship file and BLS series.",
+  "year": 2026,
+  "retrieved_at": "2026-11-07",
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "data": {
+    "_basis": "Treasury FIO workbook, tab 'Disclaimer & Background': ZIP codes with at least 10 reporting insurers and at least 50 policies; HO-3 and HO-5 policies; 80 percent of those policies nationwide by direct premiums written; residual market plans, excess and surplus lines, flood and 2023-2024 not included. Report p. 13, Figure 8 note: Texas insurer data did not include nonrenewals.",
+    "minInsurers": 10,
+    "minPolicies": 50,
+    "marketShare": 0.8,
+    "firstYear": 2018,
+    "lastYear": 2022,
+    "published": "2025-01-16"
+  },
+  "escrow": {
+    "_basis": "12 CFR 1024.17(c)(1)(i)-(ii): monthly escrow deposit of one-twelfth of the annual disbursements plus a cushion of no more than one-sixth of the estimated annual disbursements; 1024.17(f)(3)(ii): a shortage of one month's payment or more may be spread in equal monthly payments over at least 12 months.",
+    "cushionMax": 0.1666667,
+    "shortageMonths": 12
+  },
+  "florida": {
+    "_basis": "Fla. Stat. 627.701(3)(a): hurricane deductible options of $500, 2, 5 and 10 percent of the dwelling limit must be offered; 627.701(5)(a)1: the hurricane deductible applies once per calendar year to all hurricane losses with the same insurer or group. Fla. Stat. 627.4133(2)(a)-(b): 45 days' notice of the renewal premium, 120 days' notice of nonrenewal (10 days for nonpayment). Fla. Stat. 627.351(6)(c)5.a: a primary residence offered comparable private coverage is not eligible for Citizens unless that premium is more than 20 percent above Citizens.",
+    "hurricaneOptions": [
+      500,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "renewalNoticeDays": 45,
+    "nonrenewalNoticeDays": 120,
+    "nonpaymentNoticeDays": 10,
+    "citizensMargin": 0.2
+  },
+  "coinsurance": {
+    "_basis": "Common replacement cost condition of standard homeowners forms (replacement cost paid when the dwelling limit is at least 80 percent of the full replacement cost, otherwise a proportional amount or actual cash value), described in our words; the calculator lets the reader change the percentage written in their own policy.",
+    "defaultShare": 0.8
+  },
+  "sources": {
+    "fio_data": {
+      "url": "https://home.treasury.gov/system/files/311/Supporting_Underlying_Metrics_and_Disclaimer_for_Analyses_of_US_Homeowners_Insurance_Markets_2018-2022.xlsx",
+      "label": {
+        "en": "U.S. Treasury, Federal Insurance Office: Supporting Underlying Metrics and Disclaimer for Analyses of US Homeowners Insurance Markets 2018-2022 (workbook)"
+      }
+    },
+    "fio_report": {
+      "url": "https://home.treasury.gov/system/files/311/Analyses_of_US_Homeowners_Insurance_Markets_2018-2022_Climate-Related_Risks_and_Other_Factors_0.pdf",
+      "label": {
+        "en": "U.S. Treasury, Federal Insurance Office: Analyses of U.S. Homeowners Insurance Markets, 2018-2022 (January 2025)"
+      }
+    },
+    "fio_press": {
+      "url": "https://home.treasury.gov/news/press-releases/jy2791",
+      "label": {
+        "en": "U.S. Treasury press release jy2791: homeowners insurance data and report (January 16, 2025)"
+      }
+    },
+    "fio_office": {
+      "url": "https://home.treasury.gov/policy-issues/financial-markets-financial-institutions-and-fiscal-service/federal-insurance-office",
+      "label": {
+        "en": "U.S. Treasury: Federal Insurance Office"
+      }
+    },
+    "census_rel": {
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html",
+      "label": {
+        "en": "U.S. Census Bureau: 2020 Census relationship files (ZCTA to county)"
+      }
+    },
+    "bls_ppi": {
+      "url": "https://www.bls.gov/ppi/",
+      "label": {
+        "en": "U.S. Bureau of Labor Statistics: Producer Price Index, series PCU5241265241262 Homeowner's insurance"
+      }
+    },
+    "bls_cpi": {
+      "url": "https://www.bls.gov/cpi/",
+      "label": {
+        "en": "U.S. Bureau of Labor Statistics: Consumer Price Index, all items (CUUR0000SA0) and tenants' and household insurance (CUUR0000SEHD)"
+      }
+    },
+    "ecfr_escrow": {
+      "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1024/subpart-B/section-1024.17",
+      "label": {
+        "en": "12 CFR 1024.17, escrow accounts (Regulation X, RESPA)"
+      }
+    },
+    "fl_627_701": {
+      "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.701.html",
+      "label": {
+        "en": "Florida Statutes 627.701: deductibles, hurricane deductibles"
+      }
+    },
+    "fl_627_4133": {
+      "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.4133.html",
+      "label": {
+        "en": "Florida Statutes 627.4133: notice of nonrenewal, renewal premium or cancellation"
+      }
+    },
+    "fl_627_351": {
+      "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.351.html",
+      "label": {
+        "en": "Florida Statutes 627.351(6): Citizens Property Insurance Corporation, eligibility"
+      }
+    },
+    "fema_flood": {
+      "url": "https://www.fema.gov/flood-insurance",
+      "label": {
+        "en": "FEMA: National Flood Insurance Program"
+      }
+    },
+    "naic_pcmi": {
+      "url": "https://content.naic.org/article/state-insurance-regulators-monitor-home-insurance-market-protect-consumers",
+      "label": {
+        "en": "NAIC: State Insurance Regulators Monitor the Home Insurance Market (December 4, 2024)"
+      }
+    },
+    "tdi_market": {
+      "url": "https://www.tdi.texas.gov/general/texas-homeowners-insurance-market-overview.html",
+      "label": {
+        "en": "Texas Department of Insurance: Texas homeowners insurance market overview"
+      }
+    }
+  }
+}

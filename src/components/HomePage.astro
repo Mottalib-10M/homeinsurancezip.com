@@ -1,0 +1,61 @@
+---
+/**
+ * Home (the pillar): the ZIP lookup first, the folded answer, the national path 2018-2022 next to the
+ * price index, the pillar text, then the 51 states in one sortable-by-eye table and the guides as cards.
+ * Text: src/content/home.ts. Tables are generated from the data asset, so they carry data-chrome.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Clamp from './Clamp.astro';
+import Tool from './Tool.astro';
+import Body from './Body.astro';
+import { HOME } from '../content/home';
+import { route, ROUTES } from '../i18n/routes';
+import { GROUPS } from '../i18n/nav';
+import { helpers, SOURCES, table } from '../lib/helpers';
+import { GUIDES, STATE_PAGES, stateId } from '../lib/pages';
+import { KIT as K } from '../lib/kit';
+import { faqSchema, organizationSchema, websiteSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import { LAST_UPDATED } from '../data/site-config';
+const lang = 'en';
+const x = HOME;
+const path = route('home', lang);
+const h = helpers();
+const sources = x.sources.map((k) => ({ name: SOURCES[k].label, url: SOURCES[k].url }));
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(x.faqs, lang)];
+const I = K.N.index;
+const nat = K.N.years.map((y, i) => [String(y), K.usd(K.N.prem[i]), K.rate(K.N.nonren[i]), K.dec(K.N.freqY[i] * 100, 1), K.pct(K.N.lrY[i], 0), K.dec(I.ppi.annual[String(y)], 1)]);
+const hasPage = (slug: string) => STATE_PAGES.some((p) => p.slug === slug);
+const rows = [...K.STATES].sort((a, b) => b.prem[4] - a.prem[4]).map((s) => [
+  hasPage(s.slug) ? `<a href="${route(stateId(s.slug), lang)}">${s.name}</a>` : s.name,
+  K.usd(s.prem[4]), K.usd(K.today(s.prem[4])), K.sgn(s.chg), K.rate(s.nonren[4]), K.usd(s.sev), K.num(s.zips),
+]);
+---
+<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={x.faqs} sources={sources}>
+  <header class="mb-4">
+    <h1 class="font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{x.h1}</h1>
+    <p class="mt-2 text-base text-navy-700 sm:text-lg">{x.intro}</p>
+    <p data-chrome class="mt-2 text-sm text-navy-600">Independent site, not an insurer or a broker. The Treasury's ZIP code data run from 2018 to 2022.</p>
+  </header>
+  <div data-outil data-chrome><Tool kind="lookup" idPrefix="home" /></div>
+  <p class="mt-3 text-sm text-navy-600">Built on the U.S. Treasury's January 2025 ZIP code release · <a href={route('method', lang)} class="underline">How the figures are made</a> · <a href={route('about', lang)} class="underline">Who publishes this</a> · updated <time datetime={LAST_UPDATED}>{K.day(LAST_UPDATED)}</time></p>
+  <Clamp text={x.resume} lang={lang} id="clamp-home" class="my-8" />
+  <section data-chrome class="mt-8">
+    <h2 class="font-serif text-2xl font-bold text-navy-900">Five years of the median ZIP code</h2>
+    <Fragment set:html={table(['Year', 'Premium per policy', 'Nonrenewal rate', 'Claims per 100 policies', 'Paid loss ratio', 'BLS price index'], nat, `Median across ${K.num(K.N.zips)} ZIP codes of the Treasury FIO workbook (nonrenewals without Texas, which did not report them). BLS index: producer price index for homeowner's insurance, yearly average.`, ['l', 'r', 'r', 'r', 'r', 'r'])} />
+  </section>
+  <section class="mt-8"><Body html={x.why(h)} path={path} /></section>
+  <section data-chrome class="mt-10">
+    <h2 class="font-serif text-2xl font-bold text-navy-900">Every state, from the highest median premium to the lowest</h2>
+    <Fragment set:html={table(['State', 'Median ZIP 2022', `At ${K.ppiMonth} prices`, 'Change 2018-2022', 'Nonrenewal 2022', 'Average claim', 'ZIP codes'], rows, `Medians across ZIP codes, Treasury FIO workbook. "At ${K.ppiMonth} prices": the 2022 median times the change of the BLS homeowner's insurance price index, an estimate and not a quote.`, ['l', 'r', 'r', 'r', 'r', 'r', 'r'])} />
+  </section>
+  <section class="mt-10" data-chrome>
+    {GROUPS.map((g) => (
+      <div class="mb-6">
+        <h2 class="font-serif text-xl font-bold text-navy-900">{g.label}</h2>
+        <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {GUIDES.filter((p) => p.group === g.id && ROUTES.some((r) => r.id === p.id)).map((p) => <a href={route(p.id, lang)} class="rounded-lg border border-navy-200 p-3 hover:border-accent-300 hover:bg-accent-50"><span class="block font-semibold text-navy-900">{p.nav}</span><span class="mt-1 block text-sm text-navy-600">{p.card}</span></a>)}
+        </div>
+      </div>
+    ))}
+  </section>
+</PageLayout>

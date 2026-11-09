@@ -1,0 +1,476 @@
+{
+ "AL": {
+  "regulator": "Alabama Department of Insurance",
+  "url": "https://www.aldoi.gov/",
+  "plans": [
+   {
+    "name": "Alabama Insurance Underwriting Association",
+    "url": "https://www.aiua.org/",
+    "writes": "a beach plan writing wind, hail and hurricane only policies for homes in the Gulf Front, Beach and Seacoast areas of certain counties, paired with a separate policy for the other perils"
+   }
+  ]
+ },
+ "AK": {
+  "regulator": "Alaska Division of Insurance",
+  "url": "https://www.commerce.alaska.gov/web/ins/",
+  "plans": []
+ },
+ "AZ": {
+  "regulator": "Arizona Department of Insurance and Financial Institutions",
+  "url": "https://difi.az.gov/",
+  "plans": []
+ },
+ "AR": {
+  "regulator": "Arkansas Insurance Department",
+  "url": "https://insurance.arkansas.gov/",
+  "plans": []
+ },
+ "CA": {
+  "regulator": "California Department of Insurance",
+  "url": "https://www.insurance.ca.gov/",
+  "plans": [
+   {
+    "name": "California FAIR Plan",
+    "url": "https://www.cfpnet.com/",
+    "writes": "a basic dwelling policy covering fire, lightning, windstorm and hail"
+   }
+  ]
+ },
+ "CO": {
+  "regulator": "Colorado Division of Insurance",
+  "url": "https://doi.colorado.gov/",
+  "plans": []
+ },
+ "CT": {
+  "regulator": "Connecticut Insurance Department",
+  "url": "https://portal.ct.gov/cid",
+  "plans": [
+   {
+    "name": "Connecticut FAIR Plan",
+    "url": "https://www.ctfairplan.com/",
+    "writes": "a basic dwelling fire policy covering fire, lightning, wind and hail"
+   }
+  ]
+ },
+ "DE": {
+  "regulator": "Delaware Department of Insurance",
+  "url": "https://insurance.delaware.gov/",
+  "plans": [
+   {
+    "name": "Delaware FAIR Plan",
+    "url": "",
+    "writes": "a basic dwelling fire policy covering fire, lightning, windstorm and hail"
+   }
+  ]
+ },
+ "DC": {
+  "regulator": "DC Department of Insurance, Securities and Banking",
+  "url": "https://disb.dc.gov/",
+  "plans": [
+   {
+    "name": "DC Property Insurance Facility",
+    "url": "https://www.dcpif.org/",
+    "writes": "named-peril dwelling, homeowners, renters and condominium forms"
+   }
+  ]
+ },
+ "FL": {
+  "regulator": "Florida Office of Insurance Regulation",
+  "url": "https://floir.gov/",
+  "plans": [
+   {
+    "name": "Citizens Property Insurance Corporation",
+    "url": "https://www.citizensfla.com/",
+    "writes": "multi-peril and wind-only policies, through a Personal Lines Account statewide and a Coastal Account in 35 coastal counties"
+   }
+  ]
+ },
+ "GA": {
+  "regulator": "Georgia Office of Commissioner of Insurance and Safety Fire",
+  "url": "https://oci.georgia.gov/",
+  "plans": [
+   {
+    "name": "Georgia Underwriting Association",
+    "url": "https://www.georgiaunderwriting.com/",
+    "writes": "dwelling fire and HO-8 policies, with wind and hail only policies in the six coastal counties"
+   }
+  ]
+ },
+ "HI": {
+  "regulator": "Hawaii Insurance Division",
+  "url": "https://cca.hawaii.gov/ins/",
+  "plans": [
+   {
+    "name": "Hawaii Property Insurance Association",
+    "url": "https://www.hpiainfo.com/",
+    "writes": "dwelling and homeowners named-peril forms"
+   }
+  ]
+ },
+ "ID": {
+  "regulator": "Idaho Department of Insurance",
+  "url": "https://doi.idaho.gov/",
+  "plans": []
+ },
+ "IL": {
+  "regulator": "Illinois Department of Insurance",
+  "url": "https://idoi.illinois.gov/",
+  "plans": [
+   {
+    "name": "Illinois FAIR Plan Association",
+    "url": "https://www.illinoisfairplan.com/",
+    "writes": "dwelling and homeowners forms, named-peril and multi-peril"
+   }
+  ]
+ },
+ "IN": {
+  "regulator": "Indiana Department of Insurance",
+  "url": "https://www.in.gov/idoi/",
+  "plans": [
+   {
+    "name": "Indiana FAIR Plan",
+    "url": "https://www.indianafairplan.com/",
+    "writes": "dwelling and HO-2 and HO-8 homeowners forms"
+   }
+  ]
+ },
+ "IA": {
+  "regulator": "Iowa Insurance Division",
+  "url": "https://iid.iowa.gov/",
+  "plans": [
+   {
+    "name": "Iowa FAIR Plan",
+    "url": "https://iowafairplan.com/",
+    "writes": "a dwelling fire policy and an HO-8 form"
+   }
+  ]
+ },
+ "KS": {
+  "regulator": "Kansas Insurance Department",
+  "url": "https://www.insurance.kansas.gov/",
+  "plans": [
+   {
+    "name": "Kansas FAIR Plan",
+    "url": "",
+    "writes": "a dwelling policy limited to fire and lightning, with extended coverage only by endorsement"
+   }
+  ]
+ },
+ "KY": {
+  "regulator": "Kentucky Department of Insurance",
+  "url": "https://insurance.ky.gov/",
+  "plans": [
+   {
+    "name": "Kentucky FAIR Plan",
+    "url": "",
+    "writes": "dwelling and HO-4, HO-6 and HO-8 forms"
+   }
+  ]
+ },
+ "LA": {
+  "regulator": "Louisiana Department of Insurance",
+  "url": "https://www.ldi.la.gov/",
+  "plans": [
+   {
+    "name": "Louisiana Citizens Property Insurance Corporation",
+    "url": "https://www.lacitizens.com/",
+    "writes": "wind and hail dwelling forms and homeowners forms, named-peril and multi-peril"
+   }
+  ]
+ },
+ "ME": {
+  "regulator": "Maine Bureau of Insurance",
+  "url": "https://www.maine.gov/pfr/insurance/",
+  "plans": []
+ },
+ "MD": {
+  "regulator": "Maryland Insurance Administration",
+  "url": "https://insurance.maryland.gov/",
+  "plans": [
+   {
+    "name": "Maryland Joint Insurance Association",
+    "url": "https://www.mdjia.org/",
+    "writes": "dwelling fire and homeowners named-peril forms"
+   }
+  ]
+ },
+ "MA": {
+  "regulator": "Massachusetts Division of Insurance",
+  "url": "https://www.mass.gov/orgs/division-of-insurance",
+  "plans": [
+   {
+    "name": "Massachusetts Property Insurance Underwriting Association",
+    "url": "https://www.mpiua.com/",
+    "writes": "dwelling and homeowners forms, including HO-3 style multi-peril coverage"
+   }
+  ]
+ },
+ "MI": {
+  "regulator": "Michigan Department of Insurance and Financial Services",
+  "url": "https://www.michigan.gov/difs",
+  "plans": [
+   {
+    "name": "Michigan Basic Property Insurance Association",
+    "url": "https://www.mbpia.com/",
+    "writes": "dwelling fire and HO-2, HO-3, HO-4 and HO-6 forms"
+   }
+  ]
+ },
+ "MN": {
+  "regulator": "Minnesota Department of Commerce",
+  "url": "https://mn.gov/commerce/",
+  "plans": [
+   {
+    "name": "Minnesota FAIR Plan",
+    "url": "https://www.mnfairplan.org/",
+    "writes": "dwelling fire, renters, condominium and HO-8 forms"
+   }
+  ]
+ },
+ "MS": {
+  "regulator": "Mississippi Insurance Department",
+  "url": "https://www.mid.ms.gov/",
+  "plans": [
+   {
+    "name": "Mississippi Windstorm Underwriting Association",
+    "url": "https://msplans.com/",
+    "writes": "a beach plan writing windstorm and hail policies for one-to-four family homes in coastal counties"
+   },
+   {
+    "name": "Mississippi Residential Property Insurance Underwriting Association",
+    "url": "https://msplans.com/",
+    "writes": "the state's FAIR plan, writing dwelling fire policies, with windstorm and hail allowed outside three coastal counties"
+   }
+  ]
+ },
+ "MO": {
+  "regulator": "Missouri Department of Commerce and Insurance",
+  "url": "https://insurance.mo.gov/",
+  "plans": [
+   {
+    "name": "Missouri FAIR Plan",
+    "url": "https://missourifairplan.com/",
+    "writes": "a basic dwelling fire policy covering fire, lightning, windstorm and hail"
+   }
+  ]
+ },
+ "MT": {
+  "regulator": "Montana Commissioner of Securities and Insurance",
+  "url": "https://csimt.gov/",
+  "plans": []
+ },
+ "NE": {
+  "regulator": "Nebraska Department of Insurance",
+  "url": "https://doi.nebraska.gov/",
+  "plans": []
+ },
+ "NV": {
+  "regulator": "Nevada Division of Insurance",
+  "url": "https://doi.nv.gov/",
+  "plans": []
+ },
+ "NH": {
+  "regulator": "New Hampshire Insurance Department",
+  "url": "https://www.insurance.nh.gov/",
+  "plans": []
+ },
+ "NJ": {
+  "regulator": "New Jersey Department of Banking and Insurance",
+  "url": "https://www.nj.gov/dobi/",
+  "plans": [
+   {
+    "name": "New Jersey Insurance Underwriting Association",
+    "url": "",
+    "writes": "basic and broad dwelling fire policies"
+   }
+  ]
+ },
+ "NM": {
+  "regulator": "New Mexico Office of Superintendent of Insurance",
+  "url": "https://www.osi.state.nm.us/",
+  "plans": [
+   {
+    "name": "New Mexico's FAIR plan",
+    "url": "",
+    "writes": "a basic dwelling fire policy covering fire, lightning, windstorm and hail"
+   }
+  ]
+ },
+ "NY": {
+  "regulator": "New York Department of Financial Services",
+  "url": "https://www.dfs.ny.gov/",
+  "plans": [
+   {
+    "name": "New York Property Insurance Underwriting Association",
+    "url": "https://www.nypiua.com/",
+    "writes": "basic and broad dwelling fire policies"
+   }
+  ]
+ },
+ "NC": {
+  "regulator": "North Carolina Department of Insurance",
+  "url": "https://www.ncdoi.gov/",
+  "plans": [
+   {
+    "name": "North Carolina Insurance Underwriting Association (Coastal Property Insurance Pool)",
+    "url": "https://www.ncjua-nciua.org/",
+    "writes": "the beach plan of the Beach and Coastal territories, with dwelling, wind and hail only and homeowners special forms"
+   },
+   {
+    "name": "North Carolina Joint Underwriting Association",
+    "url": "https://www.ncjua-nciua.org/",
+    "writes": "the FAIR plan for the rest of the state, with dwelling and homeowners forms"
+   }
+  ]
+ },
+ "ND": {
+  "regulator": "North Dakota Insurance Department",
+  "url": "https://www.insurance.nd.gov/",
+  "plans": []
+ },
+ "OH": {
+  "regulator": "Ohio Department of Insurance",
+  "url": "https://insurance.ohio.gov/",
+  "plans": [
+   {
+    "name": "Ohio FAIR Plan",
+    "url": "",
+    "writes": "dwelling fire and homeowners named-peril and multi-peril forms"
+   }
+  ]
+ },
+ "OK": {
+  "regulator": "Oklahoma Insurance Department",
+  "url": "https://www.oid.ok.gov/",
+  "plans": []
+ },
+ "OR": {
+  "regulator": "Oregon Division of Financial Regulation",
+  "url": "https://dfr.oregon.gov/",
+  "plans": [
+   {
+    "name": "Oregon FAIR Plan",
+    "url": "https://orfairplan.com/",
+    "writes": "a dwelling fire policy, with wind and hail by endorsement"
+   }
+  ]
+ },
+ "PA": {
+  "regulator": "Pennsylvania Insurance Department",
+  "url": "https://www.pa.gov/agencies/insurance",
+  "plans": [
+   {
+    "name": "Insurance Placement Facility of Pennsylvania",
+    "url": "",
+    "writes": "basic and broad dwelling fire policies"
+   }
+  ]
+ },
+ "RI": {
+  "regulator": "Rhode Island Department of Business Regulation, Insurance Division",
+  "url": "https://dbr.ri.gov/insurance",
+  "plans": [
+   {
+    "name": "Rhode Island FAIR Plan",
+    "url": "",
+    "writes": "dwelling fire and a range of homeowners forms up to HO-5"
+   }
+  ]
+ },
+ "SC": {
+  "regulator": "South Carolina Department of Insurance",
+  "url": "https://doi.sc.gov/",
+  "plans": [
+   {
+    "name": "South Carolina Wind and Hail Underwriting Association",
+    "url": "https://www.scwind.com/",
+    "writes": "a wind and hail only plan available in two defined coastal zones"
+   }
+  ]
+ },
+ "SD": {
+  "regulator": "South Dakota Division of Insurance",
+  "url": "https://dlr.sd.gov/insurance/",
+  "plans": []
+ },
+ "TN": {
+  "regulator": "Tennessee Department of Commerce and Insurance",
+  "url": "https://www.tn.gov/commerce/insurance.html",
+  "plans": []
+ },
+ "TX": {
+  "regulator": "Texas Department of Insurance",
+  "url": "https://www.tdi.texas.gov/",
+  "plans": [
+   {
+    "name": "Texas Windstorm Insurance Association",
+    "url": "https://www.twia.org/",
+    "writes": "the wind and hail plan of the 14 Gulf Coast counties"
+   },
+   {
+    "name": "Texas FAIR Plan Association",
+    "url": "https://www.texasfairplan.org/",
+    "writes": "dwelling, homeowners, tenant and condominium policies, with wind and hail excluded where TWIA covers them"
+   }
+  ]
+ },
+ "UT": {
+  "regulator": "Utah Insurance Department",
+  "url": "https://insurance.utah.gov/",
+  "plans": []
+ },
+ "VT": {
+  "regulator": "Vermont Department of Financial Regulation",
+  "url": "https://dfr.vermont.gov/",
+  "plans": []
+ },
+ "VA": {
+  "regulator": "Virginia State Corporation Commission, Bureau of Insurance",
+  "url": "https://www.scc.virginia.gov/groups/bureau-of-insurance/",
+  "plans": [
+   {
+    "name": "Virginia Property Insurance Association",
+    "url": "https://www.vpia.com/",
+    "writes": "basic and broad dwelling fire forms"
+   }
+  ]
+ },
+ "WA": {
+  "regulator": "Washington Office of the Insurance Commissioner",
+  "url": "https://www.insurance.wa.gov/",
+  "plans": [
+   {
+    "name": "Washington FAIR Plan Association",
+    "url": "https://www.wafairplan.com/",
+    "writes": "a dwelling fire policy, with wind and hail by endorsement"
+   }
+  ]
+ },
+ "WV": {
+  "regulator": "West Virginia Offices of the Insurance Commissioner",
+  "url": "https://www.wvinsurance.gov/",
+  "plans": [
+   {
+    "name": "West Virginia Essential Property Insurance Association",
+    "url": "",
+    "writes": "a basic dwelling fire policy covering fire, lightning, wind and hail"
+   }
+  ]
+ },
+ "WI": {
+  "regulator": "Wisconsin Office of the Commissioner of Insurance",
+  "url": "https://oci.wi.gov/",
+  "plans": [
+   {
+    "name": "Wisconsin's FAIR plan",
+    "url": "",
+    "writes": "an HO-8 homeowners form"
+   }
+  ]
+ },
+ "WY": {
+  "regulator": "Wyoming Department of Insurance",
+  "url": "https://doi.wyo.gov/",
+  "plans": []
+ }
+}

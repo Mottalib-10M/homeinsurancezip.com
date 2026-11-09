@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /*?*
+
+Sitemap: https://homeinsurancezip.com/sitemap-index.xml

@@ -1,0 +1,13 @@
+{
+ "accent": "#7A3E1D",
+ "symbol": "ZIP",
+ "variants": [
+  {
+   "file": "og-en.png",
+   "title": "What homeowners really paid\nfor insurance in your ZIP code",
+   "subtitle": "Premium per policy · nonrenewals · claims · 2018 to 2022",
+   "badge": "U.S. Treasury FIO data, 25,593 ZIP codes",
+   "brand": "Home Insurance ZIP"
+  }
+ ]
+}

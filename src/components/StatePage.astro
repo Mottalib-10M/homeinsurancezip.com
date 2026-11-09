@@ -1,0 +1,65 @@
+---
+/**
+ * A state page: the ZIP / county lookup set on the state, the folded answer, the state's own text
+ * (src/content/states/<slug>.ts), then the tables built from the Treasury file (year by year, counties,
+ * dearest and cheapest ZIP codes). Tables and captions are generated, so they carry data-chrome; the prose
+ * of the content file is what makes the page.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Clamp from './Clamp.astro';
+import Tool from './Tool.astro';
+import Body from './Body.astro';
+import { route, ROUTES } from '../i18n/routes';
+import { label } from '../i18n/nav';
+import { t } from '../i18n/ui';
+import { guideById, statePageById, stateId } from '../lib/pages';
+import { helpers, SOURCES, table } from '../lib/helpers';
+import { stateBySlug } from '../lib/data';
+import { KIT as K } from '../lib/kit';
+import REG from '../data/regulators.json';
+import { articleSchema, faqSchema, breadcrumbSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import { AUTHOR_NAME } from '../data/site-config';
+import type { StateDef } from '../lib/page-types';
+interface Props { def: StateDef }
+const { def } = Astro.props;
+const lang = 'en';
+const ui = t(lang);
+const st = stateBySlug(def.slug);
+const reg = (REG as Record<string, { regulator: string; url: string; plans: Array<{ name: string; url: string }> }>)[st.code];
+const id = stateId(def.slug);
+const path = route(id, lang);
+const h1 = `Homeowners insurance in ${st.name}: premium by ZIP code`;
+const jsonLd = [webApplicationSchema({ name: h1, description: def.description, path, lang }), articleSchema({ title: h1, description: def.description, path, lang }), webPageSchema({ name: h1, description: def.description, path, lang }), breadcrumbSchema([{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: 'Homeowners insurance by state', path: route('homeowners-insurance-by-state', lang) }, { name: st.name, path }])];
+if (def.faqs.length) jsonLd.push(faqSchema(def.faqs, lang));
+const card = (x: string) => guideById(x)?.card ?? (statePageById(x) ? statePageById(x)!.intro : '');
+const related = def.related.filter((x) => ROUTES.some((r) => r.id === x)).map((x) => ({ href: route(x, lang), name: label(x), description: card(x) }));
+const sources = [
+  ...['fio_data', 'fio_report', 'census_rel', 'bls_ppi'].map((k) => ({ name: SOURCES[k].label, url: SOURCES[k].url })),
+  { name: reg.regulator, url: reg.url },
+  ...reg.plans.filter((p) => p.url).map((p) => ({ name: p.name, url: p.url })),
+];
+const years = K.N.years.map((y, i) => [String(y), K.usd(st.prem[i]), K.usd(K.N.prem[i]), K.rate(st.nonren[i]), K.dec(st.freqY[i] * 100, 1), K.pct(st.lrY[i], 0)]);
+const countyRows = st.topCounties.map((c) => [c.name, K.num(c.zips), K.usd(c.prem18), K.usd(c.prem), c.chg === null ? 'n/a' : K.sgn(c.chg), K.rate(c.nonren), K.usd(c.sev)]);
+const zipRows = (rs: typeof st.hi) => rs.map((z) => [z.zip, z.county, K.usd(z.prem), z.chg === null ? 'n/a' : K.sgn(z.chg), K.rate(z.nonren)]);
+---
+<PageLayout title={def.title} description={def.description} lang={lang} jsonLd={jsonLd} faqs={def.faqs} related={related} sources={sources} breadcrumbs={[{ label: 'Homeowners insurance by state', href: route('homeowners-insurance-by-state', lang) }, { label: st.name }]}>
+  <article>
+    <header class="mb-4">
+      <h1 class="font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{h1}</h1>
+      <p class="mt-2 text-base text-navy-700 sm:text-lg">{def.intro}</p>
+      <p data-chrome class="mt-2 text-sm text-navy-600">Independent site, not an insurer or a broker. Treasury figures cover 2018 to 2022 only.</p>
+    </header>
+    <div data-outil data-chrome class="mb-4"><Tool kind="lookup" arg={{ st: st.code }} idPrefix={`s-${st.code.toLowerCase()}`} /></div>
+    <p class="mb-6 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('method', lang)} class="underline hover:text-navy-900">{label('method')}</a> · {K.num(st.zips)} ZIP codes in {K.num(st.counties)} counties of {st.name} in the Treasury file · not a quote</p>
+    <Clamp text={def.resume} lang={lang} id={`clamp-${def.slug}`} class="mb-8" />
+    <Body html={def.body(helpers())} path={path} />
+    <section data-chrome class="mt-10">
+      <h2 class="font-serif text-2xl font-bold text-navy-900">{st.name}, year by year</h2>
+      <Fragment set:html={table(['Year', `${st.name} median ZIP`, 'National median ZIP', 'Nonrenewal rate', 'Claims per 100 policies', 'Paid loss ratio'], years, `Medians across the ${K.num(st.zips)} ZIP codes of ${st.name} in the Treasury FIO workbook (HO-3 and HO-5 policies, insurers that reported to regulators). Premium per policy = written premium / policies in force at year end.`, ['l', 'r', 'r', 'r', 'r', 'r'])} />
+      <h2 class="mt-8 font-serif text-2xl font-bold text-navy-900">The {st.name} counties with the most ZIP codes in the file</h2>
+      <Fragment set:html={table(['County', 'ZIP codes', 'Median 2018', 'Median 2022', 'Change', 'Nonrenewal 2022', 'Average claim'], countyRows, 'County of each ZIP code: the county holding most of its land area (Census 2020 relationship file). Medians across the county\'s ZIP codes.', ['l', 'r', 'r', 'r', 'r', 'r', 'r'])} />
+      <h2 class="mt-8 font-serif text-2xl font-bold text-navy-900">Highest and lowest premiums per policy, {st.name} ZIP codes, 2022</h2>
+      <Fragment set:html={table(['ZIP code', 'County', 'Premium per policy', 'Change since 2018', 'Nonrenewal 2022'], [...zipRows(st.hi), ...zipRows(st.lo)], 'First five rows: the highest 2022 premiums per policy; last five: the lowest. A high figure often reflects larger and costlier homes as much as risk.', ['l', 'l', 'r', 'r', 'r'])} />
+    </section>
+  </article>
+</PageLayout>

@@ -1,0 +1,15 @@
+.astro
+dist
+node_modules
+data-raw
+.venv
+.cache-raw
+__pycache__/
+.env
+.env.local
+scripts/.env
+.DS_Store
+*.log
+reports/
+data/raw/
+.playwright-mcp/

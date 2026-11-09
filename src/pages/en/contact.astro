@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('contact', lang);
+const description = 'Write to the publisher of Home Insurance ZIP about a premium, a nonrenewal rate or a source. E-mail only: no quote, no advice on your own policy, nothing passed on.';
+---
+<PageLayout title="Contact Home Insurance ZIP: corrections to a figure or a source" description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description, path, lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Contact</h1>
+    <p>By e-mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. No form and no phone line. Insurance pages that ask for your address usually sell it to agents; this one keeps nothing.</p>
+    <h2>Messages that help</h2>
+    <ul>
+      <li>A rule that differs from the statute or regulation cited: name the page and the paragraph of the official text.</li>
+      <li>A ZIP code whose figures look wrong next to your own declarations page: give the ZIP code and the year, never your policy number.</li>
+      <li>A newer federal or state release of ZIP code premium data that we have not loaded.</li>
+      <li>Embedding the lookup on a local news site or a community page: the code is on the <a href={route('widget', lang)}>embed page</a>.</li>
+    </ul>
+    <h2>What we cannot do</h2>
+    <p>We do not quote premiums, review policies, handle claims or say whether to switch insurers. For a price, ask a licensed agent or insurer; for a dispute, your state insurance department.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+  </div>
+</PageLayout>
