@@ -33,7 +33,7 @@ describe('one figure per notion', () => {
   it('state calculator shows the same change as the text', () => {
     const fl = STATES.find((s) => s.slug === 'florida')!;
     const out = getTool('state').run({ sx: 'florida', mine: 0 });
-    const row = out.rows.find((r) => r[0].startsWith('Change from 2018 to 2022'))!;
+    const row = out.rows.find((r) => r[0].startsWith('Premium per policy, 2018 to 2022'))!;
     expect(row[1]).toBe(`-${(Math.abs(fl.chg) * 100).toFixed(1)}%`);
   });
 });

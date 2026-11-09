@@ -12,7 +12,9 @@ const plains = [ok, ne, K.S('kansas')];
 const wide = bySpread[0];
 const bySev = K.rank((s) => s.sev);
 const byFreq = K.rank((s) => s.freq);
-const rows = byPrem.slice(0, 12).map((s) => [s.name, K.usd(s.prem[4]), K.usd(s.p10), K.usd(s.p90), K.sgn(s.chg)]);
+// Florida et Louisiane : assureurs privés seulement, Citizens hors fichier (testeurs naïfs du 2026-11-09, second passage : « -16.5% » sans astérisque ici).
+const PLAN = new Set(['FL', 'LA']);
+const rows = byPrem.slice(0, 12).map((s) => [s.name, K.usd(s.prem[4]), K.usd(s.p10), K.usd(s.p90), `${K.sgn(s.chg)}${PLAN.has(s.code) ? '*' : ''}`]);
 
 export default defineGuide({
   id: 'homeowners-insurance-by-state', group: 'cost', order: 1, slug: 'homeowners-insurance-by-state',
@@ -24,8 +26,8 @@ export default defineGuide({
   resume: `Across the ${K.num(N.zips)} ZIP codes of the Treasury file, the median homeowners premium per policy was ${K.usd(N.prem[4])} in ${N.years[4]}. The state medians run from ${K.usd(low[0].prem[4])} in ${low[0].name} to ${K.usd(a.prem[4])} in ${a.name}, a ratio of about ${K.dec(a.prem[4] / low[0].prem[4], 1)} to 1. Second and third are ${b.name} (${K.usd(b.prem[4])}) and ${c.name} (${K.usd(c.prem[4])}), which shows that hail and wind on the Plains cost insurers as much as hurricanes on the coast. The state figure hides a wide range: in ${wide.name} the dearest tenth of ZIP codes pays more than ${K.dec(wide.p90 / wide.p10, 1)} times what the cheapest tenth pays. ${byChg[0].name} had the largest rise after inflation from ${N.years[0]} to ${N.years[4]}, ${K.sgn(byChg[0].chg)}, while ${fl.name} fell ${K.sgn(fl.chg)} as policies moved to Citizens. These are premiums written per HO-3 or HO-5 policy, not quotes, and they stop in ${N.years[4]}.`,
   body: (h) => `
 <h2>The ranking, and what it is made of</h2>
-<p>Each state figure here is the middle ZIP code of the state: line up every ZIP code by its premium per policy and take the one in the center. That choice keeps a few very expensive beach or ski towns from pulling the number up, and it gives every part of the state the same weight. The ranking is not the one quote sites publish. Those sites price one invented house with the same dwelling limit in every state; the Treasury figure is what insurers wrote for the real houses of each area, divided by the policies in force.</p>
-${h.table(['State', `Median ZIP ${N.years[4]}`, 'Cheapest tenth under', 'Dearest tenth over', `Change ${N.years[0]}-${N.years[4]}`], rows, 'The twelve highest state medians. Treasury FIO workbook, medians across ZIP codes, inflation-adjusted as published.', ['l', 'r', 'r', 'r', 'r'])}
+<p>Each state figure here is the typical (middle) ZIP code of the state: line up every ZIP code by its premium per policy and take the one in the center. That choice keeps a few very expensive beach or ski towns from pulling the number up, and it gives every part of the state the same weight. The ranking is not the one quote sites publish. Those sites price one invented house with the same dwelling limit in every state; the Treasury figure is what insurers wrote for the real houses of each area, divided by the policies in force.</p>
+${h.table(['State', `Typical ZIP code, ${N.years[4]}`, 'Cheapest 10% paid under', 'Most expensive 10% paid over', `Change ${N.years[0]}-${N.years[4]}, beyond inflation`], rows, 'The twelve highest state medians. Treasury file, medians across ZIP codes, inflation-adjusted as published. *Private insurers only: many Florida and Louisiana homes moved to Citizens, the state insurer of last resort, which the file leaves out, so the change looks lower than what most owners saw.', ['l', 'r', 'r', 'r', 'r'])}
 <p>${a.name} leads because coastal counties pay several times the inland ones: the dearest tenth of its ZIP codes paid more than ${K.usd(a.p90)}. ${plains.map((s) => `${s.name} (${K.usd(s.prem[4])})`).join(', ')} follow for a different reason, the repeated hail and windstorms of the Plains, which give ${ne.name} a claim rate of ${K.dec(ne.freq * 100, 1)} paid claims per 100 policies a year against ${K.dec(N.freq * 100, 1)} nationally. ${co.name}, with hail along the Front Range and wildfire in the mountains, ranks ${co.rankPrem} of 51.</p>
 ${h.mini('nonrenew', { t: 'Your state: the chance of a nonrenewal while you own the house', p: ['sx', 'yrs'] })}
 <h2>Where homeowners pay the least</h2>

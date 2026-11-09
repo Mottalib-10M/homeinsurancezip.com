@@ -9,7 +9,7 @@ const ne = K.S('nebraska'), sd = K.S('south-dakota'), mn = K.S('minnesota'), co 
 
 export default defineGuide({
   id: 'roof-claim-actual-cash-value', group: 'policy', order: 6, slug: 'roof-claim-actual-cash-value',
-  nav: 'Roof claims: ACV or replacement', card: 'What an older roof is paid after hail or wind at actual cash value, against replacement cost.',
+  nav: 'Roof claims: today\'s value or full replacement', card: 'What an older roof is paid after hail or wind at actual cash value, against replacement cost.',
   title: 'Roof Claim Actual Cash Value 2026: Payout by Roof Age',
   description: `Roof claim at actual cash value in 2026: what a hail or wind claim pays on an older roof against replacement cost, by roof age, with hail states' claim rates.`,
   h1: 'Roof claim at actual cash value: what an older roof is paid',

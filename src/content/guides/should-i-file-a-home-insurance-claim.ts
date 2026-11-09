@@ -7,7 +7,7 @@ const small = K.E.claimOrNot({ damage: 4500, deductible: 1500, premium: prem, su
 const big = K.E.claimOrNot({ damage: 25000, deductible: 1500, premium: prem, surcharge: 0.2, years: 3 });
 const sevHi = K.rank((s) => s.sev);
 const sevLo = [...sevHi].reverse();
-const cases = [2500, 4000, 6000, 10000, 20000].map((d) => { const r = K.E.claimOrNot({ damage: d, deductible: 1500, premium: prem, surcharge: 0.2, years: 3 }); return [K.usd(d), K.usd(r.paid), K.usd(r.cost), `${r.net >= 0 ? '+' : '-'}${K.usd(Math.abs(r.net))}`]; });
+const cases = [2500, 4000, 6000, 10000, 20000].map((d) => { const r = K.E.claimOrNot({ damage: d, deductible: 1500, premium: prem, surcharge: 0.2, years: 3 }); return [`${K.usd(d)} of damage`, K.usd(r.paid), K.usd(r.cost), `${r.net >= 0 ? '+' : '-'}${K.usd(Math.abs(r.net))}`]; });
 
 export default defineGuide({
   id: 'should-i-file-a-home-insurance-claim', group: 'policy', order: 9, slug: 'should-i-file-a-home-insurance-claim',
@@ -20,7 +20,7 @@ export default defineGuide({
   body: (h) => `
 <h2>The arithmetic of a small claim</h2>
 <p>Three numbers decide it: the damage, the deductible and the extra premium the claim could bring. The first two give the payment. The third is harder to know, because insurers do not publish their surcharge schedules in a form a homeowner reads, and some apply none for one claim but drop a claim-free discount instead. The calculator asks you for a percentage and a number of years; use what your insurer or agent tells you, or try a few values to see where the answer flips.</p>
-${h.table(['Damage', 'Claim pays', 'Surcharge cost over 3 years', 'Net'], cases, `Deductible ${K.usd(1500)}, premium ${K.usd(prem)} (the national median ZIP of ${N.years[4]} at ${K.ppiMonth} prices), surcharge assumed at 20 percent for 3 years.`, ['r', 'r', 'r', 'r'])}
+${h.table(['Damage', 'Claim pays', 'Surcharge cost over 3 years', 'Net for you'], cases, `Deductible ${K.usd(1500)}, premium ${K.usd(prem)} (the typical U.S. ZIP code of ${N.years[4]} at ${K.ppiMonth} prices), surcharge assumed at 20 percent for 3 years.`, ['r', 'r', 'r', 'r'])}
 <p>The pattern holds for most premiums: claims a little above the deductible tend to cost more than they pay, while a claim several times the deductible is what insurance is for. The break-even point moves up with a high premium, a large surcharge or a long look-back period.</p>
 ${h.mini('roof', { t: 'A roof claim: what an older roof pays after the deductible', p: ['c', 'age', 'd'] })}
 <h2>More than the surcharge</h2>

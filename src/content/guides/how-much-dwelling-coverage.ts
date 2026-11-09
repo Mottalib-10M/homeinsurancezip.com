@@ -10,7 +10,7 @@ const ex = [0.6, 0.7, 0.8, 1].map((r) => { const x = K.E.coinsurance({ replaceme
 
 export default defineGuide({
   id: 'how-much-dwelling-coverage', group: 'policy', order: 7, slug: 'how-much-dwelling-coverage',
-  nav: 'Dwelling coverage and the 80% rule', card: 'How a dwelling limit below 80 percent of the rebuild cost cuts a partial claim, with the calculator.',
+  nav: 'How much to insure the house for (the 80% rule)', card: 'How a dwelling limit below 80 percent of the rebuild cost cuts a partial claim, with the calculator.',
   title: 'Dwelling Coverage Calculator 2026: The 80% Rebuild Rule',
   description: `Dwelling coverage calculator 2026: how much Coverage A a house needs, what the 80 percent rule does to a partial claim, and why market value misleads.`,
   h1: 'How much dwelling coverage do you need?',

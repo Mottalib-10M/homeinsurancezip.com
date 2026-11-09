@@ -20,7 +20,7 @@ export default defineGuide({
 ${h.table(['Time out of the apartment', 'Extra living costs', 'Paid with a ' + K.usd(6000) + ' limit', 'Left to you'], cases, `Temporary rental ${K.usd(2600)} a month, normal rent ${K.usd(1500)}, other extras ${K.usd(300)} a month.`, ['l', 'r', 'r', 'r'])}
 <h2>The limit and the time</h2>
 <p>Loss of use limits come in two shapes. Many policies set a dollar amount, often a percentage of the personal property limit. Others pay for a period, such as twelve months, or the shorter of the time to repair and the time to settle elsewhere. Either way, the limit runs out faster than people expect after a serious fire, because rebuilding a unit in a multifamily building waits on the landlord, the landlord's insurer, permits and contractors. A tenant has no control over that schedule.</p>
-${h.mini('ale', { t: 'Will your loss of use limit last?', p: ['m', 'tr', 'lim'] })}
+${h.mini('ale', { t: 'Will your loss of use limit last?', p: ['m', 'tr', 'r', 'lim'] })}
 <h2>Making the claim</h2>
 <p>Call the insurer as soon as you know you cannot stay, and ask what it will approve before you book anything long term: some insurers arrange housing directly, others reimburse. Choose housing comparable to your apartment, not better; a two-bedroom for a one-bedroom tenant may be paid only in part. Send receipts every few weeks rather than at the end, so payments keep pace with costs. If your landlord ends the lease because the building cannot be repaired, tell the insurer at once, since the period of loss of use changes to the time needed to find a new place.</p>
 <h2>Choosing the limit</h2>

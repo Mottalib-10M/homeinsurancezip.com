@@ -14,7 +14,7 @@ const fl = K.S('florida'), ca = K.S('california'), la = K.S('louisiana');
 
 export default defineGuide({
   id: 'fair-plan-insurance', group: 'cost', order: 8, slug: 'fair-plan-insurance',
-  nav: 'FAIR plans and Citizens', card: 'The insurer of last resort in each state, what it covers, and the Florida Citizens 20 percent rule.',
+  nav: 'Last-resort insurers (FAIR plans, Citizens)', card: 'The insurer of last resort in each state, what it covers, and the Florida Citizens 20 percent rule.',
   title: 'FAIR Plan Insurance 2026: Last-Resort Home Cover by State',
   description: `FAIR plan insurance in 2026: the last-resort home insurer of each state, what its policy covers and leaves out, and the Florida Citizens 20 percent rule.`,
   h1: 'FAIR plan insurance: the insurer of last resort, state by state',

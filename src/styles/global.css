@@ -21,8 +21,9 @@ html { font-size: 17px; } body { line-height: 1.65; } .tabular-nums { font-varia
 .callout { padding: 1.25rem 1.5rem; border-left: 4px solid; border-radius: .5rem; margin: 2em 0; font-size: .95rem; line-height: 1.7; } .callout p:first-child { margin-top: 0; } .callout p:last-child { margin-bottom: 0; } .callout-title { font-weight: 700; margin-bottom: .35em; display: block; }
 .callout-info { border-left-color: #2563eb; background-color: #eff6ff; color: #1e3a8a; } .callout-tip { border-left-color: #15803d; background-color: #f0fdf4; color: #14532d; } .callout-warning { border-left-color: #b45309; background-color: #fffbeb; color: #78350f; } .callout-example { border-left-color: #64748b; background-color: #f8fafc; color: #1e293b; }
 
-/* Titres : césure selon la langue de la page, jamais de débordement sur mobile (RECETTE §10.3). */
-h1, h2, h3, h4 { hyphens: auto; overflow-wrap: break-word; }
+/* Titres : jamais de débordement sur mobile (RECETTE §10.3). Pas de césure automatique : en anglais, les testeurs naïfs
+   du 2026-11-09 (second passage) lisaient « poli-cy », « premi-ums », « calcu-lator » comme un site cassé. */
+h1, h2, h3, h4 { hyphens: manual; overflow-wrap: break-word; }
 
 /* Rythme vertical (RECETTE §10.3) : le contenu ne touche jamais le calculateur. */
 .rechner { margin-bottom: 3rem; }

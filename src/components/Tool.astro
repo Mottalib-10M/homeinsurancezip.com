@@ -6,7 +6,8 @@ import { route } from '../i18n/routes';
 interface Props { kind: string; arg?: Record<string, number | string>; idPrefix?: string }
 const { kind, arg, idPrefix = 't' } = Astro.props;
 const methodHref = route('method', 'en');
+const actHref = `${route('why-is-home-insurance-going-up', 'en')}#act`;
 ---
 {kind === 'lookup'
-  ? <ZipLookup client:load state={String(arg?.st ?? '')} idPrefix={idPrefix} methodHref={methodHref} />
+  ? <ZipLookup client:load state={String(arg?.st ?? '')} idPrefix={idPrefix} methodHref={methodHref} actHref={actHref} />
   : <SpecTool client:load kind={kind} arg={arg ? JSON.stringify(arg) : undefined} methodHref={methodHref} idPrefix={idPrefix} />}

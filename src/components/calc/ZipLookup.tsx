@@ -10,7 +10,7 @@ import NumberField from '../ui/NumberField';
 import SelectField from '../ui/SelectField';
 import { ResultCard, Rows, ShareRow } from './parts';
 import { readParams, updateURL } from '../../lib/url-state';
-import { LITE_STATES, usd, pct, sgn, toToday, monthName } from '../../lib/tool-specs';
+import { LITE_STATES, usd, pct, sgn, toToday, monthName, PLAN } from '../../lib/tool-specs';
 import MentionExemple from './MentionExemple';
 import { formatNumber } from '../../lib/format';
 import NAT from '../../data/national.json';
@@ -22,21 +22,21 @@ interface Area { code?: string; label: string; kind: 'zip' | 'county' | 'state' 
 
 const NA = NAT as unknown as { prem: number[]; nonren: number[]; freq: number; sev: number; lr: number; npc: number; zips: number; ppiFactor: number; index: { ppi: { last: { ym: string } } } };
 /** States whose plan of last resort is a large share of the market and is outside the Treasury file (testeurs naïfs du 2026-11-09). */
-const CITIZENS: Record<string, string> = { FL: 'Citizens Property Insurance', LA: 'Louisiana Citizens' };
+const CITIZENS = PLAN;
 const PPI_MONTH = monthName(NA.index.ppi.last.ym);
-const natArea = (): Area => ({ label: 'the middle U.S. ZIP code', kind: 'nation', zips: NA.zips, prem: NA.prem, nonren: NA.nonren, freq: NA.freq, sev: NA.sev, lr: NA.lr, npc: NA.npc });
+const natArea = (): Area => ({ label: 'the typical U.S. ZIP code', kind: 'nation', zips: NA.zips, prem: NA.prem, nonren: NA.nonren, freq: NA.freq, sev: NA.sev, lr: NA.lr, npc: NA.npc });
 const stateArea = (code: string): Area => {
   const x = LITE_STATES.find((s) => s.c === code)!;
-  return { code, label: `${x.n}, middle ZIP code`, kind: 'state', zips: x.z, prem: x.prem, nonren: x.nonren, freq: x.freq, sev: x.sev, lr: x.lr, npc: x.npc };
+  return { code, label: `${x.n}, typical ZIP code`, kind: 'state', zips: x.z, prem: x.prem, nonren: x.nonren, freq: x.freq, sev: x.sev, lr: x.lr, npc: x.npc };
 };
 const nameOf = (code: string) => LITE_STATES.find((s) => s.c === code)?.n ?? code;
 const zipArea = (r: ZipRow): Area => ({ code: r[1], label: `ZIP ${r[0]}, ${r[2]}, ${nameOf(r[1])}`, kind: 'zip', zips: 1, prem: r.slice(3, 8) as number[], nonren: r.slice(8, 13) as Array<number | null>, freq: r[13] as number, sev: r[14] as number, lr: r[15] as number, npc: r[16] as number | null });
-const countyArea = (r: CountyRow): Area => ({ code: r[0], label: `${r[1]}, ${nameOf(r[0])} (middle of ${r[2]} ZIP codes)`, kind: 'county', zips: r[2], prem: r.slice(3, 8) as number[], nonren: r.slice(8, 13) as Array<number | null>, freq: r[13] as number, sev: r[14] as number, lr: r[15] as number, npc: r[16] as number | null });
+const countyArea = (r: CountyRow): Area => ({ code: r[0], label: `${r[1]}, ${nameOf(r[0])} (typical of its ${r[2]} ZIP codes)`, kind: 'county', zips: r[2], prem: r.slice(3, 8) as number[], nonren: r.slice(8, 13) as Array<number | null>, freq: r[13] as number, sev: r[14] as number, lr: r[15] as number, npc: r[16] as number | null });
 const rate = (x: number | null | undefined, d = 2) => (x === null || x === undefined ? 'not reported' : pct(x, d));
 
-interface Props { state?: string; idPrefix?: string; methodHref?: string }
+interface Props { state?: string; idPrefix?: string; methodHref?: string; /** Page of the levers that lower a premium (testeurs naïfs du 2026-11-09, second passage : « et maintenant, je fais quoi ? »). */ actHref?: string }
 
-export default function ZipLookup({ state = '', idPrefix = 'lk', methodHref }: Props) {
+export default function ZipLookup({ state = '', idPrefix = 'lk', methodHref, actHref = '/en/why-is-home-insurance-going-up/#act' }: Props) {
   const [zip, setZip] = useState('');
   const [st, setSt] = useState(state);
   const [county, setCounty] = useState('');
@@ -94,25 +94,32 @@ export default function ZipLookup({ state = '', idPrefix = 'lk', methodHref }: P
               className="tabular-nums h-12 w-full rounded-lg border border-navy-300 bg-white px-4 text-lg tracking-wider text-navy-900 focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/20" />
             <p id={`${idPrefix}-zip-help`} role="status" className="mt-1 text-xs text-navy-500">{zipMsg || missingMsg || 'Five digits. No ZIP code at hand? Pick your state below'}</p>
           </div>
-          <NumberField id={`${idPrefix}-mine`} label="Your yearly premium, from your bill or a quote (optional)" value={mine} onChange={setMine} unit="$" max={100000} help="Within a few tens of percent of the area is ordinary; twice as much is worth asking your agent why" />
+          <NumberField id={`${idPrefix}-mine`} label="Your yearly premium, from your bill or a quote (optional)" value={mine} onChange={setMine} unit="$" max={100000} help="Somewhat above the area is common; twice as much or more is worth asking your agent why" />
           <SelectField id={`${idPrefix}-st`} label="State" value={st} onChange={(v) => { setSt(v); setCounty(''); }} options={stateOptions} />
           <SelectField id={`${idPrefix}-county`} label="County" value={county} onChange={setCounty} options={countyOptions} help={counties === null ? 'Loading the county table' : undefined} />
         </form>
         <ResultCard label={`Typical yearly premium at ${PPI_MONTH} prices, ${area.label}`} value={usd(proj)}
           mention={<MentionExemple lang="en" touched={zip || st || county || mine ? { saisie: true } : {}} />}
           sub={`Estimate, not a quote: ${usd(head)} paid per policy in 2022, raised by the national rise of home insurance prices since then (${sgn(NA.ppiFactor - 1)}).`}>
+          {/* Testeurs naïfs du 2026-11-09, second passage : sept lignes sous le résultat, dont la plupart sans rapport avec « est-ce que je paie trop ? ». Trois lignes ouvertes ; le reste replié, secondaire. */}
           <Rows rows={[
             ...(mine > 0 ? [['Your premium against this area at today\'s prices', sgn(mine / proj - 1, 0)] as [string, string]] : []),
             ['Paid per policy in 2022', usd(head), head],
-            ['Paid per policy in 2018', p18 ? usd(p18) : 'n/a', p18 ?? 0],
-            ['Change from 2018 to 2022, after inflation', chg === null ? 'n/a' : sgn(chg)],
-            ['Policies the insurer did not renew, 2022', rate(area.nonren[4])],
-            ['Claims paid per 100 policies a year, 2018 to 2022', area.freq === null ? 'n/a' : formatNumber(area.freq * 100, 1)],
-            ['Average claim paid, 2018 to 2022', area.sev === null ? 'n/a' : usd(area.sev)],
-            ['Cancelled for unpaid premium, 2022', rate(area.npc)],
+            [`Premium per policy, 2018 to 2022, beyond general inflation${area.code && CITIZENS[area.code] ? '*' : ''}`, chg === null ? 'n/a' : sgn(chg)],
           ]} />
-          {area.code && CITIZENS[area.code] && <p data-citizens className="mt-2 rounded-md bg-white px-2 py-1 text-xs text-navy-800">{CITIZENS[area.code]} policies are not in this file: where many homes are with the state plan, this figure describes only the homes private insurers still covered.</p>}
-          <p className="mt-2 text-xs text-navy-600">The Treasury figures stop in 2022 and are after inflation, as published. The {PPI_MONTH} figure is an estimate from the national price index of home insurance (Bureau of Labor Statistics).</p>
+          {area.code && CITIZENS[area.code] && <p data-citizens className="mt-2 rounded-md bg-white px-2 py-1 text-xs text-navy-800">*Private insurers only: many {nameOf(area.code)} homes moved to {CITIZENS[area.code]}, the state's insurer of last resort, which this file leaves out, so the figures can look lower than what most owners saw.</p>}
+          <p data-agir className="mt-3 text-sm text-navy-800">Paying more than your area? Check your deductible, the amount the house is insured for, and compare two quotes per $1,000 insured. <a href={actHref} className="font-medium text-accent-700 underline">What you can act on →</a></p>
+          <details className="mt-3 rounded-md border border-accent-200 bg-white px-3 py-2">
+            <summary className="cursor-pointer text-sm font-medium text-navy-800">More figures for this area: 2018, nonrenewals, claims</summary>
+            <Rows rows={[
+              ['Paid per policy in 2018', p18 ? usd(p18) : 'n/a', p18 ?? 0],
+              ['Policies the insurer did not renew, 2022', rate(area.nonren[4])],
+              ['Claims paid per 100 policies a year, 2018 to 2022', area.freq === null ? 'n/a' : formatNumber(area.freq * 100, 1)],
+              ['Average claim paid, 2018 to 2022', area.sev === null ? 'n/a' : usd(area.sev)],
+              ['Cancelled for unpaid premium, 2022', rate(area.npc)],
+            ]} />
+          </details>
+          <p className="mt-2 text-xs text-navy-600">The Treasury figures stop in 2022 and are in dollars adjusted for inflation, as published. The {PPI_MONTH} figure is an estimate from the national price index of home insurance (Bureau of Labor Statistics).</p>
           <ShareRow methodHref={methodHref} />
         </ResultCard>
       </div>
