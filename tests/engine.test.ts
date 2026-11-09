@@ -70,3 +70,15 @@ describe('tools and data', () => {
     expect(toToday(1000)).toBeCloseTo(1000 * N.ppiFactor, 6);
   });
 });
+
+describe('nonrenewal notice (params-2026.json > nonrenewalNotice, statutes read 2026-11-09)', () => {
+  it('Florida 120 days: 100 days is 20 short, 130 days is on time', async () => {
+    const { noticeCheck } = await import('../src/lib/engine/home');
+    expect(noticeCheck({ required: 120, given: 100 })).toEqual({ onTime: false, short: 20, spare: 0 });
+    expect(noticeCheck({ required: 120, given: 130 })).toEqual({ onTime: true, short: 0, spare: 10 });
+  });
+  it('the calculator reads the state rule', () => {
+    const out = getTool('notice').run({ nx: 'WA', dn: 45 });
+    expect(out.value).toBe('60 days'); expect(out.rows[0][1]).toBe('too late');
+  });
+});

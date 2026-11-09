@@ -91,3 +91,12 @@ export function lossOfUse(o: { months: number; tempRent: number; rent: number; e
   const need = Math.max(0, o.months) * (Math.max(0, o.tempRent - o.rent) + Math.max(0, o.extra));
   return { need, paid: Math.min(need, o.limit), kept: Math.max(0, need - o.limit) };
 }
+
+/**
+ * Nonrenewal notice: was it sent early enough? `required` = minimum days of the state statute
+ * (params-2026.json > nonrenewalNotice), `given` = days between the mailing of the notice and the end of the policy.
+ */
+export function noticeCheck({ required, given }: { required: number; given: number }) {
+  const g = Math.max(0, Math.round(given));
+  return { onTime: g >= required, short: Math.max(0, required - g), spare: Math.max(0, g - required) };
+}

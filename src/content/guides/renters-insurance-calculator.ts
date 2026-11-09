@@ -3,7 +3,6 @@ import { KIT as K } from '../../lib/kit';
 
 const N = K.N;
 const T = N.index.tenants;
-const sinceT = K.idxGrowth(T, 2018);
 const since22 = K.idxGrowth(T, 2022);
 const ppi22 = K.idxGrowth(N.index.ppi, 2022);
 const cpi22 = K.idxGrowth(N.index.cpi, 2022);
@@ -31,13 +30,13 @@ export default defineGuide({
 <h2>Building the inventory</h2>
 <p>Go room by room and price what it would cost to buy each item new today, not what you paid. People tend to underestimate clothes, kitchen goods and small items, which add up quickly. The ranges below are rough orders of magnitude to check your list against, not data; your own figures go in the calculator.</p>
 ${h.table(['Room', 'What to count', 'Typical order of magnitude'], rooms, 'Illustrative ranges for a check, not statistics. Enter your own values in the calculator.', ['l', 'l', 'r'])}
-${h.mini('renters', { t: 'Your inventory in five lines', p: ['f', 'e', 'c', 'k'] })}
+${h.mini('ale', { t: 'If the apartment becomes unlivable: will loss of use cover it?', p: ['m', 'tr', 'lim'] })}
 <h2>Replacement cost or actual cash value</h2>
 <p>An actual cash value policy pays what the item was worth at the time of the loss: a five-year-old sofa or laptop is worth a fraction of its price new. A replacement cost policy pays what it costs to buy a new equivalent, often after you have bought it and sent the receipt. The difference in premium is usually small next to the difference on a large claim. The advanced field of the calculator sets the average wear of your belongings, and the result shows both payments on a total loss.</p>
 <h2>Sublimits and what to list apart</h2>
 <p>Inside the personal property limit, policies cap some categories: jewelry and watches, furs, cash, collectibles, firearms, silverware and sometimes electronics used for business, often at ${K.usd(1500)} or ${K.usd(2500)} per category for theft. If an engagement ring or a camera kit is worth more, schedule it on an endorsement with an appraisal or receipt; scheduled items are usually covered without a deductible and against more causes of loss. A roommate's belongings are not covered by your policy unless they are named on it.</p>
 <h2>What it costs, and what the index shows</h2>
-<p>Renters insurance is one of the cheapest lines of personal insurance, because the insurer does not cover the building. There is no federal file of renters premiums by ZIP code comparable to the Treasury homeowners data, so this site does not publish one; prices you read elsewhere come from insurer quotes or industry samples. What the BLS does publish is a price index for tenants' and household insurance. It rose ${K.sgn(sinceT)} from ${N.years[0]} to ${K.ppiMonth}, ${K.sgn(since22)} of it since ${N.years[4]}, while consumer prices overall rose ${K.sgn(cpi22)} from ${N.years[4]}. Your quote depends on the limit, the deductible, the city and the building.</p>
+<p>Renters insurance is one of the cheapest lines of personal insurance, because the insurer does not cover the building. There is no federal file of renters premiums by ZIP code comparable to the Treasury homeowners data, so this site does not publish one; prices you read elsewhere come from insurer quotes or industry samples. What the BLS does publish is a price index for tenants' and household insurance. It barely moved from ${N.years[0]} to ${N.years[4]} (${K.sgn(K.idxGrowth(T, 2018, 2022))}), then rose ${K.sgn(since22)} from ${N.years[4]} to ${K.ppiMonth}, while consumer prices overall rose ${K.sgn(cpi22)} over the same years. Your quote depends on the limit, the deductible, the city and the building.</p>
 <h2>Liability and medical payments</h2>
 <p>The liability part is often the most valuable part of a renters policy and the least thought about. If a guest trips on your rug, or a fire that starts in your kitchen spreads to the unit next door, the claim against you can exceed the value of everything you own. A ${K.usd(300000)} limit usually costs little more than ${K.usd(100000)}. Medical payments to others, a small separate coverage, pays a guest's minor medical bills without a lawsuit. Damage you cause to the landlord's building is a liability matter too, which is why many leases set a minimum.</p>
 <h2>Keeping the inventory useful</h2>

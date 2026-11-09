@@ -107,3 +107,11 @@ h1 { font-weight: 700; } h2 { font-weight: 650; } h3 { font-weight: 600; }
   .ledger-range { font-variant-numeric: tabular-nums; color: var(--color-navy-700); }
 }
 .prose .not-prose table { margin-top: 0; margin-bottom: 0; }
+
+/* Sections repliées (Body plier, 2026-11-09) : le titre <h2> est le bouton ; une flèche dit qu'il s'ouvre. */
+.pli-section { border-bottom: 1px solid var(--color-navy-100, #e5e7eb); }
+.pli-section > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; }
+.pli-section > summary::-webkit-details-marker { display: none; }
+.prose .pli-section > summary > h2 { margin: 1rem 0; padding-top: 0; border-top: none; }
+.pli-section > summary::after { content: '▾'; flex-shrink: 0; color: var(--color-navy-500, #64748b); transition: transform 0.15s; }
+.pli-section[open] > summary::after { transform: rotate(180deg); }

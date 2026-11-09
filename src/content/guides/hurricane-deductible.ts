@@ -12,10 +12,10 @@ const opts = F.hurricaneOptions.map((o) => [o < 1 ? K.pct(o, 0) + ' of Coverage 
 
 export default defineGuide({
   id: 'hurricane-deductible', group: 'policy', order: 5, slug: 'hurricane-deductible',
-  nav: 'Hurricane and wind deductibles', card: 'What a 2, 5 or 10 percent deductible costs on a storm claim, with the Florida once-a-year rule.',
+  nav: 'Hurricane, wind and hail deductibles', card: 'What a 2, 5 or 10 percent deductible costs on a storm claim, with the Florida once-a-year rule.',
   title: 'Hurricane Deductible Calculator 2026: 2%, 5% and 10% Cost',
   description: `Hurricane deductible calculator 2026: what a 2, 5 or 10 percent wind deductible keeps from a storm claim, the Florida once-a-year rule, and coastal premiums.`,
-  h1: 'Hurricane deductible: what a percentage costs you on a claim',
+  h1: 'Hurricane, wind and hail deductibles: what a percentage costs on a claim',
   intro: `A 2 percent hurricane deductible on a ${K.usd(350000)} dwelling limit is ${K.usd(7000)}: on ${K.usd(18000)} of storm damage the insurer pays ${K.usd(ex.paid)}, not ${K.usd(ex.paidFlat)}.`,
   resume: `A hurricane, named storm or wind deductible is usually a percentage of the dwelling limit, Coverage A, not of the damage. On a house insured for ${K.usd(350000)}, a 2 percent deductible is ${K.usd(7000)} and a 5 percent one is ${K.usd(17500)}, against perhaps ${K.usd(1000)} for a kitchen fire. With ${K.usd(18000)} of roof and siding damage from a storm, the insurer pays ${K.usd(ex.paid)} at 2 percent and ${K.usd(ex5.paid)} at 5 percent. Florida law requires insurers to offer hurricane deductibles of ${K.usd(F.hurricaneOptions[0])}, 2, 5 and 10 percent, and applies the deductible once per calendar year to all hurricanes with the same insurer, which the calculator handles. Choosing a higher percentage lowers the premium, and premiums on the coast are the highest in the Treasury file: the median ZIP code of Palm Beach County paid ${K.usd(palm.prem)} per policy in ${N.years[4]}, against ${K.usd(N.prem[4])} nationally. The data stop in ${N.years[4]}.`,
   body: (h) => `
@@ -25,7 +25,7 @@ ${h.table(['Option required in Florida', `Dwelling limit ${K.usd(250000)}`, `Dwe
 <p>The calculator above also shows what the same claim would pay under the flat deductible. The difference, ${K.usd(ex.extra)} in the example of ${K.usd(18000)} of damage at 2 percent, is the part of the storm risk you have taken on in exchange for a lower premium.</p>
 <h2>The Florida rules</h2>
 <p>Florida's statute (${h.src('fl_627_701', 'Fla. Stat. 627.701')}) is the most detailed. Insurers must offer deductibles of ${K.usd(F.hurricaneOptions[0])}, 2 percent, 5 percent and 10 percent of the dwelling limit, and the hurricane deductible applies once per calendar year: when two hurricanes hit the same house in one season with the same insurer, the second claim uses whatever is left of the hurricane deductible, or the all-other-perils deductible if that is larger. The advanced fields of the calculator take the amount already absorbed this year for that reason. The hurricane deductible applies only to losses from a hurricane as the policy defines it; a summer thunderstorm uses the ordinary deductible.</p>
-${h.mini('hurricane', { t: 'Two storms in one season', p: ['p', 'd', 'u'], d: { p: 5, d: 30000, u: 12000 } })}
+${h.mini('hurricane', { t: `Two storms in one season, same ${K.usd(350000)} house, 5 percent deductible`, p: ['p', 'd', 'u'], d: { p: 5, d: 30000, u: 12000 } })}
 <h2>Other coastal states</h2>
 <p>Most states from Texas to Maine allow percentage hurricane or named storm deductibles, with their own triggers, often a hurricane watch or warning issued by the National Weather Service, and their own limits on the percentages. Inland, many policies carry a percentage wind and hail deductible instead, which applies to any wind or hail loss and not only to named storms. The policy's deductible endorsement names the trigger; it is worth reading before the season, not after a storm.</p>
 <h2>What coastal owners pay</h2>

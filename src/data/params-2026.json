@@ -14,7 +14,7 @@
     "published": "2025-01-16"
   },
   "escrow": {
-    "_basis": "12 CFR 1024.17(c)(1)(i)-(ii): monthly escrow deposit of one-twelfth of the annual disbursements plus a cushion of no more than one-sixth of the estimated annual disbursements; 1024.17(f)(3)(ii): a shortage of one month's payment or more may be spread in equal monthly payments over at least 12 months.",
+    "_basis": "12 CFR 1024.17(c)(1)(i)-(ii): monthly escrow deposit of one-twelfth of the annual disbursements plus a cushion of no more than one-sixth of the estimated annual disbursements; 1024.17(f)(3)(i)-(ii): a shortage under one month's payment may be left, asked within 30 days or spread over at least 12 months; a shortage of one month's payment or more may be left or spread in equal monthly payments over at least 12 months (read on ecfr.gov on 2026-11-09).",
     "cushionMax": 0.1666667,
     "shortageMonths": 12
   },
@@ -119,6 +119,58 @@
       "label": {
         "en": "Texas Department of Insurance: Texas homeowners insurance market overview"
       }
+    },
+    "mn_65a29": {
+      "url": "https://www.revisor.mn.gov/statutes/cite/65A.29",
+      "label": {
+        "en": "Minnesota Statutes 65A.29, cancellation and nonrenewal of homeowner's insurance (revisor.mn.gov)"
+      }
+    },
+    "sc_38_75": {
+      "url": "https://www.scstatehouse.gov/code/statmast.php?title=38&chapter=75",
+      "label": {
+        "en": "South Carolina Code of Laws, Title 38, Chapter 75, sections 38-75-740 and 38-75-1160 (scstatehouse.gov)"
+      }
+    },
+    "wa_48_18_2901": {
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=48.18.2901",
+      "label": {
+        "en": "RCW 48.18.2901, renewal required, Washington State Legislature"
+      }
     }
+  },
+  "nonrenewalNotice": {
+    "_basis": "Minimum written notice of nonrenewal of a homeowners policy, read in each state's statute on the legislature's own site on 2026-11-09. Only states whose text was read are listed; a state missing here is not 'no rule'. Florida 627.4133(2)(b): 120 days. Minnesota 65A.29 subd. 7: 60 days' advance notice, with the specific reason. South Carolina 38-75-740(b) and 38-75-1160(A)(1)(b): not less than 60 days for a policy of one year or less. Washington RCW 48.18.2901(1)(a)(i) for policies subject to 48.18.290(1)(a): at least 60 days, with the insurer's actual reason.",
+    "read": "2026-11-09",
+    "states": [
+      {
+        "code": "FL",
+        "days": 120,
+        "cite": "Fla. Stat. 627.4133(2)(b)",
+        "source": "fl_627_4133",
+        "reason": true
+      },
+      {
+        "code": "MN",
+        "days": 60,
+        "cite": "Minn. Stat. 65A.29, subd. 7",
+        "source": "mn_65a29",
+        "reason": true
+      },
+      {
+        "code": "SC",
+        "days": 60,
+        "cite": "S.C. Code 38-75-740(b)",
+        "source": "sc_38_75",
+        "reason": true
+      },
+      {
+        "code": "WA",
+        "days": 60,
+        "cite": "RCW 48.18.2901(1)(a)",
+        "source": "wa_48_18_2901",
+        "reason": true
+      }
+    ]
   }
 }

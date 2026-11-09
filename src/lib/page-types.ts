@@ -6,7 +6,7 @@
  */
 import type { Kit } from './kit';
 
-export interface FAQ { q: string; a: string }
+export interface FAQ { q: string; a: string; /** Question ouverte d'emblée (PageLayout). */ open?: boolean }
 export interface MiniOpts { /** title */ t?: string; /** ids of the fields shown */ p?: string[]; /** default values */ d?: Record<string, number | string>; /** link text */ c?: string }
 
 export interface Helpers extends Kit {

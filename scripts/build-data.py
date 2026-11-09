@@ -118,15 +118,24 @@ def main():
 
     def summary(rs):
         p22 = [r['prem'][4] for r in rs if r['prem'][4] is not None]
-        chg = [r['prem'][4] / r['prem'][0] - 1 for r in rs if r['prem'][0] and r['prem'][4]]
         m = lambda key, i=None: [(r[key][i] if i is not None else r[key]) for r in rs if (r[key][i] if i is not None else r[key]) is not None]
+        # One figure per notion, the same arithmetic as the lookup (audit and testeurs naïfs du 2026-11-09) :
+        #  - chg = change of the median premium, prem 2022 / prem 2018 - 1 ("$1,445 to $1,551, +7.3%"), no longer
+        #    the median of each ZIP code's own change (+5.7%), which sat under the same label and contradicted it;
+        #  - freq and lr = mean of the five yearly medians shown in the year-by-year table, no longer the median of
+        #    each ZIP code's five-year mean (4.5 and 43% above every yearly row).
+        premM = [med(m('prem', i)) for i in range(5)]
+        lrY = [med(m('lrY', i)) for i in range(5)]
+        freqY = [med(m('freqY', i)) for i in range(5)]
+        mean5 = lambda xs: st.mean([x for x in xs if x is not None]) if any(x is not None for x in xs) else None
         return {
             'zips': len(rs),
-            'prem': [r0(med(m('prem', i))) for i in range(5)],
-            'p10': r0(q(p22, .1)), 'p90': r0(q(p22, .9)), 'chg': r4(med(chg)),
+            'prem': [r0(x) for x in premM],
+            'p10': r0(q(p22, .1)), 'p90': r0(q(p22, .9)),
+            'chg': r4(r0(premM[4]) / r0(premM[0]) - 1) if premM[0] and premM[4] else None,
             'nonren': [r4(med(m('nonren', i))) for i in range(5)],
-            'freq': r4(med(m('freq'))), 'sev': r0(med(m('sev'))), 'lr': r4(med(m('lr'))),
-            'lrY': [r4(med(m('lrY', i))) for i in range(5)], 'freqY': [r4(med(m('freqY', i))) for i in range(5)],
+            'freq': r4(mean5(freqY)), 'sev': r0(med(m('sev'))), 'lr': r4(mean5(lrY)),
+            'lrY': [r4(x) for x in lrY], 'freqY': [r4(x) for x in freqY],
             'npc': r4(med(m('npc'))), 'oc': r4(med(m('oc'))),
         }
 
@@ -188,7 +197,7 @@ def main():
     for d, rs in split.items():
         json.dump(rs, open(os.path.join(P, f'zip-{d}.json'), 'w'), separators=(',', ':'))
     print(f"{len(rows)} ZIP codes, {nat['counties']} counties, {nat['states']} states; median premium 2022 {nat['prem'][4]}, "
-          f"median change 2018-2022 {nat['chg']:.3f}, nonrenewal 2022 {nat['nonren'][4]:.4f}; PPI factor 2022 -> {index['ppi']['last']['ym']} {ppiFactor:.3f}")
+          f"change of the median 2018-2022 {nat['chg']:.3f}, nonrenewal 2022 {nat['nonren'][4]:.4f}; PPI factor 2022 -> {index['ppi']['last']['ym']} {ppiFactor:.3f}")
 
 
 if __name__ == '__main__':
