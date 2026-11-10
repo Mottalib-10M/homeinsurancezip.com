@@ -15,54 +15,57 @@ import { helpers, SOURCES, table } from '../lib/helpers';
 import { GUIDES, STATE_PAGES, stateId } from '../lib/pages';
 import { KIT as K } from '../lib/kit';
 import { faqSchema, organizationSchema, websiteSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
-import { LAST_UPDATED } from '../data/site-config';
+import { gloss } from '../lib/gloss';
 const lang = 'en';
 const x = HOME;
 const path = route('home', lang);
 const h = helpers();
 const sources = x.sources.map((k) => ({ name: SOURCES[k].label, url: SOURCES[k].url }));
-const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(x.faqs, lang)];
 const I = K.N.index;
 const nat = K.N.years.map((y, i) => [String(y), K.usd(K.N.prem[i]), K.rate(K.N.nonren[i]), K.dec(K.N.freqY[i] * 100, 1), K.pct(K.N.lrY[i], 0), K.dec(I.ppi.annual[String(y)], 1)]);
 const hasPage = (slug: string) => STATE_PAGES.some((p) => p.slug === slug);
-// Florida and Louisiana: private insurers only, Citizens is outside the file (testeurs naïfs du 2026-11-09).
-const PLAN = new Set(['FL', 'LA']);
+// Testeurs naïfs du 2026-11-10 : une ligne par État (aujourd'hui, puis 2022), deux groupes titrés ; l'évolution et la
+// Floride « -16.5%* » sont sur les pages d'État, avec leur explication en clair.
 const rows = [...K.STATES].sort((a, b) => b.prem[4] - a.prem[4]).map((s) => [
   hasPage(s.slug) ? `<a href="${route(stateId(s.slug), lang)}">${s.name}</a>` : s.name,
-  K.usd(K.today(s.prem[4])), K.usd(s.prem[4]), `${K.sgn(s.chg)}${PLAN.has(s.code) ? '*' : ''}`, K.rate(s.nonren[4]),
+  K.usd(K.today(s.prem[4])), K.usd(s.prem[4]),
 ]);
-const stHead = ['State', `Typical premium at ${K.ppiMonth} prices`, `Paid in ${K.N.years[4]}`, `Change ${K.N.years[0]} to ${K.N.years[4]}, beyond inflation`, `Not renewed, ${K.N.years[4]}`];
-const stCap = (what: string) => `${what} Typical (middle) ZIP code of each state, Treasury file. Today's prices: the ${K.N.years[4]} figure raised by the national price index of home insurance, an estimate and not a quote. *Private insurers only: many Florida and Louisiana homes moved to Citizens, the state insurer of last resort, which the file leaves out, so the change looks lower than what most owners saw.`;
-// Parcours débutant (brief du 2026-11-09) : trois questions, chacune mène à la bonne réponse.
-const start = [
-  { q: 'I got a quote or a renewal. Is the price normal?', a: 'Type your ZIP code and the yearly premium in the calculator above.', href: '#home-zip' },
-  { q: 'My premium went up. Why?', a: 'The four reasons, and your 2022 premium at today\'s prices.', href: route('why-is-home-insurance-going-up', lang) },
-  { q: 'My insurer will not renew. What now?', a: 'How much notice you are owed, and where to turn.', href: route('home-insurance-non-renewal', lang) },
-  // Testeurs naïfs du 2026-11-09, second passage (1, 2, 3) : aucun chemin visible vers « payer moins ».
-  { q: 'My premium feels too high. How do I pay less?', a: 'Five things you control: quotes per $1,000 insured, insured value, deductible, small claims, escrow.', href: `${route('why-is-home-insurance-going-up', lang)}#act` },
+const stHead = ['State', `Today (estimate)`, `Paid in ${K.N.years[4]}`];
+const stCap = (what: string) => `${what} Typical (middle) ZIP code of each state, U.S. Treasury file; today's figure is the ${K.N.years[4]} one raised by the national price index of home insurance, not a quote.`;
+// Portes d'entrée par profil (brief des cinq règles, 2026-11-10) : boutons au-dessus du calculateur, la question n° 1 d'abord.
+const doors = [
+  { t: 'How do I pay less?', href: `${route('why-is-home-insurance-going-up', lang)}#act` },
+  { t: 'Why did my premium go up?', href: route('why-is-home-insurance-going-up', lang) },
+  { t: 'My insurer will not renew', href: route('home-insurance-non-renewal', lang) },
 ];
+const gl = gloss();
+const intro = gl(x.intro), resume = gl(x.resume), body = gl(x.why(h));
+const faqs = x.faqs.map((f) => ({ ...f, a: gl(f.a) }));
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(faqs, lang)];
 ---
-<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={x.faqs} sources={sources}>
-  <header class="mb-4">
+<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={faqs} sources={sources}>
+  <header class="mb-3">
     <h1 class="font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{x.h1}</h1>
-    <p class="mt-2 text-base text-navy-700 sm:text-lg">{x.intro}</p>
-    <p data-chrome class="mt-2 text-sm text-navy-600">Independent site, not an insurer or a broker. The Treasury's ZIP code data run from 2018 to 2022.</p>
+    <p class="mt-2 text-base text-navy-700 sm:text-lg">{intro}</p>
+    <p data-chrome class="mt-2 text-sm text-navy-600">Independent site, not an insurer or a broker. Nothing you type leaves your device.</p>
   </header>
-  <div data-outil data-chrome id="home-zip" class="scroll-mt-20"><Tool kind="lookup" idPrefix="home" /></div>
-  <section data-chrome id="start" class="mt-4 rounded-xl border border-navy-200 bg-navy-50 p-4">
-    <h2 class="text-base font-semibold text-navy-900">Not sure where to start? Pick your question</h2>
-    <ul class="mt-2 grid gap-2 sm:grid-cols-2">
-      {start.map((s) => <li><a href={s.href} class="block h-full rounded-lg border border-navy-200 bg-white p-3 hover:border-accent-300"><span class="block font-semibold text-navy-900">{s.q}</span><span class="mt-1 block text-sm text-navy-600">{s.a}</span></a></li>)}
+  <nav data-chrome id="start" aria-label="Your question" class="mb-3 scroll-mt-20">
+    <ul class="flex flex-wrap gap-2">
+      {doors.map((d) => <li><a href={d.href} class="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-accent-500 bg-white px-3.5 py-1.5 text-sm font-semibold text-accent-700 hover:bg-accent-50">{d.t} <span aria-hidden="true">→</span></a></li>)}
     </ul>
-  </section>
-  <p class="mt-3 text-sm text-navy-600">Built on the U.S. Treasury's January 2025 ZIP code release · <a href={route('method', lang)} class="underline">How the figures are made</a> · <a href={route('about', lang)} class="underline">Who publishes this</a> · updated <time datetime={LAST_UPDATED}>{K.day(LAST_UPDATED)}</time></p>
-  <Clamp text={x.resume} lang={lang} id="clamp-home" class="my-8" />
+  </nav>
+  <div data-outil data-chrome id="home-zip" class="scroll-mt-20"><Tool kind="lookup" idPrefix="home" /></div>
+  <p class="mt-3 text-sm text-navy-600">Built on the U.S. Treasury's January 2025 ZIP code release · <a href={route('method', lang)} class="underline">How the figures are made</a> · <a href={route('about', lang)} class="underline">Who publishes this</a></p>
+  <Clamp text={resume} lang={lang} id="clamp-home" class="my-8" />
   <section data-chrome class="mt-8">
-    <h2 class="font-serif text-2xl font-bold text-navy-900">Every state, from the highest premium to the lowest</h2>
-    <Fragment set:html={table(stHead, [...rows.slice(0, 5), ...rows.slice(-5)], stCap('The five dearest and the five cheapest states.'), ['l', 'r', 'r', 'r', 'r'])} />
+    <h2 class="font-serif text-2xl font-bold text-navy-900">The 5 most expensive and the 5 cheapest states</h2>
+    <h3 class="mt-4 font-serif text-lg font-bold text-navy-900">Most expensive</h3>
+    <Fragment set:html={table(stHead, rows.slice(0, 5), stCap('The five most expensive states.'), ['l', 'r', 'r'])} />
+    <h3 class="mt-4 font-serif text-lg font-bold text-navy-900">Cheapest</h3>
+    <Fragment set:html={table(stHead, rows.slice(-5).reverse(), stCap('The five cheapest states, cheapest first.'), ['l', 'r', 'r'])} />
     <details class="pli mt-2 rounded-lg border border-navy-200 px-3 py-2">
       <summary class="cursor-pointer font-medium text-navy-900">Show all 50 states and Washington, DC</summary>
-      <Fragment set:html={table(stHead, rows, stCap('All 50 states and the District of Columbia.'), ['l', 'r', 'r', 'r', 'r'])} />
+      <Fragment set:html={table(stHead, rows, stCap('All 50 states and the District of Columbia, most expensive first.'), ['l', 'r', 'r'])} />
     </details>
   </section>
   <section class="mt-10" data-chrome>
@@ -76,11 +79,11 @@ const start = [
       </div>
     ))}
   </section>
-  <section class="mt-10"><Body html={x.why(h)} path={path} plier /></section>
+  <section class="mt-10"><Body html={body} path={path} plier /></section>
   <section data-chrome class="mt-8">
     <details class="pli rounded-lg border border-navy-200 px-3 py-2">
       <summary class="cursor-pointer font-medium text-navy-900">Year by year, 2018 to 2022: premium, nonrenewals, claims</summary>
-      <Fragment set:html={table(['Year', 'Premium per policy', 'Not renewed by the insurer', 'Claims per 100 policies', 'Share of premiums paid back as claims', 'Home insurance price index'], nat, `Middle ZIP code of each year, ${K.num(K.N.zips)} ZIP codes of the Treasury file (nonrenewals without Texas, which did not report them). Price index: producer price index for homeowner's insurance, Bureau of Labor Statistics, yearly average.`, ['l', 'r', 'r', 'r', 'r', 'r'])} />
+      <Fragment set:html={table(['Year', 'Premium per policy', 'Not renewed by the insurer', 'Claims per 100 policies', 'Share of premiums paid back as claims', 'Home insurance price index'], nat, `Middle ZIP code of each year, ${K.num(K.N.zips)} ZIP codes of the Treasury file (nonrenewals without Texas, which did not report them). Price index: home insurance prices charged by insurers, Bureau of Labor Statistics, yearly average.`, ['l', 'r', 'r', 'r', 'r', 'r'])} />
     </details>
   </section>
 </PageLayout>

@@ -19,82 +19,94 @@ const s = (v: V, k: string) => String(v[k]);
 
 export interface Lite { c: string; n: string; s: string; z: number; prem: number[]; p10: number; p90: number; chg: number; nonren: Array<number | null>; freq: number; sev: number; lr: number; npc: number | null; oc: number | null; rp: number; rn: number }
 export const LITE_STATES = LITE as unknown as Lite[];
-/** Default state of every state field on the site (testeurs naïfs du 2026-11-09 : Texas, Colorado puis Californie selon la page). */
-export const DEFAULT_STATE = 'florida';
-const ST = (slug: string) => LITE_STATES.find((x) => x.s === slug) ?? LITE_STATES.find((x) => x.s === DEFAULT_STATE)!;
-const STATE_OPTIONS = LITE_STATES.map((x) => ({ value: x.s, label: x.n }));
-const stateIn = (def = DEFAULT_STATE): Input => ({ kind: 'select', id: 'sx', label: 'State', def, options: STATE_OPTIONS });
-const NA = NAT as unknown as { prem: number[]; nonren: number[]; freq: number; sev: number; ppiFactor: number; chg: number; index: { ppi: { annual: Record<string, number>; last: { ym: string; v: number } }; cpi: { annual: Record<string, number>; last: { ym: string; v: number } }; tenants: { annual: Record<string, number>; last: { ym: string; v: number } } } };
+/** Default of every state field (testeurs naïfs du 2026-11-10 : « Florida » présélectionné faisait croire que le site avait deviné
+ * quelque chose ; brief des cinq règles : pas de valeur qui répond à la place du visiteur). Sans choix, le chiffre est celui du pays,
+ * le même que sur l'accueil. */
+export const DEFAULT_STATE = '';
+const NA = NAT as unknown as { zips: number; p10: number; p90: number; npc: number; lr: number; prem: number[]; nonren: number[]; freq: number; sev: number; ppiFactor: number; chg: number; index: { ppi: { annual: Record<string, number>; last: { ym: string; v: number } }; cpi: { annual: Record<string, number>; last: { ym: string; v: number } }; tenants: { annual: Record<string, number>; last: { ym: string; v: number } } } };
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 export const monthName = (ym: string) => `${MONTHS[Number(ym.slice(5, 7)) - 1]} ${ym.slice(0, 4)}`;
 export const longDate = (iso: string) => `${MONTHS[Number(iso.slice(5, 7)) - 1]} ${Number(iso.slice(8, 10))}, ${iso.slice(0, 4)}`;
 const PPI_MONTH = monthName(NA.index.ppi.last.ym);
+/** The whole country, read like a state when no state is chosen. */
+const US: Lite = { c: '', n: 'the U.S.', s: '', z: NA.zips, prem: NA.prem, p10: NA.p10, p90: NA.p90, chg: NA.chg, nonren: NA.nonren, freq: NA.freq, sev: NA.sev, lr: NA.lr, npc: NA.npc, oc: null, rp: 0, rn: 0 };
+const ST = (slug: string) => (slug ? LITE_STATES.find((x) => x.s === slug) ?? US : US);
+const STATE_OPTIONS = [{ value: '', label: 'Choose your state (U.S. figure until then)' }, ...LITE_STATES.map((x) => ({ value: x.s, label: x.n }))];
+const stateIn = (def = DEFAULT_STATE): Input => ({ kind: 'select', id: 'sx', label: 'State', def, options: STATE_OPTIONS });
+/** "Florida's typical ZIP code" / "the typical U.S. ZIP code". */
+const typical = (x: Lite) => (x.c ? `${x.n}'s typical ZIP code` : 'the typical U.S. ZIP code');
 /** 2022 premium carried to the latest month of the BLS homeowner's insurance price index. */
 export const toToday = (x: number) => x * NA.ppiFactor;
 /** Consumer prices from the 2022 average to the latest month: the same period as the home insurance index above (testeurs naïfs du 2026-11-09, second passage : 2018-2022 posé sous un calcul 2022-2026). */
-const cpiSince22 = NA.index.cpi.last.v / NA.index.cpi.annual['2022'];
+/** Years the renewal comparison accepts: the yearly averages of the price index after the Treasury data. */
+const RISE_YEARS = ['2022', '2023', '2024', '2025'];
 const F = P.florida;
 /** Florida and Louisiana: the state insurer of last resort (Citizens) is outside the Treasury file (testeurs naïfs du 2026-11-09, second passage : « -16.5% » sans explication sur la page État). */
 export const PLAN: Record<string, string> = { FL: 'Citizens Property Insurance', LA: 'Louisiana Citizens' };
-const planNote = (x: Lite) => `Private insurers only: many ${x.n} homes moved to ${PLAN[x.c]}, the state's insurer of last resort, which this file leaves out, so the figures can look lower than what most owners saw.`;
-const ORD = (k: number) => `${k}${k % 100 >= 11 && k % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][k % 10] ?? 'th'}`;
+const planNote = (x: Lite) => `Looks low because these are private insurers only: many ${x.n} homes moved to ${PLAN[x.c]}, the state-run insurer of last resort, which this data leaves out.`;
 const NOTICE = (P as unknown as { nonrenewalNotice: { states: Array<{ code: string; days: number; cite: string; source: string; reason: boolean }> } }).nonrenewalNotice.states;
 
 export const SPECS: Record<string, (arg?: Record<string, number | string>) => ToolSpec> = {
   /* A state's medians: premium per policy, its path, the spread, nonrenewals */
   state: () => ({
-    inputs: [stateIn(), { id: 'mine', label: 'Your yearly premium, from your bill or a quote (optional)', def: 0, unit: '$', max: 100000, help: 'Compared with the state at today\'s prices' }],
+    inputs: [stateIn(), { id: 'mine', label: 'Your yearly premium (optional)', def: 0, unit: '$', max: 100000, ph: 'e.g. 2,400', help: 'The yearly total on your bill or renewal notice. Not sure? Leave it empty: the typical premium shows anyway.' }],
     run: (v) => {
       const x = ST(s(v, 'sx')), mine = n(v, 'mine');
-      const p = x.prem[4];
-      const nr = x.nonren[4];
+      const p = x.prem[4], now = toToday(p);
       return {
-        label: `Typical yearly premium in ${x.n}, at ${PPI_MONTH} prices`, value: usd(toToday(p)),
-        sub: `Estimate: ${usd(p)} paid in 2022 by the typical ZIP code of ${x.n} (half paid more, half less; rank ${x.rp} of 51), raised by the national rise of home insurance prices since then.`,
+        label: `Typical yearly premium in ${x.n}, at ${PPI_MONTH} prices`, value: usd(now),
+        sub: `Estimate, not a quote: ${usd(p)} was paid per policy in 2022 by ${typical(x)} (half paid more, half less), raised by ${sgn(NA.ppiFactor - 1)}, the national rise of home insurance prices since then.`,
         rows: [
-          ...(mine > 0 ? [['Your premium against the state at today\'s prices', sgn(mine / toToday(p) - 1, 0)] as [string, string]] : []),
-          ['Paid in 2022, typical ZIP code of the state', usd(p), p],
-          [`Premium per policy, 2018 to 2022, beyond general inflation${PLAN[x.c] ? '*' : ''}`, sgn(x.chg)],
-          ['Cheapest 10% of ZIP codes paid under, 2022', usd(x.p10), x.p10], ['Most expensive 10% of ZIP codes paid over, 2022', usd(x.p90), x.p90],
-          ['Policies the insurer did not renew, 2022', nr === null ? 'not reported' : pct(nr, 2)],
+          ...(mine > 0 ? [[`Your premium against ${x.c ? 'the state' : 'the U.S.'} at today's prices`, sgn(mine / now - 1, 0)] as [string, string]] : []),
+          ['Paid per policy in 2022 (latest official figure)', usd(p), p],
         ],
-        note: `${PLAN[x.c] ? `*${planNote(x)} ` : ''}Premium per policy is the premiums insurers charged in the year divided by the policies they had, in dollars adjusted for inflation as published by the Treasury: it mixes large and small homes and all deductibles. Data end in 2022.`,
+        more: { title: 'More figures: 2018 to 2022, cheapest and dearest ZIP codes, rank', rows: [
+          [`Change from 2018 to 2022, after inflation${PLAN[x.c] ? ' (looks low, see the note)' : ''}`, sgn(x.chg)],
+          ['Cheapest 10% of ZIP codes paid under, 2022', usd(x.p10), x.p10], ['Most expensive 10% of ZIP codes paid over, 2022', usd(x.p90), x.p90],
+          ...(x.c ? [['Rank among the 50 states and DC (1 = most expensive)', `${x.rp}`] as [string, string]] : []),
+        ] },
+        note: `${PLAN[x.c] ? `${planNote(x)} ` : ''}A premium per policy mixes large and small houses and every deductible; yours depends on your house. U.S. Treasury figures for 2018 to 2022, the latest by ZIP code.`,
       };
     },
   }),
   /* Why premiums rise: the 2022 figure carried to today with the price index, against inflation */
   rise: () => ({
     inputs: [
-      { id: 'p22', label: 'Yearly premium paid in 2022', def: NA.prem[4], unit: '$', max: 100000, help: 'Yours if you know it; filled with the typical U.S. ZIP code' },
-      { id: 'now', label: 'Your yearly premium today (optional)', def: 0, unit: '$', max: 100000, help: 'From your renewal notice' },
+      { id: 'before', label: 'Your yearly premium before the increase', def: 1800, unit: '$', max: 100000, help: 'From last year\'s renewal notice or bank statement. Not sure? Leave the example to see how it works.' },
+      { kind: 'select', id: 'yr', label: 'Year of that premium', def: '2025', help: 'The year of that earlier bill. Not sure? Keep last year.', options: RISE_YEARS.map((y) => ({ value: y, label: y === '2025' ? '2025 (last year)' : y })) },
+      { id: 'now', label: 'Your yearly premium now', def: 2200, unit: '$', max: 100000, help: 'The yearly total on your latest renewal notice' },
     ],
     run: (v) => {
-      const p = n(v, 'p22'), now = n(v, 'now'), proj = toToday(p);
+      const before = n(v, 'before'), now = n(v, 'now'), y = RISE_YEARS.includes(s(v, 'yr')) ? s(v, 'yr') : '2025';
+      const market = NA.index.ppi.last.v / NA.index.ppi.annual[y] - 1;
+      const yours = before > 0 ? now / before - 1 : 0;
+      const follow = before * (1 + market);
+      const gap = yours - market;
       return {
-        label: `The same 2022 premium at ${PPI_MONTH} prices`, value: usd(proj),
-        sub: `${usd(p)} raised by the rise of home insurance prices from 2022 to ${PPI_MONTH}, ${sgn(NA.ppiFactor - 1)} (price index of the Bureau of Labor Statistics).`,
+        label: `Your increase since ${y}`, value: before > 0 ? sgn(yours, 0) : 'n/a',
+        sub: `From ${usd(before)} to ${usd(now)} a year. Over the same time, home insurance prices nationwide rose ${sgn(market, 0)} (${y} average to ${PPI_MONTH}).`,
         rows: [
-          ...(now > 0 ? [['Your premium today against the market trend', sgn(now / proj - 1, 0)] as [string, string]] : []),
-          [`If it had only followed general prices from 2022 to ${PPI_MONTH}`, usd(p * cpiSince22), p * cpiSince22],
-          [`Home insurance prices, 2022 to ${PPI_MONTH}`, sgn(NA.ppiFactor - 1)],
-          [`General prices, 2022 to ${PPI_MONTH} (consumer price index)`, sgn(cpiSince22 - 1)],
+          ['Your premium if it had followed the market', usd(follow), follow],
+          ['What you pay above the market trend, per year', usd(now - follow), Math.max(0, now - follow)],
         ],
-        note: 'The index follows the price of comparable coverage nationwide; a ZIP code hit by losses or a lost insurer can move far more.',
+        note: gap > 0.05
+          ? 'Well above the market: ask your agent what changed in your own policy (amount insured, a lost discount, a claim) and compare two quotes.'
+          : 'Close to the market trend or below it: the rise comes mostly from prices everywhere, not from your policy.',
       };
     },
   }),
   /* Nonrenewal: the state rate and the chance of at least one over several renewals */
   nonrenew: () => ({
-    inputs: [stateIn(), { id: 'yrs', label: 'Years you plan to keep the house', def: 5, unit: 'years', max: 30 }],
+    inputs: [stateIn(), { id: 'yrs', label: 'Years you plan to keep the house', def: 5, unit: 'years', max: 30, help: 'Not sure? Keep 5 years.' }],
     run: (v) => {
       const x = ST(s(v, 'sx')), y = Math.round(n(v, 'yrs'));
       const r = x.nonren[4];
-      if (r === null) return { label: `Nonrenewal rate in ${x.n}`, value: 'Not reported', sub: 'Texas insurers did not report nonrenewals in the data call (Treasury report, Figure 8 note).', rows: [['Whole U.S., typical ZIP code, 2022', pct(NA.nonren[4], 2)]] };
+      if (r === null) return { label: `Share of policies not renewed in ${x.n}`, value: 'Not reported', sub: 'Texas insurers did not report nonrenewals to the Treasury, so there is no Texas figure.', rows: [['Whole U.S., typical ZIP code, 2022', pct(NA.nonren[4], 2)]] };
       return {
-        label: `Chance of at least one nonrenewal in ${y} ${y === 1 ? 'renewal' : 'renewals'}, ${x.n}`, value: pct(nonrenewalOdds(r, y), 1),
-        sub: `If ${pct(r, 2)} of policies a year are not renewed, the 2022 rate of ${x.n}'s typical ZIP code.${PLAN[x.c] ? ` ${planNote(x)}` : ''}`,
-        rows: [[`Not renewed in a year, ${x.n}, 2022`, pct(r, 2)], ['Not renewed in a year, whole U.S., 2022', pct(NA.nonren[4], 2)], [`Same ${y} ${y === 1 ? 'year' : 'years'} at the U.S. rate`, pct(nonrenewalOdds(NA.nonren[4], y), 1)], [`${x.n} among the 51`, x.rn > 26 ? `${ORD(52 - x.rn)} lowest rate` : `${ORD(x.rn)} highest rate`]],
-        note: 'Insurer-initiated nonrenewals only; a policyholder who leaves is not counted. Your own odds depend on the roof, claims and the insurer.',
+        label: `Chance your insurer drops you at least once in ${y} ${y === 1 ? 'year' : 'years'}, ${x.n}`, value: pct(nonrenewalOdds(r, y), 1),
+        sub: `This assumes ${pct(r, 2)} of policies are not renewed each year, the 2022 rate in ${typical(x)}.`,
+        rows: x.c ? [[`Not renewed in a year, ${x.n}, 2022`, pct(r, 2)], ['Not renewed in a year, whole U.S., 2022', pct(NA.nonren[4], 2)], [`Same ${y} ${y === 1 ? 'year' : 'years'} at the U.S. rate`, pct(nonrenewalOdds(NA.nonren[4], y), 1)]] : [['Not renewed in a year, whole U.S., 2022', pct(r, 2)]],
+        note: `${PLAN[x.c] ? `${planNote(x)} ` : ''}Counts only insurers that declined to renew; owners who left for a cheaper offer are not in it. Your own odds depend on the roof, past claims and the insurer.`,
       };
     },
   }),
@@ -102,7 +114,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   notice: () => ({
     inputs: [
       { kind: 'select', id: 'nx', label: 'State', def: 'FL', options: NOTICE.map((x) => ({ value: x.code, label: LITE_STATES.find((s) => s.c === x.code)?.n ?? x.code })), help: 'Only the states whose statute this site has read' },
-      { id: 'dn', label: 'Days between the notice and the end of your policy', def: 60, unit: 'days', max: 1000, help: 'Count from the date printed on the notice' },
+      { id: 'dn', label: 'Days between the notice and the end of your policy', def: 60, unit: 'days', max: 1000, help: 'Count from the date printed on the notice to the end date of the policy' },
     ],
     run: (v) => {
       const x = NOTICE.find((y) => y.code === s(v, 'nx')) ?? NOTICE[0];
@@ -111,44 +123,44 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
       return {
         label: `Minimum notice of nonrenewal in ${name}`, value: `${x.days} days`,
         sub: r.onTime ? `A notice ${Math.round(n(v, 'dn'))} days before the end date meets it, with ${r.spare} days to spare.` : `A notice ${Math.round(n(v, 'dn'))} days before the end date is ${r.short} days short of it.`,
-        rows: [['Your notice', r.onTime ? 'on time' : 'too late'], ['The insurer must state its reason', x.reason ? 'yes' : 'no'], ['Rule', x.cite]],
-        note: 'A late notice does not always end the matter the same way in every state: ask the state insurance department what it means for your policy.',
+        rows: [['Your notice', r.onTime ? 'on time' : 'too late'], ['The insurer must state its reason', x.reason ? 'yes' : 'no']],
+        note: 'Each state\'s law is listed under Sources. If the notice came late, ask your state insurance department, free of charge, what it means for your policy.',
       };
     },
   }),
   /* Premium per month, with the escrow view */
   monthly: () => ({
-    inputs: [{ id: 'y', label: 'Yearly premium', def: Math.round(toToday(NA.prem[4])), unit: '$', max: 100000, help: 'Filled with the typical U.S. ZIP code at today\'s prices' }, { id: 'cov', label: 'Amount the house is insured for', def: 300000, unit: '$', max: 10000000, help: 'Most it pays to rebuild ("Coverage A")' }],
+    inputs: [{ id: 'y', label: 'Your yearly premium', def: Math.round(toToday(NA.prem[4])), unit: '$', max: 100000, help: 'Not sure? Keep the typical U.S. premium at today\'s prices.' }, { id: 'cov', label: 'Amount the house is insured for', def: 350000, unit: '$', max: 10000000, help: 'Printed next to "Dwelling" on the first page of your policy: the most it pays to rebuild. Not sure? Keep the example.' }],
     run: (v) => {
       const y = n(v, 'y'), cov = n(v, 'cov');
       return {
-        label: 'The same premium per month', value: usd(y / 12), sub: `${usd(y)} a year is ${formatMoney(y / 365, 2)} a day.`,
-        rows: [['Price per $1,000 of insured value, per year (to compare two quotes)', cov > 0 ? formatMoney((y / cov) * 1000, 2) : 'n/a'], ['Safety reserve your lender may hold if it collects the premium with the mortgage, at most', usd(y * P.escrow.cushionMax), y * P.escrow.cushionMax], [`Compared with the typical U.S. premium at ${PPI_MONTH} prices`, Math.abs(y / toToday(NA.prem[4]) - 1) < 0.005 ? 'equal' : sgn(y / toToday(NA.prem[4]) - 1, 0)]],
+        label: 'Your premium per month', value: usd(y / 12), sub: `${usd(y)} a year split into 12 payments, or ${formatMoney(y / 365, 2)} a day.`,
+        rows: [['Price per $1,000 insured, per year. To compare two quotes for the same house: the lower number is the cheaper policy', cov > 0 ? formatMoney((y / cov) * 1000, 2) : 'n/a'], ['Extra cushion your mortgage company may keep if it pays this bill for you (still your money), at most', usd(y * P.escrow.cushionMax), y * P.escrow.cushionMax], [`Compared with the typical U.S. premium at ${PPI_MONTH} prices`, Math.abs(y / toToday(NA.prem[4]) - 1) < 0.005 ? 'equal' : sgn(y / toToday(NA.prem[4]) - 1, 0)]],
       };
     },
   }),
   /* Escrow: what a premium increase does to the mortgage payment */
   escrow: () => ({
     inputs: [
-      { id: 'old', label: 'Premium last year', def: 1800, unit: '$', max: 100000 },
-      { id: 'new', label: 'Premium at renewal', def: 2400, unit: '$', max: 100000 },
-      { id: 'tax', label: 'Your yearly property tax and other escrow items', def: 4200, unit: '$', max: 200000, adv: true, help: 'Paid from the same escrow account' },
+      { id: 'old', label: 'Yearly premium last year', def: 1800, unit: '$', max: 100000 },
+      { id: 'new', label: 'Yearly premium at renewal', def: 2400, unit: '$', max: 100000, help: 'The yearly total on the renewal notice' },
+      { id: 'tax', label: 'Your yearly property tax paid through the mortgage', def: 4200, unit: '$', max: 200000, help: 'On your yearly escrow statement. Not sure? Keep the example: it does not change the increase.' },
     ],
     run: (v) => {
       const e = escrowChange({ oldPremium: n(v, 'old'), newPremium: n(v, 'new'), otherYearly: n(v, 'tax'), cushionMax: P.escrow.cushionMax, months: P.escrow.shortageMonths });
       return {
-        label: 'Monthly escrow payment in the first year after the increase, up to', value: usd(e.oldMonthly + e.firstYear),
+        label: 'Monthly escrow payment (insurance and tax) in the first year after the increase, up to', value: usd(e.oldMonthly + e.firstYear),
         sub: `${e.firstYear >= 0 ? '+' : '-'}${usd(Math.abs(e.firstYear))} a month against ${usd(e.oldMonthly)} before: ${usd(e.deposit)} for the new premium plus ${usd(e.spread)} to repay the catch-up over ${P.escrow.shortageMonths} months. After that year, ${usd(e.newMonthly)} a month.`,
-        rows: [['Change in the first year', `${e.firstYear >= 0 ? '+' : '-'}${usd(Math.abs(e.firstYear))}`], ['One-time catch-up your lender may add, up to', usd(e.shortage), e.shortage], [`Monthly escrow before: insurance plus ${usd(n(v, 'tax'))} a year of property tax`, usd(e.oldMonthly), e.oldMonthly], ['Monthly escrow after the first year', usd(e.newMonthly), e.newMonthly]],
-        note: 'The company that collects your mortgage payment (the servicer) may also leave the catch-up unpaid, or ask for it within 30 days when it is under one month\'s payment; the reserve it keeps may not exceed one-sixth of the yearly bills (federal escrow rule, see Sources).',
+        rows: [['Change in the first year', `${e.firstYear >= 0 ? '+' : '-'}${usd(Math.abs(e.firstYear))}`], ['Shortfall your mortgage company spreads over the year, up to', usd(e.shortage), e.shortage], [`Monthly escrow before: insurance plus ${usd(n(v, 'tax'))} a year of property tax`, usd(e.oldMonthly), e.oldMonthly], ['Monthly escrow after the first year', usd(e.newMonthly), e.newMonthly]],
+        note: 'Escrow is the account your mortgage company uses to pay the insurance and tax bills for you. It may also ask for a small shortfall within 30 days, or leave it unpaid; the cushion it keeps may not exceed one-sixth of the yearly bills (federal rule, see Sources).',
       };
     },
   }),
   /* Percentage hurricane or wind deductible */
   hurricane: () => ({
     inputs: [
-      { id: 'a', label: 'Amount the house is insured for', def: 350000, unit: '$', max: 10000000, help: 'Most it pays to rebuild ("Coverage A")' },
-      { id: 'p', label: 'Hurricane or wind deductible', def: 2, unit: '%', max: 25, decimals: 1 },
+      { id: 'a', label: 'Amount the house is insured for', def: 350000, unit: '$', max: 10000000, help: 'Printed next to "Dwelling" on the first page of your policy: the most it pays to rebuild' },
+      { id: 'p', label: 'Hurricane or wind deductible', def: 2, unit: '%', max: 25, decimals: 1, help: 'Not sure? Look for "Hurricane deductible" on the first page of your policy.' },
       { id: 'd', label: 'Damage from the storm', def: 18000, unit: '$', max: 10000000 },
       { id: 'f', label: 'Ordinary deductible (fire, theft and other losses)', def: 1000, unit: '$', max: 100000, adv: true },
       { id: 'u', label: 'Hurricane deductible you already paid on an earlier storm this year', def: 0, unit: '$', max: 1000000, adv: true, help: 'Florida applies the deductible once per calendar year' },
@@ -161,13 +173,16 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
         label: 'The insurer would pay', value: usd(r.paid),
         sub: u > 0
           ? `${usd(dmg)} of damage minus the ${usd(r.deductible)} left of your hurricane deductible this year (${usd(r.full)} for the year, ${usd(Math.min(u, r.full))} already paid on the earlier storm).`
-          : `${usd(dmg)} of damage minus your ${usd(r.deductible)} deductible: you keep ${usd(r.kept)}.`,
+          : `${usd(dmg)} of damage minus your ${usd(r.deductible)} hurricane deductible: you pay ${usd(r.kept)} yourself.`,
         rows: [
           ...(u > 0 ? [['Left of your hurricane deductible this year', usd(r.deductible), r.deductible] as [string, string, number]] : []),
-          [`Your ${rate} deductible on a ${usd(n(v, 'a'))} dwelling limit${u > 0 ? ', for the whole year' : ''}`, usd(r.full), r.full],
-          ['Paid with the ordinary deductible instead', usd(r.paidFlat), r.paidFlat], ['Extra you carry because of the percentage', usd(r.extra), r.extra],
-          ...F.hurricaneOptions.filter((o) => o < 1 && Math.abs(o * 100 - n(v, 'p')) > 1e-9).map((o) => [`With a ${pct(o, 0)} deductible (${usd(pctDeductible(n(v, 'a'), o))}), the insurer pays`, usd(hurricaneClaim({ coverageA: n(v, 'a'), share: o, flat: n(v, 'f'), damage: dmg, usedThisYear: u }).paid)] as [string, string])],
-        note: 'The percentage applies to the dwelling limit, not to the damage. Wind, hail and named-storm deductibles work the same way where a policy uses them.',
+          [`Your ${rate} deductible on a house insured for ${usd(n(v, 'a'))}${u > 0 ? ', for the whole year' : ''}`, usd(r.full), r.full],
+          ['Extra you pay yourself because of the percentage, against a regular deductible', usd(r.extra), r.extra],
+        ],
+        more: { title: 'Compare: a regular deductible, or another percentage', rows: [
+          [`The insurer would pay with a regular ${usd(n(v, 'f'))} deductible`, usd(r.paidFlat), r.paidFlat],
+          ...F.hurricaneOptions.filter((o) => o < 1 && Math.abs(o * 100 - n(v, 'p')) > 1e-9).map((o) => [`With a ${pct(o, 0)} deductible (${usd(pctDeductible(n(v, 'a'), o))}), the insurer pays`, usd(hurricaneClaim({ coverageA: n(v, 'a'), share: o, flat: n(v, 'f'), damage: dmg, usedThisYear: u }).paid)] as [string, string])] },
+        note: 'The percentage applies to the amount the house is insured for, not to the damage. Wind, hail and named-storm deductibles work the same way.',
       };
     },
   }),
@@ -176,23 +191,23 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
     inputs: [
       { id: 'c', label: 'Cost to replace the roof', def: 16000, unit: '$', max: 500000 },
       { id: 'age', label: 'Age of the roof', def: 12, unit: 'years', max: 80 },
-      { id: 'life', label: 'Expected life of the material', def: 25, unit: 'years', max: 100, help: 'The schedule in your policy, if it has one' },
-      { id: 'd', label: 'Deductible that applies', def: 2500, unit: '$', max: 200000 },
+      { id: 'life', label: 'Expected life of the roof', def: 25, unit: 'years', max: 100, help: 'Not sure? Keep 25 years; your policy may print its own table by age.' },
+      { id: 'd', label: 'Deductible that applies', def: 2500, unit: '$', max: 200000, help: 'On the first page of your policy. Not sure? Keep the example.' },
     ],
     run: (v) => {
       const r = roofClaim({ cost: n(v, 'c'), age: n(v, 'age'), life: n(v, 'life'), deductible: n(v, 'd') });
       return {
-        label: 'Paid for the roof at its age, after the deductible (actual cash value)', value: usd(r.acv), sub: `A policy that pays full replacement would pay ${usd(r.rcv)} after the same deductible: ${usd(r.gap)} more.`,
-        rows: [['Paid by a full replacement policy, after the deductible', usd(r.rcv), r.rcv], [`Value left in the roof: ${Math.round(n(v, 'age'))} of its ${Math.round(n(v, 'life'))} years used`, pct(r.left, 0)], ['Roof value at its age, before the deductible', usd(r.acvValue), r.acvValue]],
-        note: 'Straight-line depreciation over the expected life; insurers use their own schedules, and some pay the withheld depreciation once the work is done.',
+        label: 'Paid for your roof at its age, after the deductible (actual cash value: its value after wear)', value: usd(r.acv), sub: `A policy that pays full replacement would pay ${usd(r.rcv)} after the same deductible: ${usd(r.gap)} more.`,
+        rows: [['Paid by a full replacement policy, after the deductible', usd(r.rcv), r.rcv], [`Value left in the roof: ${Math.round(n(v, 'age'))} of its ${Math.round(n(v, 'life'))} expected years used`, pct(r.left, 0)], ['Roof value at its age, before the deductible', usd(r.acvValue), r.acvValue]],
+        note: 'The value falls evenly each year of the expected life. Insurers use their own tables, and some pay the rest once the new roof is on.',
       };
     },
   }),
   /* Dwelling limit and the replacement cost condition */
   coins: () => ({
     inputs: [
-      { id: 'rc', label: 'Cost to rebuild the house', def: 420000, unit: '$', max: 20000000, help: 'Builder estimate, not the market price' },
-      { id: 'lim', label: 'Dwelling limit on the policy', def: 300000, unit: '$', max: 20000000 },
+      { id: 'rc', label: 'Cost to rebuild the house', def: 420000, unit: '$', max: 20000000, help: 'A builder\'s estimate, not the sale price. Not sure? Your renewal notice often shows the insurer\'s estimate.' },
+      { id: 'lim', label: 'Amount the house is insured for (dwelling limit)', def: 300000, unit: '$', max: 20000000, help: 'Printed next to "Dwelling" on the first page of your policy' },
       { id: 'loss', label: 'Damage', def: 60000, unit: '$', max: 20000000 },
       { id: 'd', label: 'Deductible', def: 1000, unit: '$', max: 200000, adv: true },
       { id: 'sh', label: 'Share required by the policy', def: P.coinsurance.defaultShare * 100, unit: '%', max: 100, adv: true },
@@ -203,20 +218,20 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
         label: r.underinsured ? 'Paid with the proportional reduction' : 'Paid at replacement cost', value: usd(r.paid),
         sub: r.underinsured ? `The limit is ${pct(r.ratio, 0)} of the ${usd(r.required)} required: the claim is cut by ${usd(r.penalty)}.` : `The limit meets the ${usd(r.required)} required: no reduction.`,
         rows: [['Limit needed to avoid the reduction', usd(r.required), r.required], ['Reduction from underinsurance', usd(r.penalty), r.penalty], ['Left for you to pay', usd(r.kept), r.kept]],
-        note: 'Some policies pay the actual cash value instead when it is higher; read the loss settlement clause of your own form.',
+        note: 'Some policies pay the value after wear instead when it is higher; the claims section of your policy says which.',
       };
     },
   }),
   /* Florida Citizens: the 20 percent rule */
   citizens: () => ({
-    inputs: [{ id: 'cit', label: 'Citizens premium, comparable coverage', def: 3200, unit: '$', max: 200000 }, { id: 'pri', label: 'Private insurer offer', def: 3700, unit: '$', max: 200000 }],
+    inputs: [{ id: 'cit', label: 'Citizens premium (Florida\'s state-run insurer)', def: 3200, unit: '$', max: 200000 }, { id: 'pri', label: 'Private insurer offer for the same coverage', def: 3700, unit: '$', max: 200000 }],
     run: (v) => {
       const r = citizensTest({ citizens: n(v, 'cit'), privateOffer: n(v, 'pri'), margin: F.citizensMargin });
       return {
         label: 'Can a primary residence stay with or join Citizens?', value: r.eligible ? 'Yes, on price' : 'No, on price',
         sub: `The private offer is ${pct(r.over, 0)} above Citizens; the line is more than ${pct(F.citizensMargin, 0)}, here ${usd(r.limit)}.`,
         rows: [['Private offer that keeps eligibility, above', usd(r.limit), r.limit], ['Difference with the offer entered', usd(r.gap), r.gap]],
-        note: 'Fla. Stat. 627.351(6)(c)5.a, for comparable coverage from an authorized insurer; other eligibility rules of Citizens still apply.',
+        note: 'Florida law (see Sources), for the same coverage from an insurer licensed in Florida; Citizens\' other conditions still apply.',
       };
     },
   }),
@@ -225,17 +240,17 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
     inputs: [
       { id: 'dmg', label: 'Damage', def: 4500, unit: '$', max: 1000000 },
       { id: 'ded', label: 'Deductible', def: 1500, unit: '$', max: 200000 },
-      { id: 'pr', label: 'Yearly premium', def: Math.round(toToday(NA.prem[4])), unit: '$', max: 100000 },
-      { id: 'sur', label: 'Surcharge you expect after a claim', def: 20, unit: '%', max: 200, help: 'Your guess, or what your insurer states' },
-      { id: 'yrs', label: 'Years the surcharge lasts', def: 3, unit: 'years', max: 10 },
+      { id: 'pr', label: 'Your yearly premium', def: Math.round(toToday(NA.prem[4])), unit: '$', max: 100000, help: 'Not sure? Keep the typical U.S. premium at today\'s prices.' },
+      { id: 'sur', label: 'Price increase you expect after a claim', def: 20, unit: '%', max: 200, help: 'Not sure? Keep 20%, the example, and ask your agent before filing.' },
+      { id: 'yrs', label: 'Years the increase lasts', def: 3, unit: 'years', max: 10, help: 'Not sure? Keep 3 years.' },
     ],
     run: (v) => {
       const r = claimOrNot({ damage: n(v, 'dmg'), deductible: n(v, 'ded'), premium: n(v, 'pr'), surcharge: n(v, 'sur') / 100, years: n(v, 'yrs') });
       return {
         label: r.net >= 0 ? 'Filing leaves you ahead by' : 'Filing leaves you behind by', value: usd(Math.abs(r.net)),
-        sub: `The claim pays ${usd(r.paid)}; the surcharge would cost ${usd(r.cost)} over ${n(v, 'yrs')} years.`,
+        sub: `The claim pays ${usd(r.paid)}; the higher premium would cost ${usd(r.cost)} over ${n(v, 'yrs')} years.`,
         rows: [['Claim payment after deductible', usd(r.paid), r.paid], ['Extra premium over the period', usd(r.cost), r.cost]],
-        note: 'A surcharge is not the only effect: claims history can also weigh on a renewal decision.',
+        note: 'A higher price is not the only effect: past claims can also lead an insurer not to renew.',
       };
     },
   }),
@@ -254,8 +269,8 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
       return {
         label: 'Personal property limit to ask for', value: usd(Math.ceil(r.total / 5000) * 5000),
         sub: `Your inventory adds up to ${usd(r.total)} at today's replacement prices, rounded up to the next $5,000.`,
-        rows: [['Paid on a total loss, replacement cost policy, before deductible', usd(r.total), r.total], ['Paid on a total loss, actual cash value policy', usd(r.acv), r.acv]],
-        note: 'Jewelry, collections and cash usually have lower sublimits inside the policy; list them apart.',
+        rows: [['Paid on a total loss, replacement cost policy, before deductible', usd(r.total), r.total], ['Paid on a total loss, actual cash value policy (value after wear)', usd(r.acv), r.acv]],
+        note: 'Jewelry, collections and cash usually have smaller caps inside the policy; list them apart.',
       };
     },
   }),

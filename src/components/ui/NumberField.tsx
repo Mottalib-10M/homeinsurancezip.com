@@ -1,9 +1,11 @@
 import { type ChangeEvent, useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { formatNumber, parseLocaleNumber } from '../../lib/format';
 
-interface Props { id: string; label: string; value: number; onChange: (v: number) => void; unit?: string; min?: number; max?: number; help?: string; className?: string; decimals?: number }
+interface Props { id: string; label: string; value: number; onChange: (v: number) => void; unit?: string; min?: number; max?: number; help?: string; className?: string; decimals?: number; placeholder?: string }
 
-export default function NumberField({ id, label, value, onChange, unit = '', min = 0, max = 10_000_000, help, className = '', decimals = 0 }: Props) {
+export default function NumberField({ id, label, value, onChange, unit = '', min = 0, max = 10_000_000, help, className = '', decimals = 0, placeholder = '0' }: Props) {
+  // Dollar sign before the amount, as Americans write it (testeurs naïfs du 2026-11-10 : « 0 $ » lu comme une valeur à laisser).
+  const prefix = unit === '$';
   const [focused, setFocused] = useState(false);
   const [raw, setRaw] = useState('');
   const [over, setOver] = useState(false);
@@ -28,9 +30,9 @@ export default function NumberField({ id, label, value, onChange, unit = '', min
     <div className={`grid grid-rows-subgrid row-span-3 content-start gap-y-0 ${className}`}>
       <label htmlFor={id} className="mb-1 block text-sm font-medium text-navy-700">{label}</label>
       <div className="relative self-start">
-        <input ref={input} id={id} onMouseUp={(e) => { if (guardMouseUp.current) { guardMouseUp.current = false; e.preventDefault(); } }} type="text" inputMode="decimal" value={display} onChange={handleChange} onFocus={handleFocus} onBlur={handleBlur} placeholder="0" aria-describedby={help || over ? `${id}-help` : undefined}
-          className={`tabular-nums w-full rounded-lg border border-navy-300 bg-white h-12 px-4 ${unit ? (unit.length > 2 ? 'pr-24' : 'pr-14') : ''} text-right text-lg text-navy-900 focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/20`} />
-        {unit && <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-sm text-navy-500" aria-hidden="true">{unit}</span>}
+        <input ref={input} id={id} onMouseUp={(e) => { if (guardMouseUp.current) { guardMouseUp.current = false; e.preventDefault(); } }} type="text" inputMode="decimal" value={display} onChange={handleChange} onFocus={handleFocus} onBlur={handleBlur} placeholder={placeholder} aria-describedby={help || over ? `${id}-help` : undefined}
+          className={`tabular-nums w-full rounded-lg border border-navy-300 bg-white h-12 px-4 ${prefix ? 'pl-8' : unit ? (unit.length > 2 ? 'pr-24' : 'pr-14') : ''} text-right text-lg text-navy-900 focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/20`} />
+        {unit && <span className={`pointer-events-none absolute ${prefix ? 'left-3 text-lg text-navy-700' : 'right-3 text-sm text-navy-500'} top-1/2 -translate-y-1/2`} aria-hidden="true">{unit}</span>}
       </div>
       {over
         ? <p id={`${id}-help`} role="status" className="mt-1 text-xs font-medium text-amber-700">≤ {formatNumber(max, Number.isInteger(max) ? 0 : decimals)}{unit ? ` ${unit}` : ''}</p>

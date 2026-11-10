@@ -49,7 +49,7 @@ export default function SpecTool({ kind, arg, methodHref, idPrefix = 't' }: Prop
     const cls = i.wide ? 'sm:col-span-2' : '';
     if (i.kind === 'choice') return <div key={i.id} className={`grid grid-rows-subgrid row-span-3 ${cls}`}><Choice id={id} label={i.label} value={String(v[i.id])} options={i.options} onChange={set(i.id)} /></div>;
     if (i.kind === 'select') return <SelectField key={i.id} id={id} label={i.label} value={String(v[i.id])} onChange={set(i.id)} options={i.options} help={i.help} className={cls} />;
-    return <NumberField key={i.id} id={id} label={i.label} value={Number(v[i.id])} onChange={set(i.id)} unit={i.unit} max={i.max} decimals={i.decimals} help={i.help} className={cls} />;
+    return <NumberField key={i.id} id={id} label={i.label} value={Number(v[i.id])} onChange={set(i.id)} unit={i.unit} max={i.max} decimals={i.decimals} help={i.help} className={cls} placeholder={i.ph} />;
   };
   const main = spec.inputs.filter((i) => !i.adv), adv = spec.inputs.filter((i) => i.adv);
   return (
@@ -67,6 +67,12 @@ export default function SpecTool({ kind, arg, methodHref, idPrefix = 't' }: Prop
         </form>
         <ResultCard label={out.label} value={out.value} sub={out.sub} mention={<MentionExemple lang="en" touched={touched} />}>
           <Rows rows={out.rows} />
+          {out.more && out.more.rows.length > 0 && (
+            <details className="mt-3 rounded-lg border border-accent-200 bg-white px-3 py-2">
+              <summary className="cursor-pointer text-sm font-medium text-navy-800">{out.more.title}</summary>
+              <Rows rows={out.more.rows} />
+            </details>
+          )}
           {out.note && <p className="mt-2 text-xs text-navy-600">{out.note}</p>}
           <ShareRow methodHref={methodHref} />
         </ResultCard>

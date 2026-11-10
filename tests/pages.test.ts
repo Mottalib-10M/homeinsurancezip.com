@@ -19,10 +19,10 @@ const text = (s: string) => s.replace(/<div class="not-prose my-6 overflow-x-aut
 const only = (process.env.PAGE_FILES ?? '').split(',').map((x) => x.trim()).filter(Boolean);
 const keep = (id: string) => !only.length || only.includes(id);
 
-interface Item { id: string; title: string; description: string; intro: string; resume: string; body: string; faqs: FAQ[]; related: string[]; minBody: number; kind: string }
+interface Item { id: string; title: string; description: string; intro: string; resume: string; body: string; faqs: FAQ[]; related: string[]; minBody: number; kind: string; tool?: string }
 const items: Item[] = [
-  ...GUIDES.map((g) => ({ id: g.id, title: g.title, description: g.description, intro: g.intro, resume: g.resume, body: g.body(helpers()), faqs: g.faqs, related: g.related, minBody: 650, kind: 'guide' })),
-  ...STATE_PAGES.map((s) => ({ id: stateId(s.slug), title: s.title, description: s.description, intro: s.intro, resume: s.resume, body: s.body(helpers()), faqs: s.faqs, related: s.related, minBody: 300, kind: 'state' })),
+  ...GUIDES.map((g) => ({ id: g.id, title: g.title, description: g.description, intro: g.intro, resume: g.resume, body: g.body(helpers()), faqs: g.faqs, related: g.related, minBody: 650, kind: 'guide', tool: g.tool })),
+  ...STATE_PAGES.map((s) => ({ id: stateId(s.slug), title: s.title, description: s.description, intro: s.intro, resume: s.resume, body: s.body(helpers()), faqs: s.faqs, related: s.related, minBody: 300, kind: 'state', tool: 'lookup' })),
 ];
 
 const allQ = new Map<string, string[]>();
@@ -68,7 +68,11 @@ describe('content files', () => {
       it('related pages and minis exist', () => {
         for (const r of x.related) expect(ROUTES.some((x) => x.id === r) || PLANNED_IDS.has(r), r).toBe(true);
         for (const m of x.body.matchAll(/<!--mini:([A-Za-z0-9_]+)/g)) expect(TOOL_KINDS, m[1]).toContain(m[1]);
-        expect(x.body.match(/<!--mini:/g)?.length ?? 0, 'at least one mini-simulator').toBeGreaterThanOrEqual(1);
+        // Brief des cinq règles (2026-11-10, règle 3) : plus de mini-calculateur répété d'une page à l'autre, un lien suffit.
+        // Chaque page garde au moins un simulateur (§9.3) : son calculateur complet en tête (guide : `tool` ; page d'État :
+        // la recherche par ZIP posée par StatePage.astro), ou un mini-simulateur propre à la page.
+        const full = x.tool === 'lookup' || TOOL_KINDS.includes(x.tool ?? '');
+        expect(full || (x.body.match(/<!--mini:/g)?.length ?? 0) >= 1, 'a full calculator or a mini-simulator').toBe(true);
         expect(x.body).not.toMatch(/undefined|NaN|\[object Object\]|null/);
         expect(x.resume + x.description + x.title + x.intro).not.toMatch(/undefined|NaN|null/);
       });

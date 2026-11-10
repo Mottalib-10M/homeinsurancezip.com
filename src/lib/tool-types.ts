@@ -1,12 +1,14 @@
 /** Declarative calculators (src/lib/tool-specs.ts), rendered by components/calc/SpecTool.tsx. */
 export type V = Record<string, number | string>;
-export interface NumIn { kind?: 'num'; id: string; label: string; def: number; unit?: string; max?: number; decimals?: number; help?: string; adv?: boolean; wide?: boolean }
+export interface NumIn { kind?: 'num'; id: string; label: string; def: number; unit?: string; max?: number; decimals?: number; help?: string; adv?: boolean; wide?: boolean; ph?: string }
 export interface ChoiceIn { kind: 'choice'; id: string; label: string; def: string; options: Array<{ value: string; label: string }>; help?: string; adv?: boolean; wide?: boolean }
 export interface SelectIn { kind: 'select'; id: string; label: string; def: string; options: Array<{ value: string; label: string }>; help?: string; adv?: boolean; wide?: boolean }
 export type Input = NumIn | ChoiceIn | SelectIn;
 export interface ToolOut {
   label: string; value: string; sub?: string;
   rows: Array<[string, string, number?]>;
+  /** Secondary figures, folded under « More figures » (brief des cinq règles : un chiffre par cas). */
+  more?: { title: string; rows: Array<[string, string, number?]> };
   table?: { caption?: string; headers: string[]; rows: string[][]; align?: Array<'l' | 'r'> };
   note?: string;
 }

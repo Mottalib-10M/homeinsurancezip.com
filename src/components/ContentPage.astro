@@ -11,6 +11,7 @@ import { guideById, statePageById } from '../lib/pages';
 import { helpers, SOURCES } from '../lib/helpers';
 import { articleSchema, faqSchema, breadcrumbSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
 import { AUTHOR_NAME } from '../data/site-config';
+import { gloss } from '../lib/gloss';
 import type { GuideDef } from '../lib/page-types';
 interface Props { page: GuideDef }
 const { page } = Astro.props;
@@ -19,21 +20,26 @@ const ui = t(lang);
 const path = route(page.id, lang);
 const group = GROUPS.find((g) => g.id === page.group)!;
 const jsonLd = [webApplicationSchema({ name: page.h1, description: page.description, path, lang }), articleSchema({ title: page.h1, description: page.description, path, lang }), webPageSchema({ name: page.h1, description: page.description, path, lang }), breadcrumbSchema([{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: page.nav, path }])];
-if (page.faqs.length) jsonLd.push(faqSchema(page.faqs, lang));
+
 const card = (id: string) => guideById(id)?.card ?? (statePageById(id) ? statePageById(id)!.intro : '');
 const related = page.related.filter((id) => ROUTES.some((r) => r.id === id)).map((id) => ({ href: route(id, lang), name: label(id), description: card(id) }));
 const sources = page.sources.map((k) => ({ name: SOURCES[k].label, url: SOURCES[k].url }));
+// Règle 4 du brief du 2026-11-10 : chaque mot de métier expliqué à sa première apparition sur la page.
+const gl = gloss();
+const intro = gl(page.intro), resume = gl(page.resume), body = gl(page.body(helpers()));
+const faqs = page.faqs.map((f) => ({ ...f, a: gl(f.a) }));
+if (faqs.length) jsonLd.push(faqSchema(faqs, lang));
 ---
-<PageLayout title={page.title} description={page.description} lang={lang} jsonLd={jsonLd} faqs={page.faqs} related={related} sources={sources} breadcrumbs={[{ label: group.label }, { label: page.nav }]}>
+<PageLayout title={page.title} description={page.description} lang={lang} jsonLd={jsonLd} faqs={faqs} related={related} sources={sources} breadcrumbs={[{ label: group.label }, { label: page.nav }]}>
   <article>
     <header class="mb-4">
       <h1 class="font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{page.h1}</h1>
-      <p class="mt-2 text-base text-navy-700 sm:text-lg">{page.intro}</p>
+      <p class="mt-2 text-base text-navy-700 sm:text-lg">{intro}</p>
       <p data-chrome class="mt-2 text-sm text-navy-600">Independent site, not an insurer or a broker{page.sources.includes('fio_data') ? '. ZIP code figures are the Treasury\'s for 2018 to 2022.' : '; nothing to buy, nothing to sign up for.'} <a href={`${route('home', lang)}#start`} class="underline hover:text-navy-900">Not sure where to start?</a></p>
     </header>
     <div data-outil data-chrome class="mb-4"><Tool kind={page.tool} arg={page.toolArg} idPrefix={`p${page.order}`} /></div>
     <p class="mb-6 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('method', lang)} class="underline hover:text-navy-900">{label('method')}</a> · {page.sources.includes('fio_data') ? 'Treasury premiums, price indexes and the texts cited below' : 'the texts and indexes cited below'} · not a quote</p>
-    <Clamp text={page.resume} lang={lang} id={`clamp-${page.id}`} class="mb-8" />
-    <Body html={page.body(helpers())} path={path} plier />
+    <Clamp text={resume} lang={lang} id={`clamp-${page.id}`} class="mb-8" />
+    <Body html={body} path={path} plier />
   </article>
 </PageLayout>
