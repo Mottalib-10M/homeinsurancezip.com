@@ -31,7 +31,7 @@ const PPI_MONTH = monthName(NA.index.ppi.last.ym);
 /** The whole country, read like a state when no state is chosen. */
 const US: Lite = { c: '', n: 'the U.S.', s: '', z: NA.zips, prem: NA.prem, p10: NA.p10, p90: NA.p90, chg: NA.chg, nonren: NA.nonren, freq: NA.freq, sev: NA.sev, lr: NA.lr, npc: NA.npc, oc: null, rp: 0, rn: 0 };
 const ST = (slug: string) => (slug ? LITE_STATES.find((x) => x.s === slug) ?? US : US);
-const STATE_OPTIONS = [{ value: '', label: 'Choose your state (U.S. figure until then)' }, ...LITE_STATES.map((x) => ({ value: x.s, label: x.n }))];
+const STATE_OPTIONS = [{ value: '', label: 'Your state (or U.S. average)' }, ...LITE_STATES.map((x) => ({ value: x.s, label: x.n }))];
 const stateIn = (def = DEFAULT_STATE): Input => ({ kind: 'select', id: 'sx', label: 'State', def, options: STATE_OPTIONS });
 /** "Florida's typical ZIP code" / "the typical U.S. ZIP code". */
 const typical = (x: Lite) => (x.c ? `${x.n}'s typical ZIP code` : 'the typical U.S. ZIP code');
